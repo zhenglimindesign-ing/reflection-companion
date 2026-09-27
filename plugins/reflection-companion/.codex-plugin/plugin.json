@@ -1,0 +1,35 @@
+{
+  "name": "reflection-companion",
+  "version": "0.3.0",
+  "description": "Reflect on AI conversations, question assumptions, discover self-exploration prompts and carry learning forward.",
+  "keywords": [
+    "reflection",
+    "self-discovery",
+    "chat-history",
+    "learning",
+    "prompts"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Reflection Companion",
+    "shortDescription": "Reflect, question, discover prompts and carry learning forward",
+    "longDescription": "Use existing conversations for reflection, grounded challenge, relevant perspectives, self-exploration and optional local continuity. Public alpha; history access depends on the host. Saving and scheduling are opt-in.",
+    "developerName": "Limin Zheng",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "回顾最近的对话，哪些想法发生了变化？",
+      "我不知道怎样更了解自己，推荐几个不同的探索方式。",
+      "帮我检查这个判断可能漏了什么。"
+    ]
+  },
+  "license": "MIT",
+  "repository": "https://github.com/zhenglimindesign-ing/reflection-companion",
+  "homepage": "https://github.com/zhenglimindesign-ing/reflection-companion",
+  "author": {
+    "name": "Limin Zheng"
+  }
+}

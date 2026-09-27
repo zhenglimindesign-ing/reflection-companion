@@ -1,0 +1,39 @@
+name: Feedback / 反馈
+description: Report a problem or suggest an improvement / 问题或建议
+title: "[Feedback] "
+body:
+  - type: markdown
+    attributes:
+      value: "This issue is public. Please use a fictional example; do not include private conversations. 此反馈对外公开，请用虚构例子，不要附私人聊天。"
+  - type: input
+    id: version
+    attributes:
+      label: Version and host / 版本与宿主
+      placeholder: "0.3.0, Codex on macOS"
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Usage / 用法
+      options:
+        - Reflect / 回顾
+        - Challenge / 挑战
+        - Expand / 拓展
+        - Discovery / 探索推荐
+        - Continuity / 保存与复用
+        - Installation or scheduling / 安装或定时
+        - Other / 其他
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you try and expect? / 尝试和预期
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened? / 实际表现
+      description: "Helpful, inaccurate, repetitive, blocked, or a suggestion. 有用、不准确、重复、无法使用或改进建议。"
+    validations:
+      required: true

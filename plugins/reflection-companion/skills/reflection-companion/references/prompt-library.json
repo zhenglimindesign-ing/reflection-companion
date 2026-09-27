@@ -1,0 +1,473 @@
+{
+  "schema_version": 1,
+  "themes": {
+    "change": {
+      "zh": "变化与成长",
+      "en": "Change and growth"
+    },
+    "judgment": {
+      "zh": "判断与盲区",
+      "en": "Judgment and blind spots"
+    },
+    "values": {
+      "zh": "价值与取舍",
+      "en": "Values and tradeoffs"
+    },
+    "strengths": {
+      "zh": "优势与自我理解",
+      "en": "Strengths and self-understanding"
+    },
+    "possibilities": {
+      "zh": "兴趣与可能性",
+      "en": "Interests and possibilities"
+    },
+    "play": {
+      "zh": "轻松表达与隐喻",
+      "en": "Play and metaphor"
+    }
+  },
+  "entries": [
+    {
+      "id": "change-criteria",
+      "theme": "change",
+      "title": {
+        "zh": "判断标准怎样变了",
+        "en": "How my criteria changed"
+      },
+      "context": "history",
+      "jobs": [
+        "Reflect"
+      ],
+      "prompt": {
+        "zh": "比较我在这段时间里判断同一个问题的标准。哪些改变了，哪些没变？给出前后依据；没有明显变化也可以。",
+        "en": "Compare my criteria for judging the same issue over this period. What changed and what stayed stable? Show earlier and later evidence; no clear change is a valid finding."
+      },
+      "follow_up": {
+        "zh": "检查变化来自新证据还是情境不同。",
+        "en": "Check whether new evidence or a different situation explains the change."
+      },
+      "provenance": {
+        "kind": "original",
+        "created_on": "2026-09-27"
+      }
+    },
+    {
+      "id": "change-quiet-progress",
+      "theme": "change",
+      "title": {
+        "zh": "被忽略的进步",
+        "en": "Quiet progress"
+      },
+      "context": "history",
+      "jobs": [
+        "Reflect"
+      ],
+      "prompt": {
+        "zh": "从最近的对话里找一件我可能低估了的进步。用具体行为说明，也指出证据不足的地方。",
+        "en": "Find a possible improvement I may be underestimating in recent conversations. Use concrete behavior and identify gaps in the evidence."
+      },
+      "follow_up": {
+        "zh": "让我判断这是否真的算进步。",
+        "en": "Let me decide whether it counts as progress."
+      },
+      "provenance": {
+        "kind": "original",
+        "created_on": "2026-09-27"
+      }
+    },
+    {
+      "id": "change-unfinished",
+      "theme": "change",
+      "title": {
+        "zh": "还值得继续的问题",
+        "en": "Questions still worth revisiting"
+      },
+      "context": "history",
+      "jobs": [
+        "Reflect",
+        "Challenge"
+      ],
+      "prompt": {
+        "zh": "找一个过去讨论过、现在可能值得再看的问题。先检查是否已有新结果，不要把没读到结局当成未解决。",
+        "en": "Find a previously discussed question that may be worth revisiting. Check for newer outcomes first; a missing ending does not prove it is unresolved."
+      },
+      "follow_up": {
+        "zh": "比较今天与当时的条件。",
+        "en": "Compare current conditions with the earlier ones."
+      },
+      "provenance": {
+        "kind": "original",
+        "created_on": "2026-09-27"
+      }
+    },
+    {
+      "id": "judgment-assumption",
+      "theme": "judgment",
+      "title": {
+        "zh": "一个可以检验的假设",
+        "en": "One testable assumption"
+      },
+      "context": "current",
+      "jobs": [
+        "Challenge"
+      ],
+      "prompt": {
+        "zh": "检查我当前判断里一个重要但证据不充分的假设。解释它会影响什么，也给出支持我的解释；没有明显问题就直说。",
+        "en": "Check one important, weakly supported assumption in my current judgment. Explain its consequence and the case in my favor; say so if the reasoning looks sound."
+      },
+      "follow_up": {
+        "zh": "设计一个低成本的检验。",
+        "en": "Find a low-cost way to test it."
+      },
+      "provenance": {
+        "kind": "original",
+        "created_on": "2026-09-27"
+      }
+    },
+    {
+      "id": "judgment-opposite",
+      "theme": "judgment",
+      "title": {
+        "zh": "另一种解释",
+        "en": "A competing explanation"
+      },
+      "context": "current",
+      "jobs": [
+        "Challenge"
+      ],
+      "prompt": {
+        "zh": "对我刚才的解释，提出一个同样符合现有事实的替代解释。哪些新信息能区分它们？不要为了反对而反对。",
+        "en": "Offer a competing explanation that also fits the current facts. What new information would distinguish them? Do not manufacture disagreement."
+      },
+      "follow_up": {
+        "zh": "用一个具体事件比较两种解释。",
+        "en": "Compare the explanations against a concrete event."
+      },
+      "provenance": {
+        "kind": "original",
+        "created_on": "2026-09-27"
+      }
+    },
+    {
+      "id": "judgment-preparation",
+      "theme": "judgment",
+      "title": {
+        "zh": "准备还是推迟",
+        "en": "Preparation or postponement"
+      },
+      "context": "current",
+      "jobs": [
+        "Challenge"
+      ],
+      "prompt": {
+        "zh": "帮我检查继续准备是在减少真实风险，还是可能推迟行动。分别找支持两边的依据，不预设我是拖延。",
+        "en": "Help me examine whether further preparation reduces a real risk or postpones action. Look for evidence on both sides without assuming procrastination."
+      },
+      "follow_up": {
+        "zh": "明确还缺哪项会改变决定的信息。",
+        "en": "Identify the missing information that could change the decision."
+      },
+      "provenance": {
+        "kind": "original",
+        "created_on": "2026-09-27"
+      }
+    },
+    {
+      "id": "values-tradeoff",
+      "theme": "values",
+      "title": {
+        "zh": "我在保护什么",
+        "en": "What am I protecting?"
+      },
+      "context": "current",
+      "jobs": [
+        "Reflect",
+        "Challenge"
+      ],
+      "prompt": {
+        "zh": "围绕这个选择，列出我明确在意的东西与可能的取舍。把我的原话和你的解释分开，让我修正。",
+        "en": "For this choice, identify what I explicitly care about and the possible tradeoffs. Separate my words from your interpretation and let me revise it."
+      },
+      "follow_up": {
+        "zh": "比较一个可逆的小选择。",
+        "en": "Compare a small reversible choice."
+      },
+      "provenance": {
+        "kind": "original",
+        "created_on": "2026-09-27"
+      }
+    },
+    {
+      "id": "values-enough",
+      "theme": "values",
+      "title": {
+        "zh": "怎样才算足够",
+        "en": "What would be enough?"
+      },
+      "context": "current",
+      "jobs": [
+        "Challenge"
+      ],
+      "prompt": {
+        "zh": "帮我具体化这件事怎样才算足够好。检查这个标准是否来自我真正的目标，还是一个未检验的要求。",
+        "en": "Help me specify what would be good enough here. Check whether that standard serves my actual goal or an unexamined demand."
+      },
+      "follow_up": {
+        "zh": "提出一个我可以接受或拒绝的停止条件。",
+        "en": "Offer a stopping condition I can accept or reject."
+      },
+      "provenance": {
+        "kind": "original",
+        "created_on": "2026-09-27"
+      }
+    },
+    {
+      "id": "values-context",
+      "theme": "values",
+      "title": {
+        "zh": "看起来矛盾的选择",
+        "en": "Choices that look contradictory"
+      },
+      "context": "history",
+      "jobs": [
+        "Reflect",
+        "Challenge"
+      ],
+      "prompt": {
+        "zh": "找两次看起来不一致的选择，比较各自的情境和约束。先考虑合理差异，再判断是否真的矛盾。",
+        "en": "Compare two choices that appear inconsistent and their contexts and constraints. Consider reasonable differences before claiming a contradiction."
+      },
+      "follow_up": {
+        "zh": "让我说明当时最重要的条件。",
+        "en": "Let me explain which condition mattered most then."
+      },
+      "provenance": {
+        "kind": "original",
+        "created_on": "2026-09-27"
+      }
+    },
+    {
+      "id": "strengths-evidence",
+      "theme": "strengths",
+      "title": {
+        "zh": "有证据的优势",
+        "en": "Strengths with evidence"
+      },
+      "context": "history",
+      "jobs": [
+        "Reflect"
+      ],
+      "prompt": {
+        "zh": "指出最近对话里一个有具体行为支持的优势，并说明适用范围。不要拿我与所谓平均用户比较。",
+        "en": "Identify one strength supported by concrete behavior in recent conversations and explain its scope. Do not compare me with an imagined average user."
+      },
+      "follow_up": {
+        "zh": "检查它在哪种情境下可能不适用。",
+        "en": "Check where that strength may not apply."
+      },
+      "provenance": {
+        "kind": "original",
+        "created_on": "2026-09-27"
+      }
+    },
+    {
+      "id": "strengths-label",
+      "theme": "strengths",
+      "title": {
+        "zh": "把标签改成情境",
+        "en": "Turn a label into a situation"
+      },
+      "context": "current",
+      "jobs": [
+        "Reflect",
+        "Challenge"
+      ],
+      "prompt": {
+        "zh": "我给自己的这个标签是否太笼统？帮我改写成有关情境、行为和条件的描述，保留不确定性。",
+        "en": "Is this label I use for myself too broad? Help me rewrite it in terms of situations, behavior and conditions while retaining uncertainty."
+      },
+      "follow_up": {
+        "zh": "由我确认更准确的表达。",
+        "en": "Let me confirm the more accurate wording."
+      },
+      "provenance": {
+        "kind": "original",
+        "created_on": "2026-09-27"
+      }
+    },
+    {
+      "id": "strengths-outsider",
+      "theme": "strengths",
+      "title": {
+        "zh": "换一个观察位置",
+        "en": "A different vantage point"
+      },
+      "context": "current",
+      "jobs": [
+        "Reflect",
+        "Expand"
+      ],
+      "prompt": {
+        "zh": "只根据我提供的这件事，描述一位善意但不讨好的观察者可能注意到什么。列出其他可能解释。",
+        "en": "Using only the event I provided, describe what a kind but candid observer might notice. Include other plausible explanations."
+      },
+      "follow_up": {
+        "zh": "比较我的自述与可观察行为。",
+        "en": "Compare my account with observable behavior."
+      },
+      "provenance": {
+        "kind": "original",
+        "created_on": "2026-09-27"
+      }
+    },
+    {
+      "id": "possibilities-bridge",
+      "theme": "possibilities",
+      "title": {
+        "zh": "连接一个稍远的领域",
+        "en": "A bridge to another field"
+      },
+      "context": "current",
+      "jobs": [
+        "Expand"
+      ],
+      "prompt": {
+        "zh": "从我现在关心的问题出发，带我了解一个稍远但有用的概念或实践。解释连接，不假设我从没听过。",
+        "en": "Connect my current concern to a somewhat distant but useful concept or practice. Explain the bridge without assuming I have never encountered it."
+      },
+      "follow_up": {
+        "zh": "选一个小例子试用这个视角。",
+        "en": "Try the perspective on a small example."
+      },
+      "provenance": {
+        "kind": "original",
+        "created_on": "2026-09-27"
+      }
+    },
+    {
+      "id": "possibilities-experiment",
+      "theme": "possibilities",
+      "title": {
+        "zh": "试一个小可能",
+        "en": "Try a small possibility"
+      },
+      "context": "current",
+      "jobs": [
+        "Expand",
+        "Challenge"
+      ],
+      "prompt": {
+        "zh": "围绕这个兴趣，提出几个可逆的小体验，说明各自能让我了解什么。不要把一次尝试变成人生方向判断。",
+        "en": "Suggest a few reversible experiences around this interest and what each might help me learn. Do not turn one experiment into a verdict about my life direction."
+      },
+      "follow_up": {
+        "zh": "让我选择最想知道的那个问题。",
+        "en": "Let me choose the question I most want to answer."
+      },
+      "provenance": {
+        "kind": "original",
+        "created_on": "2026-09-27"
+      }
+    },
+    {
+      "id": "possibilities-question",
+      "theme": "possibilities",
+      "title": {
+        "zh": "一个值得问的问题",
+        "en": "A question worth asking"
+      },
+      "context": "none",
+      "jobs": [
+        "Challenge",
+        "Expand"
+      ],
+      "prompt": {
+        "zh": "给我一个可能值得思考的问题。它应允许我拒绝前提，不预设我有某种问题；先给轻量版本。",
+        "en": "Offer a question that may be worth thinking about. Let me reject its premise, do not assume I have a problem, and start lightly."
+      },
+      "follow_up": {
+        "zh": "随我的回答调整，避免连续审问。",
+        "en": "Adapt to my answer without turning it into an interrogation."
+      },
+      "provenance": {
+        "kind": "original",
+        "created_on": "2026-09-27"
+      }
+    },
+    {
+      "id": "play-gentle-roast",
+      "theme": "play",
+      "title": {
+        "zh": "善意吐槽",
+        "en": "A gentle roast"
+      },
+      "context": "current",
+      "jobs": [
+        "Reflect",
+        "Challenge"
+      ],
+      "prompt": {
+        "zh": "用中文善意地吐槽我刚才描述的做事方式。尊重我排除的主题；不要编造经历。最后简短说明哪些有依据、哪些是喜剧夸张。",
+        "en": "Gently roast the way of working I just described. Respect excluded topics and invent no experiences. Briefly separate grounded observations from comedic exaggeration afterward."
+      },
+      "follow_up": {
+        "zh": "我可以说轻一点、这条不对或换方向。",
+        "en": "I can ask for lighter humor, correct a point or switch direction."
+      },
+      "provenance": {
+        "kind": "original",
+        "created_on": "2026-09-27"
+      }
+    },
+    {
+      "id": "play-exhibition",
+      "theme": "play",
+      "title": {
+        "zh": "最近的我：一场小展览",
+        "en": "A small exhibition of my recent interests"
+      },
+      "context": "history",
+      "jobs": [
+        "Reflect",
+        "Expand"
+      ],
+      "prompt": {
+        "zh": "把最近对话中的关注点想象成一场小展览。选几件象征性展品，说明各自来自哪些材料，并标明创作部分。",
+        "en": "Imagine a small exhibition of the interests in my recent conversations. Choose symbolic exhibits, connect them to source material, and label creative additions."
+      },
+      "follow_up": {
+        "zh": "由我调整哪些展品能代表现在的自己。",
+        "en": "Let me revise which exhibits represent me now."
+      },
+      "provenance": {
+        "kind": "original",
+        "created_on": "2026-09-27"
+      }
+    },
+    {
+      "id": "play-interview",
+      "theme": "play",
+      "title": {
+        "zh": "一次好奇的采访",
+        "en": "A curious interview"
+      },
+      "context": "none",
+      "jobs": [
+        "Reflect",
+        "Expand"
+      ],
+      "prompt": {
+        "zh": "像一位好奇的采访者，一次问我一个问题，从日常选择开始。根据我的回答追问，不假装已经知道我的人生故事。",
+        "en": "Interview me curiously, one question at a time, starting with an everyday choice. Follow my answers without pretending to know my life story."
+      },
+      "follow_up": {
+        "zh": "随时停止，不强行形成性格结论。",
+        "en": "Stop whenever I want, without forcing a personality conclusion."
+      },
+      "provenance": {
+        "kind": "original",
+        "created_on": "2026-09-27"
+      }
+    }
+  ]
+}

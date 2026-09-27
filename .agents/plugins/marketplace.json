@@ -1,0 +1,20 @@
+{
+  "interface": {
+    "displayName": "Reflection Companion"
+  },
+  "name": "reflection-companion",
+  "plugins": [
+    {
+      "category": "Productivity",
+      "name": "reflection-companion",
+      "policy": {
+        "authentication": "ON_INSTALL",
+        "installation": "AVAILABLE"
+      },
+      "source": {
+        "path": "./plugins/reflection-companion",
+        "source": "local"
+      }
+    }
+  ]
+}
