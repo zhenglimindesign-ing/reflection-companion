@@ -43,7 +43,7 @@ If the Skill is missing or has an old description, check the path and reopen the
 4. Correct an interpretation by supplying facts or saying it does not fit. For a file, ask: “Export the corrected entry as a downloadable **Markdown** file; do not add it to a learning store.”
 5. Click **Download** on the reply's file card, save to a chosen folder and open it to check. Supply that file again when you want to continue in another conversation.
 
-Replies and exported files should follow the current conversational language without a repeated language instruction. This screenshot records the original rc.1 installation; Claude's `v1` / `v2` labels belong to the uploaded item. The ZIP filename and release page identify the project release.
+Replies and exported files default to the current conversational language. An explicit account preference, such as “all deliverables in English,” can override that default. If they conflict, clarify the preference once rather than require a language reminder on every export. This screenshot records the original rc.1 installation; Claude's `v1` / `v2` labels belong to the uploaded item. The ZIP filename and release page identify the project release.
 
 ![Actual enabled installation with 11 files in Contents](images/claude-web-installed.jpg)
 
@@ -67,7 +67,9 @@ A combined initialize/save/correct/readback request timed out before its final r
 
 Claude web checks in one account covered upload/enabling, actual Skill reading, diary reflection, later factual correction, Markdown creation/download, live catalog refresh and starting an exploration. Downloading the installed package confirmed all 11 core files match the candidate byte-for-byte. Only fictional material was used.
 
-The rc.1 web test exported English text in a Chinese conversation; this was a defect. rc.2 explicitly carries the conversational language through replies, file bodies, headings, tables and newly chosen filenames, with a file check before delivery. Two independent Claude Code sessions generated corresponding files from ordinary Chinese and English requests, without extra language instructions. The web installation was updated to v2, and all 11 downloaded core files match rc.2 source. Its new-chat test was interrupted by Claude reporting “Temporarily unable to authenticate,” so post-fix web behavior is not yet verified.
+The earlier web check produced English artifacts during a Chinese conversation. A later retest verified that the test account explicitly required all deliverables in English. That account preference affected the result; attributing it solely to a Skill defect was incomplete. rc.2 strengthens the language rule for exported artifacts while retaining explicit user language choices. Chinese and English Claude Code export checks passed without added language instructions.
+
+The temporary web authentication error has cleared. With only that general account preference set aside for the test, the installed Skill produced a Chinese filename, headings, body and table; the actual downloaded Markdown was inspected. The trace showed reads of the installed SKILL.md and scenarios.md. No account settings were changed for this test. This verifies the default in that scoped context, not identical behavior under every personal instruction. The installed web v2 core files still match rc.2.
 
 Permanent web continuity, unattended delivery and every account/model combination remain untested. A temporary web container is not a permanent learning store; supply downloaded files again to continue in another chat. Scheduling belongs to the host, and installing a Skill does not start a scheduling service. Catalog fallback has script tests; the earlier web run succeeded online without a forced outage.
 

@@ -5,7 +5,7 @@
 ## 0.4.0-rc.2 — 2026-09-29 · Follow the user's language in exports
 
 - Carry the current conversational language into replies, exported document contents and newly chosen filenames; explicit translation requests still take priority. Check the actual file before delivery.
-- Chinese and English Claude Code export checks passed without extra language instructions. The web installation was updated and its 11 core files verified; post-fix web execution is pending because Claude rejected new chats with a temporary authentication error.
+- Chinese and English Claude Code export checks passed without extra language instructions. The web installation and its 11 core files were verified. After the temporary authentication error cleared, a retest identified an explicit English-deliverables account preference. Setting that aside for the test produced a verified Chinese download without naming a target language.
 - Remove the onboarding workaround that made users specify the language every time. Existing rc.1 assets and tags remain unchanged.
 
 ## 0.4.0-rc.1 — 2026-09-29 · Codex, Claude Code and Claude web public candidate
