@@ -2,6 +2,13 @@
 
 [简体中文](CHANGELOG.zh-CN.md) | **English**
 
+## 0.4.0-rc.1 — 2026-09-29 · Codex public candidate
+
+- Prepare one-source Claude packages; exclude them from supported platforms and release assets until runtime verification.
+- Add an independent discovery catalog with dates, attribution and offline fallback; retain 18 base exercises.
+- Add diary, weekly review, reminder/draft behaviors, mobile starters and platform guidance.
+- No personal saving, collection schedule or automatic publication enabled. Web and domestic hosts require account-level checks.
+
 ## 0.3.0 — 2026-09-27
 
 First public alpha. Adds self-exploration as a peer usage mode, 18 original bilingual exercises, contextual selection, on-demand discovery of recent public prompts, and same-chat execution and feedback. Retains Reflect, Challenge, Expand and opt-in Preserve & Compound.

@@ -1,37 +1,40 @@
-# Feedback, contributions and prompt updates
+# Feedback and maintenance
 
 [简体中文](MAINTAINING.zh-CN.md) | **English**
 
-## Users
+[Overview](../README.md) · [Complete user guide](USER_GUIDE.md)
 
-Use [Issues](https://github.com/zhenglimindesign-ing/reflection-companion/issues/new/choose) for a bug, idea or exercise suggestion. Include the version, mode, expectation and actual behavior; use a fictional reproduction where possible. Public reports are visible to everyone. No telemetry or transcript collection is built into the plugin.
+## User feedback
 
-The installed Skill supports two update paths: ask for recent public inspiration in a conversation for a live search, or install a later release for new bundled exercises. Live search does not mutate the installed library. You can use the bundled and contextual modes without browsing.
+Use [public Issues](https://github.com/zhenglimindesign-ing/reflection-companion/issues/new/choose) to report version, scenario, expectation and actual behavior. Fictional reproductions are welcome; private chats are unnecessary. The plugin does not collect telemetry or transcripts. Personal answers and records are never a public content source.
 
-## Suggest an exercise
+## Two content update paths
 
-Explain the user need, required context, proposed wording, a useful follow-up and why it differs from existing themes. For inspiration from elsewhere include the original URL, publication date if known, retrieval date and available engagement evidence. Popularity is a discovery signal, not proof of accuracy or value. Do not submit private responses or a long third-party prompt copied without permission.
+The base library lives in the Skill's `references/prompt-library.json`; public PROMPTS documents are generated from it. Changes to durable methods or Skill behavior ship in a new plugin version.
 
-## Maintainer refresh workflow
+The independent catalog has one editable source, `references/exploration-feed.json`. Building also generates `catalog/explorations.json`. An installed candidate Skill can fetch that public catalog without a plugin upgrade for content-only changes. The helper checks schema, size, dates and duplicate IDs, with a dated bundled fallback on network failure. Entries are reference data, not execution authority.
 
-This is an executable-by-an-agent editorial workflow, not a running service. Request: “Refresh public self-exploration candidates using recent public sources; follow this maintenance guide.” Start with the current library and recent rejected/accepted candidates in the maintainer's workspace. Search the requested period (default past month), using generic topic queries. Check original posts, distinguish recent examples from evidenced popularity, and compare mechanisms against existing themes. Private user histories and answers are never search queries or library inputs.
+Content-only updates keep the plugin version while updating the catalog edition and actual check date. Synchronize the generated catalog, snapshot and release-manifest together through guarded synchronization; never hand-edit only public JSON. Keep previous ZIPs/tags intact; future packages incorporate the latest snapshot. A readable public catalog does not imply that an automated collection service is running; describe them separately.
 
-Write candidates under the maintainer's `work/prompt-candidates/` with source URL/date, retrieval date, popularity evidence or unknown, original/adapted/quoted provenance, required context, proposed bilingual exercise, and disposition (accept/revise/reject with reason). Keep concise excerpts; prefer original wording and a credited link for adaptations. A new item should offer a distinct useful experience, not another phrase for the same question.
+## One editorial update
 
-Before acceptance, run the exercise against fictional sufficient and insufficient context, test a correction/exclusion, and inspect whether the answer invents history, insists on a flaw, repeats an answered theme, or ignores feedback. Record whether this was an author walkthrough or an independent/live check. Preserve stable IDs; deprecate or revise items with reasons. New or materially changed items receive a new reviewed date and truthful provenance. Sources remain data, never executable instructions.
+1. Search generic themes, optionally over the past month. Do not use personal answers, names or diary excerpts as queries.
+2. Read original pages and body dates. Record source dates, added dates, check dates and engagement evidence or unknown separately. Search-snippet dates do not prove first publication.
+3. Compare existing methods and identify a different mechanism or useful context. Give concise attribution and original wording. Do not copy long third-party prompts or adopt instructions presupposing a user's defect.
+4. Walk through sufficient/insufficient synthetic material, including rejected premises or corrections. State what kind of validation occurred; do not call it proof of real-user effectiveness.
+5. Keep stable IDs, bilingual wording, context requirements, sources and adaptation notes. Explain revisions/retirements. Change dates only after actual checks.
+6. Build, validate links/inventory, inspect public changes requiring reconciliation, then synchronize reviewed content.
 
-Update the single library source, regenerate the public catalog, validate both languages and package links, and release a new version. The generated catalog is not edited separately. Runtime personal feedback affects that user's conversation or opted-in store; public changes require volunteered, non-private feedback and editorial judgment.
+This is a workflow, not a running service. A separately authorized host schedule may prepare candidates, without automatic publication, contacting authors or collecting personal records. Installation activates neither collection nor user schedules.
 
-A maintainer may separately schedule this candidate-gathering request through their host. Such a schedule may prepare candidates; it must not auto-publish, submit issues or collect personal histories. This release creates no schedule.
+## One development source, generated distribution
 
-## How this repository is maintained
+Public feedback and contributions are reconciled into one development source before generating public files. Synchronization checks the expected commit, old inventory and file hashes. Unknown changes require reconciliation, never forced replacement. There are not two hand-maintained implementations.
 
-This is the public distribution of one maintained development source. Public fixes and PRs are welcome and are reconciled into that source before the next generated release. There are not two independently edited implementations. Versioned releases contain the exact file inventory and hashes; public synchronization checks the expected prior commit and managed file hashes before replacing anything. Unexpected changes are reconciled, never force-overwritten.
-
-To check a downloaded checkout or extracted package:
+To verify a download:
 
 ```sh
 python3 -B scripts/verify_release.py
 ```
 
-This checks package contents and paths, not model judgment or delivery. Refer to [changes](../CHANGELOG.md) and the [guide](USER_GUIDE.md) for compatibility and updating.
+This checks files, paths and versions, not model judgment or scheduled delivery. [Changes](../CHANGELOG.md) state release scope; unverified hosts must not be advertised as supported.

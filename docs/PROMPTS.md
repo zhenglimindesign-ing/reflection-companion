@@ -4,7 +4,15 @@
 
 Generated from the runtime library; do not edit separately. These original exercises are not a trend ranking. Select one and continue in the same chat.
 
-[Overview](../README.md)
+[Overview](../README.md) · [Full user guide](USER_GUIDE.md)
+
+## How to use this library
+
+In a chat with Reflection Companion enabled, ask for two suitable bundled exercises or name a title below. You do not need to remember IDs or copy a long prompt. Say “start this one” and the assistant should continue in the same chat.
+
+Each entry states its material needs: no history, a current situation, or scoped history. If history is unavailable, choose another exercise or provide a small example you want to discuss. Say “not me,” “lighter,” or “another one” to adjust; takeaways are saved only when requested. Each exercise has both language versions, not two separate question banks.
+
+These 18 entries are starting points. The candidate adds an independently updated catalog and live search; see [complete user guide](USER_GUIDE.md).
 
 ## Change and growth
 

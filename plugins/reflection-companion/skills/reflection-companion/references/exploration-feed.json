@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "edition": "2026-09-29.1",
+  "checked_on": "2026-09-29",
+  "entries": [
+    {
+      "id": "dated-three-lines",
+      "status": "active",
+      "mechanism": "Compare a small dated snapshot with a later answer",
+      "context": "none",
+      "jobs": [
+        "Reflect"
+      ],
+      "title": {
+        "zh": "此刻的三行自画像",
+        "en": "A three-line snapshot"
+      },
+      "prompt": {
+        "zh": "用三行写下你此刻最在意什么、正在尝试什么、还拿不准什么。只写你愿意分享的内容，不用总结整个人生。",
+        "en": "Write three lines about what matters now, what you are trying, and what remains uncertain. Share only what you want; no life summary needed."
+      },
+      "follow_up": {
+        "zh": "以后回答同样三行，再比较变化和没变的部分；保存或提醒由你另行决定。",
+        "en": "Answer the same three lines later and compare changes and continuities. Saving or a reminder is a separate choice."
+      },
+      "added_on": "2026-09-29",
+      "source": {
+        "url": "https://www.rosebud.app/blog/journaling-prompts-for-self-understanding",
+        "title": "96 Journaling Prompts for Self-Discovery and Self-Understanding",
+        "page_date": "2026-09-11",
+        "date_note": "Date displayed on the page; initial publication versus update not independently established.",
+        "retrieved_on": "2026-09-29",
+        "provenance": "adapted",
+        "popularity": "unknown",
+        "adaptation_note": "Adapted the dated-repeat mechanism; original three-part wording. No claim of popularity or therapeutic effect."
+      }
+    },
+    {
+      "id": "one-sentence-two-doors",
+      "status": "active",
+      "mechanism": "Let one present-moment sentence lead to a choice of questions",
+      "context": "none",
+      "jobs": [
+        "Reflect",
+        "Expand"
+      ],
+      "title": {
+        "zh": "一句话，两扇门",
+        "en": "One sentence, two directions"
+      },
+      "prompt": {
+        "zh": "用一句话说说你现在的状态。我会给你两个方向：回看一个具体片段，或想象一个小变化。你选一个，我们一次聊一个问题。",
+        "en": "Describe your present state in one sentence. I will offer two directions: revisit one concrete moment or imagine a small change. Choose one; we will explore one question at a time."
+      },
+      "follow_up": {
+        "zh": "你可以说“不想分析情绪”或“换个方向”，我们就换。",
+        "en": "Say “I do not want to analyze feelings” or “another direction,” and we will change course."
+      },
+      "added_on": "2026-09-29",
+      "source": {
+        "url": "https://www.reflection.app/blog/introducing-depth-ai-powered-self-discovery",
+        "title": "Introducing: Depth — AI-Powered Self-Discovery",
+        "page_date": "2026-09-27",
+        "date_note": "Page currently displays Sep 27; search snippet showed Sep 9. Treat as page-date ambiguity, not proof of a new launch.",
+        "retrieved_on": "2026-09-29",
+        "provenance": "adapted",
+        "popularity": "unknown",
+        "adaptation_note": "Inspired by its one-sentence entry mechanism. Choice of two directions and opt-out wording are original."
+      }
+    },
+    {
+      "id": "label-and-exception",
+      "status": "active",
+      "mechanism": "Test a self-label against one event and a counterexample",
+      "context": "current",
+      "jobs": [
+        "Challenge",
+        "Reflect"
+      ],
+      "title": {
+        "zh": "给自我标签找一个例外",
+        "en": "An exception to a self-label"
+      },
+      "prompt": {
+        "zh": "挑一句你常用来描述自己的话，比如“我不擅长开始”。给我一个符合它的近期例子，再一起找一个不符合的例子；也可以最后决定不用这个标签。",
+        "en": "Choose a phrase you use about yourself, such as “I struggle to start.” Give one recent example, then look for an exception together. You may decide the label is not useful."
+      },
+      "follow_up": {
+        "zh": "这两个情境有什么不同？我们先看条件，不急着解释人格。",
+        "en": "What differs between the situations? Examine conditions before explaining personality."
+      },
+      "added_on": "2026-09-29",
+      "source": {
+        "url": "https://chatsmith.io/blogs/prompt/chatgpt-prompts-for-self-reflection-00317",
+        "title": "10 Powerful ChatGPT Prompts for Self Reflection",
+        "page_date": "2026-04-08",
+        "date_note": "Page body displays Apr 8 despite newer search-snippet date. Newly curated here, not a new September prompt.",
+        "retrieved_on": "2026-09-29",
+        "provenance": "adapted",
+        "popularity": "unknown",
+        "adaptation_note": "Adapted identity-audit idea with explicit counterevidence and rejection of the label. Mechanism overlaps the base label exercise; offer as a variant, not guaranteed novelty."
+      }
+    }
+  ]
+}

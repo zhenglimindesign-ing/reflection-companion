@@ -1,8 +1,10 @@
-# Four conversations
+# Worked examples: a first conversation and continued use
 
 [简体中文](EXAMPLES.zh-CN.md) | **English**
 
 These are fictional teaching examples showing intended behavior, including corrections. They are not testimonials or recorded evaluation results. Start from the [overview](../README.md) or [guide](USER_GUIDE.md).
+
+For an everyday first example, start with the [diary walkthrough](USER_GUIDE.md). The six examples below explain capabilities and corrections, not steps every beginner must follow.
 
 ## 1. Reflect: a changing decision criterion
 
@@ -60,6 +62,44 @@ These are fictional teaching examples showing intended behavior, including corre
 
 **What matters:** writing, correcting and later using a record are distinct actions. Bracketed steps describe required tool outcomes; no fake successful save is shown.
 
-## How discovery joins these conversations
+## 5. Discovery: choose an exercise, then actually start
 
-“Give me a light exercise” can lead to a gentle roast; “help me understand a change” can lead to the first example. A selection continues in the same chat. The user may correct an interpretation, ask for another view, or explicitly save a takeaway. Read the [prompt library](https://github.com/zhenglimindesign-ing/reflection-companion/blob/main/docs/PROMPTS.md).
+**User:** I do not know how to explore myself. Suggest two light exercises that need no history.
+
+**Companion:** Try “A question worth asking” to find a small question you want to understand today, or “A curious interview,” where I follow your answers with questions. Neither needs past chats. Choose one or ask me to choose.
+
+**User:** The interview. Start with one question.
+
+**Companion:** Was there something you recently wanted to do but did not do? It can be small.
+
+**User:** I planned to attend an evening drawing class but canceled this week.
+
+**Companion:** What mattered most before canceling: timing, the class content, or something else?
+
+**User:** I had only ten minutes free. I still wanted to draw.
+
+**Companion:** In this example, the interest remains, while your available time does not fit the class format. We could explore what you would most enjoy drawing in ten minutes.
+
+**User:** I want to doodle, not give myself another assignment. Let's stop here and not save this.
+
+**Companion:** Understood. We will stop here without saving this discussion.
+
+**What matters:** a recommendation leads into conversation in the same chat; interpretations come from actual answers; the user can decline actions and saving. An exercise is not a completed assessment, and temporary feedback does not automatically become a lasting preference. Browse the [full catalog](https://github.com/zhenglimindesign-ing/reflection-companion/blob/main/docs/PROMPTS.md) to start by title.
+
+## 6. Weekly reflection: connect the changes
+
+*Fictional material: last week's saved question was whether to accept an extra assignment. Three current notes show Monday's question about benefits, Wednesday's discovery of a conflict with an existing commitment, and Friday's proposal from the other party to reduce scope. The assistant must actually retrieve these materials, rather than invent the process from a task title.*
+
+**User:** Review these three discussions from this week. Do not just concatenate daily summaries. Include last week's open question.
+
+**Companion:** Across these notes, the question shifts from whether the benefits justify it, to how to avoid the conflict, then to whether to accept a smaller engagement. A smaller scope becomes an available option beyond accepting or declining everything. Is last week's question resolved now?
+
+**User:** I accepted the smaller scope. But the other person proposed it, not me.
+
+**Companion:** Correct: the proposal belongs to them; your decision was to accept the revised scope. It should not be described as your discovery of a new strategy. The old question can be treated as resolved. If useful later, you can review whether the scope works in practice.
+
+**User:** That is accurate. Save the decision and mark last week's question resolved. Do not add a new task automatically.
+
+**Companion:** [Reads current records and checks permission, then actually saves the decision and updates the question's status. Reports successful IDs and location, or separates partial success. Creates no schedule or task.]
+
+**What matters:** weekly reflection connects events, identifies new information, corrects attribution and closes resolved questions. The same workflow can be invoked by an explicitly configured host schedule; this example creates none.

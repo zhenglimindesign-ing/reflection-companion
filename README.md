@@ -2,69 +2,61 @@
 
 [简体中文](README.zh-CN.md) | **English**
 
-Use conversations you already have to understand what changed, question assumptions, discover new ways to look at yourself, and carry useful learning forward.
+**Turn your AI conversations into personal understanding you can revisit, question and revise.**
 
-**0.3.0 · Public alpha · Codex plugin with one Skill · MIT**
+You may already discuss choices, projects, interests and uncertainties with AI. Reflection Companion connects the conversations actually available: revisit changes in your thinking, test explanations, explore relevant perspectives and, when you choose, preserve useful learning for the next conversation.
 
-## Five ways to use it
+It is for people who regularly think with AI and want lasting value from those discussions. You do not need to maintain a complete parallel diary or rewrite a long reflection prompt each time.
 
-| When you want to… | Try saying… |
+[Start using it](docs/USER_GUIDE.md) · [Installation and platform status](docs/PLATFORMS.md)
+
+## Why install a Skill instead of keeping a few prompts?
+
+An ordinary prompt is enough for an occasional good question. This Skill is useful for repeated use: it organizes source reading, interpretation, correction and optional records into a reusable process, reducing the work of arranging those steps yourself.
+
+| What you want | What the Skill handles |
 | --- | --- |
-| Notice change | “Review my recent conversations. What changed in how I judge this question?” |
-| Check a judgment | “What might I be missing? Consider the strongest case for my current view too.” |
-| Broaden your perspective | “Connect this concern to a useful idea outside my usual frame.” |
-| Find self-exploration ideas | “Suggest a few different ways to understand myself. Keep it light today.” |
-| Keep useful learning | “Save this conclusion. That older interpretation was wrong; use this correction.” |
+| “Review this week” | Read accessible sources within your authorized scope, state coverage and compare changes. Disclose missing access. |
+| “Find a blind spot” | Check your words, evidence and competing explanations, including the possibility that your current judgment is sound. |
+| “That earlier interpretation was wrong” | Correct the discussion; if saved, update the record when requested so later reads use the correction. |
+| “Explore something different” | Choose a suitable method from the base library, current context or public sources and continue after selection. Optional exposure records help reduce repetition. |
+| “Return to this next week” | With saving enabled, read relevant learning from the same workspace and reconsider it against new material. |
 
-You can start with a question, a current situation, or accessible past conversations. No journaling homework, saving setup or fixed command sequence is required. Daily, weekly, topic-based and bedtime conversations are optional rhythms.
+A Skill is guidance for the model, with references and helpers such as the local state program. It has no exclusive model capability and does not guarantee a better answer than your own prompt. You can arrange the same process yourself. The reason to install is to reuse and maintain that process. Occasional questions without ongoing reflection do not require installing a prompt library.
 
-## What a conversation can look like
+## How one issue develops over time
 
-*Fictional illustration, not a real user's history or a test result.*
+This is an invented demonstration, not an observed user result.
 
-> **You:** I have three quotes but keep requesting more. Am I using preparation to put off a decision?
->
-> **Companion:** The count alone doesn't establish that. More research may help if a material cost is missing; otherwise it may add little. What unanswered question could change your choice?
->
-> **You:** Whether maintenance is included.
->
-> **Companion:** Then ask that specific question. The evidence supports closing a concrete gap; it doesn't justify labeling you a procrastinator.
+On Tuesday you say, “I keep revising the proposal; perhaps I am procrastinating.” Friday's material adds, “The client only supplied the budget today.” A weekly review should adjust the explanation: missing information may explain the delay; repeated editing alone does not establish avoidance.
 
-The point is a useful, revisable interpretation. A sound judgment can stay sound. Read the [four complete examples](docs/EXAMPLES.md) or browse the [exploration library](https://github.com/zhenglimindesign-ing/reflection-companion/blob/main/docs/PROMPTS.md).
+You can say, “Keep that learning for this case, but do not turn it into a fixed trait.” When something similar happens later, the Companion should consider that limitation alongside new evidence instead of restarting from “you always procrastinate.” This combines reflection, checking judgment and preserving corrections. If useful, it can also explore how to identify missing information earlier.
 
-## Get started
+Saving is your choice. Without it, you can still reflect in the current conversation, without a promise of cross-chat continuity.
 
-In Codex, ask:
+## Start with what you need now
 
-> Install Reflection Companion from https://github.com/zhenglimindesign-ing/reflection-companion at release v0.3.0. Check the version and avoid enabling duplicate older copies. Keep saving and scheduling off.
+| Situation | Say | Capabilities involved |
+| --- | --- | --- |
+| End of a day | “Use today's accessible conversations to review the day; ask about gaps. Do not save yet.” | Reflect; optionally turn it into a diary. |
+| End of a week | “How did my view of this question change this week?” | Reflect, check judgment, optionally preserve. |
+| An uncertain decision | “What might I have missed? Also consider support for my current view.” | Check judgment and expand perspectives. |
+| A different perspective | “Give me a relevant perspective beyond my usual approach.” | Expand, with further discussion if useful. |
+| Something new | “Suggest two light self-exploration exercises; start here after I choose.” | Discovery as an entry, using the four capabilities as needed. |
+| Learning to keep | “Preserve this; correct the earlier record with this version.” | Preserve and compound. |
 
-For the Codex CLI:
+The four capabilities remain **Reflect, Challenge, Expand, and Preserve & Compound**. Diaries, weekly reviews and exploration are situations in which you use them. A manual message or a schedule starts the same Skill. The complete process lives in [one user guide](docs/USER_GUIDE.md).
 
-```sh
-codex plugin marketplace add zhenglimindesign-ing/reflection-companion --ref v0.3.0
-codex plugin add reflection-companion@reflection-companion
-```
+## Sources and records
 
-Open a fresh chat and select the plugin if required. Say: **“Use Reflection Companion. Suggest something worth exploring about myself.”** Or ask a specific question immediately.
+Installation does not unlock all account history. Access depends on host tools, your scope and supplied files. The host manages original chats. A diary can be exported as a readable document. Selected learning can be saved in a personal workspace's `.reflection-companion/state.json`, with inspection, correction and deletion.
 
-The [full guide](docs/USER_GUIDE.md) covers ZIP installation, updates, local saving, corrections, scheduling and troubleshooting. Download the [versioned release](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.3.0) if you prefer a local package.
+Saving and scheduling are separate choices. A schedule starts the same process at an agreed time; it does not guarantee execution with the device off or invent a day with no source material. You can say “not me,” “another direction,” “no analysis yet,” or “stop.”
 
-## Exploration that stays useful
+## Availability
 
-The bundled library contains 18 original bilingual exercises across change, judgment, values, strengths, possibilities and playful expression. It can recommend from the library, adapt to your context, or search for recent public inspiration when you ask. Choose an option or ask it to choose, then continue in the same chat. “Not me,” “lighter,” “already discussed,” and “another direction” are useful feedback.
+The current public candidate is **v0.4.0-rc.1 / Codex**, adding the independent discovery catalog and consolidated diary/weekly guidance. [Download the release](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.4.0-rc.1). Catalog updates still require actual checks and maintenance; no weekly collection service is running. The v0.3.0 archive and tag remain available.
 
-Recent examples are labeled separately from verified popularity. Personal answers do not enter the public library. New library editions ship with releases; [maintenance and contribution](docs/MAINTAINING.md) explains how.
+Claude packages are generated but actual runtime validation has not passed; see [platform status](docs/PLATFORMS.md). The [mobile text sample](docs/MOBILE.md) demonstrates one conversational method. It is not the full Skill or verified adaptation for domestic Chinese apps.
 
-## Before you use it
-
-- Verified installation target: macOS with Codex CLI/desktop. Other hosts and operating systems are not certified by this release. Python 3.10+ is needed only for the optional local state helper.
-- Historical reflection needs sources your host can actually retrieve. The plugin does not unlock complete account history or other providers. Without history it can work with the current conversation, with narrower claims.
-- Saving is optional, in a folder you choose. Local records are plaintext; relevant content is still processed by the host/model under its policies. There is no developer-operated backend or telemetry.
-- Scheduling is separately opt-in and host-dependent. Creating a schedule and receiving a successful first delivery are different outcomes. Always-on delivery is not promised.
-- This supports your own interpretation and decisions. You can reject, correct or delete saved observations.
-
-## Feedback and updates
-
-The creator has used the earlier candidate and accepted public use. The new discovery workflow is included in this alpha; technical validation and synthetic examples do not establish usefulness for every user. We improve it through continued use and voluntary feedback.
-
-[Report an issue or suggestion](https://github.com/zhenglimindesign-ing/reflection-companion/issues/new/choose) using the version, what you tried, expected behavior and what happened. Public issues are public: a small fictional reproduction is welcome; private chat transcripts are unnecessary. See [changes](CHANGELOG.md), [contribution guidance](docs/MAINTAINING.md), and [license](LICENSE).
+MIT licensed. The plugin is the installation/update package containing one Skill. There is no separate application panel or developer data server; your host's model-processing policy still applies. [Changes](CHANGELOG.md) · [Feedback and maintenance](docs/MAINTAINING.md) · [License](LICENSE)
