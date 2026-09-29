@@ -4,7 +4,7 @@
 
 [Purpose and value](../README.md) · [Installation and platform status](PLATFORMS.md)
 
-This guide connects first use, diaries, weekly reviews, exploration, saving and schedules in one process. Current Codex public candidate: v0.4.0-rc.1, including the independent discovery catalog. Claude packages are not released as supported platforms before actual validation.
+This guide connects first use, diaries, weekly reviews, exploration, saving and schedules in one process. Public candidate v0.4.0-rc.1 includes the Codex plugin, a tested Claude Code project Skill and the independent discovery catalog. Claude web is not released yet.
 
 ## 1. Start with something you are already thinking about
 

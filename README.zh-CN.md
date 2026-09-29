@@ -55,8 +55,8 @@ Skill 本身也是给模型的指引，加上引用资料和保存等辅助程�
 
 ## 当前可用范围
 
-当前公开候选为 **v0.4.0-rc.1 / Codex**，增加独立探索目录与统一的日记、周回顾说明。[下载发布包](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.4.0-rc.1)。目录可独立更新，仍需实际核查和维护；目前没有每周自动采集服务。v0.3.0 的包和标签继续保留。
+当前公开候选为 **v0.4.0-rc.1 / Codex 与 Claude Code**，增加独立探索目录与统一的日记、周回顾说明。[下载发布包](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.4.0-rc.1)。目录可独立更新，仍需实际核查和维护；目前没有每周自动采集服务。v0.3.0 的包和标签继续保留。
 
-Claude 包已生成，实际运行尚未通过验证，具体限制见[平台状态](docs/PLATFORMS.zh-CN.md)。[手机文字示例](docs/MOBILE.zh-CN.md)只是体验一次对话方法，不是完整 Skill，也不代表国内应用已适配。
+Claude Code 已用虚构材料验证调用及保存读回并发布；网页版仍待上传和实际调用验证，具体范围见[平台状态](docs/PLATFORMS.zh-CN.md)。[手机文字示例](docs/MOBILE.zh-CN.md)只是体验一次对话方法，不是完整 Skill，也不代表国内应用已适配。
 
 MIT 开源。插件是安装与更新的包，其中包含这一项 Skill。没有独立应用面板或开发者数据服务器；模型仍按宿主政策处理材料。[更新记录](CHANGELOG.zh-CN.md) · [反馈与维护](docs/MAINTAINING.zh-CN.md) · [许可证](LICENSE)

@@ -2,9 +2,9 @@
 
 [简体中文](CHANGELOG.zh-CN.md) | **English**
 
-## 0.4.0-rc.1 — 2026-09-29 · Codex public candidate
+## 0.4.0-rc.1 — 2026-09-29 · Codex and Claude Code public candidate
 
-- Prepare one-source Claude packages; exclude them from supported platforms and release assets until runtime verification.
+- Release the one-source Claude Code project Skill after fictional diary, weekly-review, exploration and save/readback checks. Claude web remains unpublished pending actual testing.
 - Add an independent discovery catalog with dates, attribution and offline fallback; retain 18 base exercises.
 - Add diary, weekly review, reminder/draft behaviors, mobile starters and platform guidance.
 - No personal saving, collection schedule or automatic publication enabled. Web and domestic hosts require account-level checks.

@@ -4,7 +4,7 @@
 
 [回到概览](../README.zh-CN.md) · [手机体验](MOBILE.zh-CN.md) · [场景指南](USER_GUIDE.zh-CN.md)
 
-当前公开候选为 **v0.4.0-rc.1 / Codex**，包含动态目录。Claude 的打包适配已完成，运行验证仍在进行；以下 Claude 步骤用于说明实验包的安装方式，不表示已经验证支持，也不表示本次发布附有 Claude 下载包。
+当前公开候选 **v0.4.0-rc.1** 提供 Codex 插件和 Claude Code 项目 Skill。[下载对应平台包](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.4.0-rc.1)。Claude 网页版仍在验证，暂未提供公开下载。
 
 ## Claude Code 与 Claude 网页版区别
 
@@ -23,9 +23,9 @@
 
 在 Codex 中说：“从 https://github.com/zhenglimindesign-ing/reflection-companion 的 v0.4.0-rc.1 安装，核对版本，避免同时开启旧版；先不开启保存和定时。”安装后在新 chat 选择 Skill，直接提出一个场景请求。具体 CLI 和升级流程见[完整指南](USER_GUIDE.zh-CN.md)。v0.3.0 仍可选择，但不包含新的动态目录。
 
-## Claude Code：候选包怎么用
+## Claude Code：已发布的候选包
 
-拿到 `reflection-companion-claude-code-0.4.0-rc.1.zip` 后，在一个选定的个人项目中解压。应得到 `.claude/skills/reflection-companion/SKILL.md`；`.claude` 是隐藏目录。若该位置已有同名 Skill，先核对并保留旧版，不要直接覆盖。无需 clone 产品开发仓库。
+下载 `reflection-companion-claude-code-0.4.0-rc.1.zip`，使用同一发布页的 `SHA256SUMS-claude-code.txt` 校验，在一个选定的个人项目中解压。应得到 `.claude/skills/reflection-companion/SKILL.md`；`.claude` 是隐藏目录。若该位置已有同名 Skill，先核对并保留旧版，不要直接覆盖。无需 clone 产品开发仓库。
 
 从该项目启动 Claude Code，输入：
 
@@ -47,6 +47,10 @@
 
 个人记录放在自己选择的工作区；插件安装目录、公开仓库和开发仓库都不是必需的日记位置。安装不会给出整个账号聊天历史，也不会启用保存或定时。
 
-## Claude 验证状态（2026-09-29）
+## 实测范围（2026-09-29）
 
-两种包的格式、资源和核心一致性检查已通过。Claude Code 实际调用遇到登录状态问题；网页上传遇到验证环境的本地文件访问限制。尚未取得成功运行的证据，不宣称已兼容。对应环境验证通过后再补充具体结果与发布包；这不影响 Codex 的公开使用。
+Claude Code 2.1.218 用虚构材料完成了：发现和调用 Skill、日记中区分事实与猜测、读取指定周记录并使用后续纠正、直接进入探索练习，以及通过包内脚本保存并读回记录。测试没有使用个人聊天或真实收获库。
+
+一次包含初始化、保存、纠正和读回的组合请求在最终回复前超时；检查文件确认旧项已被替代，但不能把这次请求算作完整成功。随后较小的保存/读回请求完成。严格的命令权限导致多次重试，使用者仍需按宿主提示审查保存操作。尚未验证无人值守定时送达，也不保证每次模型执行都一致。
+
+Claude 网页版的包格式已检查，上传和实际调用尚未完成，因此尚未发布。公开仓库 main 中的指南随验证更新；先前冻结的 Codex ZIP 内平台状态保留打包时的记录，以本页和发布说明为最新状态。

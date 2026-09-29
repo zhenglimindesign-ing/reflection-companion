@@ -4,7 +4,7 @@
 
 [Overview](../README.md) · [Mobile introduction](MOBILE.md) · [Scenarios](USER_GUIDE.md)
 
-The current public candidate is **v0.4.0-rc.1 / Codex**, including the dynamic catalog. Claude packaging is prepared while runtime verification continues. Claude instructions below describe experimental packages, not verified support or Claude assets attached to this release.
+Public candidate **v0.4.0-rc.1** provides the Codex plugin and Claude Code project Skill. [Download your platform package](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.4.0-rc.1). Claude web remains under validation with no public download yet.
 
 ## Claude Code versus Claude web
 
@@ -23,9 +23,9 @@ The difference covers access, permissions and file lifetime, not just invocation
 
 Ask Codex to install `https://github.com/zhenglimindesign-ing/reflection-companion` at `v0.4.0-rc.1`, verify the version and avoid duplicate enabled copies. Leave saving and scheduling off initially. Start a fresh chat, select the Skill and describe a scenario. The [full guide](USER_GUIDE.md) covers CLI installation and upgrades. The older v0.3.0 remains available without the new dynamic catalog.
 
-## Claude Code: the candidate package
+## Claude Code: published candidate package
 
-Extract `reflection-companion-claude-code-0.4.0-rc.1.zip` into a chosen personal project. The resulting entry is `.claude/skills/reflection-companion/SKILL.md`; `.claude` is hidden. Inspect and preserve an existing copy before replacing it. No clone of the development repository is required.
+Download `reflection-companion-claude-code-0.4.0-rc.1.zip`, check it against `SHA256SUMS-claude-code.txt` on the same release, and extract into a chosen personal project. The resulting entry is `.claude/skills/reflection-companion/SKILL.md`; `.claude` is hidden. Inspect and preserve an existing copy before replacing it. No clone of the development repository is required.
 
 Start Claude Code in that project and enter:
 
@@ -47,6 +47,10 @@ The candidate build checks core-byte equality, entry format, relative links and 
 
 Personal records belong in a chosen workspace, not necessarily the installation, public repository or development source. Installation grants neither full account history nor saving/scheduling permission.
 
-## Claude verification status (2026-09-29)
+## Actual verification scope (2026-09-29)
 
-Both packages pass format, resource and core-consistency checks. Actual Claude Code invocation encountered an authentication issue; web upload encountered local file-access limits in the validation environment. Successful runtime evidence is still missing, so compatibility is not claimed. Results and packages will follow actual host validation; this does not block public Codex use.
+Claude Code 2.1.218 completed fictional-input checks for Skill discovery/invocation, diary facts versus inference, a supplied weekly file with a later correction, an in-conversation exploration, and local save/readback using the bundled helper. No personal chats or real continuity store were used.
+
+A combined initialize/save/correct/readback request timed out before its final response. File inspection confirmed the old entry was superseded, but that request is not counted as a completed conversation. A smaller save/readback request then completed. Restricted command permissions caused retries; review storage operations when the host asks. Unattended scheduled delivery was not tested, and model execution is not guaranteed identical each time.
+
+The Claude web package passes format checks, but upload and invocation remain incomplete, so it is unpublished. This main-branch guide follows subsequent validation; the frozen Codex ZIP retains its packaging-time platform-status text. Use this page and the release notes for current status.

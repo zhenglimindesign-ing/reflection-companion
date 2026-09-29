@@ -55,8 +55,8 @@ Saving and scheduling are separate choices. A schedule starts the same process a
 
 ## Availability
 
-The current public candidate is **v0.4.0-rc.1 / Codex**, adding the independent discovery catalog and consolidated diary/weekly guidance. [Download the release](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.4.0-rc.1). Catalog updates still require actual checks and maintenance; no weekly collection service is running. The v0.3.0 archive and tag remain available.
+The current public candidate is **v0.4.0-rc.1 / Codex and Claude Code**, adding the independent discovery catalog and consolidated diary/weekly guidance. [Download the release](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.4.0-rc.1). Catalog updates still require actual checks and maintenance; no weekly collection service is running. The v0.3.0 archive and tag remain available.
 
-Claude packages are generated but actual runtime validation has not passed; see [platform status](docs/PLATFORMS.md). The [mobile text sample](docs/MOBILE.md) demonstrates one conversational method. It is not the full Skill or verified adaptation for domestic Chinese apps.
+Claude Code has passed fictional-input invocation and save/readback checks and is published; web upload and invocation remain unverified. See [platform status](docs/PLATFORMS.md). The [mobile text sample](docs/MOBILE.md) demonstrates one conversational method. It is not the full Skill or verified adaptation for domestic Chinese apps.
 
 MIT licensed. The plugin is the installation/update package containing one Skill. There is no separate application panel or developer data server; your host's model-processing policy still applies. [Changes](CHANGELOG.md) · [Feedback and maintenance](docs/MAINTAINING.md) · [License](LICENSE)
