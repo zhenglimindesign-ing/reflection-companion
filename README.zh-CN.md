@@ -55,7 +55,7 @@ Skill 本身也是给模型的指引，加上引用资料和保存等辅助程�
 
 ## 当前可用范围
 
-当前公开候选为 **v0.4.0-rc.1 / Codex、Claude Code 与 Claude 网页版**，增加独立探索目录与统一的日记、周回顾说明。[下载发布包](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.4.0-rc.1)。目录可独立更新，仍需实际核查和维护；目前没有每周自动采集服务。v0.3.0 的包和标签继续保留。
+当前公开候选为 **v0.4.0-rc.2 / Codex、Claude Code 与 Claude 网页版**，增加独立探索目录与统一的日记、周回顾说明。[下载发布包](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.4.0-rc.2)。目录可独立更新，仍需实际核查和维护；目前没有每周自动采集服务。v0.3.0 的包和标签继续保留。
 
 Claude Code 与网页版均已用虚构材料验证后发布；网页版还验证了日记下载与在线目录，具体范围和真实截图见[平台状态](docs/PLATFORMS.zh-CN.md)。[手机文字示例](docs/MOBILE.zh-CN.md)只是体验一次对话方法，不是完整 Skill，也不代表国内应用已适配。
 

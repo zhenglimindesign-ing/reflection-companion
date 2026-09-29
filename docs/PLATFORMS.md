@@ -4,7 +4,7 @@
 
 [Overview](../README.md) · [Mobile introduction](MOBILE.md) · [Scenarios](USER_GUIDE.md)
 
-Public candidate **v0.4.0-rc.1** provides the Codex plugin, Claude Code project Skill and Claude web Skill. [Download your platform package](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.4.0-rc.1). All three share one core, with packaging for each host.
+Public candidate **v0.4.0-rc.2** provides the Codex plugin, Claude Code project Skill and Claude web Skill. [Download your platform package](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.4.0-rc.2). All three share one core, with packaging for each host.
 
 ## Claude Code versus Claude web
 
@@ -21,11 +21,11 @@ The difference covers access, permissions and file lifetime, not just invocation
 
 ## Codex: the public release
 
-Ask Codex to install `https://github.com/zhenglimindesign-ing/reflection-companion` at `v0.4.0-rc.1`, verify the version and avoid duplicate enabled copies. Leave saving and scheduling off initially. Start a fresh chat, select the Skill and describe a scenario. The [full guide](USER_GUIDE.md) covers CLI installation and upgrades. The older v0.3.0 remains available without the new dynamic catalog.
+Ask Codex to install `https://github.com/zhenglimindesign-ing/reflection-companion` at `v0.4.0-rc.2`, verify the version and avoid duplicate enabled copies. Leave saving and scheduling off initially. Start a fresh chat, select the Skill and describe a scenario. The [full guide](USER_GUIDE.md) covers CLI installation and upgrades. The older v0.3.0 remains available without the new dynamic catalog.
 
 ## Claude Code: published candidate package
 
-Download `reflection-companion-claude-code-0.4.0-rc.1.zip`, check it against `SHA256SUMS-claude-code.txt` on the same release, and extract into a chosen personal project. The resulting entry is `.claude/skills/reflection-companion/SKILL.md`; `.claude` is hidden. Inspect and preserve an existing copy before replacing it. No clone of the development repository is required.
+Download `reflection-companion-claude-code-0.4.0-rc.2.zip`, check it against `SHA256SUMS.txt` on the same release, and extract into a chosen personal project. The resulting entry is `.claude/skills/reflection-companion/SKILL.md`; `.claude` is hidden. Inspect and preserve an existing copy before replacing it. No clone of the development repository is required.
 
 Start Claude Code in that project and enter:
 
@@ -37,13 +37,13 @@ If the Skill is missing or has an old description, check the path and reopen the
 
 ## Claude web: install, begin and download a record
 
-1. Download `reflection-companion-claude-web-0.4.0-rc.1.zip` from the release and check `SHA256SUMS-claude-web.txt`. Do not extract it or upload the whole Codex distribution.
+1. Download `reflection-companion-claude-web-0.4.0-rc.2.zip` from the release and check `SHA256SUMS.txt`. Do not extract it or upload the whole Codex distribution.
 2. Open Customize → Skills in Claude, add the ZIP and confirm that `reflection-companion` is enabled with 11 files in Contents. The account needs Skills and the required file/code-execution capabilities; check official account requirements if the entry is absent.
 3. Start a new chat: “Use Reflection Companion to help me write a diary about one small event today, one question at a time. Do not save yet.” Start with your material; no long prompt needs memorizing.
-4. Correct an interpretation by supplying facts or saying it does not fit. For a file, ask: “Export the corrected entry as a downloadable **English Markdown** file; do not add it to a learning store.”
+4. Correct an interpretation by supplying facts or saying it does not fit. For a file, ask: “Export the corrected entry as a downloadable **Markdown** file; do not add it to a learning store.”
 5. Click **Download** on the reply's file card, save to a chosen folder and open it to check. Supply that file again when you want to continue in another conversation.
 
-This actual installation screenshot shows the upload's Claude `v1` label. The project's release version is `0.4.0-rc.1`, identified by the ZIP filename and release page.
+Replies and exported files should follow the current conversational language without a repeated language instruction. This screenshot records the original rc.1 installation; Claude's `v1` / `v2` labels belong to the uploaded item. The ZIP filename and release page identify the project release.
 
 ![Actual enabled installation with 11 files in Contents](images/claude-web-installed.jpg)
 
@@ -67,6 +67,8 @@ A combined initialize/save/correct/readback request timed out before its final r
 
 Claude web checks in one account covered upload/enabling, actual Skill reading, diary reflection, later factual correction, Markdown creation/download, live catalog refresh and starting an exploration. Downloading the installed package confirmed all 11 core files match the candidate byte-for-byte. Only fictional material was used.
 
-The first export was English despite Chinese context. An explicit request produced a Chinese file, which was downloaded and read back. The example export request therefore specifies a language; users should still check the result. Permanent cross-chat storage, unattended delivery and every account/model combination were not tested. Failure fallback has script tests; this web run succeeded online and did not force an outage.
+The rc.1 web test exported English text in a Chinese conversation; this was a defect. rc.2 explicitly carries the conversational language through replies, file bodies, headings, tables and newly chosen filenames, with a file check before delivery. Two independent Claude Code sessions generated corresponding files from ordinary Chinese and English requests, without extra language instructions. The web installation was updated to v2, and all 11 downloaded core files match rc.2 source. Its new-chat test was interrupted by Claude reporting “Temporarily unable to authenticate,” so post-fix web behavior is not yet verified.
 
-This main-branch guide follows subsequent validation; the frozen Codex ZIP retains its packaging-time platform-status text. Use this page and the release notes for current status.
+Permanent web continuity, unattended delivery and every account/model combination remain untested. A temporary web container is not a permanent learning store; supply downloaded files again to continue in another chat. Scheduling belongs to the host, and installing a Skill does not start a scheduling service. Catalog fallback has script tests; the earlier web run succeeded online without a forced outage.
+
+The public main branch guide evolves with verification; each archive retains its packaging-time record. The rc.1 assets and tag stay unchanged. The language correction is distributed as rc.2.

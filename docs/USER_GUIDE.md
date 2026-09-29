@@ -4,7 +4,7 @@
 
 [Purpose and value](../README.md) · [Installation and platform status](PLATFORMS.md)
 
-This guide connects first use, diaries, weekly reviews, exploration, saving and schedules in one process. Public candidate v0.4.0-rc.1 includes the Codex plugin, tested Claude Code and web Skills, and the independent discovery catalog.
+This guide connects first use, diaries, weekly reviews, exploration, saving and schedules in one process. Public candidate v0.4.0-rc.2 includes the Codex plugin, tested Claude Code and web Skills, and the independent discovery catalog.
 
 ## 1. Start with something you are already thinking about
 
@@ -81,7 +81,7 @@ Then say “Keep this conclusion, limited to this case,” “Show what is saved
 
 For readable files, `journals/daily/date.md` or `journals/weekly/start_to_end.md` are suggested structures, not automatically created folders. Saving a diary does not authorize extracting durable personal conclusions. Read existing files before editing, preserve human changes, and avoid duplicate runs overwriting them.
 
-To continue across chats, use the same workspace or provide its location. If unknown, clarify rather than create another empty store; read before interpreting. In Claude web, ask for a downloadable Markdown file in your preferred language without writing to a learning store. Click Download on the file card, then open it to check; the [platform guide](PLATFORMS.md) includes actual screenshots. Temporary web files are not computer files or permanent cross-chat storage; supply the export again to continue later. Stopping saving does not delete host chats/exports; removing Companion records does not remove host or backup copies.
+To continue across chats, use the same workspace or provide its location. If unknown, clarify rather than create another empty store; read before interpreting. In Claude web, ask for a downloadable Markdown file without writing to a learning store. Replies and exported files should follow your current conversational language; name a different language only when you want a translation. Click Download on the file card, then open it to check; the [platform guide](PLATFORMS.md) includes actual screenshots. Temporary web files are not computer files or permanent cross-chat storage; supply the export again to continue later. Stopping saving does not delete host chats/exports; removing Companion records does not remove host or backup copies.
 
 ## 6. Manual requests and scheduled runs
 
@@ -103,11 +103,11 @@ First run the desired result manually. Then request, for example: “Every Sunda
 Current public Codex commands:
 
 ```sh
-codex plugin marketplace add zhenglimindesign-ing/reflection-companion --ref v0.4.0-rc.1
+codex plugin marketplace add zhenglimindesign-ing/reflection-companion --ref v0.4.0-rc.2
 codex plugin add reflection-companion@reflection-companion
 ```
 
-Or ask Codex to install v0.4.0-rc.1 from that repository, verify the version and avoid duplicate enabled copies. Refresh as needed and open a new chat. Pinned refs do not automatically advance: inspect the current source/version before updating to a chosen ref, preserving the personal record directory. Claude packages and status are in the [platform guide](PLATFORMS.md).
+Or ask Codex to install v0.4.0-rc.2 from that repository, verify the version and avoid duplicate enabled copies. Refresh as needed and open a new chat. Pinned refs do not automatically advance: inspect the current source/version before updating to a chosen ref, preserving the personal record directory. Claude packages and status are in the [platform guide](PLATFORMS.md).
 
 The [mobile text sample](MOBILE.md) lets someone try one method. It does not carry Skill references, storage helpers, cross-chat state or scheduling, and is not verified native adaptation for domestic apps.
 

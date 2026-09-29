@@ -18,7 +18,7 @@ A diary is a readable document. Companion state is selected learning/decisions w
 
 When the user requests a diary file, agree on the destination once and reuse that choice. In a local workspace, a suggested layout is `journals/daily/YYYY-MM-DD.md` and `journals/weekly/YYYY-MM-DD_to_YYYY-MM-DD.md`. The paths are suggestions, not automatic defaults. Keep private records outside the public source/plugin directories. Use available file tools, then read back the written file and report its real path. Existing content must be read before editing; repeated scheduled runs should not create duplicate entries or overwrite a human correction. Preserve prior wording or ask about an ambiguous replacement. When filesystem access is absent, provide Markdown to copy/download and name that limitation.
 
-Suggested document sections: source coverage; diary/review; optional tentative observations. Mark any synthetic demo as a demo in the file itself. Save a selected learning into [state](state.md) only under the separate user instruction for that store. Never infer it from permission to export a diary.
+Suggested document sections: source coverage; diary/review; optional tentative observations. These describe section purposes, not literal English headings: write the exported document in the user's conversational language unless they request otherwise. Mark any synthetic demo as a demo in that same language in the file itself. Save a selected learning into [state](state.md) only under the separate user instruction for that store. Never infer it from permission to export a diary.
 
 ## Scheduled variants
 

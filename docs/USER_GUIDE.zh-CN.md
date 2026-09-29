@@ -4,7 +4,7 @@
 
 [产品是什么、为什么使用](../README.zh-CN.md) · [安装和平台状态](PLATFORMS.zh-CN.md)
 
-本指南将第一次使用、日记、周回顾、探索、保存和定时放在同一条使用过程中。当前公开候选 v0.4.0-rc.1 包含 Codex 插件、已实测的 Claude Code 与网页版 Skill，以及独立动态目录。
+本指南将第一次使用、日记、周回顾、探索、保存和定时放在同一条使用过程中。当前公开候选 v0.4.0-rc.2 包含 Codex 插件、已实测的 Claude Code 与网页版 Skill，以及独立动态目录。
 
 ## 1. 第一次：从一个已经在想的问题开始
 
@@ -81,7 +81,7 @@
 
 保存日记可以另行选择 `journals/daily/日期.md`、周回顾选择 `journals/weekly/起止日期.md`。这只是建议结构，不会自动创建。保存整篇日记不等于同意提取长期个人结论。遇到已有文件，应先读取并保留你的修改，避免重复运行覆盖它。
 
-跨 chat 继续时，使用同一工作区或告诉助手原来的位置。位置未知时先确认，不另建一个空库；先读取再解释。在 Claude 网页中可说：“导出为可下载的中文 Markdown，不写入收获库。”点击文件卡片的 Download，再打开核对；[平台指南](PLATFORMS.zh-CN.md)有真实截图。网页临时文件不等于电脑存档或跨 chat 永久保存，后续对话可以由你重新提供导出文件。关闭保存不删除原始聊天或已有导出；删除 Companion 记录也不删除宿主和备份中的副本。
+跨 chat 继续时，使用同一工作区或告诉助手原来的位置。位置未知时先确认，不另建一个空库；先读取再解释。在 Claude 网页中可说：“导出为可下载的 Markdown，不写入收获库。”回复和导出文件默认跟随你当前对话的语言，无需额外指定；想翻译时再说明目标语言。点击文件卡片的 Download，再打开核对；[平台指南](PLATFORMS.zh-CN.md)有真实截图。网页临时文件不等于电脑存档或跨 chat 永久保存，后续对话可以由你重新提供导出文件。关闭保存不删除原始聊天或已有导出；删除 Companion 记录也不删除宿主和备份中的副本。
 
 ## 6. 主动来聊与定时执行
 
@@ -103,11 +103,11 @@
 Codex 当前公开安装命令：
 
 ```sh
-codex plugin marketplace add zhenglimindesign-ing/reflection-companion --ref v0.4.0-rc.1
+codex plugin marketplace add zhenglimindesign-ing/reflection-companion --ref v0.4.0-rc.2
 codex plugin add reflection-companion@reflection-companion
 ```
 
-也可直接让 Codex 从该仓库的 v0.4.0-rc.1 安装，核对版本，避免同时开启旧版。安装后按界面需要刷新并开新 chat。固定 ref 不会自动跳到新版本；更新时先核对当前来源和版本，再按目标 ref 升级，保留个人记录目录。Claude 包和具体状态见[平台指南](PLATFORMS.zh-CN.md)。
+也可直接让 Codex 从该仓库的 v0.4.0-rc.2 安装，核对版本，避免同时开启旧版。安装后按界面需要刷新并开新 chat。固定 ref 不会自动跳到新版本；更新时先核对当前来源和版本，再按目标 ref 升级，保留个人记录目录。Claude 包和具体状态见[平台指南](PLATFORMS.zh-CN.md)。
 
 手机上的[文字示例](MOBILE.zh-CN.md)用于试一次方法，不自动携带 Skill 的引用资料、记录程序、跨 chat 状态或定时。不能把这段 prompt 说成已完成国内原生适配。
 

@@ -4,7 +4,7 @@
 
 [回到概览](../README.zh-CN.md) · [手机体验](MOBILE.zh-CN.md) · [场景指南](USER_GUIDE.zh-CN.md)
 
-当前公开候选 **v0.4.0-rc.1** 提供 Codex 插件、Claude Code 项目 Skill 和 Claude 网页版 Skill。[下载对应平台包](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.4.0-rc.1)。三个入口共用同一份核心，安装包按宿主区分。
+当前公开候选 **v0.4.0-rc.2** 提供 Codex 插件、Claude Code 项目 Skill 和 Claude 网页版 Skill。[下载对应平台包](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.4.0-rc.2)。三个入口共用同一份核心，安装包按宿主区分。
 
 ## Claude Code 与 Claude 网页版区别
 
@@ -21,11 +21,11 @@
 
 ## Codex：当前公开版
 
-在 Codex 中说：“从 https://github.com/zhenglimindesign-ing/reflection-companion 的 v0.4.0-rc.1 安装，核对版本，避免同时开启旧版；先不开启保存和定时。”安装后在新 chat 选择 Skill，直接提出一个场景请求。具体 CLI 和升级流程见[完整指南](USER_GUIDE.zh-CN.md)。v0.3.0 仍可选择，但不包含新的动态目录。
+在 Codex 中说：“从 https://github.com/zhenglimindesign-ing/reflection-companion 的 v0.4.0-rc.2 安装，核对版本，避免同时开启旧版；先不开启保存和定时。”安装后在新 chat 选择 Skill，直接提出一个场景请求。具体 CLI 和升级流程见[完整指南](USER_GUIDE.zh-CN.md)。v0.3.0 仍可选择，但不包含新的动态目录。
 
 ## Claude Code：已发布的候选包
 
-下载 `reflection-companion-claude-code-0.4.0-rc.1.zip`，使用同一发布页的 `SHA256SUMS-claude-code.txt` 校验，在一个选定的个人项目中解压。应得到 `.claude/skills/reflection-companion/SKILL.md`；`.claude` 是隐藏目录。若该位置已有同名 Skill，先核对并保留旧版，不要直接覆盖。无需 clone 产品开发仓库。
+下载 `reflection-companion-claude-code-0.4.0-rc.2.zip`，使用同一发布页的 `SHA256SUMS.txt` 校验，在一个选定的个人项目中解压。应得到 `.claude/skills/reflection-companion/SKILL.md`；`.claude` 是隐藏目录。若该位置已有同名 Skill，先核对并保留旧版，不要直接覆盖。无需 clone 产品开发仓库。
 
 从该项目启动 Claude Code，输入：
 
@@ -37,13 +37,13 @@
 
 ## Claude 网页版：安装、开始与下载记录
 
-1. 从发布页下载 `reflection-companion-claude-web-0.4.0-rc.1.zip`，用 `SHA256SUMS-claude-web.txt` 核对。无需解压，也不要上传整个 Codex 分发包。
+1. 从发布页下载 `reflection-companion-claude-web-0.4.0-rc.2.zip`，用 `SHA256SUMS.txt` 核对。无需解压，也不要上传整个 Codex 分发包。
 2. 打开 Claude 的 Customize → Skills，添加并上传这个 ZIP。安装后确认 `reflection-companion` 已启用，Contents 中有 11 个文件。账号需要提供 Skills 和所需文件/代码执行能力；找不到入口时按官方说明核对账户设置。
 3. 开一个新对话，直接说：“用 Reflection Companion，帮我从今天的一件小事写日记，一次问一个问题；先不保存。”它应使用你的材料开始，而不是要求记住整套提示词。
-4. 如果解释不准确，补充事实或说“这个理解不对”。需要文件时说：“把修正后的内容导出为可下载的**中文 Markdown**，不要另存到收获库。”
+4. 如果解释不准确，补充事实或说“这个理解不对”。需要文件时说：“把修正后的内容导出为可下载的 **Markdown**，不要另存到收获库。”
 5. 点击回复中文件卡片的 **Download**，保存到自己选择的目录，再打开核对。下一次想继续时，可以重新提供这份文件。
 
-下图来自实际安装。Claude 显示的 `v1` 属于该上传项，项目发行版本以 ZIP 文件名和发布页的 `0.4.0-rc.1` 为准。
+回复和导出文件都默认跟随当前对话语言，不需要在每次请求中重申。下图记录 rc.1 的首次安装；Claude 的 `v1` / `v2` 是该上传项的版本，项目发行版本以 ZIP 文件名和发布页为准。
 
 ![实际安装：已启用，Contents 中有 11 个文件](images/claude-web-installed.jpg)
 
@@ -67,6 +67,8 @@ Claude Code 2.1.218 用虚构材料完成了：发现和调用 Skill、日记中
 
 Claude 网页版在一个账户中完成上传启用、实际 Skill 读取、日记反思、后续事实纠正、Markdown 生成与下载，以及公共目录在线刷新和直接探索。下载已安装包后，11 个核心文件与发布候选逐字节一致。没有使用真实个人材料。
 
-网页实测首次在中文对话中导出了英文正文；明确要求中文后已重新生成并下载核对。因此示例导出请求写明语言，用户仍应检查内容。本次未验证跨聊天永久保存、无人值守定时或所有账户/模型组合。失败回退有脚本测试，网页这一轮联网成功，未强制制造断网。
+rc.1 网页实测曾在中文对话中导出英文正文；这是缺陷。rc.2 明确要求回复及文件正文、标题、表格和新取文件名跟随当前对话语言，并在交付前检查文件。Claude Code 的两次独立会话分别用普通中文和英文请求实际生成了对应语言的文件，没有附加语言指令。网页版已更新为 v2，下载的 11 个核心文件与 rc.2 源码完全一致；新的对话测试因 Claude 报告“暂时无法认证”而未完成，不能算作网页版修复后的行为验证。
 
-公开仓库 main 中的指南随验证更新；冻结的 Codex ZIP 内平台状态保留打包时的记录，以本页和发布说明为最新状态。
+未验证网页版跨聊天永久保存、无人值守定时或所有账户/模型组合。网页临时容器不是永久收获库；跨 chat 可以重新提供下载文件。定时由宿主负责，Skill 安装本身不会创建定时服务。目录失败回退有脚本测试；此前网页联网成功，未强制制造断网。
+
+公开仓库 main 中的指南随验证更新；每个发布包保留打包时的记录。rc.1 的包和标签不变，语言修复通过新的 rc.2 发布。

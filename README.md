@@ -55,7 +55,7 @@ Saving and scheduling are separate choices. A schedule starts the same process a
 
 ## Availability
 
-The current public candidate is **v0.4.0-rc.1 / Codex, Claude Code and Claude web**, adding the independent discovery catalog and consolidated diary/weekly guidance. [Download the release](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.4.0-rc.1). Catalog updates still require actual checks and maintenance; no weekly collection service is running. The v0.3.0 archive and tag remain available.
+The current public candidate is **v0.4.0-rc.2 / Codex, Claude Code and Claude web**, adding the independent discovery catalog and consolidated diary/weekly guidance. [Download the release](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.4.0-rc.2). Catalog updates still require actual checks and maintenance; no weekly collection service is running. The v0.3.0 archive and tag remain available.
 
 Claude Code and web packages are published after fictional-input checks; web checks also covered diary downloads and the live catalog. See actual screenshots and scope in [platform status](docs/PLATFORMS.md). The [mobile text sample](docs/MOBILE.md) demonstrates one conversational method. It is not the full Skill or verified adaptation for domestic Chinese apps.
 

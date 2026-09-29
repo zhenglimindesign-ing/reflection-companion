@@ -2,6 +2,12 @@
 
 [简体中文](CHANGELOG.zh-CN.md) | **English**
 
+## 0.4.0-rc.2 — 2026-09-29 · Follow the user's language in exports
+
+- Carry the current conversational language into replies, exported document contents and newly chosen filenames; explicit translation requests still take priority. Check the actual file before delivery.
+- Chinese and English Claude Code export checks passed without extra language instructions. The web installation was updated and its 11 core files verified; post-fix web execution is pending because Claude rejected new chats with a temporary authentication error.
+- Remove the onboarding workaround that made users specify the language every time. Existing rc.1 assets and tags remain unchanged.
+
 ## 0.4.0-rc.1 — 2026-09-29 · Codex, Claude Code and Claude web public candidate
 
 - Release the one-source Claude Code project Skill after fictional diary, weekly-review, exploration and save/readback checks. Claude web is also released after installation, invocation, correction, file-download and live-catalog checks.
