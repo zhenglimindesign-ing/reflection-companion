@@ -9,7 +9,7 @@ body:
     id: version
     attributes:
       label: Version and host / 版本与宿主
-      placeholder: "0.3.0, Codex on macOS"
+      placeholder: "0.4.0-rc.1, Claude web / Codex on macOS"
     validations:
       required: true
   - type: dropdown

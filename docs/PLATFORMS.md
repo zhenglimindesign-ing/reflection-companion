@@ -4,7 +4,7 @@
 
 [Overview](../README.md) · [Mobile introduction](MOBILE.md) · [Scenarios](USER_GUIDE.md)
 
-Public candidate **v0.4.0-rc.1** provides the Codex plugin and Claude Code project Skill. [Download your platform package](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.4.0-rc.1). Claude web remains under validation with no public download yet.
+Public candidate **v0.4.0-rc.1** provides the Codex plugin, Claude Code project Skill and Claude web Skill. [Download your platform package](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.4.0-rc.1). All three share one core, with packaging for each host.
 
 ## Claude Code versus Claude web
 
@@ -35,15 +35,27 @@ Start Claude Code in that project and enter:
 
 If the Skill is missing or has an old description, check the path and reopen the project session. Core conversation needs no Python; local state and the catalog helper require Python 3.10+. Saving/correction must return actual locations and readback. Installation grants no additional history access.
 
-## Claude web: dedicated candidate ZIP
+## Claude web: install, begin and download a record
 
-Upload `reflection-companion-claude-web-0.4.0-rc.1.zip`, not the whole Codex distribution. Its root is `reflection-companion/`, containing `SKILL.md`, references and scripts. Use Customize → Skills as exposed by your account. If absent, check current official requirements and administrator settings.
+1. Download `reflection-companion-claude-web-0.4.0-rc.1.zip` from the release and check `SHA256SUMS-claude-web.txt`. Do not extract it or upload the whole Codex distribution.
+2. Open Customize → Skills in Claude, add the ZIP and confirm that `reflection-companion` is enabled with 11 files in Contents. The account needs Skills and the required file/code-execution capabilities; check official account requirements if the entry is absent.
+3. Start a new chat: “Use Reflection Companion to help me write a diary about one small event today, one question at a time. Do not save yet.” Start with your material; no long prompt needs memorizing.
+4. Correct an interpretation by supplying facts or saying it does not fit. For a file, ask: “Export the corrected entry as a downloadable **English Markdown** file; do not add it to a learning store.”
+5. Click **Download** on the reply's file card, save to a chosen folder and open it to check. Supply that file again when you want to continue in another conversation.
 
-In a new chat, ask Reflection Companion to guide a diary about one small event, one question at a time, without saving. A fictional event is sufficient for the first check. Actual account upload, invocation and download remain to be tested; package validation is not equivalent. A temporary browser execution path is not a file on your computer.
+This actual installation screenshot shows the upload's Claude `v1` label. The project's release version is `0.4.0-rc.1`, identified by the ZIP filename and release page.
+
+![Actual enabled installation with 11 files in Contents](images/claude-web-installed.jpg)
+
+The screenshot below is a real check using explicitly fictional Chinese material. The generated diary is on the right; its download card is on the left. It is neither a real person's experience nor a required template.
+
+![Fictional Chinese diary check with a corrected explanation and Download button](images/claude-web-export.jpg)
+
+You still need to download an export; a container path is not a file on your computer. Installing the Skill does not enable permanent cross-chat records or schedules. For exploration, ask for two newer methods with dates and attribution and begin one here. Catalog refresh depends on the current account's network capabilities; this does not establish online access for every environment.
 
 ## Verification boundaries
 
-The candidate build checks core-byte equality, entry format, relative links and archive integrity for both Claude packages. Actual Claude Code results accompany the candidate verification receipt. Claude web and domestic hosts are not labeled fully supported before account-level testing. The mobile text entry can be tried first, with results checked in the user's own app.
+The candidate build checks core-byte equality, entry format, relative links and archive integrity for both Claude packages. Actual Claude Code results accompany the candidate verification receipt. The Code and web checks are scoped below; full domestic-host capability remains unverified. The mobile text entry can be tried first, with results checked in the user's own app.
 
 Personal records belong in a chosen workspace, not necessarily the installation, public repository or development source. Installation grants neither full account history nor saving/scheduling permission.
 
@@ -53,4 +65,8 @@ Claude Code 2.1.218 completed fictional-input checks for Skill discovery/invocat
 
 A combined initialize/save/correct/readback request timed out before its final response. File inspection confirmed the old entry was superseded, but that request is not counted as a completed conversation. A smaller save/readback request then completed. Restricted command permissions caused retries; review storage operations when the host asks. Unattended scheduled delivery was not tested, and model execution is not guaranteed identical each time.
 
-The Claude web package passes format checks, but upload and invocation remain incomplete, so it is unpublished. This main-branch guide follows subsequent validation; the frozen Codex ZIP retains its packaging-time platform-status text. Use this page and the release notes for current status.
+Claude web checks in one account covered upload/enabling, actual Skill reading, diary reflection, later factual correction, Markdown creation/download, live catalog refresh and starting an exploration. Downloading the installed package confirmed all 11 core files match the candidate byte-for-byte. Only fictional material was used.
+
+The first export was English despite Chinese context. An explicit request produced a Chinese file, which was downloaded and read back. The example export request therefore specifies a language; users should still check the result. Permanent cross-chat storage, unattended delivery and every account/model combination were not tested. Failure fallback has script tests; this web run succeeded online and did not force an outage.
+
+This main-branch guide follows subsequent validation; the frozen Codex ZIP retains its packaging-time platform-status text. Use this page and the release notes for current status.
