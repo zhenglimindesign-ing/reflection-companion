@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "edition": "2026-09-29.1",
-  "checked_on": "2026-09-29",
+  "edition": "2026-10-02.1",
+  "checked_on": "2026-10-02",
   "entries": [
     {
       "id": "dated-three-lines",
@@ -29,7 +29,7 @@
         "title": "96 Journaling Prompts for Self-Discovery and Self-Understanding",
         "page_date": "2026-09-11",
         "date_note": "Date displayed on the page; initial publication versus update not independently established.",
-        "retrieved_on": "2026-09-29",
+        "retrieved_on": "2026-10-02",
         "provenance": "adapted",
         "popularity": "unknown",
         "adaptation_note": "Adapted the dated-repeat mechanism; original three-part wording. No claim of popularity or therapeutic effect."
@@ -61,8 +61,8 @@
         "url": "https://www.reflection.app/blog/introducing-depth-ai-powered-self-discovery",
         "title": "Introducing: Depth — AI-Powered Self-Discovery",
         "page_date": "2026-09-27",
-        "date_note": "Page currently displays Sep 27; search snippet showed Sep 9. Treat as page-date ambiguity, not proof of a new launch.",
-        "retrieved_on": "2026-09-29",
+        "date_note": "Rechecked page displays Sep 27; an earlier search snippet showed Sep 9. Initial publication versus update remains uncertain; not proof of a new launch.",
+        "retrieved_on": "2026-10-02",
         "provenance": "adapted",
         "popularity": "unknown",
         "adaptation_note": "Inspired by its one-sentence entry mechanism. Choice of two directions and opt-out wording are original."
@@ -92,13 +92,78 @@
       "added_on": "2026-09-29",
       "source": {
         "url": "https://chatsmith.io/blogs/prompt/chatgpt-prompts-for-self-reflection-00317",
-        "title": "10 Powerful ChatGPT Prompts for Self Reflection",
+        "title": "10 ChatGPT Prompts for Self Reflection That Matter",
         "page_date": "2026-04-08",
-        "date_note": "Page body displays Apr 8 despite newer search-snippet date. Newly curated here, not a new September prompt.",
-        "retrieved_on": "2026-09-29",
+        "date_note": "Page body displays Apr 8, 2026; this is a newly curated adaptation, not a newly published prompt.",
+        "retrieved_on": "2026-10-02",
         "provenance": "adapted",
         "popularity": "unknown",
         "adaptation_note": "Adapted identity-audit idea with explicit counterevidence and rejection of the label. Mechanism overlaps the base label exercise; offer as a variant, not guaranteed novelty."
+      }
+    },
+    {
+      "id": "future-ordinary-day",
+      "status": "active",
+      "mechanism": "Describe one concrete imagined future scene and compare its conditions with the present",
+      "context": "none",
+      "jobs": [
+        "Reflect",
+        "Expand"
+      ],
+      "title": {
+        "zh": "未来一个普通日子",
+        "en": "An ordinary future day"
+      },
+      "prompt": {
+        "zh": "想象几个月后，一个你愿意过的普通日子。选一个小片段，具体说发生了什么；不必成为“最好的自己”或假装没有困难。把它当作想象，不是预测；也可以拒绝这个前提。",
+        "en": "Imagine an ordinary day you would like a few months from now. Describe one small scene. You need not become your best self or pretend difficulties disappear. Treat it as imagination, not a prediction; you may reject the premise."
+      },
+      "follow_up": {
+        "zh": "先把你明确说“现在已有”的条件与想象中／不确定的条件分开；没有说明的条件先保留未知。你想聊哪一个，还是只留下这个画面？不必提下一步。",
+        "en": "Separate conditions you explicitly said are present now from imagined or uncertain ones; leave unmentioned conditions unknown. Which would you like to discuss, or would you keep only the scene? No next step is required."
+      },
+      "added_on": "2026-10-02",
+      "source": {
+        "url": "https://ggia.berkeley.edu/practice/best_possible_self",
+        "title": "Best Possible Self",
+        "page_date": null,
+        "date_note": "No publication date displayed on the practice page; not labelled newly published.",
+        "retrieved_on": "2026-10-02",
+        "provenance": "adapted",
+        "popularity": "unknown",
+        "adaptation_note": "Adapted concrete imagined-future mechanism; a neutral single scene, optional difficulties and opt-out are original. Does not reproduce the study schedule or claim its outcomes."
+      }
+    },
+    {
+      "id": "noticed-small-detail",
+      "status": "active",
+      "mechanism": "Recall one sensory detail before interpreting its personal meaning",
+      "context": "none",
+      "jobs": [
+        "Reflect"
+      ],
+      "title": {
+        "zh": "今天留意到的一个细节",
+        "en": "One detail you noticed"
+      },
+      "prompt": {
+        "zh": "选一个今天注意到的声音、光线、气味或小动作，用两三句讲当时的具体细节。不必积极，不要求散步或总结成长；如果没有这样的片段，也可以换一种方式。",
+        "en": "Choose a sound, light, smell or small gesture you noticed today. Describe its concrete details in two or three sentences. Positivity, a walk and a growth lesson are optional. If nothing comes to mind, choose another exercise."
+      },
+      "follow_up": {
+        "zh": "如果你愿意，我们再看看是什么让这个细节停留在记忆里；也可以只留下描述，不分析自己。",
+        "en": "If you wish, explore what made the detail memorable. You may keep only the description without analyzing yourself."
+      },
+      "added_on": "2026-10-02",
+      "source": {
+        "url": "https://ggia.berkeley.edu/practice/savoring_walk",
+        "title": "Savoring Walk",
+        "page_date": null,
+        "date_note": "No publication date displayed on the practice page; not labelled newly published.",
+        "retrieved_on": "2026-10-02",
+        "provenance": "adapted",
+        "popularity": "unknown",
+        "adaptation_note": "Adapted attention to concrete sensory details. A recalled scene, neutral emotion and no walking schedule are original changes; no therapeutic or well-being outcome is claimed."
       }
     }
   ]

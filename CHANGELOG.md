@@ -2,6 +2,11 @@
 
 [简体中文](CHANGELOG.zh-CN.md) | **English**
 
+## Discovery catalog 2026-10-02.1 · Content update
+
+- Add two credited bilingual explorations: an ordinary future day, and one sensory detail noticed today. Recheck the three existing sources and retain uncertainty about page dates and popularity.
+- Catalog content updates independently of the plugin. Version 0.4.0 and its published ZIPs/tags stay intact; installed Skills can request the live catalog. No automatic collection or regular-update promise is added.
+
 ## 0.4.0 — 2026-10-02 · Public Alpha
 
 - Publish clearer bilingual onboarding, scenarios and platform guidance, with Codex and both Claude packages generated from one core.
