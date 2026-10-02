@@ -1,8 +1,10 @@
-# 选择入口与安装
+# 平台安装详情与验证范围
 
 **简体中文** | [English](PLATFORMS.md)
 
-[回到概览](../README.zh-CN.md) · [手机体验](MOBILE.zh-CN.md) · [场景指南](USER_GUIDE.zh-CN.md)
+[产品介绍与快速开始](../README.zh-CN.md) · [手机体验](MOBILE.zh-CN.md) · [场景与进阶指南](USER_GUIDE.zh-CN.md)
+
+第一次安装和开始对话的基本步骤已放在 README。本页提供各平台的安装细节、截图、升级说明和有日期的验证记录；需要解决具体平台问题时再查阅。
 
 当前公开候选 **v0.4.0-rc.2** 提供 Codex 插件、Claude Code 项目 Skill 和 Claude 网页版 Skill。[下载对应平台包](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.4.0-rc.2)。三个入口共用同一份核心，安装包按宿主区分。
 
@@ -21,7 +23,9 @@
 
 ## Codex：当前公开版
 
-在 Codex 中说：“从 https://github.com/zhenglimindesign-ing/reflection-companion 的 v0.4.0-rc.2 安装，核对版本，避免同时开启旧版；先不开启保存和定时。”安装后在新 chat 选择 Skill，直接提出一个场景请求。具体 CLI 和升级流程见[完整指南](USER_GUIDE.zh-CN.md)。v0.3.0 仍可选择，但不包含新的动态目录。
+自然语言安装请求与 CLI 命令见 [README](../README.zh-CN.md)。安装后按界面要求刷新，开新 chat，选择插件并直接描述需要。
+
+升级时先检查已安装的来源、版本与启用项，再更新到选定 ref；固定 ref 不会自动跳到新版本。保留旧版安装与个人记录目录，核对新版本后只启用需要的一份。v0.3.0 仍可选择，但不包含新的动态目录。
 
 ## Claude Code：已发布的候选包
 

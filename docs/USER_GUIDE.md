@@ -1,14 +1,14 @@
-# Reflection Companion user guide
+# Reflection Companion scenarios and further-use guide
 
 [简体中文](USER_GUIDE.zh-CN.md) | **English**
 
-[Purpose and value](../README.md) · [Installation and platform status](PLATFORMS.md)
+[Introduction and quick start](../README.md) · [Platform installation details and verification](PLATFORMS.md)
 
-This guide connects first use, diaries, weekly reviews, exploration, saving and schedules in one process. Public candidate v0.4.0-rc.2 includes the Codex plugin, tested Claude Code and web Skills, and the independent discovery catalog.
+The README contains the introduction, installation and examples needed for first use. This guide develops diaries, weekly reviews, exploration, saving and schedules as needed, including how to select material, continue a discussion and keep results. It covers public candidate v0.4.0-rc.2.
 
-## 1. Start with something you are already thinking about
+## 1. Choose material and continue a question you already have
 
-Follow the [installation guide](PLATFORMS.md), enable/select Reflection Companion and describe what you want. No personal profile, saving setup or capability selection is required.
+After installing and starting through the [README](../README.md), use existing discussions or describe something happening now. Your choice of material determines what this discussion can cover.
 
 If you already discuss things with AI, say:
 
@@ -22,14 +22,15 @@ Without history, try:
 
 Add facts, reject an explanation, change direction or stop. A useful one-off conversation need not produce a lasting conclusion.
 
-## 2. One Skill, different situations
+## 2. Choose a situation that fits your need
 
-The four capabilities are Reflect, Challenge, Expand, and Preserve & Compound. Scenarios combine them as needed; they are neither separate new features nor steps to complete in order.
+These common situations show the material needed and the result to expect. Describe your need in ordinary language.
 
 | Situation | Material | Say | Expected result |
 | --- | --- | --- | --- |
 | End-of-day diary | Accessible conversations that day or one event you choose to describe. | “Review today's material and write a short diary. Ask about gaps; no growth lesson yet.” | Grounded events and feelings, with interpretation separate. |
 | Weekly review | Scoped chats or selected journal files. | “Compare my earlier and later judgments this week.” | Evidence of change, changed circumstances and uncertainty. |
+| The end of a period or experience | Selected material from a month, project or topic. | “Have my priorities or ways of deciding changed since the beginning?” | Connect experiences, changes and questions worth considering across a period. |
 | Uncertain decision | Current discussion, with relevant history if useful. | “Find the information most likely to change my conclusion; also consider support for it.” | A specific gap or alternative; the current view may be supported. |
 | A broader perspective | Current question or scoped historical theme. | “Give me a relevant perspective beyond my usual approach.” | A new angle, its connection and a way to explore further. |
 | Unsure what to ask | No history required, or use current context. | “Offer two different exercises and begin after I choose.” | A few options with purposes and material requirements. |
@@ -38,19 +39,21 @@ The four capabilities are Reflect, Challenge, Expand, and Preserve & Compound. S
 
 Use existing material first. A diary is an optional form; daily manual input is not a prerequisite.
 
-## 3. From a diary to a weekly review and a correction
+## 3. A concrete example: do I still enjoy drawing?
 
-This continuous demonstration uses author-invented events, not actual user experience.
+This teaching example is invented, not an actual user experience or evaluation result. The three discussions use an event that day, two records and a takeaway you choose to keep.
 
-**On the day:** You say, “I did not share my idea in today's meeting and feel disappointed; help me record it.” The assistant may ask which moment matters. You add, “I had two sentences ready, but the meeting ended as I was about to speak.” A diary can preserve that experience; it cannot infer “I fear speaking” without evidence.
+**That day, clarify an experience:** You say, “I did not draw again tonight. Have I stopped enjoying it?” During the discussion you add, “I had ten minutes after work, but the class lasts an hour.” The confirmed issue is a mismatch between class length and available time. A diary can record the experience and question; missing the class alone does not establish lost interest.
 
-**At the weekend:** You supply Tuesday and Friday's records. Tuesday attributes silence to lack of preparation; Friday shows preparation but no opportunity. The review should compare circumstances and explain why preparation alone cannot cover both, rather than repeat both entries. It should say “based on these two records,” not claim a complete week.
+**At the weekend, connect the experiences:** You supply two records: on Tuesday you missed an hour-long class; on Friday you enjoyed sketching freely for ten minutes. A review might say, “These two records support that you still enjoy drawing; short, informal sessions may fit better right now.” This adds an understanding beyond repeating the daily summaries, while retaining the scope of two records.
 
-**Correction:** You say, “Tuesday was a quote from my colleague, not about me.” Retract the corresponding inference. If saved earlier, you can request a correction so it is not used to describe you again. Report a successful record ID/location, and use the corrected content on later reads.
+**Later, continue or revise:** You can request saving: “This week, ten minutes of informal drawing fitted my schedule better than an hour-long class.” When that record is read next time, continue with your current circumstances. If you later prefer a structured class, revise the takeaway's scope. Successful saves or corrections should report an actual location or record ID. Earlier understanding can change with new experience.
 
-This connects reflection, checking judgment and preserving corrections. Expansion can help anywhere useful, such as exploring ways to get an earlier speaking opportunity. Not every answer needs all four capabilities. More [specific dialogues](EXAMPLES.md) are optional references.
+The discussions clarify an event, connect two experiences and bring a takeaway into later thinking. Saving is your choice, and continuing later requires actually reading the record. See [complete examples](EXAMPLES.md) for more detailed conversations.
 
 ## 4. Exploration: the library supplies material; the Skill guides the process
+
+Exploration includes the bundled library, independently updated catalog, exercises designed for your situation and live search. Eighteen is the current base library's count, not a limit on all exploration. New catalog entries do not require reinstalling the Skill.
 
 Name a gentle roast or ask for a suitable method. After selection, continue here, using your answers for follow-up, evidence checks and revision. Copying a question into an ordinary chat is also valid. The Skill keeps selection, execution and continuation within a shared method.
 
@@ -98,16 +101,9 @@ First run the desired result manually. Then request, for example: “Every Sunda
 
 **Verify configuration and the first delivered run separately.** Installing a Skill, writing schedule instructions or having a store does not activate a task. Local Codex execution needs the app/device available; other hosts depend on actual account tools. Pause the host task to stop delivery. Disabling saving does not pause sending; pausing a task does not delete journals.
 
-## 7. Install, update and give feedback
+## 7. Update and give feedback
 
-Current public Codex commands:
-
-```sh
-codex plugin marketplace add zhenglimindesign-ing/reflection-companion --ref v0.4.0-rc.2
-codex plugin add reflection-companion@reflection-companion
-```
-
-Or ask Codex to install v0.4.0-rc.2 from that repository, verify the version and avoid duplicate enabled copies. Refresh as needed and open a new chat. Pinned refs do not automatically advance: inspect the current source/version before updating to a chosen ref, preserving the personal record directory. Claude packages and status are in the [platform guide](PLATFORMS.md).
+Basic installation is in the [README](../README.md). Before upgrading, inspect the current source and version, update to your chosen version, avoid duplicate enabled copies and preserve your personal record directory. Pinned versions do not automatically advance. Package checksums, detailed host instructions and tested scope are in the [platform guide](PLATFORMS.md).
 
 The [mobile text sample](MOBILE.md) lets someone try one method. It does not carry Skill references, storage helpers, cross-chat state or scheduling, and is not verified native adaptation for domestic apps.
 

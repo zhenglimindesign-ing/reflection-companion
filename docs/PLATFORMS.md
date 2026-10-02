@@ -1,8 +1,10 @@
-# Choose an entry and install
+# Platform installation details and verification
 
 [简体中文](PLATFORMS.zh-CN.md) | **English**
 
-[Overview](../README.md) · [Mobile introduction](MOBILE.md) · [Scenarios](USER_GUIDE.md)
+[Introduction and quick start](../README.md) · [Mobile introduction](MOBILE.md) · [Scenarios and further use](USER_GUIDE.md)
+
+Basic installation and a first conversation are covered in the README. This page provides host-specific details, screenshots, update instructions and dated verification records for questions about a particular platform.
 
 Public candidate **v0.4.0-rc.2** provides the Codex plugin, Claude Code project Skill and Claude web Skill. [Download your platform package](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.4.0-rc.2). All three share one core, with packaging for each host.
 
@@ -21,7 +23,9 @@ The difference covers access, permissions and file lifetime, not just invocation
 
 ## Codex: the public release
 
-Ask Codex to install `https://github.com/zhenglimindesign-ing/reflection-companion` at `v0.4.0-rc.2`, verify the version and avoid duplicate enabled copies. Leave saving and scheduling off initially. Start a fresh chat, select the Skill and describe a scenario. The [full guide](USER_GUIDE.md) covers CLI installation and upgrades. The older v0.3.0 remains available without the new dynamic catalog.
+Use the natural-language request or CLI commands in the [README](../README.md). After installation, refresh as the interface requires, open a fresh chat, select the plugin and describe your need.
+
+For an upgrade, inspect the installed source, version and enabled copies before updating to the chosen ref. A pinned ref does not advance automatically. Preserve the previous installation and personal record directory, verify the new version, and keep only the intended copy enabled. The older v0.3.0 remains available without the new dynamic catalog.
 
 ## Claude Code: published candidate package
 

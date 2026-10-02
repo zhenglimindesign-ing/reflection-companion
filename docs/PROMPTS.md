@@ -1,8 +1,8 @@
-# Exploration library
+# Bundled exploration library
 
 [简体中文](PROMPTS.zh-CN.md) | **English**
 
-Generated from the runtime library; do not edit separately. These original exercises are not a trend ranking. Select one and continue in the same chat.
+This is the base library bundled with the Skill, generated from its runtime source. Do not edit separately. It is not the entire dynamic catalog or a trend ranking. Select an exercise and continue in the same chat.
 
 [Overview](../README.md) · [Full user guide](USER_GUIDE.md)
 
@@ -12,7 +12,7 @@ In a chat with Reflection Companion enabled, ask for two suitable bundled exerci
 
 Each entry states its material needs: no history, a current situation, or scoped history. If history is unavailable, choose another exercise or provide a small example you want to discuss. Say “not me,” “lighter,” or “another one” to adjust; takeaways are saved only when requested. Each exercise has both language versions, not two separate question banks.
 
-These 18 entries are starting points. The candidate adds an independently updated catalog and live search; see [complete user guide](USER_GUIDE.md).
+These 18 entries are this version's starting points. Ask “what is new?” to read the independently updated catalog or verify recent public sources; a failed read should disclose the dated bundled snapshot used instead. Catalog content requires actual curation and publication; no automatic collection service is running. See [complete user guide](USER_GUIDE.md).
 
 ## Change and growth
 
