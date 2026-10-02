@@ -83,19 +83,19 @@ Exploration changes over time and is not limited to 18 fixed questions. Someone 
 
 ### 1. Install for your platform
 
-This guide covers the **v0.4.0-rc.2 public candidate**. All three packages are on the [release page](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.4.0-rc.2); choose your platform.
+This guide covers the **v0.4.0 public Alpha**. All three packages are on the [release page](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.4.0); choose your platform.
 
 | Platform | Installation |
 | --- | --- |
-| Codex | Ask Codex: “Install Reflection Companion from `https://github.com/zhenglimindesign-ing/reflection-companion` at `v0.4.0-rc.2`, verify the version and avoid duplicate enabled copies. Leave saving and schedules off.” Refresh as the interface requires, open a new chat and select the plugin. |
-| Claude Code | Download `reflection-companion-claude-code-0.4.0-rc.2.zip` and extract it in a selected personal project, producing `.claude/skills/reflection-companion/SKILL.md`. Start Claude Code from that project and use `/reflection-companion` followed by your request. Preserve an existing copy before replacing it. |
-| Claude web | Download `reflection-companion-claude-web-0.4.0-rc.2.zip`, upload and enable it under **Customize → Skills**, and check that your account provides the required file and code-execution capabilities. Upload without extracting; start a new conversation and describe your need. |
+| Codex | Ask Codex: “Install Reflection Companion from `https://github.com/zhenglimindesign-ing/reflection-companion` at `v0.4.0`, verify the version and avoid duplicate enabled copies. Leave saving and schedules off.” Refresh as the interface requires, open a new chat and select the plugin. |
+| Claude Code | Download `reflection-companion-claude-code-0.4.0.zip` and extract it in a selected personal project, producing `.claude/skills/reflection-companion/SKILL.md`. Start Claude Code from that project and use `/reflection-companion` followed by your request. Preserve an existing copy before replacing it. |
+| Claude web | Download `reflection-companion-claude-web-0.4.0.zip`, upload and enable it under **Customize → Skills**, and check that your account provides the required file and code-execution capabilities. Upload without extracting; start a new conversation and describe your need. |
 
 <details>
 <summary>Install with the Codex CLI</summary>
 
 ```sh
-codex plugin marketplace add zhenglimindesign-ing/reflection-companion --ref v0.4.0-rc.2
+codex plugin marketplace add zhenglimindesign-ing/reflection-companion --ref v0.4.0
 codex plugin add reflection-companion@reflection-companion
 ```
 
@@ -140,7 +140,7 @@ An ordinary prompt can also start a useful discussion. Install if you want to ca
 - [Complete conversations](docs/EXAMPLES.md): how questions, added facts and corrections affect a discussion.
 - [Mobile text sample](docs/MOBILE.md): try one conversational method; see that page for its scope.
 
-Claude Code and web checks used fictional material, with records through 2026-09-29. Permanent cross-chat storage, unattended delivery and every account combination have not all been verified. Details remain in the platform documentation.
+Validation uses fictional material: the desktop local store has been checked for fresh-session readback, correction and stopping saving; Claude web has been checked for diaries, corrections and file downloads. Phone use, permanent web cross-chat storage, unattended delivery and other account combinations still need checks in their own environments. See the platform page for dates and exact scope.
 
 To [report a problem or suggestion](https://github.com/zhenglimindesign-ing/reflection-companion/issues/new/choose), describe the situation, expected result and actual result. Fictional examples can replace private transcripts. MIT licensed. [Changes](CHANGELOG.md) · [Maintenance](docs/MAINTAINING.md) · [License](LICENSE)
 
@@ -223,19 +223,19 @@ Reflection Companion 希望让这些材料继续发挥作用。一次回顾可�
 
 ### 1. 在你使用的平台安装
 
-本说明对应 **v0.4.0-rc.2 公开候选版**。三个平台的包在[同一发布页](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.4.0-rc.2)，按你使用的平台选择。
+本说明对应 **v0.4.0 公开 Alpha**。三个平台的包在[同一发布页](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.4.0)，按你使用的平台选择。
 
 | 平台 | 安装方式 |
 | --- | --- |
-| Codex | 让 Codex 执行：“从 `https://github.com/zhenglimindesign-ing/reflection-companion` 的 `v0.4.0-rc.2` 安装 Reflection Companion，核对版本，避免同时启用旧版。先不开启保存和定时。”安装后按界面要求刷新，开新 chat 并选择插件。 |
-| Claude Code | 下载 `reflection-companion-claude-code-0.4.0-rc.2.zip`，在选定的个人项目目录解压，得到 `.claude/skills/reflection-companion/SKILL.md`。从这个项目启动 Claude Code，以 `/reflection-companion` 加上你的需求开始。已有同名 Skill 时先保留旧版。 |
-| Claude 网页版 | 下载 `reflection-companion-claude-web-0.4.0-rc.2.zip`，在 **Customize → Skills** 上传并启用，确认账户提供所需文件与代码执行能力。无需解压；开启新对话后直接提出需求。 |
+| Codex | 让 Codex 执行：“从 `https://github.com/zhenglimindesign-ing/reflection-companion` 的 `v0.4.0` 安装 Reflection Companion，核对版本，避免同时启用旧版。先不开启保存和定时。”安装后按界面要求刷新，开新 chat 并选择插件。 |
+| Claude Code | 下载 `reflection-companion-claude-code-0.4.0.zip`，在选定的个人项目目录解压，得到 `.claude/skills/reflection-companion/SKILL.md`。从这个项目启动 Claude Code，以 `/reflection-companion` 加上你的需求开始。已有同名 Skill 时先保留旧版。 |
+| Claude 网页版 | 下载 `reflection-companion-claude-web-0.4.0.zip`，在 **Customize → Skills** 上传并启用，确认账户提供所需文件与代码执行能力。无需解压；开启新对话后直接提出需求。 |
 
 <details>
 <summary>使用 Codex CLI 安装</summary>
 
 ```sh
-codex plugin marketplace add zhenglimindesign-ing/reflection-companion --ref v0.4.0-rc.2
+codex plugin marketplace add zhenglimindesign-ing/reflection-companion --ref v0.4.0
 codex plugin add reflection-companion@reflection-companion
 ```
 
@@ -280,7 +280,7 @@ Skill 是 AI 工具可以调用的一组指引、参考资料和辅助程序。R
 - [完整对话示例](docs/EXAMPLES.zh-CN.md)：查看提问、补充事实和纠正怎样影响结果。
 - [手机文字体验](docs/MOBILE.zh-CN.md)：先试一次对话方法，具体范围见页面说明。
 
-Claude Code 与网页版的验证使用虚构材料，记录截至 2026-09-29；跨聊天永久保存、无人值守送达及所有账户组合尚未全部验证。细节保留在平台文档中。
+验证使用虚构材料：桌面本地库已实测新会话读回、纠正和停用；网页版已实测日记、纠正及文件下载。手机体验、网页版永久跨 chat 保存、无人值守送达和其他账户组合仍需在对应环境验证。日期与具体范围见平台文档。
 
 [反馈问题或建议](https://github.com/zhenglimindesign-ing/reflection-companion/issues/new/choose)时，描述尝试的场景、预期与实际结果即可。可以用虚构小例子，无需提交私人聊天。MIT 开源。[更新记录](CHANGELOG.zh-CN.md) · [维护说明](docs/MAINTAINING.zh-CN.md) · [许可证](LICENSE)
 

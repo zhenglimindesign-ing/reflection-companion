@@ -2,6 +2,13 @@
 
 [简体中文](CHANGELOG.zh-CN.md) | **English**
 
+## 0.4.0 — 2026-10-02 · Public Alpha
+
+- Publish clearer bilingual onboarding, scenarios and platform guidance, with Codex and both Claude packages generated from one core.
+- Preserve explicitly confirmed save text without adding an inferred preference or next step. Explicit corrections replace the old active claim instead of retaining an invented general preference.
+- Check actual local continuity with fictional data and fresh Claude Code sessions; an independent Codex session uses the corrected record. Check stopping saving, Chinese weekly export, direct exploration, missing-history coverage and dated offline discovery.
+- Keep previous tags/assets intact. Web permanent continuity, phone acceptance and unattended scheduling remain outside this round's verified scope; no personal saving or schedule is enabled.
+
 ## 0.4.0-rc.2 — 2026-09-29 · Follow the user's language in exports
 
 - Carry the current conversational language into replies, exported document contents and newly chosen filenames; explicit translation requests still take priority. Check the actual file before delivery.

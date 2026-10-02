@@ -6,7 +6,7 @@
 
 Basic installation and a first conversation are covered in the README. This page provides host-specific details, screenshots, update instructions and dated verification records for questions about a particular platform.
 
-Public candidate **v0.4.0-rc.2** provides the Codex plugin, Claude Code project Skill and Claude web Skill. [Download your platform package](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.4.0-rc.2). All three share one core, with packaging for each host.
+Public Alpha **v0.4.0** provides the Codex plugin, Claude Code project Skill and Claude web Skill. [Download your platform package](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.4.0). All three share one core, with packaging for each host.
 
 ## Claude Code versus Claude web
 
@@ -27,9 +27,9 @@ Use the natural-language request or CLI commands in the [README](../README.md). 
 
 For an upgrade, inspect the installed source, version and enabled copies before updating to the chosen ref. A pinned ref does not advance automatically. Preserve the previous installation and personal record directory, verify the new version, and keep only the intended copy enabled. The older v0.3.0 remains available without the new dynamic catalog.
 
-## Claude Code: published candidate package
+## Claude Code: public Alpha package
 
-Download `reflection-companion-claude-code-0.4.0-rc.2.zip`, check it against `SHA256SUMS.txt` on the same release, and extract into a chosen personal project. The resulting entry is `.claude/skills/reflection-companion/SKILL.md`; `.claude` is hidden. Inspect and preserve an existing copy before replacing it. No clone of the development repository is required.
+Download `reflection-companion-claude-code-0.4.0.zip`, check it against `SHA256SUMS.txt` on the same release, and extract into a chosen personal project. The resulting entry is `.claude/skills/reflection-companion/SKILL.md`; `.claude` is hidden. Inspect and preserve an existing copy before replacing it. No clone of the development repository is required.
 
 Start Claude Code in that project and enter:
 
@@ -41,7 +41,7 @@ If the Skill is missing or has an old description, check the path and reopen the
 
 ## Claude web: install, begin and download a record
 
-1. Download `reflection-companion-claude-web-0.4.0-rc.2.zip` from the release and check `SHA256SUMS.txt`. Do not extract it or upload the whole Codex distribution.
+1. Download `reflection-companion-claude-web-0.4.0.zip` from the release and check `SHA256SUMS.txt`. Do not extract it or upload the whole Codex distribution.
 2. Open Customize → Skills in Claude, add the ZIP and confirm that `reflection-companion` is enabled with 11 files in Contents. The account needs Skills and the required file/code-execution capabilities; check official account requirements if the entry is absent.
 3. Start a new chat: “Use Reflection Companion to help me write a diary about one small event today, one question at a time. Do not save yet.” Start with your material; no long prompt needs memorizing.
 4. Correct an interpretation by supplying facts or saying it does not fit. For a file, ask: “Export the corrected entry as a downloadable **Markdown** file; do not add it to a learning store.”
@@ -59,11 +59,19 @@ You still need to download an export; a container path is not a file on your com
 
 ## Verification boundaries
 
-The candidate build checks core-byte equality, entry format, relative links and archive integrity for both Claude packages. Actual Claude Code results accompany the candidate verification receipt. The Code and web checks are scoped below; full domestic-host capability remains unverified. The mobile text entry can be tried first, with results checked in the user's own app.
+The release build checks core-byte equality, entry format, relative links and archive integrity for both Claude packages. Actual Claude Code results accompany the release verification receipt. The Code and web checks are scoped below; full domestic-host capability remains unverified. The mobile text entry can be tried first, with results checked in the user's own app.
 
 Personal records belong in a chosen workspace, not necessarily the installation, public repository or development source. Installation grants neither full account history nor saving/scheduling permission.
 
-## Actual verification scope (2026-09-29)
+## Desktop checks in this round (2026-10-02)
+
+Claude Code 2.1.218 used an isolated project, fictional material and fresh sessions to check local save/readback, replacement of an old record, a fresh session using the corrected decision, and disabling saving while preserving history. Testing found that the model appended unconfirmed wording and retained a corrected conclusion as an active preference. Version 0.4.0 strengthens verbatim-save and replacement instructions; the affected behaviors were checked again. An independent read-only Codex CLI 0.145.0 session also used the corrected active record without changing the store.
+
+Claude also completed a weekly review with later corrections, Chinese Markdown readback and immediate exploration. Its missing-history explanation contained inaccurate date/store statements, leading to a focused scope rule. Claude reached its session limit during the verbatim-save regression; that interrupted run is not counted as a pass. Codex CLI completed the subsequent verbatim-save, scope and offline-snapshot checks. Host command permissions may still need review. These tool-backed checks cover this environment and do not guarantee identical execution by every model.
+
+All three 0.4.0 packages are generated from the same core. The new package was not uploaded again to a Claude web account in this round. Earlier web diary, language and download evidence is below; the new saving rules were mainly accepted against a local desktop store. Permanent web cross-chat storage, real phone use and unattended scheduling remain unverified. Installation enables neither personal saving nor tasks.
+
+## Earlier web and desktop checks (2026-09-29)
 
 Claude Code 2.1.218 completed fictional-input checks for Skill discovery/invocation, diary facts versus inference, a supplied weekly file with a later correction, an in-conversation exploration, and local save/readback using the bundled helper. No personal chats or real continuity store were used.
 
@@ -77,4 +85,4 @@ The temporary web authentication error has cleared. With only that general accou
 
 Permanent web continuity, unattended delivery and every account/model combination remain untested. A temporary web container is not a permanent learning store; supply downloaded files again to continue in another chat. Scheduling belongs to the host, and installing a Skill does not start a scheduling service. Catalog fallback has script tests; the earlier web run succeeded online without a forced outage.
 
-The public main branch guide evolves with verification; each archive retains its packaging-time record. The rc.1 assets and tag stay unchanged. The language correction is distributed as rc.2.
+The public main branch guide evolves with verification; each archive retains its packaging-time record. Old assets and tags remain unchanged; rc.2 shipped the language fix, while 0.4.0 ships the saving rules and onboarding updates.

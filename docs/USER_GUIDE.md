@@ -4,7 +4,7 @@
 
 [Introduction and quick start](../README.md) · [Platform installation details and verification](PLATFORMS.md)
 
-The README contains the introduction, installation and examples needed for first use. This guide develops diaries, weekly reviews, exploration, saving and schedules as needed, including how to select material, continue a discussion and keep results. It covers public candidate v0.4.0-rc.2.
+The README contains the introduction, installation and examples needed for first use. This guide develops diaries, weekly reviews, exploration, saving and schedules as needed, including how to select material, continue a discussion and keep results. It covers public Alpha v0.4.0.
 
 ## 1. Choose material and continue a question you already have
 
@@ -61,7 +61,7 @@ Name a gentle roast or ask for a suitable method. After selection, continue here
 | --- | --- | --- |
 | 18 original base exercises | Available offline, selected by theme/material. | Reusable methods, not a popularity chart. |
 | Contextual exercise | Written for your current question. | Original for this discussion, not a web discovery. |
-| Independent catalog (candidate addition) | Refreshed when asking for something new; failures disclose the bundled snapshot date. | Newly curated is not newly published; flag checks older than 30 days. |
+| Independent catalog | Refreshed when asking for something new; failures disclose the bundled snapshot date. | Newly curated is not newly published; flag checks older than 30 days. |
 | Live web search | Verify original pages, dates and observable engagement. | No popularity claim without evidence; search snippets do not replace the original. |
 
 For example: “What's new? No strengths theme again; offer two directions needing no history.” One possibility is a three-line snapshot of what matters now, what you are trying and what is uncertain. Returning later can reveal changes; completing an entire questionnaire is unnecessary.

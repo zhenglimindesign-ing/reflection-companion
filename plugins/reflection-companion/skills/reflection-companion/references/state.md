@@ -12,6 +12,8 @@ Initialization requires explicit permission for saving and a timezone. Separatel
 
 Send one JSON request on stdin. Use structured arguments or a quoted heredoc, not interpolation of private text into shell syntax. The helper prints JSON and returns a nonzero exit code on failure. No network is used.
 
+If a host rejects a heredoc but permits file input, write one JSON payload file in the selected workspace and pass it on stdin using a literal absolute helper/root path. This is an alternative input method, not permission to widen access. After a denied cleanup attempt, leave the task-created payload in place and report its location once; do not repeat equivalent cleanup commands or let cleanup obscure a successful save/readback.
+
 ```text
 python3 /absolute/skill/path/scripts/state.py --root /absolute/Companion/.reflection-companion
 ```
@@ -38,6 +40,10 @@ Mutations require `consent:true`, a user-authored `authorization` and `expected_
 To `add`, include `entry` with `kind`, `text`, `topics`, `sources`, `authority` and optional `confirmation`. Kinds: `decision`, `learning`, `open_question`, `reflection`, `observation`, `preference`. Authority is `user_confirmed` (requires a user confirmation source) or `ai_proposed` (no confirmation). A receipt may preserve an unconfirmed observation without promoting it.
 
 Split claims with different authority into separate entries. Do not label a mixed receipt user-confirmed because the user confirmed one sentence. Before saving multiple entries, state the exact proposed contents; report partial success by record ID if a later write fails.
+
+When the user supplies the exact text to save, preserve that text in the confirmed entry. Do not append an implied next step, motive, qualification or broader preference. A summary may shorten already authorized material, but any additional personal meaning needs confirmation or a separate `ai_proposed` entry. Keep a correction's stated situation and scope; a project-specific decision must not become a permanent personality claim.
+
+When the user explicitly asks to replace or correct an existing claim, use `correct` so the old claim leaves active context. The replacement may be a scoped `decision` even when the old entry was a `preference`. Do not keep the old claim active by inventing a distinction between a supposed general tendency and the user's current decision. Preserve both only when the user actually says both remain valid; ask about scope only if their replacement instruction is genuinely ambiguous.
 
 Other operations:
 
