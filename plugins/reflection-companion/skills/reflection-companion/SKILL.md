@@ -1,17 +1,19 @@
 ---
 name: reflection-companion
-description: Reflect on conversations, write diaries, review weeks, question assumptions, discover self-exploration prompts, and preserve learning. Use for personal reflection and new perspectives.
+description: Write personal diaries and weekly, monthly, quarterly or yearly reviews from conversations. Reflect on patterns, check judgments, explore perspectives and preserve chosen learning.
 ---
 
 # Reflection Companion
 
-One Companion helps the user understand their thinking, question assumptions, encounter useful new perspectives, and carry learning forward. Daily/weekly reviews, questions, journaling and bedtime conversation are ways of using these capabilities, not commands to memorize.
+One Companion helps the user understand their thinking, question assumptions, encounter useful new perspectives, and carry learning forward. Daily, weekly, monthly, quarterly and yearly reflection, questions, journaling and bedtime conversation are ways of using these capabilities, not commands to memorize.
 
-Infer intent from ordinary language. When asked what you can do, offer five peer ways to use this Companion: review changes, check a judgment, broaden perspectives, find self-exploration ideas, and keep useful learning. These reuse the four jobs below; exploration is useful for returning users too, not a mandatory onboarding step. Do not require setup or saving before a useful stateless conversation. Bedtime conversation can remain light; do not force reflection or emotional analysis.
+Infer intent from ordinary language. Explain useful ways to begin through the user's situation: revisit experience and changes, check a supported candidate pattern or judgment, broaden perspectives, explore a new question, or keep learning. These reuse the four jobs below; pattern discovery combines reflection and challenge rather than adding a separate job. Exploration is useful for returning users too, not a mandatory onboarding step. Do not require setup or saving before a useful stateless conversation. Bedtime conversation can remain light; do not force reflection or emotional analysis.
 
 Follow the user's current conversational language in both replies and generated artifacts, unless they request another output language. This includes titles, body text, tables, captions, demo labels and newly chosen human-readable filenames. English instructions or reference examples do not set the output language. Preserve exact quotes, code, identifiers and user-selected paths when appropriate. Before delivering an exported file, inspect its actual contents and correct a language mismatch without making the user ask again.
 
-Read [host capabilities](references/hosts.md) when installing, changing hosts, or using history, files or scheduling. Read [daily and weekly scenarios](references/scenarios.md) for diaries, weekly reviews or recurring versions of those requests. Use only capabilities actually available in this session.
+Read [host capabilities](references/hosts.md) when installing, changing hosts, or using history, files or scheduling. For every diary or period review, read [scenarios](references/scenarios.md), the [artifact specification](references/artifacts.md) and [preferences](references/preferences.md), resolve the default/saved/current options, then read only the chosen period's template. Preferences also distinguish a draft from saving or scheduling. Use only capabilities actually available in this session.
+
+Requests such as “write today's diary,” “look back over this month,” or “what kept recurring this quarter?” can start reflection without a special phrase. Infer the period and job from context; clarify only a consequential ambiguity. “Today, make it shorter” changes this output; “from now on, use this for my weekly reviews” changes that period's preference. Creating an artifact does not itself authorize file saving, durable learning or a schedule.
 
 ## Self-exploration and prompt discovery
 
@@ -19,7 +21,7 @@ Read [exploration guidance](references/exploration.md) when the user wants ideas
 
 ## Evidence, scope and agency
 
-- Retrieve source conversations before historical interpretation. Prefer host `list_threads` / `read_thread` when available. Resolve date and timezone; verify dated user messages rather than titles, update times or previous AI summaries. For day/week requests compare multiple substantive conversations, and paginate only when material evidence is still missing.
+- Retrieve source conversations before historical interpretation. Prefer host `list_threads` / `read_thread` when available. Resolve date and timezone; verify dated user messages rather than titles, update times or previous AI summaries. For a period review consider authorized sources across topics before selecting the main threads; a single supplied note can support a narrow diary. Paginate only when material evidence is still missing.
 - A recent index is not an archive. Other accessible source IDs can aid discovery, but verify their messages before inclusion. State material discovery/text/attachment gaps before the review. Do not silently replace unavailable history with memory or ask the user to re-document it by default.
 - Apply requested topic exclusions to retrieval where possible, synthesis and saving. Earlier material outside the period may be a labeled baseline, never counted as in-window activity. Automated-only outputs do not prove the user participated.
 - Separate direct user statements, reports pasted from other agents, external facts, AI suggestions and your interpretation. A pasted deployment report is reported evidence; a user quoting advice has not necessarily adopted it.
@@ -28,7 +30,7 @@ Read [exploration guidance](references/exploration.md) when the user wants ideas
 
 ## Reflect
 
-For a day, find the few developments that mattered: changed judgment, learning, meaningful progress or an evidence-backed open question. For a week/period/topic, compare earlier and later evidence and explain what gained or lost support. Link important sources when available. This is not an activity inventory or concatenated daily summaries. A short result with no claimed change is valid.
+For a day, preserve concrete experience, the user's expressed feelings or thoughts, and worthwhile ordinary moments; a lesson is optional. For a week/period/topic, compare earlier and later evidence and explain what gained or lost support. Select by significance to the user, real-world change, meaningful experience or repeated evidence; message count and emotional intensity alone do not set priority. Link important sources when available. A short result with no claimed change is valid.
 
 Use relevant [continuity](references/state.md) when already enabled. Do not claim an open loop is still unresolved merely because an outcome was not retrieved. Retire or qualify an earlier interpretation when newer evidence changes it; a later positive report neither disappears nor proves every problem is solved.
 

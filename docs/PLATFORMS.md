@@ -6,7 +6,7 @@
 
 Basic installation and a first conversation are covered in the README. This page provides host-specific details, screenshots, update instructions and dated verification records for questions about a particular platform.
 
-Public Alpha **v0.4.0** provides the Codex plugin, Claude Code project Skill and Claude web Skill. [Download your platform package](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.4.0). All three share one core, with packaging for each host.
+Public Alpha **v0.5.0** provides the Codex plugin, Claude Code project Skill and Claude web Skill. [Download your platform package](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.5.0). All three share one core, with packaging for each host.
 
 ## Claude Code versus Claude web
 
@@ -29,7 +29,7 @@ For an upgrade, inspect the installed source, version and enabled copies before 
 
 ## Claude Code: public Alpha package
 
-Download `reflection-companion-claude-code-0.4.0.zip`, check it against `SHA256SUMS.txt` on the same release, and extract into a chosen personal project. The resulting entry is `.claude/skills/reflection-companion/SKILL.md`; `.claude` is hidden. Inspect and preserve an existing copy before replacing it. No clone of the development repository is required.
+Download `reflection-companion-claude-code-0.5.0.zip`, check it against `SHA256SUMS.txt` on the same release, and extract into a chosen personal project. The resulting entry is `.claude/skills/reflection-companion/SKILL.md`; `.claude` is hidden. Inspect and preserve an existing copy before replacing it. No clone of the development repository is required.
 
 Start Claude Code in that project and enter:
 
@@ -41,8 +41,8 @@ If the Skill is missing or has an old description, check the path and reopen the
 
 ## Claude web: install, begin and download a record
 
-1. Download `reflection-companion-claude-web-0.4.0.zip` from the release and check `SHA256SUMS.txt`. Do not extract it or upload the whole Codex distribution.
-2. Open Customize → Skills in Claude, add the ZIP and confirm that `reflection-companion` is enabled with 11 files in Contents. The account needs Skills and the required file/code-execution capabilities; check official account requirements if the entry is absent.
+1. Download `reflection-companion-claude-web-0.5.0.zip` from the release and check `SHA256SUMS.txt`. Do not extract it or upload the whole Codex distribution.
+2. Open Customize → Skills in Claude, add the ZIP and confirm that `reflection-companion` is enabled with 29 files in Contents. The account needs Skills and the required file/code-execution capabilities; check official account requirements if the entry is absent.
 3. Start a new chat: “Use Reflection Companion to help me write a diary about one small event today, one question at a time. Do not save yet.” Start with your material; no long prompt needs memorizing.
 4. Correct an interpretation by supplying facts or saying it does not fit. For a file, ask: “Export the corrected entry as a downloadable **Markdown** file; do not add it to a learning store.”
 5. Click **Download** on the reply's file card, save to a chosen folder and open it to check. Supply that file again when you want to continue in another conversation.
@@ -59,9 +59,17 @@ You still need to download an export; a container path is not a file on your com
 
 ## Verification boundaries
 
-The release build checks core-byte equality, entry format, relative links and archive integrity for both Claude packages. Actual Claude Code results accompany the release verification receipt. The Code and web checks are scoped below; full domestic-host capability remains unverified. The mobile text entry can be tried first, with results checked in the user's own app.
+The release build checks core-byte equality, entry format, relative links and archive integrity for both Claude packages. Earlier Claude Code results are dated below; the new five-period authoring rules were tested on Codex in this round. The Code and web checks are scoped below; full domestic-host capability remains unverified. The mobile text entry can be tried first, with results checked in the user's own app.
 
 Personal records belong in a chosen workspace, not necessarily the installation, public repository or development source. Installation grants neither full account history nor saving/scheduling permission.
+
+## Five-period checks (2026-10-03)
+
+Codex CLI 0.145.0 runs use an isolated project, frozen packaged Skill files and fictional dated notes. The suite covers all five periods, English annual writing, temporary component switches, separately identified AI observation, saved weekly preferences used in a fresh process, technical-log non-triggering, a scheduling-capability question and additional material absent from the bundled examples. No model or reasoning-effort override is requested; the command evidence does not establish an exact hidden runtime model.
+
+Earlier attempts exposed unsupported first-person meaning, miscopied dates, changed speaker attribution and an invented shared purpose between separate activities. The core now requires source checks and a factual motive/cause audit. The read-only helper checks submitted dates and exact quotes; it cannot validate every interpretation or detect unsubmitted claims. Generated prose still needs review for excessive generalization, implied motives and scope notes. These checks establish scoped behavior, not human usefulness or guaranteed output quality.
+
+The two Claude 0.5.0 packages contain the same 29-file core. This round does not run the new authoring rules on Claude Code or upload the new package to Claude web. Earlier Claude evidence below remains tied to its original package. Real phone use, cloud writes and unattended delivery are not covered here.
 
 ## Desktop checks in this round (2026-10-02)
 

@@ -4,7 +4,7 @@
 
 [Introduction and quick start](../README.md) · [Platform installation details and verification](PLATFORMS.md)
 
-The README contains the introduction, installation and examples needed for first use. This guide develops diaries, weekly reviews, recurring-pattern checks, exploration, saving and schedules as needed, including how to select material, continue a discussion and keep results. It covers public Alpha v0.4.0.
+The README contains the introduction, installation and examples needed for first use. This guide develops diaries, weekly reviews, recurring-pattern checks, exploration, saving and schedules as needed, including how to select material, continue a discussion and keep results. It covers public Alpha v0.5.0.
 
 ## 1. Choose material and continue a question you already have
 
@@ -39,6 +39,33 @@ These common situations show the material needed and the result to expect. Descr
 | A light bedtime chat | A moment you choose to share. | “No analysis today; let's just talk.” | Conversation without a compulsory lesson. |
 
 Use existing material first. A diary is an optional form; daily manual input is not a prerequisite.
+
+### Templates and choices for days, weeks, months, quarters and years
+
+**v0.5.0 includes bilingual templates and complete fictional examples for five periods.** Templates guide structure; the model writes from actual material. Selecting a template grants no additional access. See the [platform record](PLATFORMS.md) for this round’s verified host scope.
+
+| Say | Default focus |
+| --- | --- |
+| “Turn today's moments into a diary.” | Events, feelings and moments to keep; edited first-person prose without automatic psychological interpretation. |
+| “What happened this week, and which judgments changed?” | Facts, shifts, limited observations and open questions; at most one optional experiment and one closing question. |
+| “What has firmer evidence this month, and where did my attention go?” | Threads, evidence, room for living and revisiting old explanations; no assigned next-month tasks. |
+| “Look over this quarter for patterns and their limits.” | Cross-month course, investment and needs, conditions where a pattern holds or fails. |
+| “Record this year without inventing a growth story.” | Phases, choices, experiences to retain, remaining tensions and stated wishes. |
+
+No exact phrase is required: “the past three months” can work too. Clarify an ambiguous interval when it would change the result. “Log this error” or “write the company's annual report” follows its actual task. Sparse material supports a limited record, not invented experiences to fill a template; an annual template grants no broader retrieval access.
+
+Start with faithful wording, edited prose or Long View reflection. Adjust length, layout, voice, title, language, tone, themes/exclusions, quotes, source appendix, AI observation depth, takeaways, knowledge, moments, open questions, experiment, closing question and time basis. Components can be off, inline or separate where applicable. Greater depth still needs evidence and counterexamples; a day need not produce a lesson.
+
+| Instruction | Effect |
+| --- | --- |
+| “Shorter today, no analysis of me.” | This output only; no durable preference write. |
+| “From now on, weekly reviews should keep more quotes, without an experiment or closing question.” | Save weekly preferences in the selected authorized local store, preserving other periods. Without a store, apply in this chat and disclose that cross-chat preferences are not saved. |
+| “Save this in my selected folder.” | Export this artifact and report its location after successful writing and readback. |
+| “Keep this takeaway for later.” | Save selected content with its authority rather than treating the whole AI interpretation as confirmed meaning. |
+| “Do this every Sunday at 19:00.” | Resolve needed timezone, source, destination and saving behavior; use the available host scheduler. |
+| “Can this be scheduled?” | Explain capability without creating recurrence. |
+
+Precedence: this request > saved period preferences > saved global preferences > defaults. Removing period overrides still leaves global preferences applicable. No manual JSON editing is needed. Disabled continuity does not apply saved preferences; current choices remain usable. See [completed examples and a variant with analysis off](../plugins/reflection-companion/skills/reflection-companion/assets/examples/reviews.en.md) and [specific options and persistence rules](../plugins/reflection-companion/skills/reflection-companion/references/preferences.md).
 
 ## 3. A concrete example: do I still enjoy drawing?
 
@@ -84,6 +111,8 @@ For first setup: “Set up a local learning store; explain the location first an
 Then say “Keep this conclusion, limited to this case,” “Show what is saved,” “Correct that record with what I just said,” or “Delete it.” The assistant should verify the operation before reporting a path/ID. An unsuccessful write is not a successful save. You do not need to edit JSON.
 
 For readable files, `journals/daily/date.md` or `journals/weekly/start_to_end.md` are suggested structures, not automatically created folders. Saving a diary does not authorize extracting durable personal conclusions. Read existing files before editing, preserve human changes, and avoid duplicate runs overwriting them.
+
+Months, quarters and years can have separate folders too. A connected cloud tool with write capability, such as Google Drive, can export documents after you select a destination and authorize it. Formatting settings do not connect cloud tools. Disclose unavailable tools without claiming a write; cloud export does not establish synchronization for `.reflection-companion`.
 
 To continue across chats, use the same workspace or provide its location. If unknown, clarify rather than create another empty store; read before interpreting. In Claude web, ask for a downloadable Markdown file without writing to a learning store. Replies and exported files should follow your current conversational language; name a different language only when you want a translation. Click Download on the file card, then open it to check; the [platform guide](PLATFORMS.md) includes actual screenshots. Temporary web files are not computer files or permanent cross-chat storage; supply the export again to continue later. Stopping saving does not delete host chats/exports; removing Companion records does not remove host or backup copies.
 

@@ -6,7 +6,7 @@
 
 第一次安装和开始对话的基本步骤已放在 README。本页提供各平台的安装细节、截图、升级说明和有日期的验证记录；需要解决具体平台问题时再查阅。
 
-当前公开 Alpha **v0.4.0** 提供 Codex 插件、Claude Code 项目 Skill 和 Claude 网页版 Skill。[下载对应平台包](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.4.0)。三个入口共用同一份核心，安装包按宿主区分。
+当前公开 Alpha **v0.5.0** 提供 Codex 插件、Claude Code 项目 Skill 和 Claude 网页版 Skill。[下载对应平台包](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.5.0)。三个入口共用同一份核心，安装包按宿主区分。
 
 ## Claude Code 与 Claude 网页版区别
 
@@ -29,7 +29,7 @@
 
 ## Claude Code：公开 Alpha 包
 
-下载 `reflection-companion-claude-code-0.4.0.zip`，使用同一发布页的 `SHA256SUMS.txt` 校验，在一个选定的个人项目中解压。应得到 `.claude/skills/reflection-companion/SKILL.md`；`.claude` 是隐藏目录。若该位置已有同名 Skill，先核对并保留旧版，不要直接覆盖。无需 clone 产品开发仓库。
+下载 `reflection-companion-claude-code-0.5.0.zip`，使用同一发布页的 `SHA256SUMS.txt` 校验，在一个选定的个人项目中解压。应得到 `.claude/skills/reflection-companion/SKILL.md`；`.claude` 是隐藏目录。若该位置已有同名 Skill，先核对并保留旧版，不要直接覆盖。无需 clone 产品开发仓库。
 
 从该项目启动 Claude Code，输入：
 
@@ -41,8 +41,8 @@
 
 ## Claude 网页版：安装、开始与下载记录
 
-1. 从发布页下载 `reflection-companion-claude-web-0.4.0.zip`，用 `SHA256SUMS.txt` 核对。无需解压，也不要上传整个 Codex 分发包。
-2. 打开 Claude 的 Customize → Skills，添加并上传这个 ZIP。安装后确认 `reflection-companion` 已启用，Contents 中有 11 个文件。账号需要提供 Skills 和所需文件/代码执行能力；找不到入口时按官方说明核对账户设置。
+1. 从发布页下载 `reflection-companion-claude-web-0.5.0.zip`，用 `SHA256SUMS.txt` 核对。无需解压，也不要上传整个 Codex 分发包。
+2. 打开 Claude 的 Customize → Skills，添加并上传这个 ZIP。安装后确认 `reflection-companion` 已启用，Contents 中有 29 个文件。账号需要提供 Skills 和所需文件/代码执行能力；找不到入口时按官方说明核对账户设置。
 3. 开一个新对话，直接说：“用 Reflection Companion，帮我从今天的一件小事写日记，一次问一个问题；先不保存。”它应使用你的材料开始，而不是要求记住整套提示词。
 4. 如果解释不准确，补充事实或说“这个理解不对”。需要文件时说：“把修正后的内容导出为可下载的 **Markdown**，不要另存到收获库。”
 5. 点击回复中文件卡片的 **Download**，保存到自己选择的目录，再打开核对。下一次想继续时，可以重新提供这份文件。
@@ -59,9 +59,17 @@
 
 ## 兼容性边界
 
-本发布的构建会核对 Claude 包内核心文件与源文件一致、入口格式、相对链接和 ZIP 完整性。Claude Code 的真实调用结果见随发布交付的验证记录。Claude Code 与网页版的实测范围见下文；国内宿主尚未验证完整能力。手机文字入口可先体验，但其效果仍需用户在自己的应用验证。
+本发布的构建会核对 Claude 包内核心文件与源文件一致、入口格式、相对链接和 ZIP 完整性。此前 Claude Code 的实测有下文日期记录；本轮新增的五周期写作规则在 Codex 验收。Claude Code 与网页版的实测范围见下文；国内宿主尚未验证完整能力。手机文字入口可先体验，但其效果仍需用户在自己的应用验证。
 
 个人记录放在自己选择的工作区；插件安装目录、公开仓库和开发仓库都不是必需的日记位置。安装不会给出整个账号聊天历史，也不会启用保存或定时。
+
+## 五周期验收（2026-10-03）
+
+Codex CLI 0.145.0 使用独立项目、冻结的安装包核心文件和虚构带日期记录。验收覆盖五个周期、英文年回顾、临时组件开关、单独标明的 AI 观察、保存后在新进程使用周偏好、技术日志不误触发、定时能力询问，以及未出现在随包示例里的另一套材料。命令不指定模型或推理档位；执行证据不能确认具体的隐藏运行模型。
+
+早期尝试发现第一人称擅加含义、日期误抄、说话者归属变化，以及把独立活动合并成共同目的。核心已要求来源核对和事实动机／因果检查。只读助手检查提交的日期与原话，不能验证每个解释，也不能发现未提交的说法。生成正文仍需检查过度归纳、隐含动机和范围说明。这些检查证明限定情境下的行为，不等于真人价值验收或保证输出质量。
+
+两个 Claude 0.5.0 包含相同的 29 文件核心。本轮未在 Claude Code 运行新增写作规则，也未在 Claude 网页上传新版。下方此前 Claude 证据仍对应原安装包。真实手机、云端写入和无人值守送达不在本轮覆盖范围。
 
 ## 本轮桌面验证（2026-10-02）
 

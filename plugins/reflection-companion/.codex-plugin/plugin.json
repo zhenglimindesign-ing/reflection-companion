@@ -1,9 +1,11 @@
 {
   "name": "reflection-companion",
-  "version": "0.4.0",
-  "description": "Reflect on AI conversations, question assumptions, discover self-exploration prompts and carry learning forward.",
+  "version": "0.5.0",
+  "description": "Write personal diaries and weekly, monthly, quarterly or yearly reviews; check judgments, explore perspectives and preserve chosen learning.",
   "keywords": [
     "reflection",
+    "diary",
+    "weekly-review",
     "self-discovery",
     "chat-history",
     "learning",
@@ -13,7 +15,7 @@
   "interface": {
     "displayName": "Reflection Companion",
     "shortDescription": "Reflect, question, discover prompts and carry learning forward",
-    "longDescription": "Use existing conversations for reflection, grounded challenge, relevant perspectives, self-exploration and optional local continuity. Public alpha; history access depends on the host. Saving and scheduling are opt-in.",
+    "longDescription": "Use existing conversations for diaries and five-period reviews, grounded challenge, self-exploration and optional local continuity. Choose authoring style and components; temporary choices and saved preferences remain separate. Public alpha; source access and scheduling depend on the host.",
     "developerName": "Limin Zheng",
     "category": "Productivity",
     "capabilities": [

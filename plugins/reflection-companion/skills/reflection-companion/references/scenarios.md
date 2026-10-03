@@ -1,32 +1,42 @@
-# Daily diaries and weekly reviews
+# Diaries and period reviews
 
-Scenarios describe what the user wants. Reflect, Challenge, Expand and Preserve & Compound are the methods used inside them. Manual requests and scheduled runs are independent ways to start the same scenario. Exploration can stand alone or lead into a diary; it is not a required first step.
+Use the [artifact guide](artifacts.md) for writing and the [preferences guide](preferences.md) for natural-language intent and settings. Manual requests and scheduled runs start the same writing task; they differ in source availability and delivery permission. A bedtime chat or a small note need not become a full artifact.
 
-## End-of-day diary
+## Gather and choose the scope
 
-Resolve the user's local date/timezone only when the date matters. Begin with the supplied material or authorized conversations for that day. If little is available, ask for one memorable moment and how it felt; one question at a time. Do not turn ordinary diary writing into a compulsory lesson or interrogation.
+Resolve the period from the user's intent and current timezone. For “this week/month/quarter/year,” use the local calendar period up to the observed cutoff; a current period is not complete. “Last week” refers to that completed calendar week. Preserve a requested rolling/custom interval. A scheduled weekly run can cover seven completed local days when that is the agreed window; do not change an existing schedule's scope silently.
 
-Return a readable short diary in the user's preferred voice. Ground first-person statements in their own words. Keep interpretation separate, use tentative language, and do not invent events, emotions or achievements to fill the day. Offer an optional unanswered question only if it is useful. Material gaps are allowed. “No source material today” must never become a fabricated diary.
+Use supplied material or retrieve authorized, actually accessible source messages/files before interpretation. Consider topics broadly within that scope rather than seeding only familiar subjects. Do not count a destination chat, preloaded memory or previous AI review as full cross-chat coverage. When an actual retrieval is empty or unexpectedly narrow, make one useful broader retry if supported; then state the gap and narrow the review. Do not iterate through unrelated sources merely to make coverage look complete.
 
-## Weekly review
+For a single-day diary, one concrete experience can be enough. When useful material is missing, invite one memorable event and the user's experience of it, one question at a time. No usable material produces a narrow explanation, not an invented entry or empty completed form.
 
-Resolve the interval (default seven completed local calendar days), accessible sources and exclusions. Compare earlier and later evidence, rather than concatenate daily summaries. Include a few changes, something that remained stable, and unresolved questions only when supported. User corrections override earlier AI summaries. If using diary files, keep source filenames/dates visible. One week need not produce a grand narrative or a new goal.
+Compare important earlier and later source evidence at the chosen scale. Older material outside the interval is a labeled baseline. Check correction records before reusing a prior interpretation. The user may reject a premise or leave a contradiction unresolved.
 
-## Save a diary versus keep a learning
+## Produce the artifact
 
-A diary is a readable document. Companion state is selected learning/decisions with provenance and corrections; it is not a complete journal archive. Neither is saved by installation.
+Resolve default, saved and current choices, then load only the appropriate daily/weekly/monthly/quarterly/yearly template. Apply the period's writing task from the artifact guide; do not concatenate shorter summaries. Write in the user's chosen voice and language. Preserve exact original words where selected, leave unsupported components out, and keep AI interpretation separately identifiable.
 
-When the user requests a diary file, agree on the destination once and reuse that choice. In a local workspace, a suggested layout is `journals/daily/YYYY-MM-DD.md` and `journals/weekly/YYYY-MM-DD_to_YYYY-MM-DD.md`. The paths are suggestions, not automatic defaults. Keep private records outside the public source/plugin directories. Use available file tools, then read back the written file and report its real path. Existing content must be read before editing; repeated scheduled runs should not create duplicate entries or overwrite a human correction. Preserve prior wording or ask about an ambiguous replacement. When filesystem access is absent, provide Markdown to copy/download and name that limitation.
+Resolve options even when the user names no choices: use the bundled options file, or the read-only helper at the known selected workspace. Keep the effective voice, processing and enabled components available while writing, and check the actual body against them before delivery. No known store is not a reason to skip defaults or require setup.
 
-Suggested document sections: source coverage; diary/review; optional tentative observations. These describe section purposes, not literal English headings: write the exported document in the user's conversational language unless they request otherwise. Mark any synthetic demo as a demo in that same language in the file itself. Save a selected learning into [state](state.md) only under the separate user instruction for that store. Never infer it from permission to export a diary.
+A short free-prose request may override the visible template while preserving scope and attribution. Existing sources/settings do not make setup mandatory before useful writing. A completed output must honor switches such as no AI analysis, no experiment or no closing question.
+
+## Save a document versus keep learning or preferences
+
+A diary/review is a readable document. Selected learning/decisions and output preferences live in Companion state when explicitly enabled; the state store is not the full journal archive. Installing the Skill saves none of these.
+
+For requested files, reuse the user's selected destination. Suggested layouts are `journals/daily/date.md`, `journals/weekly/start_to_end.md`, or matching monthly/quarterly/yearly folders; they are suggestions, not automatic directories. Keep private records outside plugin/public source folders. Use available file tools, read the completed file back and report its actual location only after success. Inspect existing content before editing; preserve human corrections and avoid duplicate scheduled overwrites.
+
+An authorized cloud document export uses an actually available connector and its workflow. It does not establish cloud continuity, synchronization or a saved learning. If tools or write access are missing, provide a usable chat/download draft and explain that the requested save was not completed.
+
+Use [state operations](state.md) for selected meaning or persistent output preferences under the user's specific instruction. Exporting a diary never consents to capturing every personal interpretation.
 
 ## Scheduled variants
 
-Use [scheduling](scheduling.md). Distinguish these user choices:
+Read [scheduling](scheduling.md) for recurring delivery:
 
-- A reminder to write: asks the user for today's input; does not manufacture an entry if they do not reply.
-- Automatic draft: uses only the agreed accessible materials; labels it a draft; names missing coverage.
-- Weekly review: reads the agreed date range, conversations or journal folder and produces a comparison.
-- Exploration delivery: suggests a few ideas without personal analysis; saves nothing unless authorized.
+- A reminder invites input and waits; it does not manufacture an unanswered day.
+- An automatic draft uses only agreed accessible material, is labeled a draft, and follows agreed missing-material behavior.
+- A period review applies its own daily/weekly/monthly/quarterly/yearly writing rules and the agreed date window.
+- Exploration delivery offers relevant new perspectives without inventing personal experience.
 
-Before activation, settle cadence, time/timezone, source scope, destination, saving permission and the behavior when there is no new material. Confirm setup separately from an actual delivered run. Installing this package never starts these tasks.
+Settle missing cadence, time/timezone, source scope/exclusions, destination, workspace, options and saving behavior before activation. Task configuration, first delivered result, document storage and later continuity have separate evidence requirements. Existing ChatGPT tasks are not migrated or changed by installing these templates.

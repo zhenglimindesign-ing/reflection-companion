@@ -8,7 +8,8 @@ Reflection Companion is an AI companion for reflection. It turns experiences, co
 
 Use it for a diary, a weekly review, or a period or project retrospective. It can also compare material over time to surface possible recurring patterns or blind spots, help you reconsider a question, or introduce a new way to explore yourself.
 
-**Public Alpha · v0.4.0**  
+**Public Alpha · v0.5.0**
+
 Available for Codex, Claude Code, and Claude web.
 
 ---
@@ -149,16 +150,37 @@ Scheduling is opt-in. You choose the scope, timing, and saving behavior.
 
 Installing Reflection Companion **does not create schedules automatically**. Support for scheduled execution, source access, and unattended delivery varies by host; see the platform documentation for the verified scope.
 
-<!-- REFLECTION_OUTPUT_EXAMPLES_PLACEHOLDER
-Reserved for reviewed daily / weekly / period synthesis examples and their final visual assets.
-Do not replace this marker with generic recap templates; add only after the output model is accurately defined and reviewed. When filled, insert it as its own numbered H2 and renumber the following H2 sections.
--->
+## 4. A review you can revisit
+
+A day preserves lived scenes. Longer reviews connect evidence across time, while leaving room for contradictions and unfinished experience.
+
+| Period | What the review looks for |
+| --- | --- |
+| Day | Concrete scenes, your expressed feelings and moments worth keeping. |
+| Week | What happened, which judgments changed and which observations need checking. |
+| Month | Threads with stronger evidence, where attention went and explanations to revise. |
+| Quarter | Direction across months, possible patterns and the conditions that limit them. |
+| Year | Chapters, choices, ordinary life and wishes without a compulsory growth story. |
+
+The following excerpts are authored from one fictional source set, not a real person’s diary or host-test results.
+
+**A diary can keep a small evening:**
+
+> The rain stopped on my way home. I walked an extra stop along the river. This evening is worth recording: “I didn't produce anything tonight, but I was living.”
+
+**A week can connect evidence and correct a judgment:**
+
+> With three signups, you considered cancelling the book group. All three later confirmed, and Xiaohe offered to bring a friend. That separates the size of a gathering from people's willingness to attend. It does not prove that attendance no longer matters to you; it adds evidence beside the earlier judgment.
+
+[Read all five completed examples and an analysis-off variant](plugins/reflection-companion/skills/reflection-companion/assets/examples/reviews.en.md).
+
+Choose faithful wording, edited prose or Long View reflection. You can adjust length, quotes and components, or turn off AI observation, experiments and questions. “This time” applies to one review; “from now on” requests a saved preference in an authorized store. [Choices and saving rules](docs/USER_GUIDE.md).
 
 ---
 
-## 4. Install and start
+## 5. Install and start
 
-The current public release is **v0.4.0 Public Alpha**.
+The current public release is **v0.5.0 Public Alpha**.
 
 Available for:
 
@@ -168,7 +190,7 @@ Available for:
 
 Choose the package for your platform:
 
-[View the v0.4.0 release](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.4.0)
+[View the v0.5.0 release](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.5.0)
 
 For installation details, compatibility, and what has actually been verified:
 
@@ -186,7 +208,7 @@ or:
 
 ---
 
-## 5. Sources, saving, and boundaries
+## 6. Sources, saving, and boundaries
 
 Reflection Companion can only use material the current platform can **actually access**, plus material you choose to provide or authorize.
 
@@ -217,7 +239,7 @@ Reflection Companion is not a diagnostic or therapy tool, and it should not turn
 
 ---
 
-## 6. Does self-exploration content change?
+## 7. Does self-exploration content change?
 
 Yes — but not through an automated scraper collecting prompts from the web.
 
@@ -235,7 +257,7 @@ Browse the current bundled library:
 
 ---
 
-## 7. Read more
+## 8. Read more
 
 - [Scenarios and advanced use](docs/USER_GUIDE.md) — diaries, weekly reviews, corrections, saving, and schedules
 - [Complete conversation examples](docs/EXAMPLES.md) — see how a discussion actually unfolds

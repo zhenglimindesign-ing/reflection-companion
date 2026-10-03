@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "preset": {"enum": ["faithful", "edited", "long_view"]},
+    "processing": {"enum": ["faithful", "edited", "reflective"]},
+    "layout": {"enum": ["prose", "sections", "raw_notes", "custom"]},
+    "voice": {"enum": ["first_person", "second_person", "third_person"]},
+    "length": {"enum": ["light", "standard", "expanded"]},
+    "quotes": {"enum": ["off", "selected", "more"]},
+    "source_appendix": {"enum": ["off", "links", "agreed_originals"]},
+    "theme_selection": {"enum": ["automatic", "selected"]},
+    "themes": {"type": "text_list"},
+    "excluded_themes": {"type": "text_list"},
+    "title": {"enum": ["content", "date_only", "custom"]},
+    "ai_observation": {"enum": ["off", "gentle", "deep"]},
+    "takeaways": {"enum": ["off", "inline", "section"]},
+    "knowledge": {"enum": ["off", "inline", "section"]},
+    "moments": {"enum": ["off", "inline", "section"]},
+    "open_questions": {"enum": ["off", "supported"]},
+    "experiment": {"enum": ["off", "chosen_only", "suggestion"]},
+    "closing_question": {"type": "boolean"},
+    "period_basis": {"enum": ["calendar", "completed_days", "custom"]},
+    "tone": {"enum": ["plain", "warm", "direct"]},
+    "language": {"type": "text"}
+  },
+  "common": {
+    "layout": "sections", "voice": "second_person", "length": "standard",
+    "quotes": "selected", "source_appendix": "links", "theme_selection": "automatic",
+    "themes": [], "excluded_themes": [], "title": "content",
+    "takeaways": "inline", "knowledge": "inline", "moments": "inline",
+    "open_questions": "supported", "period_basis": "calendar", "tone": "plain",
+    "language": "follow_user"
+  },
+  "presets": {
+    "faithful": {"processing": "faithful", "ai_observation": "off", "experiment": "off", "closing_question": false},
+    "edited": {"processing": "edited", "ai_observation": "off", "experiment": "off", "closing_question": false},
+    "long_view": {"processing": "reflective", "ai_observation": "gentle", "experiment": "suggestion", "closing_question": true}
+  },
+  "periods": {
+    "daily": {"preset": "edited", "layout": "prose", "voice": "first_person"},
+    "weekly": {"preset": "long_view"},
+    "monthly": {"preset": "long_view", "experiment": "chosen_only"},
+    "quarterly": {"preset": "long_view", "experiment": "chosen_only"},
+    "yearly": {"preset": "long_view", "experiment": "chosen_only"}
+  }
+}

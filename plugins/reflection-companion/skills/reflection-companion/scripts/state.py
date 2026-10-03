@@ -67,8 +67,76 @@ def consent(req):
 
 KINDS = {'decision', 'learning', 'open_question', 'reflection', 'observation', 'preference'}
 STATUSES = {'active', 'superseded', 'dismissed', 'resolved'}
-READS = {'inspect', 'context', 'get', 'export', 'novelty'}
+READS = {'inspect', 'context', 'get', 'export', 'novelty', 'artifact_options'}
 MUTATIONS = {'add', 'confirm', 'correct', 'dismiss', 'resolve', 'delete', 'purge', 'settings', 'expose', 'delete_exposure'}
+
+
+def artifact_schema():
+    path = Path(__file__).resolve().parents[1] / 'assets/artifact-options.json'
+    data = json.loads(path.read_text(encoding='utf-8'))
+    require(data.get('schema_version') == 1, 'SCHEMA_UNSUPPORTED', 'Unknown artifact options schema')
+    return data
+
+
+def validate_options(value, schema):
+    require(isinstance(value, dict) and set(value) <= set(schema['fields']), 'INVALID', 'Unsupported artifact option; access, storage and schedules are separate')
+    for key, item in value.items():
+        field = schema['fields'][key]
+        if 'enum' in field:
+            require(isinstance(item, str) and item in field['enum'], 'INVALID', f'Invalid artifact option {key}')
+        elif field['type'] == 'boolean':
+            require(type(item) is bool, 'INVALID', f'{key} must be boolean')
+        elif field['type'] == 'text':
+            string(item, key)
+        elif field['type'] == 'text_list':
+            require(isinstance(item, list), 'INVALID', f'{key} must be an array')
+            for text in item:
+                string(text, key)
+    return value
+
+
+def validate_artifact_preferences(value):
+    require(isinstance(value, dict) and set(value) <= {'global', 'periods'}, 'INVALID', 'Preferences use global and periods only')
+    schema = artifact_schema()
+    validate_options(value.get('global', {}), schema)
+    periods = value.get('periods', {})
+    require(isinstance(periods, dict) and set(periods) <= set(schema['periods']), 'INVALID', 'Unknown preference period')
+    for options in periods.values():
+        validate_options(options, schema)
+    return value
+
+
+def resolve_artifact_options(period, preferences=None, overrides=None):
+    schema = artifact_schema()
+    require(isinstance(period, str) and period in schema['periods'], 'INVALID', 'Use daily, weekly, monthly, quarterly or yearly')
+    preferences = {} if preferences is None else preferences
+    overrides = {} if overrides is None else overrides
+    validate_artifact_preferences(preferences)
+    validate_options(overrides, schema)
+    options = dict(schema['common'])
+
+    def apply(patch):
+        if 'preset' in patch:
+            options.update(schema['presets'][patch['preset']])
+        options.update(patch)
+        # A direct request to turn analysis on should work for an edited diary
+        # without requiring the user to name an internal processing dependency.
+        if patch.get('ai_observation') in ('gentle', 'deep') and 'processing' not in patch:
+            options['processing'] = 'reflective'
+
+    apply(schema['periods'][period])
+    apply(preferences.get('global', {}))
+    apply(preferences.get('periods', {}).get(period, {}))
+    apply(overrides)
+    adjustments = []
+    if options['processing'] != 'reflective' and options['ai_observation'] != 'off':
+        options['ai_observation'] = 'off'
+        adjustments.append('AI observations are off for faithful or edited processing')
+    if (options['processing'] != 'reflective' or options['ai_observation'] == 'off') and options['experiment'] == 'suggestion':
+        options['experiment'] = 'off'
+        adjustments.append('AI experiments are off when reflection is off')
+    validate_options(options, schema)
+    return options, adjustments
 
 
 def validate_entry(entry):
@@ -102,6 +170,8 @@ def validate_settings(settings):
     except (ZoneInfoNotFoundError, ValueError):
         raise StateError('INVALID', 'Use a valid IANA timezone')
     require(topics(settings.get('excluded_topics')) == settings['excluded_topics'], 'INVALID', 'Stored exclusions must be canonical')
+    if 'artifact_preferences' in settings:
+        validate_artifact_preferences(settings['artifact_preferences'])
 
 
 def validate(doc):
@@ -208,6 +278,18 @@ def run(root, req):
     op = req.get('op')
     require(op in READS | MUTATIONS | {'init'}, 'INVALID', 'Unknown operation')
     safe_paths(root)
+    if op == 'artifact_options':
+        doc = read(root) if (root / 'state.json').exists() else None
+        enabled = doc is not None and doc['settings']['enabled']
+        preferences = doc['settings'].get('artifact_preferences', {}) if enabled else {}
+        options, adjustments = resolve_artifact_options(req.get('period'), preferences, req.get('overrides'))
+        values = {'period': req['period'], 'options': options, 'adjustments': adjustments,
+                  'preferences': preferences,
+                  'stored_preferences_applied': bool(enabled and (preferences.get('global') or preferences.get('periods', {}).get(req['period']))),
+                  'initialized': doc is not None}
+        if doc is None:
+            return {'ok': True, 'store_id': None, 'revision': None, **values}
+        return result(doc, **values)
     if op == 'init':
         auth = consent(req)
         settings = {'timezone': req.get('timezone'), 'enabled': True,
@@ -295,10 +377,11 @@ def run(root, req):
         elif op == 'purge':
             doc['entries'], doc['exposures'] = [], []
             doc['settings'].update(enabled=False, continuity_log=False)
+            doc['settings'].pop('artifact_preferences', None)
             payload = {'purged': True, 'host_history_and_exports_unchanged': True}
         elif op == 'settings':
             changes = req.get('settings')
-            require(isinstance(changes, dict) and set(changes) <= {'timezone', 'enabled', 'continuity_log', 'excluded_topics'}, 'INVALID', 'Unsupported settings')
+            require(isinstance(changes, dict) and set(changes) <= {'timezone', 'enabled', 'continuity_log', 'excluded_topics', 'artifact_preferences'}, 'INVALID', 'Unsupported settings')
             changes = dict(changes)
             if 'excluded_topics' in changes:
                 changes['excluded_topics'] = topics(changes['excluded_topics'])

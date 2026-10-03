@@ -2,6 +2,13 @@
 
 [简体中文](CHANGELOG.zh-CN.md) | **English**
 
+## 0.5.0 — 2026-10-03 · Five-period reflection artifacts
+
+- Add distinct diary, weekly, monthly, quarterly and yearly authoring contracts, ten bilingual template scaffolds, complete fictional examples and an analysis-off variant. Fill the reviewed README example slot and retain separate English/Chinese pages.
+- Offer faithful, edited and Long View presets with 21 output choices. Temporary requests change only this artifact; explicitly saved global/period preferences use the existing consent and revision checks. Legacy v1 stores remain readable. Formatting does not authorize saving, sources or schedules.
+- Add a read-only helper to index selected dated Markdown notes and check submitted dates and exact quotes. Strengthen attribution, first-person narration and motive/cause checks after actual fictional Codex runs exposed errors. Mechanical quote checks do not verify interpretation.
+- Generate all three packages from the tested core. This round’s new authoring and preference tests use Codex CLI; previous Claude checks retain their original version/date. New Claude-host authoring, real phone use, cloud writes and unattended scheduling are not verified here. Old tags/assets remain intact.
+
 ## Documentation 2026-10-03 · README structure and language navigation
 
 - Rework the public README around the core thesis, evidence-backed pattern discovery and opt-in proactive reflection. Reserve a reviewed slot for future daily / weekly / period synthesis examples rather than publishing generic recap templates.
