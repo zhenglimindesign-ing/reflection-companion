@@ -4,7 +4,7 @@
 
 [Introduction and quick start](../README.md) · [Platform installation details and verification](PLATFORMS.md)
 
-The README contains the introduction, installation and examples needed for first use. This guide develops diaries, weekly reviews, exploration, saving and schedules as needed, including how to select material, continue a discussion and keep results. It covers public Alpha v0.4.0.
+The README contains the introduction, installation and examples needed for first use. This guide develops diaries, weekly reviews, recurring-pattern checks, exploration, saving and schedules as needed, including how to select material, continue a discussion and keep results. It covers public Alpha v0.4.0.
 
 ## 1. Choose material and continue a question you already have
 
@@ -30,10 +30,11 @@ These common situations show the material needed and the result to expect. Descr
 | --- | --- | --- | --- |
 | End-of-day diary | Accessible conversations that day or one event you choose to describe. | “Review today's material and write a short diary. Ask about gaps; no growth lesson yet.” | Grounded events and feelings, with interpretation separate. |
 | Weekly review | Scoped chats or selected journal files. | “Compare my earlier and later judgments this week.” | Evidence of change, changed circumstances and uncertainty. |
-| The end of a period or experience | Selected material from a month, project or topic. | “Have my priorities or ways of deciding changed since the beginning?” | Connect experiences, changes and questions worth considering across a period. |
+| Look for recurring patterns | Multiple accessible discussions across a period, ideally from different contexts. | “Looking across these discussions, is there a way of thinking that keeps showing up but I may not have noticed? Treat it as something to test.” | Concrete evidence, scope and counterexamples or limits; one event does not become a stable trait. |
+| The end of a period or experience | Selected material from a month, project or topic. | “Look back on this experience from the beginning. How was I thinking at first, which judgments changed later, and which criteria stayed consistent?” | Connect experiences, changes and questions worth considering across a period. |
 | Uncertain decision | Current discussion, with relevant history if useful. | “Find the information most likely to change my conclusion; also consider support for it.” | A specific gap or alternative; the current view may be supported. |
 | A broader perspective | Current question or scoped historical theme. | “Give me a relevant perspective beyond my usual approach.” | A new angle, its connection and a way to explore further. |
-| Unsure what to ask | No history required, or use current context. | “Offer two different exercises and begin after I choose.” | A few options with purposes and material requirements. |
+| Unsure what to ask | No history required, or use current context. | “What are a few different self-exploration approaches I could try? Give me distinct options, and start one after I choose.” | A few options with purposes and material requirements. |
 | Continue an earlier theme | Current conversation or authorized saved records. | “Read that earlier takeaway and reconsider it against this situation.” | Earlier qualifications and corrections remain available; conclusions can change. |
 | A light bedtime chat | A moment you choose to share. | “No analysis today; let's just talk.” | Conversation without a compulsory lesson. |
 
