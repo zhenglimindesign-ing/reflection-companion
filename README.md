@@ -13,7 +13,7 @@ Available for Codex, Claude Code, and Claude web.
 
 ---
 
-## Why Reflection Companion exists
+## 1. Why Reflection Companion exists
 
 “Know thyself” is an old instruction.
 
@@ -42,9 +42,9 @@ Your conversations are not the whole of you. But they can be useful material for
 
 ---
 
-## What it can help you do
+## 2. What it can help you do
 
-### Revisit experience and change
+### 2.1 Revisit experience and change
 
 Connect thinking from different moments instead of merely summarizing recent activity.
 
@@ -57,7 +57,7 @@ You may notice that:
 
 Diaries, weekly reviews, monthly reflections, and project retrospectives are all versions of this job.
 
-### Notice patterns you may not have seen yourself
+### 2.2 Notice patterns you may not have seen yourself
 
 From inside a situation, we usually see only the current moment.
 
@@ -76,7 +76,7 @@ One repetition does not establish a pattern, and a lack of counterexamples does 
 
 The Companion should distinguish evidence from interpretation and your own confirmation. You can reject an observation, qualify it, or revise it as new experience appears.
 
-### See your own thinking more clearly
+### 2.3 See your own thinking more clearly
 
 Sometimes another piece of advice is not what you need.
 
@@ -94,7 +94,7 @@ The goal is not to disagree with you.
 
 Your original judgment may turn out to be sound. The point is to make the judgment itself clearer.
 
-### Encounter something outside your current frame
+### 2.4 Encounter something outside your current frame
 
 Sometimes the useful move is not deeper analysis, but a different direction.
 
@@ -102,7 +102,7 @@ Reflection Companion can introduce a relevant concept, perspective, question, ex
 
 This is not random inspiration. The aim is to open a part of the landscape you were not already looking at.
 
-### Let useful learning continue
+### 2.5 Let useful learning continue
 
 Some things deserve to survive beyond one conversation:
 
@@ -116,7 +116,7 @@ New experience can also overturn an old interpretation.
 
 ---
 
-## Start from what is happening now
+## 3. Start from what is happening now
 
 There are no commands to memorize and no profile to complete before you begin.
 
@@ -134,7 +134,7 @@ Describe what you want in ordinary language.
 
 The same Companion can move naturally between these situations.
 
-### Reflection can also happen proactively
+### 3.1 Reflection can also happen proactively
 
 If your host supports scheduled tasks, you do not have to remember to initiate every review yourself.
 
@@ -151,12 +151,12 @@ Installing Reflection Companion **does not create schedules automatically**. Sup
 
 <!-- REFLECTION_OUTPUT_EXAMPLES_PLACEHOLDER
 Reserved for reviewed daily / weekly / period synthesis examples and their final visual assets.
-Do not replace this marker with generic recap templates; add only after the output model is accurately defined and reviewed.
+Do not replace this marker with generic recap templates; add only after the output model is accurately defined and reviewed. When filled, insert it as its own numbered H2 and renumber the following H2 sections.
 -->
 
 ---
 
-## Install and start
+## 4. Install and start
 
 The current public release is **v0.4.0 Public Alpha**.
 
@@ -186,7 +186,7 @@ or:
 
 ---
 
-## Sources, saving, and boundaries
+## 5. Sources, saving, and boundaries
 
 Reflection Companion can only use material the current platform can **actually access**, plus material you choose to provide or authorize.
 
@@ -217,7 +217,7 @@ Reflection Companion is not a diagnostic or therapy tool, and it should not turn
 
 ---
 
-## Does self-exploration content change?
+## 6. Does self-exploration content change?
 
 Yes — but not through an automated scraper collecting prompts from the web.
 
@@ -235,7 +235,7 @@ Browse the current bundled library:
 
 ---
 
-## Read more
+## 7. Read more
 
 - [Scenarios and advanced use](docs/USER_GUIDE.md) — diaries, weekly reviews, corrections, saving, and schedules
 - [Complete conversation examples](docs/EXAMPLES.md) — see how a discussion actually unfolds
