@@ -64,7 +64,7 @@ For an everyday first example, start with the [diary walkthrough](USER_GUIDE.md)
 
 ## 5. Discovery: choose an exercise, then actually start
 
-**User:** I do not know how to explore myself. Suggest two light exercises that need no history.
+**User:** What are a few self-exploration approaches I could try? I want something light today and do not want to rely on history. Give me a few distinct options, and start after I choose.
 
 **Companion:** Try “A question worth asking” to find a small question you want to understand today, or “A curious interview,” where I follow your answers with questions. Neither needs past chats. Choose one or ask me to choose.
 
