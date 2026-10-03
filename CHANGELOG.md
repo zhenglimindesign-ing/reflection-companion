@@ -2,6 +2,12 @@
 
 [简体中文](CHANGELOG.zh-CN.md) | **English**
 
+## Documentation 2026-10-03 · README structure and language navigation
+
+- Rework the public README around the core thesis, evidence-backed pattern discovery and opt-in proactive reflection. Reserve a reviewed slot for future daily / weekly / period synthesis examples rather than publishing generic recap templates.
+- Keep English and Chinese READMEs as separate files with reciprocal links instead of merging both editions into collapsible sections. Align the user guide and discovery example wording with the new entry points.
+- Version 0.4.0 packages and tags remain unchanged; this is a main-branch documentation update.
+
 ## Discovery catalog 2026-10-02.1 · Content update
 
 - Add two credited bilingual explorations: an ordinary future day, and one sensory detail noticed today. Recheck the three existing sources and retain uncertainty about page dates and popularity.
