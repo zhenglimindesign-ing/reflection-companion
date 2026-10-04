@@ -40,3 +40,13 @@ python3 -B scripts/verify_release.py
 ```
 
 This checks files, paths and versions, not model judgment or scheduled delivery. [Changes](../CHANGELOG.md) state release scope; unverified hosts must not be advertised as supported.
+
+## Installation recovery
+
+Treat release publication, installed version and the Skill loaded in a chat as separate states. Keep formal release tags/assets unchanged. Release 0.5.1 adds an [installation lifecycle helper](../plugins/reflection-companion/skills/reflection-companion/references/updates.md) for the existing Codex Git route; it does not migrate diary/state files or configure background updates.
+
+Retain each successful update's `receipt.json` with its `previous-plugin` folder outside the plugin cache and personal store. Those files contain prior plugin bytes, hashes and installation metadata, not a whole account configuration or personal records. Rollback checks that both backup and current installation match the receipt, restores the previous release through the native host and preserves records written in the meantime.
+
+The helper attempts recovery once after an update failure. `failed_recovered` reports a failed update and verified old installation; `needs_recovery` reports that recovery is incomplete. Preserve the backup and inspect the specific host/network/config failure before another authorized attempt. Do not broadly reset configuration or remove a marketplace, which may affect other installations. A hard interruption may leave an update lock and a `switching` receipt: check whether its process is alive and inspect disk state before clearing a stale lock. Backups are retained until the user chooses to remove them.
+
+For Claude Code retain the prior Skill directory outside the active discovery folder; for Claude web retain the prior upload ZIP. Both use their host's installation path. Package equality is not proof of a successful account update. Any future data migration needs its own compatibility and backup plan.

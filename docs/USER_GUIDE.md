@@ -4,7 +4,7 @@
 
 [Introduction and quick start](../README.md) · [Platform installation details and verification](PLATFORMS.md)
 
-The README contains the introduction, installation and examples needed for first use. This guide develops diaries, weekly reviews, recurring-pattern checks, exploration, saving and schedules as needed, including how to select material, continue a discussion and keep results. It covers public Alpha v0.5.0.
+The README contains the introduction, installation and examples needed for first use. This guide develops diaries, weekly reviews, recurring-pattern checks, exploration, saving and schedules as needed, including how to select material, continue a discussion and keep results. It covers public Alpha v0.5.1.
 
 ## 1. Choose material and continue a question you already have
 
@@ -133,7 +133,11 @@ First run the desired result manually. Then request, for example: “Every Sunda
 
 ## 7. Update and give feedback
 
-Basic installation is in the [README](../README.md). Before upgrading, inspect the current source and version, update to your chosen version, avoid duplicate enabled copies and preserve your personal record directory. Pinned versions do not automatically advance. Package checksums, detailed host instructions and tested scope are in the [platform guide](PLATFORMS.md).
+Basic installation is in the [README](../README.md). Ask “check whether Reflection Companion has an update,” “upgrade to the latest formal release,” or “return to the previous version.” A check reports the installed version, available release and relevant changes; only an explicit upgrade or rollback request changes installation. Pinned versions do not advance automatically, and no background update reminder is running.
+
+Update the same Skill/plugin, retain its recovery source, and keep journals and preferences in their existing directory. Rollback changes the program, preserving records added in the meantime. Older releases may ignore newer preferences but should not delete them. The result should report actual installed version, verification, recovery location and any fresh-chat step. Host methods differ; see the [platform guide](PLATFORMS.md).
+
+The public release is 0.5.1, with a Codex check/prepare/upgrade/rollback helper. Existing 0.5.0 users can ask their host to assist that first transition using a reviewed current version, without finding a ZIP themselves. Claude Code project Skills and Claude web uploads follow their own channels; a Codex update does not update Claude.
 
 The [mobile text sample](MOBILE.md) lets someone try one method. It does not carry Skill references, storage helpers, cross-chat state or scheduling, and is not verified native adaptation for domestic apps.
 

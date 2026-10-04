@@ -6,7 +6,7 @@
 
 Basic installation and a first conversation are covered in the README. This page provides host-specific details, screenshots, update instructions and dated verification records for questions about a particular platform.
 
-Public Alpha **v0.5.0** provides the Codex plugin, Claude Code project Skill and Claude web Skill. [Download your platform package](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.5.0). All three share one core, with packaging for each host.
+Public Alpha **v0.5.1** provides the Codex plugin, Claude Code project Skill and Claude web Skill. [Download your platform package](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.5.1). All three share one core, with packaging for each host.
 
 ## Claude Code versus Claude web
 
@@ -25,11 +25,15 @@ The difference covers access, permissions and file lifetime, not just invocation
 
 Use the natural-language request or CLI commands in the [README](../README.md). After installation, refresh as the interface requires, open a fresh chat, select the plugin and describe your need.
 
-For an upgrade, inspect the installed source, version and enabled copies before updating to the chosen ref. A pinned ref does not advance automatically. Preserve the previous installation and personal record directory, verify the new version, and keep only the intended copy enabled. The older v0.3.0 remains available without the new dynamic catalog.
+Ask to check for a newer release, upgrade to a selected formal version or return to the prior version. A check leaves installation unchanged. A pinned ref does not advance automatically. Keep the same plugin ID, `reflection-companion@reflection-companion`, and preserve the journal/preference directory outside the plugin cache.
+
+**Release 0.5.1** includes a Python 3.11+ helper with check, verified preparation, upgrade and receipt-based rollback. It backs up the existing plugin, uses the native CLI, checks actual installed bytes and unrelated settings, and attempts recovery once on failure. Native recovery requires the Git source available; a retained backup does not establish automatic offline restoration. Details and commands are in [installation updates](../plugins/reflection-companion/skills/reflection-companion/references/updates.md). Published 0.5.0 does not contain this helper; a reviewed current checkout or host-assisted installation is needed for that first transition.
+
+Report “installed” separately from “loaded in this chat”; follow the host's reload instructions and check a fresh invocation. For a recovery failure, keep its receipt and backup and resolve the named failure. Do not remove the whole marketplace or overwrite unrelated settings. See [maintenance and recovery](MAINTAINING.md).
 
 ## Claude Code: public Alpha package
 
-Download `reflection-companion-claude-code-0.5.0.zip`, check it against `SHA256SUMS.txt` on the same release, and extract into a chosen personal project. The resulting entry is `.claude/skills/reflection-companion/SKILL.md`; `.claude` is hidden. Inspect and preserve an existing copy before replacing it. No clone of the development repository is required.
+Download `reflection-companion-claude-code-0.5.1.zip`, check it against `SHA256SUMS.txt` on the same release, and extract into a chosen personal project. The resulting entry is `.claude/skills/reflection-companion/SKILL.md`; `.claude` is hidden. Inspect and preserve an existing copy before replacing it. No clone of the development repository is required.
 
 Start Claude Code in that project and enter:
 
@@ -39,10 +43,12 @@ Start Claude Code in that project and enter:
 
 If the Skill is missing or has an old description, check the path and reopen the project session. Core conversation needs no Python; local state and the catalog helper require Python 3.10+. Saving/correction must return actual locations and readback. Installation grants no additional history access.
 
+For an update, preserve the exact existing Skill folder outside `.claude/skills`, verify the selected replacement ZIP, and replace that folder without overlaying obsolete files. Retain the old folder for rollback and keep project journals/state in place. This is a standalone Skill distribution; Claude plugin-marketplace auto-update settings apply only to plugins installed through that other channel. See [Claude's plugin update documentation](https://code.claude.com/docs/en/discover-plugins#keep-plugins-updated).
+
 ## Claude web: install, begin and download a record
 
-1. Download `reflection-companion-claude-web-0.5.0.zip` from the release and check `SHA256SUMS.txt`. Do not extract it or upload the whole Codex distribution.
-2. Open Customize → Skills in Claude, add the ZIP and confirm that `reflection-companion` is enabled with 29 files in Contents. The account needs Skills and the required file/code-execution capabilities; check official account requirements if the entry is absent.
+1. Download `reflection-companion-claude-web-0.5.1.zip` from the release and check `SHA256SUMS.txt`. Do not extract it or upload the whole Codex distribution.
+2. Open Customize → Skills in Claude, add the ZIP and confirm that `reflection-companion` is enabled with 31 files in Contents. The account needs Skills and the required file/code-execution capabilities; check official account requirements if the entry is absent.
 3. Start a new chat: “Use Reflection Companion to help me write a diary about one small event today, one question at a time. Do not save yet.” Start with your material; no long prompt needs memorizing.
 4. Correct an interpretation by supplying facts or saying it does not fit. For a file, ask: “Export the corrected entry as a downloadable **Markdown** file; do not add it to a learning store.”
 5. Click **Download** on the reply's file card, save to a chosen folder and open it to check. Supply that file again when you want to continue in another conversation.
@@ -56,6 +62,8 @@ The screenshot below is a real check using explicitly fictional Chinese material
 ![Fictional Chinese diary check with a corrected explanation and Download button](images/claude-web-export.jpg)
 
 You still need to download an export; a container path is not a file on your computer. Installing the Skill does not enable permanent cross-chat records or schedules. For exploration, ask for two newer methods with dates and attribution and begin one here. Catalog refresh depends on the current account's network capabilities; this does not establish online access for every environment.
+
+To update the custom Skill, retain the old ZIP and use the account's current Skills UI to update the existing item, then verify its contents and a fresh chat. If replacement is unavailable, use the offered workflow and keep only the chosen copy enabled. Rollback uses the retained old ZIP. A prepared local ZIP is not a completed upload; chats, diary downloads and cloud files are separate. See [custom Skill guidance](https://support.claude.com/en/articles/12512198-how-to-create-custom-skills).
 
 ## Verification boundaries
 
@@ -93,4 +101,4 @@ The temporary web authentication error has cleared. With only that general accou
 
 Permanent web continuity, unattended delivery and every account/model combination remain untested. A temporary web container is not a permanent learning store; supply downloaded files again to continue in another chat. Scheduling belongs to the host, and installing a Skill does not start a scheduling service. Catalog fallback has script tests; the earlier web run succeeded online without a forced outage.
 
-The public main branch guide evolves with verification; each archive retains its packaging-time record. Old assets and tags remain unchanged: rc.2 shipped the language fix, 0.4.0 shipped the saving rules and onboarding updates, and 0.5.0 adds the five-period artifact contracts, bilingual templates, examples and output preferences described above.
+The public main branch guide evolves with verification; each archive retains its packaging-time record. Old assets and tags remain unchanged. rc.2 shipped the language fix, 0.4.0 the saving/onboarding rules, and 0.5.0 the five-period specifications and configurable output. 0.5.1 adds the installation lifecycle helper and host-specific update/recovery guidance.

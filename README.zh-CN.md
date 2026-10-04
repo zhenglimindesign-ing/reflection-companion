@@ -8,7 +8,7 @@ Reflection Companion 是一个 AI 反思伙伴。它把你已经留下的经历�
 
 你可以用它写日记、做周回顾、复盘一段经历；也可以让它从一段时间的材料里寻找可能反复出现的模式或盲点，陪你重新理解一个问题，或者尝试新的自我探索方式。
 
-**Public Alpha · v0.5.0**
+**Public Alpha · v0.5.1**
 
 目前提供 Codex、Claude Code 和 Claude 网页版。
 
@@ -178,7 +178,7 @@ Reflection Companion 可以根据当前问题，带入相关的概念、经验�
 
 ## 5. 安装并开始
 
-当前公开版本为 **v0.5.0 Public Alpha**。
+当前公开版本为 **v0.5.1 Public Alpha**。
 
 支持：
 
@@ -188,7 +188,7 @@ Reflection Companion 可以根据当前问题，带入相关的概念、经验�
 
 从这里选择对应平台：
 
-[查看 v0.5.0 Release](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.5.0)
+[查看 v0.5.1 Release](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.5.1)
 
 详细安装、版本范围和已验证能力：
 

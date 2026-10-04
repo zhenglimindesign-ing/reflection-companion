@@ -8,7 +8,7 @@ Reflection Companion is an AI companion for reflection. It turns experiences, co
 
 Use it for a diary, a weekly review, or a period or project retrospective. It can also compare material over time to surface possible recurring patterns or blind spots, help you reconsider a question, or introduce a new way to explore yourself.
 
-**Public Alpha · v0.5.0**
+**Public Alpha · v0.5.1**
 
 Available for Codex, Claude Code, and Claude web.
 
@@ -180,7 +180,7 @@ These structures are adjustable starting points, not fixed forms. You can keep m
 
 ## 5. Install and start
 
-The current public release is **v0.5.0 Public Alpha**.
+The current public release is **v0.5.1 Public Alpha**.
 
 Available for:
 
@@ -190,7 +190,7 @@ Available for:
 
 Choose the package for your platform:
 
-[View the v0.5.0 release](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.5.0)
+[View the v0.5.1 release](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.5.1)
 
 For installation details, compatibility, and what has actually been verified:
 

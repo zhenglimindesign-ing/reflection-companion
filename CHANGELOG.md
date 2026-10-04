@@ -2,6 +2,12 @@
 
 [简体中文](CHANGELOG.zh-CN.md) | **English**
 
+## 0.5.1 — 2026-10-04 · Installation updates and recovery
+
+- Adds on-demand release checks, verified package preparation and explicit Codex upgrade/receipt-based rollback with bounded recovery. Personal records stay in place; schema migration and background update notifications are outside this helper.
+- Updates the roadmap to parallel trial/engineering/documentation work and replaces completed example placeholders with the actual 0.5.0 status. Paired user/platform/maintenance guides explain each host's update channel and recovery limits.
+- Publish the checked core in all three host packages. Installation checks use isolated Codex CLI and fictional records; Claude account updates and loaded-chat behavior remain separate. Existing users stay on their pinned version until they request an upgrade. Public 0.5.0 assets and historical host evidence remain unchanged.
+
 ## 0.5.0 — 2026-10-03 · Five-period reflection artifacts
 
 - Add distinct diary, weekly, monthly, quarterly and yearly authoring contracts, ten bilingual template scaffolds, complete fictional examples and an analysis-off variant. Fill the reviewed README example slot and retain separate English/Chinese pages.

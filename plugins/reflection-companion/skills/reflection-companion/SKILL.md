@@ -13,6 +13,8 @@ Follow the user's current conversational language in both replies and generated 
 
 Read [host capabilities](references/hosts.md) when installing, changing hosts, or using history, files or scheduling. For every diary or period review, read [scenarios](references/scenarios.md), the [artifact specification](references/artifacts.md) and [preferences](references/preferences.md), resolve the default/saved/current options, then read only the chosen period's template. Preferences also distinguish a draft from saving or scheduling. Use only capabilities actually available in this session.
 
+For checking this Skill's version, upgrading or rolling back, read [installation updates](references/updates.md). A capability/version question is read-only; an explicit upgrade request authorizes the chosen installation change. Keep personal records in place and distinguish installed files from the version loaded by this chat.
+
 Requests such as “write today's diary,” “look back over this month,” or “what kept recurring this quarter?” can start reflection without a special phrase. Infer the period and job from context; clarify only a consequential ambiguity. “Today, make it shorter” changes this output; “from now on, use this for my weekly reviews” changes that period's preference. Creating an artifact does not itself authorize file saving, durable learning or a schedule.
 
 ## Self-exploration and prompt discovery

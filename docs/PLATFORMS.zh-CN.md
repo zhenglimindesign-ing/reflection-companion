@@ -6,7 +6,7 @@
 
 第一次安装和开始对话的基本步骤已放在 README。本页提供各平台的安装细节、截图、升级说明和有日期的验证记录；需要解决具体平台问题时再查阅。
 
-当前公开 Alpha **v0.5.0** 提供 Codex 插件、Claude Code 项目 Skill 和 Claude 网页版 Skill。[下载对应平台包](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.5.0)。三个入口共用同一份核心，安装包按宿主区分。
+当前公开 Alpha **v0.5.1** 提供 Codex 插件、Claude Code 项目 Skill 和 Claude 网页版 Skill。[下载对应平台包](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.5.1)。三个入口共用同一份核心，安装包按宿主区分。
 
 ## Claude Code 与 Claude 网页版区别
 
@@ -25,11 +25,15 @@
 
 自然语言安装请求与 CLI 命令见 [README](../README.zh-CN.md)。安装后按界面要求刷新，开新 chat，选择插件并直接描述需要。
 
-升级时先检查已安装的来源、版本与启用项，再更新到选定 ref；固定 ref 不会自动跳到新版本。保留旧版安装与个人记录目录，核对新版本后只启用需要的一份。v0.3.0 仍可选择，但不包含新的动态目录。
+可以直接要求检查新版、升级到指定正式版或退回上一版。检查不改变安装，固定 ref 不会自动跳到新版。保持同一个插件 ID `reflection-companion@reflection-companion`，日记和偏好目录保留在插件缓存之外。
+
+**0.5.1 发布版**增加 Python 3.11+ 助手，支持检查、校验后准备、升级和基于回执的回退。它备份已有插件，通过原生 CLI 安装，核对实际文件及无关设置；失败时尝试恢复一次。原生恢复需要 Git 来源可访问，保留备份不等于可以自动离线恢复。具体步骤见[安装更新规则](../plugins/reflection-companion/skills/reflection-companion/references/updates.md)。公开 0.5.0 不含这个助手；首次过渡需要经审查的当前 checkout，或由宿主协助安装。
+
+“文件已安装”和“当前 chat 已加载”分别说明，按宿主提示刷新并核对一次新会话调用。恢复受阻时保留回执及备份，处理具体失败；不要移除整个 marketplace 或覆盖无关设置。见[维护与恢复](MAINTAINING.zh-CN.md)。
 
 ## Claude Code：公开 Alpha 包
 
-下载 `reflection-companion-claude-code-0.5.0.zip`，使用同一发布页的 `SHA256SUMS.txt` 校验，在一个选定的个人项目中解压。应得到 `.claude/skills/reflection-companion/SKILL.md`；`.claude` 是隐藏目录。若该位置已有同名 Skill，先核对并保留旧版，不要直接覆盖。无需 clone 产品开发仓库。
+下载 `reflection-companion-claude-code-0.5.1.zip`，使用同一发布页的 `SHA256SUMS.txt` 校验，在一个选定的个人项目中解压。应得到 `.claude/skills/reflection-companion/SKILL.md`；`.claude` 是隐藏目录。若该位置已有同名 Skill，先核对并保留旧版，不要直接覆盖。无需 clone 产品开发仓库。
 
 从该项目启动 Claude Code，输入：
 
@@ -39,10 +43,12 @@
 
 没有出现 Skill 或仍显示旧描述时，先检查路径，再重新进入项目会话。核心对话不需要 Python；本地收获库及目录读取助手需要 Python 3.10+。保存和修改应返回真实记录位置与读回结果。历史权限不因安装而扩大。
 
+更新时，把准确选定的原 Skill 目录保留到 `.claude/skills` 之外，校验新 ZIP 后替换整个 Skill 目录，避免叠加解压留下旧文件。旧目录用于回退，项目里的日记和状态保留原位。这是独立 Skill 分发；Claude 插件 marketplace 的自动更新设置适用于从那个渠道安装的插件。参见 [Claude 插件更新说明](https://code.claude.com/docs/en/discover-plugins#keep-plugins-updated)。
+
 ## Claude 网页版：安装、开始与下载记录
 
-1. 从发布页下载 `reflection-companion-claude-web-0.5.0.zip`，用 `SHA256SUMS.txt` 核对。无需解压，也不要上传整个 Codex 分发包。
-2. 打开 Claude 的 Customize → Skills，添加并上传这个 ZIP。安装后确认 `reflection-companion` 已启用，Contents 中有 29 个文件。账号需要提供 Skills 和所需文件/代码执行能力；找不到入口时按官方说明核对账户设置。
+1. 从发布页下载 `reflection-companion-claude-web-0.5.1.zip`，用 `SHA256SUMS.txt` 核对。无需解压，也不要上传整个 Codex 分发包。
+2. 打开 Claude 的 Customize → Skills，添加并上传这个 ZIP。安装后确认 `reflection-companion` 已启用，Contents 中有 31 个文件。账号需要提供 Skills 和所需文件/代码执行能力；找不到入口时按官方说明核对账户设置。
 3. 开一个新对话，直接说：“用 Reflection Companion，帮我从今天的一件小事写日记，一次问一个问题；先不保存。”它应使用你的材料开始，而不是要求记住整套提示词。
 4. 如果解释不准确，补充事实或说“这个理解不对”。需要文件时说：“把修正后的内容导出为可下载的 **Markdown**，不要另存到收获库。”
 5. 点击回复中文件卡片的 **Download**，保存到自己选择的目录，再打开核对。下一次想继续时，可以重新提供这份文件。
@@ -56,6 +62,8 @@
 ![虚构日记实测：中文正文、事实修正和 Download 入口](images/claude-web-export.jpg)
 
 导出文件仍需要你下载；容器里的路径不等于电脑上的存档。上传 Skill 不会开启跨聊天永久记录或定时任务。想试探索可以直接说：“给我两个新一点的自我探索方法，注明来源和日期，选一个就在这里开始。”目录刷新取决于当前账户的网络能力，不能据此承诺所有环境都能联网。
+
+更新自定义 Skill 时保留旧 ZIP，通过当前账户的 Skills 界面更新已有项目，再核对内容并试一次新 chat。若当前界面不提供替换，就按实际可用流程处理，并只启用选定副本。回退时使用保留的旧 ZIP。本地准备好文件不代表已上传成功；聊天、下载日记和云端文件另行保留。参见[自定义 Skill 指南](https://support.claude.com/en/articles/12512198-how-to-create-custom-skills)。
 
 ## 兼容性边界
 
@@ -93,4 +101,4 @@ Claude 网页版在一个账户中完成上传启用、实际 Skill 读取、日
 
 未验证网页版跨聊天永久保存、无人值守定时或所有账户/模型组合。网页临时容器不是永久收获库；跨 chat 可以重新提供下载文件。定时由宿主负责，Skill 安装本身不会创建定时服务。目录失败回退有脚本测试；此前网页联网成功，未强制制造断网。
 
-公开仓库 main 中的指南随验证更新；每个发布包保留打包时的记录。旧版本的包和标签不变：语言修复于 rc.2 发布，保存规则和入门文档于 0.4.0 发布，0.5.0 则增加上文所述的五周期产出约定、双语模板／示例和输出偏好。
+公开仓库 main 中的指南随验证更新；每个发布包保留打包时的记录。旧版本的包和标签不变。rc.2 发布语言修复，0.4.0 发布保存及入门规则，0.5.0 发布五周期规范与输出配置。0.5.1 增加安装生命周期助手及各宿主的更新／恢复指导。
