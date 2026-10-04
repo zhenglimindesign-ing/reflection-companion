@@ -8,6 +8,8 @@
 
 通过[公开 Issue](https://github.com/zhenglimindesign-ing/reflection-companion/issues/new/choose)说明版本、尝试的场景、预期与实际结果。可以使用虚构小例子，不需要私人聊天。插件不自动收集遥测或对话。个人回答和个人收获库不会成为公共内容源。
 
+[贡献指南](../CONTRIBUTING.zh-CN.md)说明贡献范围、候选验证、归因，以及公开 PR 如何回收开发源再重新生成。维护者按能力安排审阅，提案不会自动成为官方行为。
+
 ## 两类内容怎样更新
 
 基础库为 Skill 中的 `references/prompt-library.json`，公共 PROMPTS 文档由它生成。基础方法或 Skill 行为改变时，发布新的插件版本。

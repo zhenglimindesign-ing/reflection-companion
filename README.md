@@ -273,4 +273,6 @@ If you try it, the most useful feedback is not simply whether you liked it.
 
 [Share feedback or report an issue](https://github.com/zhenglimindesign-ing/reflection-companion/issues/new/choose)
 
+[Contribute an improvement](CONTRIBUTING.md) — documentation, translations, fictional failure cases, and installation reports are welcome. The guide explains proposals, review, and contribution credit.
+
 MIT License.

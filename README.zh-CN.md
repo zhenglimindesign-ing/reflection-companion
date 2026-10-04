@@ -271,4 +271,6 @@ Reflection Companion 有一组随 Skill 提供的基础探索方式，也可以�
 
 [提交反馈或问题](https://github.com/zhenglimindesign-ing/reflection-companion/issues/new/choose)
 
+[参与改进](CONTRIBUTING.zh-CN.md) — 欢迎文档、翻译、虚构失败案例和安装记录；指南说明如何提案、验收和记录贡献。
+
 MIT License.

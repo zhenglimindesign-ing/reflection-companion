@@ -9,7 +9,7 @@ body:
     id: version
     attributes:
       label: Version and host / 版本与宿主
-      placeholder: "0.4.0-rc.2, Claude web / Codex on macOS"
+      placeholder: "Skill version; host and app/model version if available / Skill 版本；宿主及可获取的应用／模型版本"
     validations:
       required: true
   - type: dropdown
@@ -37,3 +37,17 @@ body:
       description: "Helpful, inaccurate, repetitive, blocked, or a suggestion. 有用、不准确、重复、无法使用或改进建议。"
     validations:
       required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Fictional reproduction or steps / 虚构复现或步骤
+      description: "Optional: minimal fictional input, relevant correction, or installation steps. Leave unavailable evidence blank; never paste private records. 可选：最小虚构输入、相关纠正或安装步骤。证据缺失可留空，不粘贴私人记录。"
+    validations:
+      required: false
+  - type: textarea
+    id: checks
+    attributes:
+      label: Checks and remaining gaps / 已做检查和剩余缺口
+      description: "Optional: what you checked, observed results, and what remains unverified. 可选：做过什么检查、观察结果，以及哪些内容尚未验证。"
+    validations:
+      required: false

@@ -1,1 +1,5 @@
 blank_issues_enabled: true
+contact_links:
+  - name: Contribution guide / 贡献指南
+    url: https://github.com/zhenglimindesign-ing/reflection-companion/blob/main/CONTRIBUTING.md
+    about: Read accepted scopes and proposal steps / 查看贡献范围和提案步骤

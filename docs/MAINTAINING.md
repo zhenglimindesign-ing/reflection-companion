@@ -8,6 +8,8 @@
 
 Use [public Issues](https://github.com/zhenglimindesign-ing/reflection-companion/issues/new/choose) to report version, scenario, expectation and actual behavior. Fictional reproductions are welcome; private chats are unnecessary. The plugin does not collect telemetry or transcripts. Personal answers and records are never a public content source.
 
+The [contribution guide](../CONTRIBUTING.md) explains accepted scopes, candidate checks, attribution, and how public PRs enter the development source before regeneration. Review happens as maintainer capacity allows; proposals do not automatically become official behavior.
+
 ## Two content update paths
 
 The base library lives in the Skill's `references/prompt-library.json`; public PROMPTS documents are generated from it. Changes to durable methods or Skill behavior ship in a new plugin version.
