@@ -150,9 +150,9 @@ Scheduling is opt-in. You choose the scope, timing, and saving behavior.
 
 Installing Reflection Companion **does not create schedules automatically**. Support for scheduled execution, source access, and unattended delivery varies by host; see the platform documentation for the verified scope.
 
-## 4. A review you can revisit
+## 4. Different time scales, different kinds of reflection
 
-A day preserves lived scenes. Longer reviews connect evidence across time, while leaving room for contradictions and unfinished experience.
+**A day, week, month, quarter and year should not be the same summary stretched across different dates.** As the time span changes, so does what a useful reflection needs to notice and connect: a diary stays close to lived experience; longer reviews compare evidence over time, revisit judgments, and look for patterns together with their limits.
 
 | Period | What the review looks for |
 | --- | --- |
@@ -174,7 +174,7 @@ The following excerpts are authored from one fictional source set, not a real pe
 
 [Read all five completed examples and an analysis-off variant](plugins/reflection-companion/skills/reflection-companion/assets/examples/reviews.en.md).
 
-Choose faithful wording, edited prose or Long View reflection. You can adjust length, quotes and components, or turn off AI observation, experiments and questions. “This time” applies to one review; “from now on” requests a saved preference in an authorized store. [Choices and saving rules](docs/USER_GUIDE.md).
+These structures are adjustable starting points, not fixed forms. You can keep more of your original wording, ask for a more natural diary or review, or reduce analysis; AI observations and questions can also be turned off. See the [user guide](docs/USER_GUIDE.md) for detailed output choices and saving rules.
 
 ---
 
