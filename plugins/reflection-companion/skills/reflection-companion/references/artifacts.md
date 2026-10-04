@@ -1,6 +1,6 @@
 # Diary and period-review artifact specification
 
-Use for completed diaries or weekly, monthly, quarterly and yearly reviews, including requested exports and scheduled drafts. A light conversation need not become a document. Resolve output choices through [preferences](preferences.md); gathering, saving and recurrence follow [scenarios](scenarios.md).
+Use for completed diaries or weekly, monthly, quarterly and yearly reviews, including requested exports and scheduled drafts. A light conversation need not become a document. Resolve output choices through [preferences](preferences.md); gathering, saving and recurrence follow [scenarios](scenarios.md). Historical writing first requires the [source-readiness check](source-readiness.md); templates cannot cure missing sources.
 
 ## Selecting and writing material
 
@@ -43,6 +43,8 @@ These are editable defaults. The [options file](../assets/artifact-options.json)
 | Yearly | [年回顾](../assets/templates/yearly-review.zh-CN.md) | [Yearly](../assets/templates/yearly-review.en.md) |
 
 Use the user's language, translating labels for other languages. Authoring placeholders are not final text. Populate retained sections and delete omitted headings/placeholders; a requested blank template may retain them. [Chinese complete examples and configuration variant](../assets/examples/reviews.zh-CN.md), [English examples](../assets/examples/reviews.en.md), and their [fictional source notes](../assets/examples/fictional-notes.zh-CN.md) demonstrate selection and provenance without importing private user history.
+
+When the user is testing or checking templates, make the relationship inspectable: use visible headings for supported enabled components unless they ask for prose, or include a short external receipt mapping components to inline prose and explaining omissions. For ordinary daily prose, supported quotes/knowledge/moments may remain inline; this is a resolved layout choice, not permission to skip the daily writing task. A custom existing document container does not silently override the selected writing components. An omitted heading needs an actual disabled/unsupported/inline reason, not a generic claim that all templates are flexible. Never fill an empty component to make a template look complete, and never add disabled observation or questions for demonstration. Track each requested period separately rather than showing a daily example in place of a weekly or monthly output.
 
 ## Daily writing
 

@@ -43,8 +43,8 @@ Use an explicit Codex home when needed. Do not copy another user's paths.
 ```sh
 python3 /absolute/skill/scripts/updates.py inspect
 python3 /absolute/skill/scripts/updates.py check
-python3 /absolute/skill/scripts/updates.py prepare --version 0.5.1 --out /chosen/new/staging
-python3 /absolute/skill/scripts/updates.py upgrade --package /chosen/new/staging/reflection-companion-0.5.1 --out /chosen/new/recovery
+python3 /absolute/skill/scripts/updates.py prepare --version 0.5.2 --out /chosen/new/staging
+python3 /absolute/skill/scripts/updates.py upgrade --package /chosen/new/staging/reflection-companion-0.5.2 --out /chosen/new/recovery
 ```
 
 The version is illustrative: use the release actually checked and chosen. `check`

@@ -8,7 +8,7 @@ Reflection Companion is an AI companion for reflection. It turns experiences, co
 
 Use it for a diary, a weekly review, or a period or project retrospective. It can also compare material over time to surface possible recurring patterns or blind spots, help you reconsider a question, or introduce a new way to explore yourself.
 
-**Public Alpha · v0.5.1**
+**Public Alpha · v0.5.2**
 
 Available for Codex, Claude Code, and Claude web.
 
@@ -180,7 +180,7 @@ These structures are adjustable starting points, not fixed forms. You can keep m
 
 ## 5. Install and start
 
-The current public release is **v0.5.1 Public Alpha**.
+The current public release is **v0.5.2 Public Alpha**.
 
 Available for:
 
@@ -190,7 +190,7 @@ Available for:
 
 Choose the package for your platform:
 
-[View the v0.5.1 release](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.5.1)
+[View the v0.5.2 release](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.5.2)
 
 For installation details, compatibility, and what has actually been verified:
 
@@ -208,6 +208,14 @@ or:
 
 ---
 
+### 5.1 Model and reasoning starting point
+
+Use your host's current general-purpose model at its default reasoning effort. In Codex, **GPT-6.1 Sol** is a starting option when available in your model menu. For Claude, use an available general-purpose model; the Skill does not require a particular vendor or model.
+
+A short diary from a few notes is a useful first trial. For a review spanning many sources or months, try **high** effort if the model drops earlier evidence, misses corrections or confuses statements with interpretation after the source coverage is checked. This is a practical starting guideline, not a benchmark ranking or a requirement to use the highest setting.
+
+Higher effort takes longer and uses more tokens; it cannot recover history the host cannot access. First check sources and the written result, then adjust effort. The assistant should not change your model or settings merely because this README recommends a starting point. See [OpenAI's model and reasoning guidance](https://developers.openai.com/codex/models).
+
 ## 6. Sources, saving, and boundaries
 
 Reflection Companion can only use material the current platform can **actually access**, plus material you choose to provide or authorize.
@@ -220,6 +228,10 @@ Installing the Skill does **not**:
 - or add your private answers to the public exploration catalog.
 
 History, file access, and continuity differ across hosts. When a reflection depends on previous material, the Companion should say what it actually covered rather than pretending it read a complete archive.
+
+For a request to backfill a whole period, it should check discovery and source-text coverage, attempt supported retrieval repairs, and report any remaining gap before calling the archive complete. A recent list or an exhausted cursor alone does not prove full history. Existing records are baselines; new outputs should have their own verified links. If you ask for comparison copies, originals remain unchanged.
+
+Personal diaries, quotations and source indexes belong in your chosen private destination. A product repository's output or scratch folder is not a default personal archive, even when the repository is private. The Companion should finish the authorized writing, saving and readback work, then tell you what remains or that no further action is needed.
 
 Its interpretations are not final either.
 

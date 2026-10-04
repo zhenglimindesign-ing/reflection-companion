@@ -2,6 +2,13 @@
 
 [简体中文](CHANGELOG.zh-CN.md) | **English**
 
+## 0.5.2 — 2026-10-04 · Source coverage and archive delivery
+
+- Check source discovery and text coverage before full historical backfill; use supported retrieval repairs and keep unresolved account completeness explicit. The read-only readiness helper validates declared coverage, not whether the host actually retrieved every message.
+- Recover accepted archive conventions and later user corrections, preserve original documents for comparison, and separate low-interpretation user writing from selected AI material. Keep personal drafts, quotes, source indexes and receipts outside product repositories.
+- Carry authorized writing, saving and readback through the requested package. Make template use inspectable when requested and close with concrete remaining work, or state that none is required; an explicit body-only request still controls.
+- Add conditional model/effort starting guidance without changing host settings. Retain all ten existing template scaffolds; installation updates retain the 0.5.1 helper and do not migrate personal data.
+
 ## 0.5.1 — 2026-10-04 · Installation updates and recovery
 
 - Adds on-demand release checks, verified package preparation and explicit Codex upgrade/receipt-based rollback with bounded recovery. Personal records stay in place; schema migration and background update notifications are outside this helper.

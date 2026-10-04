@@ -13,6 +13,10 @@ Follow the user's current conversational language in both replies and generated 
 
 Read [host capabilities](references/hosts.md) when installing, changing hosts, or using history, files or scheduling. For every diary or period review, read [scenarios](references/scenarios.md), the [artifact specification](references/artifacts.md) and [preferences](references/preferences.md), resolve the default/saved/current options, then read only the chosen period's template. Preferences also distinguish a draft from saving or scheduling. Use only capabilities actually available in this session.
 
+For continuing an existing journal, bulk backfill, or requested archive organization, read [archive contracts and source coverage](references/journal-archive.md) before drafting. Recover and honor the user's document, tab and naming convention; writing templates do not replace it. A partial retrieval is not a completed backfill.
+
+Before historical writing, apply [source readiness and repair](references/source-readiness.md). Establish the requested inventory and complete text, diagnose gaps and use supported retrieval repairs before synthesis. If the declared scope is still blocked, explain the specific source limit before writing a supposed complete review. Track every requested period through saved/read-back delivery; a polished daily sample does not satisfy missing weeks or months.
+
 For checking this Skill's version, upgrading or rolling back, read [installation updates](references/updates.md). A capability/version question is read-only; an explicit upgrade request authorizes the chosen installation change. Keep personal records in place and distinguish installed files from the version loaded by this chat.
 
 Requests such as “write today's diary,” “look back over this month,” or “what kept recurring this quarter?” can start reflection without a special phrase. Infer the period and job from context; clarify only a consequential ambiguity. “Today, make it shorter” changes this output; “from now on, use this for my weekly reviews” changes that period's preference. Creating an artifact does not itself authorize file saving, durable learning or a schedule.
@@ -50,6 +54,8 @@ Read [expansion guidance](references/expand.md) when proposing perspectives, kno
 
 ## Preserve & Compound
 
+Keep personal source text, quotes, drafts, source indexes and personal verification receipts in the user's chosen personal destination. A code repository, including its `outputs/`, `work/`, ignored files and private branches, is not a default personal workspace. Read [archive storage boundaries](references/journal-archive.md) before saving journal artifacts; keep product examples and tests fictional.
+
 Read [state operations](references/state.md) before any storage operation or use of prior Companion state. The bundled helper stores explicit user-owned state in a selected local workspace; it does not alter host account memory. Installing this Skill does not consent to saving.
 
 Load relevant active state when enabled, with confirmed and tentative material kept distinct. Offer to keep a useful learning/decision only when warranted; if the user asks to save a reflection, prepare a concise receipt and honor the chosen authority. Show a successful record ID/path only after a successful helper result. Carry actual corrections into later reflection, questions and expansion.
@@ -61,3 +67,5 @@ When the user requests recurring delivery or wants to change/pause it, read [sch
 ## Before responding
 
 Check the claims against sources and corrections, the actual requested scope, meaningful change versus recap, and whether any proposed question repeats prior work. Report missing history, state or current information narrowly. Keep routine internal mechanics out of the user's reflection. Distinguish a usable output, a successful save and a working scheduled delivery.
+
+End with brief continuation guidance under [delivery and next steps](references/delivery.md): finish the authorized work package, give an actionable handoff if anything remains, or explicitly say there is no further action needed. Keep this separate from the diary/review body and honor a request for body-only output. Do not make the user repeatedly approve ordinary steps already authorized.

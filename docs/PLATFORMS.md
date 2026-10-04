@@ -6,7 +6,7 @@
 
 Basic installation and a first conversation are covered in the README. This page provides host-specific details, screenshots, update instructions and dated verification records for questions about a particular platform.
 
-Public Alpha **v0.5.1** provides the Codex plugin, Claude Code project Skill and Claude web Skill. [Download your platform package](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.5.1). All three share one core, with packaging for each host.
+Public Alpha **v0.5.2** provides the Codex plugin, Claude Code project Skill and Claude web Skill. [Download your platform package](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.5.2). All three share one core, with packaging for each host.
 
 ## Claude Code versus Claude web
 
@@ -33,7 +33,7 @@ Report “installed” separately from “loaded in this chat”; follow the hos
 
 ## Claude Code: public Alpha package
 
-Download `reflection-companion-claude-code-0.5.1.zip`, check it against `SHA256SUMS.txt` on the same release, and extract into a chosen personal project. The resulting entry is `.claude/skills/reflection-companion/SKILL.md`; `.claude` is hidden. Inspect and preserve an existing copy before replacing it. No clone of the development repository is required.
+Download `reflection-companion-claude-code-0.5.2.zip`, check it against `SHA256SUMS.txt` on the same release, and extract into a chosen personal project. The resulting entry is `.claude/skills/reflection-companion/SKILL.md`; `.claude` is hidden. Inspect and preserve an existing copy before replacing it. No clone of the development repository is required.
 
 Start Claude Code in that project and enter:
 
@@ -47,8 +47,8 @@ For an update, preserve the exact existing Skill folder outside `.claude/skills`
 
 ## Claude web: install, begin and download a record
 
-1. Download `reflection-companion-claude-web-0.5.1.zip` from the release and check `SHA256SUMS.txt`. Do not extract it or upload the whole Codex distribution.
-2. Open Customize → Skills in Claude, add the ZIP and confirm that `reflection-companion` is enabled with 31 files in Contents. The account needs Skills and the required file/code-execution capabilities; check official account requirements if the entry is absent.
+1. Download `reflection-companion-claude-web-0.5.2.zip` from the release and check `SHA256SUMS.txt`. Do not extract it or upload the whole Codex distribution.
+2. Open Customize → Skills in Claude, add the ZIP and confirm that `reflection-companion` is enabled with 35 files in Contents. The account needs Skills and the required file/code-execution capabilities; check official account requirements if the entry is absent.
 3. Start a new chat: “Use Reflection Companion to help me write a diary about one small event today, one question at a time. Do not save yet.” Start with your material; no long prompt needs memorizing.
 4. Correct an interpretation by supplying facts or saying it does not fit. For a file, ask: “Export the corrected entry as a downloadable **Markdown** file; do not add it to a learning store.”
 5. Click **Download** on the reply's file card, save to a chosen folder and open it to check. Supply that file again when you want to continue in another conversation.
