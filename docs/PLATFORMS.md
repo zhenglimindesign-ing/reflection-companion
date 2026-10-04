@@ -93,4 +93,4 @@ The temporary web authentication error has cleared. With only that general accou
 
 Permanent web continuity, unattended delivery and every account/model combination remain untested. A temporary web container is not a permanent learning store; supply downloaded files again to continue in another chat. Scheduling belongs to the host, and installing a Skill does not start a scheduling service. Catalog fallback has script tests; the earlier web run succeeded online without a forced outage.
 
-The public main branch guide evolves with verification; each archive retains its packaging-time record. Old assets and tags remain unchanged; rc.2 shipped the language fix, while 0.4.0 ships the saving rules and onboarding updates.
+The public main branch guide evolves with verification; each archive retains its packaging-time record. Old assets and tags remain unchanged: rc.2 shipped the language fix, 0.4.0 shipped the saving rules and onboarding updates, and 0.5.0 adds the five-period artifact contracts, bilingual templates, examples and output preferences described above.
