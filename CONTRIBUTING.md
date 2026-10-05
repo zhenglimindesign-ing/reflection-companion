@@ -20,6 +20,8 @@ Use [the feedback form](https://github.com/zhenglimindesign-ing/reflection-compa
 
 Issues and PRs are public. Use fictional material; do not upload private chats, diaries, personal records, credentials, or identifiable third-party information. Describe unavailable evidence as unavailable. Do not turn a synthetic example into a user testimonial.
 
+A blocked installation is useful evidence too: identify the last step reached, the exact version and route, and any command output you can safely share. Say when logs or a first invocation are unavailable. Maintainer reproductions are recorded separately from contributor reports; a documentation correction does not turn a blocked attempt into a successful host check.
+
 ## Submit a focused PR
 
 1. Read the relevant guide and existing Issues. Choose an unclaimed task labeled `good first issue` or `help wanted`, or open an Issue for your proposal. Mention the Issue when starting so work can be coordinated.

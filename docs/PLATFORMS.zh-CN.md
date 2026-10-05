@@ -6,7 +6,7 @@
 
 第一次安装和开始对话的基本步骤已放在 README。本页提供各平台的安装细节、截图、升级说明和有日期的验证记录；需要解决具体平台问题时再查阅。
 
-当前公开 Alpha **v0.5.2** 提供 Codex 插件、Claude Code 项目 Skill 和 Claude 网页版 Skill。[下载对应平台包](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.5.2)。三个入口共用同一份核心，安装包按宿主区分。
+当前公开 Alpha **v0.5.3** 提供 Codex 插件、Claude Code 项目 Skill 和 Claude 网页版 Skill。[下载对应平台包](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.5.3)。三个入口共用同一份核心，安装包按宿主区分。
 
 ## Claude Code 与 Claude 网页版区别
 
@@ -23,7 +23,27 @@
 
 ## Codex：当前公开版
 
-自然语言安装请求与 CLI 命令见 [README](../README.zh-CN.md)。安装后按界面要求刷新，开新 chat，选择插件并直接描述需要。
+### 首次安装
+
+[README](../README.zh-CN.md) 给出了固定在 v0.5.3 的 Git marketplace 安装路径。先登记 marketplace，再运行 `codex plugin add`；安装命令需要 `reflection-companion@reflection-companion`，同时指定插件和 marketplace。参见 [OpenAI 的 marketplace 来源说明](https://developers.openai.com/plugins/build/plugins#build-your-own-curated-plugin-list)。
+
+也可以从发布页下载 `reflection-companion-0.5.3.zip`，对照同一发布页的 `SHA256SUMS.txt` 校验摘要，再把完整包解压到一个稳定的本地目录。marketplace 根目录是解压后的 `reflection-companion-0.5.3` 文件夹，其中包含 `.agents/plugins/marketplace.json` 和 `plugins/reflection-companion/`；**不是** ZIP 文件本身，也不是内层 Skill 文件夹。部分系统会隐藏 `.agents`。
+
+把下面的示例路径换成实际解压根目录：
+
+```sh
+codex plugin marketplace add /path/to/reflection-companion-0.5.3
+codex plugin add reflection-companion@reflection-companion
+codex plugin list --marketplace reflection-companion --json
+```
+
+首次安装选择一种来源路径即可；本地来源需保留，供后续刷新使用。列表应显示已安装、已启用且版本为 `0.5.3` 的项目。若当前 CLI 缺少这些子命令，记录 `codex --version` 和 `codex plugin --help` 的结果；这些步骤本身不构成 Linux 支持验证。
+
+安装后按界面要求刷新，用 `codex` 开新 CLI 会话，或在桌面端开已启用 Reflection Companion 的新 chat，用虚构请求试调用：“陪我写一篇想象中的散步日记，一次问一个问题；先不保存。”核对当前 chat 实际能使用这个 Skill。安装和列出命令成功，不能单独证明首次调用成功。
+
+### 已有安装与更新
+
+若已登记 `reflection-companion`，先核对现有安装，按下方更新流程处理，不要用首次安装命令替换已有来源。
 
 可以直接要求检查新版、升级到指定正式版或退回上一版。检查不改变安装，固定 ref 不会自动跳到新版。保持同一个插件 ID `reflection-companion@reflection-companion`，日记和偏好目录保留在插件缓存之外。
 
@@ -33,7 +53,7 @@
 
 ## Claude Code：公开 Alpha 包
 
-下载 `reflection-companion-claude-code-0.5.2.zip`，使用同一发布页的 `SHA256SUMS.txt` 校验，在一个选定的个人项目中解压。应得到 `.claude/skills/reflection-companion/SKILL.md`；`.claude` 是隐藏目录。若该位置已有同名 Skill，先核对并保留旧版，不要直接覆盖。无需 clone 产品开发仓库。
+下载 `reflection-companion-claude-code-0.5.3.zip`，使用同一发布页的 `SHA256SUMS.txt` 校验，在一个选定的个人项目中解压。应得到 `.claude/skills/reflection-companion/SKILL.md`；`.claude` 是隐藏目录。若该位置已有同名 Skill，先核对并保留旧版，不要直接覆盖。无需 clone 产品开发仓库。
 
 从该项目启动 Claude Code，输入：
 
@@ -47,7 +67,7 @@
 
 ## Claude 网页版：安装、开始与下载记录
 
-1. 从发布页下载 `reflection-companion-claude-web-0.5.2.zip`，用 `SHA256SUMS.txt` 核对。无需解压，也不要上传整个 Codex 分发包。
+1. 从发布页下载 `reflection-companion-claude-web-0.5.3.zip`，用 `SHA256SUMS.txt` 核对。无需解压，也不要上传整个 Codex 分发包。
 2. 打开 Claude 的 Customize → Skills，添加并上传这个 ZIP。安装后确认 `reflection-companion` 已启用，Contents 中有 35 个文件。账号需要提供 Skills 和所需文件/代码执行能力；找不到入口时按官方说明核对账户设置。
 3. 开一个新对话，直接说：“用 Reflection Companion，帮我从今天的一件小事写日记，一次问一个问题；先不保存。”它应使用你的材料开始，而不是要求记住整套提示词。
 4. 如果解释不准确，补充事实或说“这个理解不对”。需要文件时说：“把修正后的内容导出为可下载的 **Markdown**，不要另存到收获库。”
@@ -102,3 +122,13 @@ Claude 网页版在一个账户中完成上传启用、实际 Skill 读取、日
 未验证网页版跨聊天永久保存、无人值守定时或所有账户/模型组合。网页临时容器不是永久收获库；跨 chat 可以重新提供下载文件。定时由宿主负责，Skill 安装本身不会创建定时服务。目录失败回退有脚本测试；此前网页联网成功，未强制制造断网。
 
 公开仓库 main 中的指南随验证更新；每个发布包保留打包时的记录。旧版本的包和标签不变。rc.2 发布语言修复，0.4.0 发布保存及入门规则，0.5.0 发布五周期规范与输出配置。0.5.1 增加安装生命周期助手及各宿主的更新／恢复指导。
+
+## 外部安装报告（2026-10-04）
+
+[Cid-oe 的 PR #4](https://github.com/zhenglimindesign-ing/reflection-companion/pull/4) 报告了一次 Linux 环境下的安装尝试，使用 Codex CLI 0.159.2 和 v0.5.0 Public Alpha ZIP。贡献者下载并解压了包，但 README 和平台说明没有给出 marketplace 登记命令、必要的安装路径／选择标识，因此在首次调用前受阻。
+
+这是贡献者报告的受阻尝试，没有附命令日志；它不是经核实的 Linux 安装成功记录，也不是通用兼容性结论。维护者另行检查了已发布的 v0.5.0 文档，确认其中缺少 CLI 安装命令。当前 main 文档已补上 Git 和解压 ZIP 两种路径；历史 v0.5.0 标签与安装包保持原内容。
+
+## 维护者安装检查（2026-10-05）
+
+在 macOS 和 Codex CLI 0.145.0 上，使用分别隔离的配置目录，对固定在 v0.5.3 的 Git 来源和已校验的 v0.5.3 ZIP 来源运行了 marketplace 登记、插件安装及列出命令。两种路径均返回已启用、版本为 0.5.3 的插件，实际安装文件与公开包逐字节一致。本次没有新增模型调用或 Linux 测试。

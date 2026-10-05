@@ -6,7 +6,7 @@
 
 Basic installation and a first conversation are covered in the README. This page provides host-specific details, screenshots, update instructions and dated verification records for questions about a particular platform.
 
-Public Alpha **v0.5.2** provides the Codex plugin, Claude Code project Skill and Claude web Skill. [Download your platform package](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.5.2). All three share one core, with packaging for each host.
+Public Alpha **v0.5.3** provides the Codex plugin, Claude Code project Skill and Claude web Skill. [Download your platform package](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.5.3). All three share one core, with packaging for each host.
 
 ## Claude Code versus Claude web
 
@@ -23,7 +23,27 @@ The difference covers access, permissions and file lifetime, not just invocation
 
 ## Codex: the public release
 
-Use the natural-language request or CLI commands in the [README](../README.md). After installation, refresh as the interface requires, open a fresh chat, select the plugin and describe your need.
+### First installation
+
+The [README](../README.md) shows the pinned Git marketplace route for v0.5.3. Run the marketplace registration before `codex plugin add`: the install command needs the selector `reflection-companion@reflection-companion`, identifying both the plugin and its marketplace. See [OpenAI's marketplace source documentation](https://developers.openai.com/plugins/build/plugins#build-your-own-curated-plugin-list).
+
+Alternatively, download `reflection-companion-0.5.3.zip` from the release and check its digest against that release's `SHA256SUMS.txt`. Extract the complete package into a stable local directory. The marketplace root is the extracted `reflection-companion-0.5.3` folder containing `.agents/plugins/marketplace.json` and `plugins/reflection-companion/`, **not** the ZIP itself or the inner Skill folder. `.agents` is hidden on some systems.
+
+Replace the example path below with that extracted root:
+
+```sh
+codex plugin marketplace add /path/to/reflection-companion-0.5.3
+codex plugin add reflection-companion@reflection-companion
+codex plugin list --marketplace reflection-companion --json
+```
+
+Choose one source route for the first installation; keep a local source available for later refreshes. The list should show an enabled, installed entry at version `0.5.3`. If your CLI lacks these subcommands, record `codex --version` and the result of `codex plugin --help`; no Linux-specific support claim follows from these instructions.
+
+After installation, refresh as the interface requires, start a fresh CLI session with `codex` or a new desktop chat with Reflection Companion enabled, and try a fictional request: “Help me write a diary about an imaginary walk, one question at a time; do not save.” Confirm that the Skill is actually available in that chat. A successful install/list command alone does not establish a successful invocation.
+
+### Existing installations and updates
+
+If `reflection-companion` is already registered, inspect the existing installation and follow the update procedure below instead of replacing its source with the first-install commands.
 
 Ask to check for a newer release, upgrade to a selected formal version or return to the prior version. A check leaves installation unchanged. A pinned ref does not advance automatically. Keep the same plugin ID, `reflection-companion@reflection-companion`, and preserve the journal/preference directory outside the plugin cache.
 
@@ -33,7 +53,7 @@ Report “installed” separately from “loaded in this chat”; follow the hos
 
 ## Claude Code: public Alpha package
 
-Download `reflection-companion-claude-code-0.5.2.zip`, check it against `SHA256SUMS.txt` on the same release, and extract into a chosen personal project. The resulting entry is `.claude/skills/reflection-companion/SKILL.md`; `.claude` is hidden. Inspect and preserve an existing copy before replacing it. No clone of the development repository is required.
+Download `reflection-companion-claude-code-0.5.3.zip`, check it against `SHA256SUMS.txt` on the same release, and extract into a chosen personal project. The resulting entry is `.claude/skills/reflection-companion/SKILL.md`; `.claude` is hidden. Inspect and preserve an existing copy before replacing it. No clone of the development repository is required.
 
 Start Claude Code in that project and enter:
 
@@ -47,7 +67,7 @@ For an update, preserve the exact existing Skill folder outside `.claude/skills`
 
 ## Claude web: install, begin and download a record
 
-1. Download `reflection-companion-claude-web-0.5.2.zip` from the release and check `SHA256SUMS.txt`. Do not extract it or upload the whole Codex distribution.
+1. Download `reflection-companion-claude-web-0.5.3.zip` from the release and check `SHA256SUMS.txt`. Do not extract it or upload the whole Codex distribution.
 2. Open Customize → Skills in Claude, add the ZIP and confirm that `reflection-companion` is enabled with 35 files in Contents. The account needs Skills and the required file/code-execution capabilities; check official account requirements if the entry is absent.
 3. Start a new chat: “Use Reflection Companion to help me write a diary about one small event today, one question at a time. Do not save yet.” Start with your material; no long prompt needs memorizing.
 4. Correct an interpretation by supplying facts or saying it does not fit. For a file, ask: “Export the corrected entry as a downloadable **Markdown** file; do not add it to a learning store.”
@@ -102,3 +122,13 @@ The temporary web authentication error has cleared. With only that general accou
 Permanent web continuity, unattended delivery and every account/model combination remain untested. A temporary web container is not a permanent learning store; supply downloaded files again to continue in another chat. Scheduling belongs to the host, and installing a Skill does not start a scheduling service. Catalog fallback has script tests; the earlier web run succeeded online without a forced outage.
 
 The public main branch guide evolves with verification; each archive retains its packaging-time record. Old assets and tags remain unchanged. rc.2 shipped the language fix, 0.4.0 the saving/onboarding rules, and 0.5.0 the five-period specifications and configurable output. 0.5.1 adds the installation lifecycle helper and host-specific update/recovery guidance.
+
+## External installation report (2026-10-04)
+
+[Cid-oe's PR #4](https://github.com/zhenglimindesign-ing/reflection-companion/pull/4) reports an attempted installation on Linux with Codex CLI 0.159.2 and the v0.5.0 Public Alpha ZIP. The contributor downloaded and extracted the package, then stopped before a first invocation because the README and platform guide did not provide marketplace registration commands or the required installation path/selector.
+
+This is a contributor-reported blocked attempt, without attached command logs; it is not a verified Linux installation or a general compatibility result. The maintainer separately checked the published v0.5.0 documents and confirmed that the CLI installation commands were absent. The current main-branch guides now explain the Git and extracted-ZIP routes; the historical v0.5.0 tag and archives keep their original contents.
+
+## Maintainer installation check (2026-10-05)
+
+On macOS with Codex CLI 0.145.0, separate isolated configuration directories were used to run marketplace registration, plugin installation and plugin listing through both the pinned v0.5.3 Git route and the verified v0.5.3 ZIP route. Both returned an enabled plugin at version 0.5.3, and the installed plugin files matched the published package bytes. No new model invocation or Linux test was performed in this check.

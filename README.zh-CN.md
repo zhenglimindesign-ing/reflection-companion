@@ -192,9 +192,17 @@ Reflection Companion 可以根据当前问题，带入相关的概念、经验�
 
 [查看 v0.5.3 Release](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.5.3)
 
-详细安装、版本范围和已验证能力：
+**首次安装 Codex 插件**时，先登记发布版 marketplace，再安装其中的插件：
 
-[平台安装与验证范围](docs/PLATFORMS.zh-CN.md)
+```sh
+codex plugin marketplace add https://github.com/zhenglimindesign-ing/reflection-companion.git --ref v0.5.3
+codex plugin add reflection-companion@reflection-companion
+codex plugin list --marketplace reflection-companion --json
+```
+
+核对安装项已启用，版本为 `0.5.3`。用 `codex` 开一个新的 CLI 会话，或在桌面端开一个已启用 Reflection Companion 的新 chat，再直接描述需要。若没有这些子命令，先检查 `codex --version` 和 `codex plugin --help`。
+
+已有安装、下载 ZIP 后的安装路径、其他宿主及验证边界，见[平台安装与验证范围](docs/PLATFORMS.zh-CN.md)。
 
 安装之后，不需要先配置个人档案或开启保存。
 
