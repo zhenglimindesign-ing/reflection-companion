@@ -2,6 +2,14 @@
 
 [简体中文](CHANGELOG.zh-CN.md) | **English**
 
+## 0.5.6 — 2026-10-05 · One question to begin
+
+- Start a bundled question immediately without a source-choice menu or saving setup; offer choices when requested. Tone and feedback can change the exercise; explicit fresh-content requests use the dynamic shelf.
+- Preserve the existing 18 entries and six themes; add five original bilingual history exercises for blind spots, self-description versus behavior, possible happiness changes, present priorities and third-person traces. All retain longitudinal evidence, counterexample and correction rules.
+- Require a one-sentence distinction between grounded behavior and comedic invention in a roast; the focused fictional retest showed both parts.
+- Improve both completed-review pages with numbered headings, compact navigation and collapsible provenance. Source text, fictional events, quotes and templates are unchanged.
+- Align the README, guide and current roadmap; generated catalogs and three host packages share the canonical source. Package checks and fictional model walkthroughs do not establish real-user usefulness or full history access. Publication does not upgrade existing installations.
+
 ## 0.5.5 — 2026-10-05 · Source coverage for open-ended reflection
 
 - Establish available sources and time/topic coverage before deriving personal patterns. Check original statements, earlier self-awareness, counterexamples and user corrections; AI summaries are navigation aids, not independent confirmation.

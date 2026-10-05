@@ -8,11 +8,13 @@ This is the base library bundled with the Skill, generated from its runtime sour
 
 ## How to use this library
 
-In a chat with Reflection Companion enabled, ask for two suitable bundled exercises or name a title below. You do not need to remember IDs or copy a long prompt. Say “start this one” and the assistant should continue in the same chat.
+Say “Ask me one question that could help me understand myself.” The assistant should choose a bundled exercise and begin immediately, without a bundled/web menu. Request two or three distinct choices if you prefer to select, or name a title below; no IDs or long prompt copying required.
 
 Each entry states its material needs: no history, a current situation, or scoped history. If history is unavailable, choose another exercise or provide a small example you want to discuss. Say “not me,” “lighter,” or “another one” to adjust; takeaways are saved only when requested. Each exercise has both language versions, not two separate question banks.
 
-These 18 entries are this version's starting points. Ask “what is new?” to read the independently updated catalog or verify recent public sources; a failed read should disclose the dated bundled snapshot used instead. Catalog content requires actual curation and publication; no automatic collection service is running. See [complete user guide](USER_GUIDE.md).
+Historical judgments about blind spots, self-understanding, happiness, priorities and traces first check actual time/topic coverage, evidence, counterexamples and corrections. Insufficient material means a scoped answer or an unresolved judgment; happiness proposals are not proven causes and a third-person introduction is not a complete biography.
+
+These 23 entries are this version's starting points. Ask “what is new?” to read the independently updated catalog or verify recent public sources; a failed read should disclose the dated bundled snapshot used instead. Catalog content requires actual curation and publication; no automatic collection service is running. See [complete user guide](USER_GUIDE.md).
 
 ## Change and growth
 
@@ -66,6 +68,14 @@ Possible continuation: Compare the explanations against a concrete event.
 
 Possible continuation: Identify the missing information that could change the decision.
 
+### A possible blind spot
+
+`judgment-blind-spot` · Accessible history within a chosen scope · Reflect / Challenge
+
+> Using the history you can actually access, look for a possible thinking pattern or blind spot I may not have fully noticed, supported by multiple instances. State source coverage, compare evidence, counterexamples, earlier self-awareness and limits, and explain why it may matter. Insufficient evidence or something I already articulated is not a new discovery.
+
+Possible continuation: Check the observation in another context; I can reject its premise or correct it.
+
 ## Values and tradeoffs
 
 ### What am I protecting?
@@ -92,6 +102,22 @@ Possible continuation: Offer a stopping condition I can accept or reject.
 
 Possible continuation: Let me explain which condition mattered most then.
 
+### Quick relief or a larger long-term effect?
+
+`values-happiness-changes` · Accessible history within a chosen scope · Reflect / Expand
+
+> Using accessible recent and longer-term material, propose one change that might improve daily experience relatively soon and one that might have a larger long-term effect. Explain evidence, constraints, counterexamples and unknowns. Without comparative outcomes, do not claim these are the fastest or largest improvements or present recommendations as proven causes.
+
+Possible continuation: If I want, choose a small reversible trial; do not assign a plan automatically.
+
+### What matters most now?
+
+`values-priority-now` · Accessible history within a chosen scope · Reflect / Challenge
+
+> Using accessible history, consider recent actual actions, confirmed constraints, choices and what I explicitly care about. Suggest one or two things that may deserve attention now. State source dates, evidence, alternatives and limits; do not rank by chat frequency or treat your suggestion as my decision.
+
+Possible continuation: Let me confirm the priority or add a recently changed condition.
+
 ## Strengths and self-understanding
 
 ### Strengths with evidence
@@ -117,6 +143,14 @@ Possible continuation: Let me confirm the more accurate wording.
 > Using only the event I provided, describe what a kind but candid observer might notice. Include other plausible explanations.
 
 Possible continuation: Compare my account with observable behavior.
+
+### Where I may misunderstand myself
+
+`strengths-self-discrepancy` · Accessible history within a chosen scope · Reflect / Challenge
+
+> From accessible history, compare one self-description with my reported choices or behavior. Check my wording, context, supporting evidence, counterexamples and later corrections before judging whether an unexplained discrepancy exists. Do not manufacture a contradiction or turn a discrepancy into a trait or motive.
+
+Possible continuation: Let me add context or explain why the two are compatible.
 
 ## Interests and possibilities
 
@@ -169,3 +203,11 @@ Possible continuation: Let me revise which exhibits represent me now.
 > Interview me curiously, one question at a time, starting with an everyday choice. Follow my answers without pretending to know my life story.
 
 Possible continuation: Stop whenever I want, without forcing a personality conclusion.
+
+### If these were the only traces
+
+`play-only-traces` · Accessible history within a chosen scope · Reflect / Expand
+
+> Imagine that these selected conversations are the only traces of a person, and introduce them to someone who has never met them. What would you say? State the actual material scope and distinguish supported observations, possible interpretations and what the records cannot tell you. Use third-person distance without inventing a life story or personality diagnosis; do not add a death framing by default.
+
+Possible continuation: Let me say what fits, is missing or is wrong; use a more dramatic framing only if I request it.

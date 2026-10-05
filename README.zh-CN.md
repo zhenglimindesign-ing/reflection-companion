@@ -8,7 +8,7 @@ Reflection Companion 是一个 AI 反思伙伴。它把你已经留下的经历�
 
 你可以用它写日记、做周回顾、复盘一段经历；也可以让它从一段时间的材料里寻找可能反复出现的模式或盲点，陪你重新理解一个问题，或者尝试新的自我探索方式。
 
-**Public Alpha · v0.5.4**
+**Public Alpha · v0.5.6**
 
 目前提供 Codex、Claude Code 和 Claude 网页版。
 
@@ -123,6 +123,7 @@ Reflection Companion 可以根据当前问题，带入相关的概念、经验�
 
 | 如果你现在想…… | 可以这样开始 |
 | --- | --- |
+| 不知道该问什么 | “帮我选一个可以更了解自己的问题，直接问我。” |
 | 整理一天 | “帮我回顾今天值得记住的几件事，看看我在意什么、有什么变化。缺的地方再问我。” |
 | 回顾一周 | “帮我回顾这周。不要只是总结做过什么，看看哪些判断变了、哪些事情有了结果、还有什么值得继续想。” |
 | 复盘一段经历 | “帮我回顾这个项目从开始到现在：我一开始是怎么想的，后来哪些判断变了，哪些标准一直没变？” |
@@ -133,7 +134,19 @@ Reflection Companion 可以根据当前问题，带入相关的概念、经验�
 
 同一个 Companion 可以在这些场景之间自然切换。
 
-### 3.1 也可以让回顾主动发生
+### 3.1 不知道该问什么？先给你一个问题
+
+不需要先写日记，也不用想好要探索什么。直接说：
+
+> “帮我选一个可以更了解自己的问题，直接问我。”
+
+它会从内置库选一个适合当前材料的问题并开始。没有历史也能从一个日常选择聊起；你可以说“轻一点”“深一点”“犀利一点”或“好玩一点”。想自己选，就让它给两三个不同方向。
+
+想结合过去的讨论找盲区、比较自我认识与行为、探索幸福感或当下优先级，它应先检查实际能读到的历史，再说明证据、反例与限制。缺少历史就不能得出“你一直如此”的结论。你也可以试“善意吐槽”或“如果只剩这些痕迹”。
+
+想找新灵感，可以说“最近有什么新的自我探索问题值得试？”它会先读动态目录；需要近期公开内容时，再核查网络来源。说“换个方向”只是在调整这次探索。
+
+### 3.2 也可以让回顾主动发生
 
 如果你使用的平台支持定时任务，日记和回顾不一定每次都要靠你想起来再打开。
 
@@ -180,7 +193,7 @@ Reflection Companion 可以根据当前问题，带入相关的概念、经验�
 
 ## 5. 安装并开始
 
-当前公开版本为 **v0.5.4 Public Alpha**。
+当前公开版本为 **v0.5.6 Public Alpha**。
 
 支持：
 
@@ -190,17 +203,17 @@ Reflection Companion 可以根据当前问题，带入相关的概念、经验�
 
 从这里选择对应平台：
 
-[查看 v0.5.4 Release](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.5.4)
+[查看 v0.5.6 Release](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.5.6)
 
 **首次安装 Codex 插件**时，先登记发布版 marketplace，再安装其中的插件：
 
 ```sh
-codex plugin marketplace add https://github.com/zhenglimindesign-ing/reflection-companion.git --ref v0.5.4
+codex plugin marketplace add https://github.com/zhenglimindesign-ing/reflection-companion.git --ref v0.5.6
 codex plugin add reflection-companion@reflection-companion
 codex plugin list --marketplace reflection-companion --json
 ```
 
-核对安装项已启用，版本为 `0.5.4`。用 `codex` 开一个新的 CLI 会话，或在桌面端开一个已启用 Reflection Companion 的新 chat，再直接描述需要。若没有这些子命令，先检查 `codex --version` 和 `codex plugin --help`。
+核对安装项已启用，版本为 `0.5.6`。用 `codex` 开一个新的 CLI 会话，或在桌面端开一个已启用 Reflection Companion 的新 chat，再直接描述需要。若没有这些子命令，先检查 `codex --version` 和 `codex plugin --help`。
 
 已有安装、下载 ZIP 后的安装路径、其他宿主及验证边界，见[平台安装与验证范围](docs/PLATFORMS.zh-CN.md)。
 
@@ -259,21 +272,15 @@ Reflection Companion 不是心理诊断工具，也不应该根据零散材料�
 
 ---
 
-## 7. 自我探索内容会变化吗？
+## 7. 这些问题和探索方式从哪里来？
 
-会，但不是自动抓取一大堆网络 prompt。
+- **内置库**：内置库包含 23 个原创双语脚手架，覆盖六个主题，不联网也能用。问一个问题、点名玩法，或让它给几个选项都可以。
+- **当前情境**：根据正在聊的问题调整玩法；不会因为你没提过某件事，就推断你不了解它。
+- **新的公开灵感**：明确问“有什么新的”时，先读取可独立更新的动态目录；目录过时、不足或你要求近期网络内容时，再核查公开来源。
 
-Reflection Companion 有一组随 Skill 提供的基础探索方式，也可以根据当前问题设计新的探索方式；当你明确想找“新的东西”时，还可以读取经过整理的公开探索目录。
+动态目录的收录日期、原文发布日期和热度是不同的事。没有热度证据就不称“热门”；读取失败时说明随包快照日期，并可继续使用内置问题。目录更新需要实际人工寻找、核查、改写和发布，目前没有自动采集服务。你的私人回答不会进入公共库。
 
-公共目录可以独立于 Skill 版本更新。
-
-更新过程仍然需要人工寻找、核查来源、判断是否真的提供了新的探索方式、改写并测试；它不是一个自动采集或自动发布系统。
-
-你的私人回答不会进入这个公共目录。
-
-想浏览当前基础玩法：
-
-[自我探索玩法库](https://github.com/zhenglimindesign-ing/reflection-companion/blob/main/docs/PROMPTS.zh-CN.md)
+[浏览内置探索库](https://github.com/zhenglimindesign-ing/reflection-companion/blob/main/docs/PROMPTS.zh-CN.md)
 
 ---
 

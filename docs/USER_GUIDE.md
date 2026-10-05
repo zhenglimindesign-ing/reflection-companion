@@ -4,7 +4,7 @@
 
 [Introduction and quick start](../README.md) · [Platform installation details and verification](PLATFORMS.md)
 
-The README contains the introduction, installation and examples needed for first use. This guide develops diaries, weekly reviews, recurring-pattern checks, exploration, saving and schedules as needed, including how to select material, continue a discussion and keep results. It covers public Alpha v0.5.2.
+The README contains the introduction, installation and examples needed for first use. This guide develops diaries, weekly reviews, recurring-pattern checks, exploration, saving and schedules as needed, including how to select material, continue a discussion and keep results. It covers public Alpha v0.5.6, with 23 bilingual bundled exercises.
 
 ## 1. Choose material and continue a question you already have
 
@@ -34,7 +34,7 @@ These common situations show the material needed and the result to expect. Descr
 | The end of a period or experience | Selected material from a month, project or topic. | “Look back on this experience from the beginning. How was I thinking at first, which judgments changed later, and which criteria stayed consistent?” | Connect experiences, changes and questions worth considering across a period. |
 | Uncertain decision | Current discussion, with relevant history if useful. | “Find the information most likely to change my conclusion; also consider support for it.” | A specific gap or alternative; the current view may be supported. |
 | A broader perspective | Current question or scoped historical theme. | “Give me a relevant perspective beyond my usual approach.” | A new angle, its connection and a way to explore further. |
-| Unsure what to ask | No history required, or use current context. | “What are a few different self-exploration approaches I could try? Give me distinct options, and start one after I choose.” | A few options with purposes and material requirements. |
+| Unsure what to ask | No history required. | “Ask me one question that could help me understand myself.” | One opening question now; request two or three choices if you prefer to select. |
 | Continue an earlier theme | Current conversation or authorized saved records. | “Read that earlier takeaway and reconsider it against this situation.” | Earlier qualifications and corrections remain available; conclusions can change. |
 | A light bedtime chat | A moment you choose to share. | “No analysis today; let's just talk.” | Conversation without a compulsory lesson. |
 
@@ -81,13 +81,17 @@ The discussions clarify an event, connect two experiences and bring a takeaway i
 
 ## 4. Exploration: the library supplies material; the Skill guides the process
 
-Exploration includes the bundled library, independently updated catalog, exercises designed for your situation and live search. Eighteen is the current base library's count, not a limit on all exploration. New catalog entries do not require reinstalling the Skill.
+Say “Ask me one question that could help me understand myself.” It chooses a bundled exercise and starts, without a bundled/web choice or enabling saving. With no history, use “A question worth asking” or “A curious interview.” Lighter, deeper, sharper and playful adjust tone without lowering evidence requirements. Request two or three choices if you want to select. “Another direction” applies feedback; only an explicit freshness request reads the dynamic catalog.
+
+History exercises include “A possible blind spot,” “Where I may misunderstand myself,” “Quick relief or a larger long-term effect?”, “What matters most now?” and “If these were the only traces.” They first check accessible time/topic coverage and compare evidence, counterexamples and corrections. Happiness changes remain proposals to test; priorities are not ranked by chat frequency. Third-person introductions separate evidence, speculation and what the records cannot show, with no death framing by default. Limited material calls for a scoped judgment or an unresolved question, not a complete life portrait.
+
+Exploration includes the bundled library, independently updated catalog, exercises designed for your situation and live search. Twenty-three is the current base library's count, not a limit on all exploration. New catalog entries do not require reinstalling the Skill.
 
 Name a gentle roast or ask for a suitable method. After selection, continue here, using your answers for follow-up, evidence checks and revision. Copying a question into an ordinary chat is also valid. The Skill keeps selection, execution and continuation within a shared method.
 
 | Source | How it works | What can be claimed |
 | --- | --- | --- |
-| 18 original base exercises | Available offline, selected by theme/material. | Reusable methods, not a popularity chart. |
+| 23 original base exercises | Available offline, selected by theme/material. | Reusable methods, not a popularity chart. |
 | Contextual exercise | Written for your current question. | Original for this discussion, not a web discovery. |
 | Independent catalog | Refreshed when asking for something new; failures disclose the bundled snapshot date. | Newly curated is not newly published; flag checks older than 30 days. |
 | Live web search | Verify original pages, dates and observable engagement. | No popularity claim without evidence; search snippets do not replace the original. |
@@ -137,7 +141,7 @@ Basic installation is in the [README](../README.md). Ask “check whether Reflec
 
 Update the same Skill/plugin, retain its recovery source, and keep journals and preferences in their existing directory. Rollback changes the program, preserving records added in the meantime. Older releases may ignore newer preferences but should not delete them. The result should report actual installed version, verification, recovery location and any fresh-chat step. Host methods differ; see the [platform guide](PLATFORMS.md).
 
-The public release is 0.5.2, with a Codex check/prepare/upgrade/rollback helper. Existing 0.5.0 users can ask their host to assist that first transition using a reviewed current version, without finding a ZIP themselves. Claude Code project Skills and Claude web uploads follow their own channels; a Codex update does not update Claude.
+The public release is 0.5.6, with a Codex check/prepare/upgrade/rollback helper. Existing 0.5.0 users can ask their host to assist that first transition using a reviewed current version, without finding a ZIP themselves. Claude Code project Skills and Claude web uploads follow their own channels; a Codex update does not update Claude.
 
 The [mobile text sample](MOBILE.md) lets someone try one method. It does not carry Skill references, storage helpers, cross-chat state or scheduling, and is not verified native adaptation for domestic apps.
 

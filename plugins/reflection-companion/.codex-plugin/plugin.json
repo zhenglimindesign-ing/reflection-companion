@@ -1,6 +1,6 @@
 {
   "name": "reflection-companion",
-  "version": "0.5.5",
+  "version": "0.5.6",
   "description": "Write personal diaries and weekly, monthly, quarterly or yearly reviews; check judgments, explore perspectives and preserve chosen learning.",
   "keywords": [
     "reflection",
@@ -24,7 +24,7 @@
     ],
     "defaultPrompt": [
       "回顾最近的对话，哪些想法发生了变化？",
-      "我不知道怎样更了解自己，推荐几个不同的探索方式。",
+      "帮我选一个可以更了解自己的问题，直接问我。",
       "帮我检查这个判断可能漏了什么。"
     ]
   },

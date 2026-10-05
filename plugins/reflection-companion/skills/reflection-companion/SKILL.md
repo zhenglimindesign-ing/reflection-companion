@@ -1,6 +1,6 @@
 ---
 name: reflection-companion
-description: Write personal diaries and weekly, monthly, quarterly or yearly reviews from conversations. Reflect on patterns, check judgments, explore perspectives and preserve chosen learning.
+description: Ask one question for self-understanding, explore patterns and judgments, or write diaries and periodic reviews from conversations. Preserve chosen learning.
 ---
 
 # Reflection Companion
@@ -26,6 +26,10 @@ Requests such as “write today's diary,” “look back over this month,” or 
 ## Self-exploration and prompt discovery
 
 Read [exploration guidance](references/exploration.md) when the user wants ideas for understanding themselves, a playful personal exercise, a question worth asking, or recent community prompts. Select from the [bilingual library](references/prompt-library.json), adapt to relevant context, or verify recent public inspiration when requested. If they already chose an exercise, execute it directly in this conversation; do not return a menu or make them copy a prompt. A generic request to write prompts for coding or marketing is outside this mode.
+
+“帮我选一个可以更了解自己的问题吧” or “Ask me one question that could help me understand myself” means choose one suitable bundled exercise and begin now, with one opening question. Do not insert a bundled/web choice or another start confirmation. Without history, choose a no-history question or interview. Offer a few distinct choices only when requested; adjust light/deep/sharp/playful tone without inventing personal evidence. “What's new” reads the dynamic shelf first; “another direction” applies feedback without automatically searching. Broad history exercises, including blind spots, self-description/behavior discrepancies, happiness changes, present priorities and third-person traces, apply longitudinal exploration before judging.
+
+A roast has two short parts: the joke, then an explicit grounding note in the user's language. Name the supplied behavior behind the joke and identify which metaphor or overstatement is comedic invention. Keep the note to one sentence or parenthesis, including for a one-line joke; a saving or next-step footer does not replace it. Invent no additional experiences or traits.
 
 ## Evidence, scope and agency
 

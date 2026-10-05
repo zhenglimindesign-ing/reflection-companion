@@ -468,6 +468,131 @@
         "kind": "original",
         "created_on": "2026-09-27"
       }
+    },
+    {
+      "id": "judgment-blind-spot",
+      "theme": "judgment",
+      "title": {
+        "zh": "一个可能的盲区",
+        "en": "A possible blind spot"
+      },
+      "context": "history",
+      "jobs": [
+        "Reflect",
+        "Challenge"
+      ],
+      "prompt": {
+        "zh": "结合你实际能访问到的历史，找一个我可能还没有充分意识到、且有多处材料支持的思维模式或盲区。先说明材料覆盖，再比较证据、反例、较早的自我认识与限制，解释为什么值得注意。材料不够或我已经说清楚过，就不要硬造一个新发现。",
+        "en": "Using the history you can actually access, look for a possible thinking pattern or blind spot I may not have fully noticed, supported by multiple instances. State source coverage, compare evidence, counterexamples, earlier self-awareness and limits, and explain why it may matter. Insufficient evidence or something I already articulated is not a new discovery."
+      },
+      "follow_up": {
+        "zh": "用另一个情境检查这个观察；我可以否定前提或纠正。",
+        "en": "Check the observation in another context; I can reject its premise or correct it."
+      },
+      "provenance": {
+        "kind": "original",
+        "created_on": "2026-10-05"
+      }
+    },
+    {
+      "id": "strengths-self-discrepancy",
+      "theme": "strengths",
+      "title": {
+        "zh": "我可能看错自己的地方",
+        "en": "Where I may misunderstand myself"
+      },
+      "context": "history",
+      "jobs": [
+        "Reflect",
+        "Challenge"
+      ],
+      "prompt": {
+        "zh": "从实际可访问的历史里，比较一条我的自我描述与我报告的选择或行为。先核对原话、情境、支持证据、反例与后来的更正，再判断是否存在尚未解释的差异。不要制造矛盾，或把差异直接解释成性格和动机。",
+        "en": "From accessible history, compare one self-description with my reported choices or behavior. Check my wording, context, supporting evidence, counterexamples and later corrections before judging whether an unexplained discrepancy exists. Do not manufacture a contradiction or turn a discrepancy into a trait or motive."
+      },
+      "follow_up": {
+        "zh": "让我补充条件，或指出两者其实并不冲突。",
+        "en": "Let me add context or explain why the two are compatible."
+      },
+      "provenance": {
+        "kind": "original",
+        "created_on": "2026-10-05"
+      }
+    },
+    {
+      "id": "values-happiness-changes",
+      "theme": "values",
+      "title": {
+        "zh": "快一点，还是影响大一点？",
+        "en": "Quick relief or a larger long-term effect?"
+      },
+      "context": "history",
+      "jobs": [
+        "Reflect",
+        "Expand"
+      ],
+      "prompt": {
+        "zh": "根据实际可访问的近期与较长期材料，分别提出一个可能较快改善日常感受的改变，以及一个可能带来较大长期影响的改变。说明依据、约束、反例和未知；没有比较结果就不要声称它们最快或影响最大，也不要把建议写成已证明的因果。",
+        "en": "Using accessible recent and longer-term material, propose one change that might improve daily experience relatively soon and one that might have a larger long-term effect. Explain evidence, constraints, counterexamples and unknowns. Without comparative outcomes, do not claim these are the fastest or largest improvements or present recommendations as proven causes."
+      },
+      "follow_up": {
+        "zh": "我愿意时，选择一个可逆的小尝试来检验；不自动布置计划。",
+        "en": "If I want, choose a small reversible trial; do not assign a plan automatically."
+      },
+      "provenance": {
+        "kind": "original",
+        "created_on": "2026-10-05"
+      }
+    },
+    {
+      "id": "values-priority-now",
+      "theme": "values",
+      "title": {
+        "zh": "当下什么最重要？",
+        "en": "What matters most now?"
+      },
+      "context": "history",
+      "jobs": [
+        "Reflect",
+        "Challenge"
+      ],
+      "prompt": {
+        "zh": "结合可访问历史中的近期真实行动、已确认约束、选择与我明确表达过的在意，提出现在可能最值得优先照顾的一两件事。说明材料日期、依据、其他可能与限制；不要按聊天频率排序，也不要把你的建议当成我的决定。",
+        "en": "Using accessible history, consider recent actual actions, confirmed constraints, choices and what I explicitly care about. Suggest one or two things that may deserve attention now. State source dates, evidence, alternatives and limits; do not rank by chat frequency or treat your suggestion as my decision."
+      },
+      "follow_up": {
+        "zh": "由我确认优先级，或补充最近改变了的条件。",
+        "en": "Let me confirm the priority or add a recently changed condition."
+      },
+      "provenance": {
+        "kind": "original",
+        "created_on": "2026-10-05"
+      }
+    },
+    {
+      "id": "play-only-traces",
+      "theme": "play",
+      "title": {
+        "zh": "如果只剩这些痕迹",
+        "en": "If these were the only traces"
+      },
+      "context": "history",
+      "jobs": [
+        "Reflect",
+        "Expand"
+      ],
+      "prompt": {
+        "zh": "假设选定的这些对话是一个人留下的唯一材料，你需要向一个从未见过对方的人介绍这个人。你会讲什么？说明实际材料范围，区分有依据的观察、只能说“可能”的解释，以及这些记录无法告诉你的部分。把它作为第三人称视角练习，不补写人生故事或人格诊断；默认不加入死亡设定。",
+        "en": "Imagine that these selected conversations are the only traces of a person, and introduce them to someone who has never met them. What would you say? State the actual material scope and distinguish supported observations, possible interpretations and what the records cannot tell you. Use third-person distance without inventing a life story or personality diagnosis; do not add a death framing by default."
+      },
+      "follow_up": {
+        "zh": "让我指出哪部分像我、哪部分遗漏或不成立；只有我点名时才采用更戏剧化的设定。",
+        "en": "Let me say what fits, is missing or is wrong; use a more dramatic framing only if I request it."
+      },
+      "provenance": {
+        "kind": "original",
+        "created_on": "2026-10-05"
+      }
     }
   ]
 }

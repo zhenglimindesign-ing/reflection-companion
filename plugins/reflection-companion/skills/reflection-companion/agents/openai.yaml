@@ -1,4 +1,4 @@
 interface:
   display_name: "Reflection Companion"
   short_description: "Reflect, question, explore and carry learning forward"
-  default_prompt: "Use $reflection-companion to suggest a useful way to understand myself from our conversations."
+  default_prompt: "Use $reflection-companion to ask me one question that could help me understand myself."

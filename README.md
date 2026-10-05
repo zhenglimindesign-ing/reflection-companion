@@ -8,7 +8,7 @@ Reflection Companion is an AI companion for reflection. It turns experiences, co
 
 Use it for a diary, a weekly review, or a period or project retrospective. It can also compare material over time to surface possible recurring patterns or blind spots, help you reconsider a question, or introduce a new way to explore yourself.
 
-**Public Alpha · v0.5.4**
+**Public Alpha · v0.5.6**
 
 Available for Codex, Claude Code, and Claude web.
 
@@ -125,6 +125,7 @@ Describe what you want in ordinary language.
 
 | If you want to… | You might say |
 | --- | --- |
+| Unsure what to ask | “Ask me one question that could help me understand myself.” |
 | Reflect on a day | “Help me look back on what was worth remembering today — what mattered, and whether anything actually changed. Ask me about gaps if needed.” |
 | Review a week | “Review this week without just listing what I did. What judgments changed, what reached an outcome, and what is still worth thinking about?” |
 | Revisit a period or project | “Look back on this project from the beginning. How was I thinking at first, which judgments changed later, and which criteria stayed consistent?” |
@@ -135,7 +136,19 @@ Describe what you want in ordinary language.
 
 The same Companion can move naturally between these situations.
 
-### 3.1 Reflection can also happen proactively
+### 3.1 Unsure what to ask? Start with one question
+
+You do not need a diary habit or a topic in mind. Say:
+
+> “Ask me one question that could help me understand myself.”
+
+It chooses a bundled question suited to the available material and begins. With no history, start from an everyday choice. Ask for something lighter, deeper, sharper or playful; if you want to choose, request two or three different directions.
+
+For blind spots, self-description versus behavior, happiness changes or present priorities based on past discussions, it first checks accessible history and explains evidence, counterexamples and limits. Missing history cannot support a lifelong verdict. You can also try a gentle roast or “If these were the only traces.”
+
+For fresh inspiration, ask “What new self-exploration questions are worth trying?” It reads the dynamic catalog first, then verifies web sources when recent public content is needed. “Another direction” simply adjusts the current exercise.
+
+### 3.2 Reflection can also happen proactively
 
 If your host supports scheduled tasks, you do not have to remember to initiate every review yourself.
 
@@ -182,7 +195,7 @@ For historical backfill, the assistant must check both what was retrieved and wh
 
 ## 5. Install and start
 
-The current public release is **v0.5.4 Public Alpha**.
+The current public release is **v0.5.6 Public Alpha**.
 
 Available for:
 
@@ -192,17 +205,17 @@ Available for:
 
 Choose the package for your platform:
 
-[View the v0.5.4 release](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.5.4)
+[View the v0.5.6 release](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.5.6)
 
 For a **first Codex installation**, register the release marketplace, then install its plugin:
 
 ```sh
-codex plugin marketplace add https://github.com/zhenglimindesign-ing/reflection-companion.git --ref v0.5.4
+codex plugin marketplace add https://github.com/zhenglimindesign-ing/reflection-companion.git --ref v0.5.6
 codex plugin add reflection-companion@reflection-companion
 codex plugin list --marketplace reflection-companion --json
 ```
 
-Check that the installed entry is enabled and reports version `0.5.4`. Start a fresh CLI session with `codex`, or open a new desktop chat with Reflection Companion enabled, and describe your request. If these subcommands are unavailable, check `codex --version` and `codex plugin --help` before proceeding.
+Check that the installed entry is enabled and reports version `0.5.6`. Start a fresh CLI session with `codex`, or open a new desktop chat with Reflection Companion enabled, and describe your request. If these subcommands are unavailable, check `codex --version` and `codex plugin --help` before proceeding.
 
 For an existing installation, the downloaded-ZIP route, other hosts and verification limits, see [platform setup and validation scope](docs/PLATFORMS.md).
 
@@ -261,21 +274,15 @@ Reflection Companion is not a diagnostic or therapy tool, and it should not turn
 
 ---
 
-## 7. Does self-exploration content change?
+## 7. Where do the questions and exercises come from?
 
-Yes — but not through an automated scraper collecting prompts from the web.
+- **Bundled library:** the bundled library includes 23 original bilingual scaffolds across six themes, usable offline. Ask for one question, name an exercise or request a few choices.
+- **Current context:** adapt a mechanism to what you are discussing; an unmentioned topic does not prove it is unfamiliar to you.
+- **New public inspiration:** an explicit “what's new” request reads the independently updated catalog first. A stale or insufficient catalog, or a request for recent web content, leads to verified public sources.
 
-Reflection Companion includes a bundled set of exploration methods, can adapt an exercise to the situation already under discussion, and can read a curated public exploration catalog when you explicitly want something new.
+Catalog addition dates, original publication dates and popularity are separate. No engagement evidence means no “trending” claim. Failed reads disclose the snapshot date and leave bundled questions available. Updates require actual editorial research, checking, rewriting and publication; no automatic collection service is running. Private answers never enter the public library.
 
-The public catalog can be updated independently of a Skill release.
-
-Those updates are still editorial: candidates are found, sources checked, mechanisms compared against existing material, rewritten, and tested before publication. There is no automatic collection or publishing service.
-
-Your private answers never become part of that public catalog.
-
-Browse the current bundled library:
-
-[Self-exploration library](https://github.com/zhenglimindesign-ing/reflection-companion/blob/main/docs/PROMPTS.md)
+[Browse the bundled library](https://github.com/zhenglimindesign-ing/reflection-companion/blob/main/docs/PROMPTS.md)
 
 ---
 
