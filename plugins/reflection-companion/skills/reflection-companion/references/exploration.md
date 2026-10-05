@@ -14,6 +14,8 @@ The [library](prompt-library.json) has original bilingual exercises across six t
 
 ## Run, respond, revise
 
+When an exercise asks for broad personal judgments from history, use [longitudinal exploration](longitudinal-exploration.md) before interpretation. The prompt library selects an exercise; it does not determine which periods or conversations count as evidence.
+
 Proceed in the same conversation after selection. Retrieve dated source material when the exercise calls for history; if access is missing, narrow the exercise to current material or offer one that works without history. Never present a generated personality profile as recovered truth. For a roast, respect requested topic exclusions and tone, ground observations in accessible material, and distinguish comedic exaggeration from interpretation without burying the joke in a report. Never escalate harshness by default. For metaphors, make the creative part explicit.
 
 Allow “not me,” “already discussed,” “lighter,” “deeper,” “another direction,” “stop,” or an ordinary correction. Apply feedback immediately. Do not force a lesson or follow-up question. A useful continuation can compare an alternative explanation, test an observation against an example, explore a connected idea, or keep a user-confirmed takeaway.

@@ -2,6 +2,13 @@
 
 [简体中文](CHANGELOG.zh-CN.md) | **English**
 
+## 0.5.5 — 2026-10-05 · Source coverage for open-ended reflection
+
+- Establish available sources and time/topic coverage before deriving personal patterns. Check original statements, earlier self-awareness, counterexamples and user corrections; AI summaries are navigation aids, not independent confirmation.
+- Bind browser excerpts to their own message containers and verified dates. Keep ambiguous excerpts pending rather than inventing roles, IDs or timestamps.
+- When history is incomplete, identify the judgments affected, repair meaningful gaps and deliver supported provisional parts plus the source audit. An account export is not a prerequisite for every reflection; source gaps do not suspend independent Skill delivery. More history alone cannot prove which happiness change has the greatest causal effect.
+- Include the shared guidance in all three host packages. Existing archive/topic checks and schema-v1 personal storage remain unchanged; installation and fresh-chat behavior require separate verification.
+
 ## 0.5.4 — 2026-10-05 · Topics and saved-output reconciliation
 
 - Retain meaningful questions, distinctions, corrections and useful historical answers inside multi-topic messages. Philosophical discussion and understanding without an action result remain valid archive material.

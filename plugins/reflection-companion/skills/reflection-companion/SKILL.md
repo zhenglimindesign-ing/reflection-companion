@@ -29,6 +29,8 @@ Read [exploration guidance](references/exploration.md) when the user wants ideas
 
 ## Evidence, scope and agency
 
+For open-ended historical questions such as "find my blind spots," "what matters most now," or several personal judgments at once, read [longitudinal exploration](references/longitudinal-exploration.md). Establish the available source landscape and time/topic coverage before deriving candidate patterns. Testing a user-supplied hypothesis is a different starting point; do not turn open discovery into a search for evidence supporting an early impression.
+
 - Retrieve source conversations before historical interpretation. Prefer host `list_threads` / `read_thread` when available. Resolve date and timezone; verify dated user messages rather than titles, update times or previous AI summaries. For a period review consider authorized sources across topics before selecting the main threads; a single supplied note can support a narrow diary. Paginate only when material evidence is still missing.
 - A recent index is not an archive. Other accessible source IDs can aid discovery, but verify their messages before inclusion. State material discovery/text/attachment gaps before the review. Do not silently replace unavailable history with memory or ask the user to re-document it by default.
 - Apply requested topic exclusions to retrieval where possible, synthesis and saving. Earlier material outside the period may be a labeled baseline, never counted as in-window activity. Automated-only outputs do not prove the user participated.

@@ -4,6 +4,8 @@ Use before historical diaries and period reviews, especially requests for all co
 
 ## Resolve the scope and inventory
 
+Open-ended personal history questions also need [longitudinal exploration](longitudinal-exploration.md): source readiness establishes what can be read, while the coverage map determines what those sources can support. A complete small corpus does not by itself justify a lifelong or cross-domain claim.
+
 Distinguish **all history in a period** from **the user-selected notes/conversations**. A few complete supplied notes can support a review of those notes; they do not cover all account history. Current-chat/supplied-note tasks need no account search unless requested. Resolve actual dates, timezone, topics and exclusions before counting sources.
 
 For broad history, a recent index, search snippets, memory, or an API's exhausted page cursor is insufficient to establish account coverage. Look for an actual export inventory or a provider's documented full inventory. Record the relevant inventory reference, selected source IDs, actual text retrieval, date verification and material attachment status. Unknown inventory coverage stays unknown. Do not set a complete flag merely because a request returned successfully.
@@ -46,6 +48,8 @@ On Python-capable hosts, run `scripts/source_readiness.py` with a JSON inventory
 Use one of `user_selected_corpus`, `export_inventory`, `provider_full_inventory`, `recent_index`, `unknown`. A complete inventory needs a real reference and complete discovery; a recent/unknown inventory cannot pass as complete. Source retrieval is `full_text`, `truncated`, or `unavailable`; attachment status is `none`, `retrieved`, `missing`, or `unknown`. `allow_partial=true` requires an actual user choice accepting partial scope, not an agent's preference to finish early.
 
 The result is `ready`, `partial_only`, or `blocked`, with reasons and repair actions. Exit 0 allows the declared scope; exit 3 means blocked; exit 2 means invalid input. Schema 1 remains available for small selected-note tasks and metadata diagnosis; it cannot establish observed transcript or writing coverage. Check the underlying references. Without Python, perform the same checks manually and report the same distinction.
+
+These decisions govern the declared completeness claim, not every part of a task. For open-ended reflection, apply the [incomplete-source guidance](longitudinal-exploration.md): identify which judgments depend on each gap, deliver supported provisional parts and the source audit, and continue independent authorized work. Do not silently mark the original scope complete or turn an optional account export into a prerequisite for all reflection.
 
 ## Reconcile retrieval and writing separately
 
