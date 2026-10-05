@@ -1,0 +1,21 @@
+# Topic coverage before archive delivery
+
+Use for broad historical backfill and when the user reports missing discussions. Message counts do not establish writing coverage: one message may contain career logistics, a life question, a correction and a request for companionship. Considering only its first topic does not cover the message.
+
+Build topic units from the actual observed user messages and useful historical assistant answers **before choosing an interpretation or main story**. Retain meaningful questions, the reasons behind them, follow-up distinctions, wishes, experiences and corrections. Philosophical discussion, imaginative questions and understanding without an action result are valid archive material. Do not require an actionable conclusion, merge distinct questions into a generic growth lesson, or select only emotional/occupational evidence.
+
+For each unit, record source/message identity, an exact source excerpt, significance, selection and actual saved-output passage. Faithful condensation is allowed; verbatim transcription and fixed per-topic lengths are not required. Preserve the question or distinction that makes the unit meaningful. Acknowledgments, duplicates and irrelevant boilerplate may be omitted with a specific reason. Material topics should survive unless the user actually excluded them. New AI observations being off does not exclude useful historical answers. Keep original answers, current editorial interpretation and user facts separate.
+
+On Python-capable hosts, run `scripts/topic_readiness.py` on a private JSON ledger on stdin after saved-output readback and alongside the delivery-stage [source checker](source-readiness.md). Keep this ledger outside product repositories. The input is:
+
+- `schema_version: 1` and `retrieval_result`: the actual source check result, including `decision` and `broader_scope_complete`. Do not construct a desired ready result.
+- `messages`: observed `{source_id, message_id, role, text, topics_reviewed}`. Roles are `user`, `assistant` or `note`; `topics_reviewed: true` records an actual topic review of that message.
+- `topics`: `{id, source_id, message_id, evidence, priority, action}`. `evidence` is an exact source substring; priority is `material` or `incidental`. Use `included`/`condensed` with `artifact_refs: [{artifact_key, excerpt}]`, or `pending`, `omitted`, `excluded_by_user`. Historical assistant answers require `attribution: historical_assistant`.
+- `artifacts`: actual `{key, text, readback_reference}` from the persisted destination. Each included/condensed unit's excerpt must occur in that saved text. A planned path or unsaved draft is not a readback reference.
+- Omission records require `reason`; user exclusions also require a real `user_instruction_reference`. `omissions_disclosed: true` records actual disclosure. `no_action_result`, `too_abstract`, `not_main_story`, and `length_limit` are invalid `reason_code` values for exclusion. Do not evade these rules by rephrasing the same reason in prose.
+
+Exit 3 blocks completion for unresolved topic units, material omissions, missing source/output excerpts, undisclosed exclusions or blocked retrieval. Exit 2 is invalid input. A passed topic ledger with incomplete retrieval remains `partial_only`; it cannot upgrade source completeness. On hosts without Python, perform the equivalent reconciliation manually and disclose that the program was not run.
+
+The checker validates **declared** topic units and literal mappings. It cannot discover undeclared topics, authenticate tool readbacks, judge whether a condensation is faithful, or add host history permissions. Review source versus prose for these limits. Spot-check multi-topic messages and corrections rather than repeatedly counting documents. Never present a green ledger as semantic or account-wide completeness.
+
+When a topic is missing, classify it as unavailable source, acquired-but-unrepresented writing, or uncertain prior acquisition. Repair supported acquisition first; repair already obtained material immediately within authorization. Update affected day/week/month/quarter/year summaries, then read back the actual destinations. Report what was repaired, what remains unavailable and the next supported action. Do not make the user retell their life or approve ordinary repair steps already authorized.

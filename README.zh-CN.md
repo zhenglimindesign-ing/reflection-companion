@@ -8,7 +8,7 @@ Reflection Companion 是一个 AI 反思伙伴。它把你已经留下的经历�
 
 你可以用它写日记、做周回顾、复盘一段经历；也可以让它从一段时间的材料里寻找可能反复出现的模式或盲点，陪你重新理解一个问题，或者尝试新的自我探索方式。
 
-**Public Alpha · v0.5.3**
+**Public Alpha · v0.5.4**
 
 目前提供 Codex、Claude Code 和 Claude 网页版。
 
@@ -180,7 +180,7 @@ Reflection Companion 可以根据当前问题，带入相关的概念、经验�
 
 ## 5. 安装并开始
 
-当前公开版本为 **v0.5.3 Public Alpha**。
+当前公开版本为 **v0.5.4 Public Alpha**。
 
 支持：
 
@@ -190,17 +190,17 @@ Reflection Companion 可以根据当前问题，带入相关的概念、经验�
 
 从这里选择对应平台：
 
-[查看 v0.5.3 Release](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.5.3)
+[查看 v0.5.4 Release](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.5.4)
 
 **首次安装 Codex 插件**时，先登记发布版 marketplace，再安装其中的插件：
 
 ```sh
-codex plugin marketplace add https://github.com/zhenglimindesign-ing/reflection-companion.git --ref v0.5.3
+codex plugin marketplace add https://github.com/zhenglimindesign-ing/reflection-companion.git --ref v0.5.4
 codex plugin add reflection-companion@reflection-companion
 codex plugin list --marketplace reflection-companion --json
 ```
 
-核对安装项已启用，版本为 `0.5.3`。用 `codex` 开一个新的 CLI 会话，或在桌面端开一个已启用 Reflection Companion 的新 chat，再直接描述需要。若没有这些子命令，先检查 `codex --version` 和 `codex plugin --help`。
+核对安装项已启用，版本为 `0.5.4`。用 `codex` 开一个新的 CLI 会话，或在桌面端开一个已启用 Reflection Companion 的新 chat，再直接描述需要。若没有这些子命令，先检查 `codex --version` 和 `codex plugin --help`。
 
 已有安装、下载 ZIP 后的安装路径、其他宿主及验证边界，见[平台安装与验证范围](docs/PLATFORMS.zh-CN.md)。
 

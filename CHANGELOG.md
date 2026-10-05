@@ -2,6 +2,12 @@
 
 [简体中文](CHANGELOG.zh-CN.md) | **English**
 
+## 0.5.4 — 2026-10-05 · Topics and saved-output reconciliation
+
+- Retain meaningful questions, distinctions, corrections and useful historical answers inside multi-topic messages. Philosophical discussion and understanding without an action result remain valid archive material.
+- Add a read-only topic checker linking exact observed source excerpts to actual saved-output passages. Unresolved units, material omissions, missing readbacks and unsupported exclusions block completion; a topic pass cannot upgrade partial source retrieval.
+- This checks declared units and literal mappings, not undiscovered topics, semantic fidelity, host access or account completeness. The ten bilingual writing templates and personal store schema are unchanged.
+
 ## 0.5.3 — 2026-10-05 · Observed sources and writing coverage
 
 - Reconcile scoped source/message inventories with actual dated text and earlier-boundary references; successful requests and `full_text` declarations alone cannot pass the schema-2 check. At delivery, require every retrieved message to be considered and consequential omissions to be explained.
