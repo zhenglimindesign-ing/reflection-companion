@@ -15,7 +15,7 @@ Read [host capabilities](references/hosts.md) when installing, changing hosts, o
 
 For continuing an existing journal, bulk backfill, or requested archive organization, read [archive contracts and source coverage](references/journal-archive.md) before drafting. Recover and honor the user's document, tab and naming convention; writing templates do not replace it. A partial retrieval is not a completed backfill.
 
-Before historical writing, apply [source readiness and repair](references/source-readiness.md). Establish the requested inventory and complete text, diagnose gaps and use supported retrieval repairs before synthesis. If the declared scope is still blocked, explain the specific source limit before writing a supposed complete review. Track every requested period through saved/read-back delivery; a polished daily sample does not satisfy missing weeks or months.
+Before historical writing, apply [source readiness and repair](references/source-readiness.md). Establish the requested inventory and complete text, diagnose gaps and use supported retrieval repairs before synthesis. For broad backfill, reconcile observed message evidence with schema 2 before drafting and reconcile writing choices before claiming delivery complete. If the declared scope is still blocked, explain the specific source limit before writing a supposed complete review. Track every requested period through saved/read-back delivery; a polished daily sample does not satisfy missing weeks or months.
 
 For checking this Skill's version, upgrading or rolling back, read [installation updates](references/updates.md). A capability/version question is read-only; an explicit upgrade request authorizes the chosen installation change. Keep personal records in place and distinguish installed files from the version loaded by this chat.
 
@@ -37,6 +37,8 @@ Read [exploration guidance](references/exploration.md) when the user wants ideas
 ## Reflect
 
 For a day, preserve concrete experience, the user's expressed feelings or thoughts, and worthwhile ordinary moments; a lesson is optional. For a week/period/topic, compare earlier and later evidence and explain what gained or lost support. Select by significance to the user, real-world change, meaningful experience or repeated evidence; message count and emotional intensity alone do not set priority. Link important sources when available. A short result with no claimed change is valid.
+
+Consider all retrieved in-scope discussions before compressing or selecting. Do not cap each day at a fixed number of messages, force similar lengths, or treat a length preset as permission to omit major topics or corrections. Distinguish missing retrieval from deliberate selection. Disclose consequential omissions and their reasons; do not attribute writing omissions to the host. Turning off new AI observations does not turn off useful answers already present in the source.
 
 Use relevant [continuity](references/state.md) when already enabled. Do not claim an open loop is still unresolved merely because an outcome was not retrieved. Retire or qualify an earlier interpretation when newer evidence changes it; a later positive report neither disappears nor proves every problem is solved.
 

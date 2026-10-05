@@ -8,7 +8,7 @@ Reflection Companion is an AI companion for reflection. It turns experiences, co
 
 Use it for a diary, a weekly review, or a period or project retrospective. It can also compare material over time to surface possible recurring patterns or blind spots, help you reconsider a question, or introduce a new way to explore yourself.
 
-**Public Alpha · v0.5.2**
+**Public Alpha · v0.5.3**
 
 Available for Codex, Claude Code, and Claude web.
 
@@ -176,11 +176,13 @@ The following excerpts are authored from one fictional source set, not a real pe
 
 These structures are adjustable starting points, not fixed forms. You can keep more of your original wording, ask for a more natural diary or review, or reduce analysis; AI observations and questions can also be turned off. See the [user guide](docs/USER_GUIDE.md) for detailed output choices and saving rules.
 
+For historical backfill, the assistant must check both what was retrieved and what was represented in the writing. Existing memory or an exhausted recent-history cursor is not proof of all account history. Entries need not have similar lengths; important discussions and corrections must not disappear behind a fixed message cap. You can keep daily entries and their weekly review in one weekly tab, with month/quarter reviews in the same document. Existing archive conventions and your current choices control the layout.
+
 ---
 
 ## 5. Install and start
 
-The current public release is **v0.5.2 Public Alpha**.
+The current public release is **v0.5.3 Public Alpha**.
 
 Available for:
 
@@ -190,7 +192,7 @@ Available for:
 
 Choose the package for your platform:
 
-[View the v0.5.2 release](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.5.2)
+[View the v0.5.3 release](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.5.3)
 
 For installation details, compatibility, and what has actually been verified:
 

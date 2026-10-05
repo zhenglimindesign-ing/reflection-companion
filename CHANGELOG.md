@@ -2,6 +2,12 @@
 
 [简体中文](CHANGELOG.zh-CN.md) | **English**
 
+## 0.5.3 — 2026-10-05 · Observed sources and writing coverage
+
+- Reconcile scoped source/message inventories with actual dated text and earlier-boundary references; successful requests and `full_text` declarations alone cannot pass the schema-2 check. At delivery, require every retrieved message to be considered and consequential omissions to be explained.
+- Separate retrieval gaps from writing omissions. Consider the full retrieved scope before compression, preserve corrections and useful existing AI answers, and forbid hidden per-day message caps or uniform word lengths. Checks do not prove inventory provenance, account access or semantic writing quality.
+- Support configurable weekly tabs with daily sections and a final weekly review, plus month/quarter reviews in the same container. State cross-period ownership and preserve original documents for comparison. The ten bilingual writing templates are unchanged.
+
 ## 0.5.2 — 2026-10-04 · Source coverage and archive delivery
 
 - Check source discovery and text coverage before full historical backfill; use supported retrieval repairs and keep unresolved account completeness explicit. The read-only readiness helper validates declared coverage, not whether the host actually retrieved every message.

@@ -8,7 +8,7 @@ Reflection Companion 是一个 AI 反思伙伴。它把你已经留下的经历�
 
 你可以用它写日记、做周回顾、复盘一段经历；也可以让它从一段时间的材料里寻找可能反复出现的模式或盲点，陪你重新理解一个问题，或者尝试新的自我探索方式。
 
-**Public Alpha · v0.5.2**
+**Public Alpha · v0.5.3**
 
 目前提供 Codex、Claude Code 和 Claude 网页版。
 
@@ -174,11 +174,13 @@ Reflection Companion 可以根据当前问题，带入相关的概念、经验�
 
 这些结构是可调整的起点，不是固定表格。你可以要求它更多保留原话、更像一篇自然的日记／回顾，或减少分析；也可以关闭 AI 观察和提问。更详细的输出选择与保存规则见[使用指南](docs/USER_GUIDE.zh-CN.md)。
 
+历史回填需要同时核对“取回了什么”和“正文写入了什么”。已有记忆、近期历史游标结束，都不能证明全部账户历史。日记不需要等长，重要讨论与更正不能因固定消息上限而消失。你可以把日记和周记放在同一个每周 Tab，月／季回顾也放在同一文档；既有归档约定和你的当前选择决定组织方式。
+
 ---
 
 ## 5. 安装并开始
 
-当前公开版本为 **v0.5.2 Public Alpha**。
+当前公开版本为 **v0.5.3 Public Alpha**。
 
 支持：
 
@@ -188,7 +190,7 @@ Reflection Companion 可以根据当前问题，带入相关的概念、经验�
 
 从这里选择对应平台：
 
-[查看 v0.5.2 Release](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.5.2)
+[查看 v0.5.3 Release](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.5.3)
 
 详细安装、版本范围和已验证能力：
 
