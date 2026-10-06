@@ -284,7 +284,35 @@ Reflection Companion 不是心理诊断工具，也不应该根据零散材料�
 
 ---
 
-## 8. 继续阅读
+## 8. 常见问题
+
+### 8.1 我平时主要用 ChatGPT。装在 Codex 里后，会自动继承 ChatGPT 的 Memory 和全部聊天吗？
+
+不要这样假设。Codex 可以用 ChatGPT 账号登录，但它仍是独立体验，聊天历史与普通 ChatGPT 分开，也有自己的记忆能力。Reflection Companion 因此只把 Memory 当作定向线索，不把它当成“完整 ChatGPT 档案”的证据。需要历史判断时，应使用当前宿主实际能访问的原始对话、文件或导出；取不到的范围就明确说明。
+
+参见 [Using Codex with your ChatGPT plan](https://help.openai.com/en/articles/11369540-using-codex-with-your-chatgpt-plan)、[ChatGPT Work and Codex](https://help.openai.com/en/articles/20001275/) 和 [Memory in ChatGPT](https://help.openai.com/en/articles/8590148-memory-in-chatgpt)。
+
+### 8.2 Claude Code 会自动继承 Claude 网页版的 Memory 吗？
+
+也不要这样假设。Claude 网页、桌面和移动端有自己的聊天搜索与 Memory；Claude Code 则有 `CLAUDE.md`、auto-memory 等项目／会话连续性机制。即使用同一个订阅账号登录，也不能把 Claude 网页聊天的 Memory 当成 Claude Code 已经拿到的历史来源。
+
+参见 [Claude 的聊天搜索与 Memory](https://support.claude.com/en/articles/11817273-use-claude-s-chat-search-and-memory-to-build-on-previous-context) 和 [Claude Code cheatsheet](https://support.claude.com/en/articles/14553413-claude-code-cheatsheet)。
+
+### 8.3 Memory 和聊天历史是一回事吗？
+
+不是。Memory 很适合提供背景和偏好，但它是经过选择的上下文，而且会随时间更新，不是带日期的完整聊天记录。像“我反复出现什么模式”“我以前怎么看这件事”这类问题，Reflection Companion 应尽量回到实际原始材料，并把结论限制在证据支持的范围内。
+
+### 8.4 Reflection Companion 能直接读取我账号里的所有历史吗？
+
+只有当前宿主真的开放了相应范围时才可以。近期列表、Memory 摘要或“已经没有下一页”都不能单独证明全历史完整。若你提供的导出或文件已经足以回答当前问题，也可以直接使用那一小块材料。
+
+### 8.5 使用前一定要写日记、开启保存或设置定时吗？
+
+不用。你可以完全不保存，从一个问题、一件事或当前对话直接开始。保存、长期偏好和定时回顾都是之后单独选择的 opt-in 能力。
+
+---
+
+## 9. 继续阅读
 
 - [场景与进阶指南](docs/USER_GUIDE.zh-CN.md) — 日记、周回顾、保存、纠正与定时
 - [完整对话示例](docs/EXAMPLES.zh-CN.md) — 看一次讨论怎样展开
