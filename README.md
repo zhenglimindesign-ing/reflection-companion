@@ -288,29 +288,44 @@ Catalog addition dates, original publication dates and popularity are separate. 
 
 ## 8. Common questions
 
-### 8.1 I use ChatGPT a lot. Does Codex automatically inherit ChatGPT Memory and all my chats?
+### 8.1 I mostly use ChatGPT. Can Reflection Companion in Codex still use those conversations?
 
-Do not assume that. You can sign in to Codex with your ChatGPT account, but Codex remains a separate experience with separate chat history, and it has its own memory features. Reflection Companion therefore treats memory as orientation, not proof of a complete ChatGPT archive. Historical claims should use original conversations, files or exports the current host can actually access, or state the missing scope.
+**Yes — in the Codex owner-account setup we tested, it could.** Reflection Companion retrieved real ChatGPT message content across many threads, with dates and source links, and used that material for packaged daily and weekly reflection. That cross-surface retrieval is one reason Codex is a useful current host.
 
-See [Using Codex with your ChatGPT plan](https://help.openai.com/en/articles/11369540-using-codex-with-your-chatgpt-plan), [ChatGPT Work and Codex](https://help.openai.com/en/articles/20001275/) and [Memory in ChatGPT](https://help.openai.com/en/articles/8590148-memory-in-chatgpt).
+OpenAI documents Codex's own chat history as separate from the ChatGPT history shown in the Chat experience. That UI separation does not mean relevant ChatGPT conversations are necessarily unavailable to Codex host retrieval. The exact range can still vary by account, client, workspace permissions and platform changes, so Reflection Companion checks what it can actually retrieve and states the coverage rather than promising a complete archive. See [platform verification and source boundaries](docs/PLATFORMS.md) and OpenAI's [ChatGPT Work and Codex](https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex).
 
-### 8.2 Does Claude Code automatically inherit Claude chat Memory?
+### 8.2 What about Claude and Claude Code?
 
-Do not assume that either. Claude chat on web, desktop and mobile has its own chat-search and memory features, while Claude Code has project/session memory such as `CLAUDE.md` and auto-memory. Signing in with the same subscription does not make Claude chat memory a verified source inside Claude Code.
+Claude on supported paid chat surfaces can search past Claude conversations and cite them. For **Claude Code**, this release has not yet verified the same kind of cross-surface access to the Claude chat archive. Claude Code can use its current session, authorized project/files, and its own project/session memory such as `CLAUDE.md` and auto-memory.
 
-See [Claude chat search and memory](https://support.claude.com/en/articles/11817273-use-claude-s-chat-search-and-memory-to-build-on-previous-context) and the [Claude Code cheatsheet](https://support.claude.com/en/articles/14553413-claude-code-cheatsheet).
+If past Claude chats are important to the task, use Claude chat search where available or provide/export the relevant material. This is an **unverified capability boundary**, not a claim that such access can never exist. See [Claude chat search and memory](https://support.claude.com/en/articles/11817273-use-claude-s-chat-search-and-memory-to-build-on-previous-context).
 
-### 8.3 Is Memory the same as conversation history?
+### 8.3 What material can Reflection Companion actually use?
 
-No. Memory can be useful context, but it is selective and may change over time. It is not a dated, complete transcript. For questions such as “what pattern keeps recurring?” or “what did I believe before?”, Reflection Companion should inspect the actual source material when available and keep the claim as narrow as the evidence.
+Depending on the host and your choices, it can use:
 
-### 8.4 Can Reflection Companion read my entire account history?
+- the current conversation;
+- past conversations the host can actually retrieve;
+- files, exports, journals or project material you provide or authorize;
+- optional Reflection Companion local state, such as saved takeaways, corrections and output preferences;
+- host memory as supporting context or a retrieval clue;
+- public catalog or web sources for external ideas and facts when relevant.
 
-Only when the current host actually exposes that scope. A recent list, remembered summary or exhausted cursor does not by itself prove complete history. Selected exports or files are valid alternatives when they cover the question you want to explore.
+For historical claims, dated original conversations/files carry more evidential weight than memory, titles or old AI summaries. Web sources never substitute for personal history.
+
+### 8.4 How much past conversation history can it usually read?
+
+It depends on the host and the task. In our Codex owner-account tests, Reflection Companion retrieved broad, date-scoped ChatGPT history across many threads. That does not guarantee every conversation, attachment or audio item is available on every account.
+
+A narrow question rarely needs a complete archive. A broad request such as a yearly review or “what pattern keeps recurring?” should first inspect the available time/topic coverage, repair material gaps where supported, and disclose any remaining limit.
 
 ### 8.5 Do I need to journal, save anything or set up schedules first?
 
 No. You can begin statelessly with one question, one event or the current conversation. Saving, durable preferences and scheduled reflection are separate opt-in choices.
+
+### 8.6 Couldn't I just ask ordinary ChatGPT or Claude these questions?
+
+For a one-off question, often yes. Reflection Companion is useful when you want the behavior to be repeatable: source-aware historical reflection, corrections that stay corrections, five-period review artifacts, a curated exploration library, optional continuity and host-native scheduling. You do not need all of those features to benefit from one conversation.
 
 ---
 
