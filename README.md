@@ -286,7 +286,35 @@ Catalog addition dates, original publication dates and popularity are separate. 
 
 ---
 
-## 8. Read more
+## 8. Common questions
+
+### 8.1 I use ChatGPT a lot. Does Codex automatically inherit ChatGPT Memory and all my chats?
+
+Do not assume that. You can sign in to Codex with your ChatGPT account, but Codex remains a separate experience with separate chat history, and it has its own memory features. Reflection Companion therefore treats memory as orientation, not proof of a complete ChatGPT archive. Historical claims should use original conversations, files or exports the current host can actually access, or state the missing scope.
+
+See [Using Codex with your ChatGPT plan](https://help.openai.com/en/articles/11369540-using-codex-with-your-chatgpt-plan), [ChatGPT Work and Codex](https://help.openai.com/en/articles/20001275/) and [Memory in ChatGPT](https://help.openai.com/en/articles/8590148-memory-in-chatgpt).
+
+### 8.2 Does Claude Code automatically inherit Claude chat Memory?
+
+Do not assume that either. Claude chat on web, desktop and mobile has its own chat-search and memory features, while Claude Code has project/session memory such as `CLAUDE.md` and auto-memory. Signing in with the same subscription does not make Claude chat memory a verified source inside Claude Code.
+
+See [Claude chat search and memory](https://support.claude.com/en/articles/11817273-use-claude-s-chat-search-and-memory-to-build-on-previous-context) and the [Claude Code cheatsheet](https://support.claude.com/en/articles/14553413-claude-code-cheatsheet).
+
+### 8.3 Is Memory the same as conversation history?
+
+No. Memory can be useful context, but it is selective and may change over time. It is not a dated, complete transcript. For questions such as “what pattern keeps recurring?” or “what did I believe before?”, Reflection Companion should inspect the actual source material when available and keep the claim as narrow as the evidence.
+
+### 8.4 Can Reflection Companion read my entire account history?
+
+Only when the current host actually exposes that scope. A recent list, remembered summary or exhausted cursor does not by itself prove complete history. Selected exports or files are valid alternatives when they cover the question you want to explore.
+
+### 8.5 Do I need to journal, save anything or set up schedules first?
+
+No. You can begin statelessly with one question, one event or the current conversation. Saving, durable preferences and scheduled reflection are separate opt-in choices.
+
+---
+
+## 9. Read more
 
 - [Scenarios and advanced use](docs/USER_GUIDE.md) — diaries, weekly reviews, corrections, saving, and schedules
 - [Complete conversation examples](docs/EXAMPLES.md) — see how a discussion actually unfolds
