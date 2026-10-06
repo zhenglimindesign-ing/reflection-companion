@@ -2,11 +2,11 @@
 
 [简体中文](CHANGELOG.zh-CN.md) | **English**
 
-## Documentation 2026-10-06 · Memory and source boundaries
+## Documentation 2026-10-06 · Cross-surface history and source boundaries
 
-- Add a compact FAQ clarifying that same-account use across ChatGPT/Codex or Claude/Claude Code does not prove shared conversation history. Host memory may orient reflection but is not a complete, dated source archive.
-- Add the same boundary to the platform guide and user guide, with links to current OpenAI and Anthropic documentation. Existing source-readiness and longitudinal rules remain unchanged.
-- This is a documentation-only main-branch update; v0.5.6 runtime packages and release assets are unchanged.
+- Clarify the verified positive path: owner-account Codex tests retrieved real ChatGPT messages across threads, with dates and source links. Codex's own history UI being separate from ChatGPT history does not by itself mean relevant ChatGPT threads are unavailable to host retrieval.
+- Reframe the FAQ around what users actually care about: which past conversations remain usable, what materials Reflection Companion consumes, how much history is needed, and the separate unverified Claude Code cross-surface boundary.
+- Keep memory as supporting context rather than a substitute for dated source evidence. This is a documentation-only main-branch update; v0.5.6 runtime packages and release assets are unchanged.
 
 ## 0.5.6 — 2026-10-05 · One question to begin
 
