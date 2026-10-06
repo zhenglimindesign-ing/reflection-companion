@@ -10,6 +10,8 @@ The README contains the introduction, installation and examples needed for first
 
 After installing and starting through the [README](../README.md), use existing discussions or describe something happening now. Your choice of material determines what this discussion can cover.
 
+Host memory can help provide background, but it does not replace auditable historical sources. Even when Codex and ChatGPT, or Claude Code and Claude, use the same account, do not assume their history is automatically shared. Longitudinal claims should rely on original conversations, files or exports the current host can actually access.
+
 If you already discuss things with AI, say:
 
 > Review this week's discussions about this project. How did my decision criteria change? First explain which sources you can actually read. Do not save yet.
