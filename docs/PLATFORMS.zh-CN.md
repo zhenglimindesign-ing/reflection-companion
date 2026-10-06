@@ -21,6 +21,15 @@
 
 区别涉及材料、权限与文件寿命，不只是叫它的方式。两种安装包从同一份核心 Skill 生成，不维护两套反思逻辑。说明依据 [Claude Code Skills](https://code.claude.com/docs/en/skills) 与 [Claude 自定义 Skills](https://support.claude.com/en/articles/12512198-how-to-create-custom-skills)。
 
+## 账号 Memory 与聊天历史访问
+
+使用同一家厂商、同一个账号登录，**不等于**不同宿主能读取同一份个人历史。
+
+- **ChatGPT ↔ Codex**：Codex 可以用 ChatGPT 账号登录，也有自己的记忆能力，但 Codex 仍是独立体验，聊天历史与普通 ChatGPT 分开。不能把 ChatGPT Memory 或记忆摘要当成 Codex 已经能读取底层 ChatGPT 原始对话的证明。参见 [Using Codex with your ChatGPT plan](https://help.openai.com/en/articles/11369540-using-codex-with-your-chatgpt-plan)、[ChatGPT Work and Codex](https://help.openai.com/en/articles/20001275/) 和 [Memory in ChatGPT](https://help.openai.com/en/articles/8590148-memory-in-chatgpt)。
+- **Claude ↔ Claude Code**：Claude 的聊天 Memory 用于受支持的聊天端；Claude Code 使用自己的项目／会话上下文，例如 `CLAUDE.md` 与 auto-memory。同一订阅／登录不构成共享历史证据。参见 [Claude 的聊天搜索与 Memory](https://support.claude.com/en/articles/11817273-use-claude-s-chat-search-and-memory-to-build-on-previous-context) 和 [Claude Code cheatsheet](https://support.claude.com/en/articles/14553413-claude-code-cheatsheet)。
+
+对 Reflection Companion 来说，Memory 可以帮助定向，但涉及历史解释时，应尽量回到当前宿主实际能取回的原始对话、笔记、文件或导出。取不到相应范围时，就缩小结论或明确说明缺口。
+
 ## Codex：当前公开版
 
 ### 首次安装
