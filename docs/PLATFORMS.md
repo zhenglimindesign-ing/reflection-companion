@@ -21,14 +21,19 @@ Public Alpha **v0.5.6** provides the Codex plugin, Claude Code project Skill and
 
 The difference covers access, permissions and file lifetime, not just invocation. Both packages are generated from one core Skill. References: [Claude Code Skills](https://code.claude.com/docs/en/skills) and [custom Claude Skills](https://support.claude.com/en/articles/12512198-how-to-create-custom-skills).
 
-## Account memory and conversation-history access
+## Chat history, memory and cross-surface access
 
-Signing in with the same provider account does **not** mean every surface exposes the same personal history.
+Using one provider account can expose useful context across surfaces, but the exact mechanisms differ.
 
-- **ChatGPT ↔ Codex:** Codex can use a ChatGPT account for sign-in and has its own memory features, but Codex remains a separate experience with separate chat history. Do not treat ChatGPT Memory or a remembered summary as proof that Codex can read the underlying ChatGPT conversations. See [Using Codex with your ChatGPT plan](https://help.openai.com/en/articles/11369540-using-codex-with-your-chatgpt-plan), [ChatGPT Work and Codex](https://help.openai.com/en/articles/20001275/) and [Memory in ChatGPT](https://help.openai.com/en/articles/8590148-memory-in-chatgpt).
-- **Claude ↔ Claude Code:** Claude chat memory applies to supported chat surfaces; Claude Code uses its own project/session context such as `CLAUDE.md` and auto-memory. A shared subscription/login does not establish shared historical evidence. See [Claude chat search and memory](https://support.claude.com/en/articles/11817273-use-claude-s-chat-search-and-memory-to-build-on-previous-context) and the [Claude Code cheatsheet](https://support.claude.com/en/articles/14553413-claude-code-cheatsheet).
+- **ChatGPT → Codex — verified in our owner-account tests.** Fresh Codex conversations retrieved real ChatGPT message content across multiple threads using host history tools, with pagination, dates and ChatGPT source links. Packaged daily and weekly Reflection Companion flows preserved this source-level retrieval rather than relying on generic memory alone. OpenAI separately documents that Codex's own chat history is shown separately from ChatGPT history; that product-history separation is not the same question as whether Codex host retrieval can access relevant ChatGPT threads. Availability should still be checked per account/client/workspace.
+- **Claude chat — supported chat search.** Anthropic documents past-chat search on supported paid Claude web, desktop and mobile surfaces, with citations back to original chats.
+- **Claude Code — separate evidence boundary.** This release has not verified equivalent access from Claude Code to the Claude chat archive. Claude Code has its own session/project context, `CLAUDE.md`, resumable local sessions and auto-memory. Use supplied/exported Claude chats when cross-surface source access is unavailable.
 
-For Reflection Companion, memory may help orient a conversation, but historical interpretation should be grounded in the original conversations, notes, files or exports the current host can actually retrieve. If that source scope is unavailable, narrow the claim or disclose the gap.
+For Reflection Companion, the source hierarchy is practical rather than ideological: current conversation and actually retrieved dated source material first; user-provided files/exports and authorized local state where relevant; host memory, titles and old summaries as supporting context or retrieval clues; public/web sources only for external facts and exploration. A useful reflection does not require a complete lifetime archive, but broader claims require broader verified coverage.
+
+References: OpenAI [ChatGPT Work and Codex](https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex), [Using Codex with your ChatGPT plan](https://help.openai.com/en/articles/11369540-using-codex-with-your-chatgpt-plan), [Memory in ChatGPT](https://help.openai.com/en/articles/8590148-memory-in-chatgpt); Anthropic [Claude chat search and memory](https://support.claude.com/en/articles/11817273-use-claude-s-chat-search-and-memory-to-build-on-previous-context), [Claude Code power-user tips](https://support.claude.com/en/articles/14554000-claude-code-power-user-tips).
+
+
 
 ## Codex: the public release
 
