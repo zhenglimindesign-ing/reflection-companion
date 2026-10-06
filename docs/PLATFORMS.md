@@ -21,6 +21,15 @@ Public Alpha **v0.5.6** provides the Codex plugin, Claude Code project Skill and
 
 The difference covers access, permissions and file lifetime, not just invocation. Both packages are generated from one core Skill. References: [Claude Code Skills](https://code.claude.com/docs/en/skills) and [custom Claude Skills](https://support.claude.com/en/articles/12512198-how-to-create-custom-skills).
 
+## Account memory and conversation-history access
+
+Signing in with the same provider account does **not** mean every surface exposes the same personal history.
+
+- **ChatGPT ↔ Codex:** Codex can use a ChatGPT account for sign-in and has its own memory features, but Codex remains a separate experience with separate chat history. Do not treat ChatGPT Memory or a remembered summary as proof that Codex can read the underlying ChatGPT conversations. See [Using Codex with your ChatGPT plan](https://help.openai.com/en/articles/11369540-using-codex-with-your-chatgpt-plan), [ChatGPT Work and Codex](https://help.openai.com/en/articles/20001275/) and [Memory in ChatGPT](https://help.openai.com/en/articles/8590148-memory-in-chatgpt).
+- **Claude ↔ Claude Code:** Claude chat memory applies to supported chat surfaces; Claude Code uses its own project/session context such as `CLAUDE.md` and auto-memory. A shared subscription/login does not establish shared historical evidence. See [Claude chat search and memory](https://support.claude.com/en/articles/11817273-use-claude-s-chat-search-and-memory-to-build-on-previous-context) and the [Claude Code cheatsheet](https://support.claude.com/en/articles/14553413-claude-code-cheatsheet).
+
+For Reflection Companion, memory may help orient a conversation, but historical interpretation should be grounded in the original conversations, notes, files or exports the current host can actually retrieve. If that source scope is unavailable, narrow the claim or disclose the gap.
+
 ## Codex: the public release
 
 ### First installation
