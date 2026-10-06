@@ -2,11 +2,11 @@
 
 **简体中文** | [English](CHANGELOG.md)
 
-## 文档更新 2026-10-06 · Memory 与来源边界
+## 文档更新 2026-10-06 · 跨 surface 历史与来源边界
 
-- 增加简短 FAQ，明确同一账号下的 ChatGPT／Codex 或 Claude／Claude Code 并不证明聊天历史自动共享。宿主 Memory 可以帮助定向，但不是完整、带日期的来源档案。
-- 平台指南和使用指南同步加入同一边界，并链接当前 OpenAI 与 Anthropic 官方说明；既有 source-readiness 与 longitudinal 规则不变。
-- 这是 main 分支的纯文档更新；v0.5.6 运行时安装包和 release 附件保持不变。
+- 明确已经验证过的正向路径：owner-account Codex 实测可以跨 thread 取回真实 ChatGPT 消息、日期和来源链接。Codex 自己的 history 界面与 ChatGPT history 分开，并不等于宿主检索拿不到相关 ChatGPT thread。
+- FAQ 改为回答用户真正关心的问题：过去的对话还能不能用、Reflection Companion 实际消费哪些材料、需要多广的历史，以及 Claude Code 跨 surface 访问目前仍未验证的边界。
+- Memory 继续作为背景／定向线索，而不是带日期原始证据的替代。这是 main 分支的纯文档更新；v0.5.6 运行时安装包和 release 附件保持不变。
 
 ## 0.5.6 — 2026-10-05 · 从一个问题开始
 
