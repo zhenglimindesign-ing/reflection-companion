@@ -2,6 +2,12 @@
 
 **简体中文** | [English](CHANGELOG.md)
 
+## 文档更新 2026-10-06 · Memory 与来源边界
+
+- 增加简短 FAQ，明确同一账号下的 ChatGPT／Codex 或 Claude／Claude Code 并不证明聊天历史自动共享。宿主 Memory 可以帮助定向，但不是完整、带日期的来源档案。
+- 平台指南和使用指南同步加入同一边界，并链接当前 OpenAI 与 Anthropic 官方说明；既有 source-readiness 与 longitudinal 规则不变。
+- 这是 main 分支的纯文档更新；v0.5.6 运行时安装包和 release 附件保持不变。
+
 ## 0.5.6 — 2026-10-05 · 从一个问题开始
 
 - 直接开始一个内置问题，无需来源选择菜单或保存设置；想自己选时才给选项。语气与反馈可以换玩法，明确请求新内容时使用动态目录。
