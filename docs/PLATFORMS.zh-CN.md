@@ -21,14 +21,19 @@
 
 区别涉及材料、权限与文件寿命，不只是叫它的方式。两种安装包从同一份核心 Skill 生成，不维护两套反思逻辑。说明依据 [Claude Code Skills](https://code.claude.com/docs/en/skills) 与 [Claude 自定义 Skills](https://support.claude.com/en/articles/12512198-how-to-create-custom-skills)。
 
-## 账号 Memory 与聊天历史访问
+## 聊天历史、Memory 与跨 surface 访问
 
-使用同一家厂商、同一个账号登录，**不等于**不同宿主能读取同一份个人历史。
+同一个厂商账号可以让不同 surface 共享一部分有用上下文，但具体机制并不相同。
 
-- **ChatGPT ↔ Codex**：Codex 可以用 ChatGPT 账号登录，也有自己的记忆能力，但 Codex 仍是独立体验，聊天历史与普通 ChatGPT 分开。不能把 ChatGPT Memory 或记忆摘要当成 Codex 已经能读取底层 ChatGPT 原始对话的证明。参见 [Using Codex with your ChatGPT plan](https://help.openai.com/en/articles/11369540-using-codex-with-your-chatgpt-plan)、[ChatGPT Work and Codex](https://help.openai.com/en/articles/20001275/) 和 [Memory in ChatGPT](https://help.openai.com/en/articles/8590148-memory-in-chatgpt)。
-- **Claude ↔ Claude Code**：Claude 的聊天 Memory 用于受支持的聊天端；Claude Code 使用自己的项目／会话上下文，例如 `CLAUDE.md` 与 auto-memory。同一订阅／登录不构成共享历史证据。参见 [Claude 的聊天搜索与 Memory](https://support.claude.com/en/articles/11817273-use-claude-s-chat-search-and-memory-to-build-on-previous-context) 和 [Claude Code cheatsheet](https://support.claude.com/en/articles/14553413-claude-code-cheatsheet)。
+- **ChatGPT → Codex——我们已经在 owner-account 实测过。** 多个全新的 Codex 会话通过宿主历史工具跨 thread 取回真实 ChatGPT 消息正文，并保留分页、日期和 ChatGPT 原始链接；打包后的 Daily / Weekly Reflection Companion 也继续使用这种来源级取回，而不是只靠泛化 Memory。OpenAI 另外说明 Codex 自己的聊天 history 在产品界面上与 ChatGPT history 分开；这和“Codex 的宿主检索能否取到相关 ChatGPT thread”不是同一个问题。具体可用范围仍应按账号／客户端／workspace 实际检查。
+- **Claude 聊天端——官方支持过去聊天搜索。** Anthropic 已说明在支持的付费 Claude 网页、桌面和移动端，可以搜索过去对话，并引用回原始 chat。
+- **Claude Code——目前是不同的证据边界。** 当前版本尚未验证 Claude Code 可以同样读取 Claude 聊天档案。Claude Code 有自己的 session／project context、`CLAUDE.md`、可恢复的本地 session 和 auto-memory；跨 surface 历史不可用时，可以使用导出／提供的 Claude 对话。
 
-对 Reflection Companion 来说，Memory 可以帮助定向，但涉及历史解释时，应尽量回到当前宿主实际能取回的原始对话、笔记、文件或导出。取不到相应范围时，就缩小结论或明确说明缺口。
+对 Reflection Companion 来说，材料优先级是实用的：当前对话和实际取回的带日期原始材料优先；需要时使用你提供的文件／导出与获授权的本地状态；宿主 Memory、标题和旧总结可以帮助定向或找材料；公共目录／网络只用于外部事实和探索灵感。一次有用的反思并不要求完整人生档案，但结论越宽，越需要更宽且核实过的材料覆盖。
+
+参考：OpenAI [ChatGPT Work and Codex](https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex)、[Using Codex with your ChatGPT plan](https://help.openai.com/en/articles/11369540-using-codex-with-your-chatgpt-plan)、[Memory in ChatGPT](https://help.openai.com/en/articles/8590148-memory-in-chatgpt)；Anthropic [Claude 的聊天搜索与 Memory](https://support.claude.com/en/articles/11817273-use-claude-s-chat-search-and-memory-to-build-on-previous-context)、[Claude Code power-user tips](https://support.claude.com/en/articles/14554000-claude-code-power-user-tips)。
+
+
 
 ## Codex：当前公开版
 
