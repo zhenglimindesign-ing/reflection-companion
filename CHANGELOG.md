@@ -2,6 +2,12 @@
 
 [简体中文](CHANGELOG.zh-CN.md) | **English**
 
+## Documentation 2026-10-06 · Memory and source boundaries
+
+- Add a compact FAQ clarifying that same-account use across ChatGPT/Codex or Claude/Claude Code does not prove shared conversation history. Host memory may orient reflection but is not a complete, dated source archive.
+- Add the same boundary to the platform guide and user guide, with links to current OpenAI and Anthropic documentation. Existing source-readiness and longitudinal rules remain unchanged.
+- This is a documentation-only main-branch update; v0.5.6 runtime packages and release assets are unchanged.
+
 ## 0.5.6 — 2026-10-05 · One question to begin
 
 - Start a bundled question immediately without a source-choice menu or saving setup; offer choices when requested. Tone and feedback can change the exercise; explicit fresh-content requests use the dynamic shelf.
