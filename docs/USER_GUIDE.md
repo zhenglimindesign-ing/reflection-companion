@@ -10,7 +10,7 @@ The README contains the introduction, installation and examples needed for first
 
 After installing and starting through the [README](../README.md), use existing discussions or describe something happening now. Your choice of material determines what this discussion can cover.
 
-Host memory can help provide background, but it does not replace auditable historical sources. Even when Codex and ChatGPT, or Claude Code and Claude, use the same account, do not assume their history is automatically shared. Longitudinal claims should rely on original conversations, files or exports the current host can actually access.
+Hosts may provide more than memory. In the tested Codex owner-account environment, Reflection Companion retrieved real ChatGPT messages across threads and should prefer that dated source material when available. Memory is better treated as background or a retrieval clue. Coverage can still vary by account and host, so longitudinal claims should use the original conversations, files, exports and authorized state actually accessible in the current run.
 
 If you already discuss things with AI, say:
 
