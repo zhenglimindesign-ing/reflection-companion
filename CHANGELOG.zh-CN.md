@@ -6,7 +6,7 @@
 
 - 明确已经验证过的正向路径：owner-account Codex 实测可以跨 thread 取回真实 ChatGPT 消息、日期和来源链接。Codex 自己的 history 界面与 ChatGPT history 分开，并不等于宿主检索拿不到相关 ChatGPT thread。
 - FAQ 改为回答用户真正关心的问题：过去的对话还能不能用、Reflection Companion 实际消费哪些材料、需要多广的历史，以及 Claude Code 跨 surface 访问目前仍未验证的边界。
-- Memory 继续作为背景／定向线索，而不是带日期原始证据的替代。这是 main 分支的纯文档更新；v0.5.6 运行时安装包和 release 附件保持不变。
+- Memory 继续作为背景／定向线索，而不是带日期原始证据的替代。同时明确 Reflection Companion 本质上是在普通 AI 对话之上增加一层 reflection harness，让来源编排、证据纪律、跨时间综合、纠正、探索脚手架和可选连续性变得可重复。这是 main 分支的纯文档更新；v0.5.6 运行时安装包和 release 附件保持不变。
 
 ## 0.5.6 — 2026-10-05 · 从一个问题开始
 
