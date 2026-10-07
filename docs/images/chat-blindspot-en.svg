@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="780" viewBox="0 0 800 780">
+<rect width="800" height="780" rx="18" fill="#f2efe8"/>
+<text x="40" y="48" font-family="Arial,Helvetica,sans-serif" font-size="13" letter-spacing="2" fill="#087f78">BLIND SPOTS</text>
+<text x="40" y="92" font-family="Georgia,serif" font-size="29" font-weight="700" fill="#1d1d1b">It brings evidence from your past chats — and offers another reading</text>
+
+<rect x="40" y="150" width="720" height="540" rx="14" fill="#fffefb"/>
+<text x="62" y="182" font-family="Arial,sans-serif" font-size="13" fill="#6a6a64">Fictional example</text><text x="604" y="182" font-family="Arial,sans-serif" font-size="13" fill="#087f78">Reflection Companion</text>
+<rect x="250" y="210" width="475" height="70" rx="12" fill="#e9e6de"/><text x="274" y="238" font-family="Arial,sans-serif" font-size="15" fill="#1d1d1b">Look back at my chats from the last few months. Where do you think</text><text x="274" y="260" font-family="Arial,sans-serif" font-size="15" fill="#1d1d1b">I see myself inaccurately?</text>
+<circle cx="72" cy="320" r="16" fill="#087f78"/><text x="66" y="326" font-family="Arial,sans-serif" font-size="13" fill="white">R</text>
+<text x="102" y="315" font-family="Arial,sans-serif" font-size="14" fill="#1d1d1b">I could read 38 conversations from Aug 1 to Nov 20; late November is sparse.</text><text x="102" y="337" font-family="Arial,sans-serif" font-size="14" fill="#1d1d1b">I’ll only say what the material supports.</text>
+<rect x="105" y="366" width="620" height="192" rx="10" fill="#f8f6f0" stroke="#ddd9cf"/>
+<text x="125" y="392" font-family="Arial,sans-serif" font-size="12" fill="#6a6a64">How you describe yourself</text><text x="125" y="422" font-family="Georgia,serif" font-size="18" fill="#1d1d1b">Aug 3　“I’m not good at organizing people, and I don’t like taking the lead.”</text>
+<line x1="105" y1="444" x2="725" y2="444" stroke="#ddd9cf"/>
+<text x="125" y="471" font-family="Arial,sans-serif" font-size="12" fill="#6a6a64">What you did</text><text x="125" y="498" font-family="Arial,sans-serif" font-size="15" fill="#1d1d1b">Sep 14　Started a book club, picked the books and the venue</text><text x="125" y="522" font-family="Arial,sans-serif" font-size="15" fill="#1d1d1b">Oct 9　Called a project retro yourself and wrote the agenda</text><text x="125" y="546" font-family="Arial,sans-serif" font-size="15" fill="#1d1d1b">Nov 2　Planned a three-day trip for a friend</text>
+<text x="105" y="594" font-family="Arial,sans-serif" font-size="16" fill="#1d1d1b">Each time, you spoke up first and did the arranging. “Not good at organizing” may undersell you.</text>
+<text x="105" y="628" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#8a392f">Another reading:</text><text x="235" y="628" font-family="Arial,sans-serif" font-size="16" fill="#1d1d1b"> maybe you dislike being assigned the lead, not organizing itself.</text>
+<text x="105" y="661" font-family="Arial,sans-serif" font-size="16" fill="#1d1d1b">Of those three, was there one you actually enjoyed?</text>
+<text x="40" y="735" font-family="Arial,sans-serif" font-size="13" fill="#6a6a64">That’s not right　 ·　 You’re missing a condition　 ·　 Save this observation</text>
+</svg>
