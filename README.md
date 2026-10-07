@@ -12,6 +12,8 @@ Use it for a diary, a weekly review, or a period or project retrospective. It ca
 
 Available for Codex, Claude Code, and Claude web.
 
+**Quick start:** [One question](#start-one-question) · [See examples](#review-examples) · [Install](#install) · [FAQ](#faq)
+
 ---
 
 ## 1. Why Reflection Companion exists
@@ -77,7 +79,7 @@ One repetition does not establish a pattern, and a lack of counterexamples does 
 
 The Companion should distinguish evidence from interpretation and your own confirmation. You can reject an observation, qualify it, or revise it as new experience appears.
 
-![Fictional example: checking a possible blind spot against past conversations](docs/images/chat-blindspot-en.svg)
+![Fictional example: checking a possible blind spot against past conversations](docs/images/chat-blindspot-en.webp)
 
 ### 2.3 See your own thinking more clearly
 
@@ -138,6 +140,8 @@ Describe what you want in ordinary language.
 
 The same Companion can move naturally between these situations.
 
+<a id="start-one-question"></a>
+
 ### 3.1 Unsure what to ask? Start with one question
 
 You do not need a diary habit or a topic in mind. Say:
@@ -150,7 +154,7 @@ For blind spots, self-description versus behavior, happiness changes or present 
 
 For fresh inspiration, ask “What new self-exploration questions are worth trying?” It reads the dynamic catalog first, then verifies web sources when recent public content is needed. “Another direction” simply adjusts the current exercise.
 
-![Fictional example: starting with one bundled question](docs/images/chat-question-en.svg)
+![Fictional example: starting with one bundled question](docs/images/chat-question-en.webp)
 
 ### 3.2 Reflection can also happen proactively
 
@@ -167,6 +171,8 @@ Scheduling is opt-in. You choose the scope, timing, and saving behavior.
 
 Installing Reflection Companion **does not create schedules automatically**. Support for scheduled execution, source access, and unattended delivery varies by host; see the platform documentation for the verified scope.
 
+<a id="review-examples"></a>
+
 ## 4. Different time scales, different kinds of reflection
 
 **A day, week, month, quarter and year should not be the same summary stretched across different dates.** As the time span changes, so does what a useful reflection needs to notice and connect: a diary stays close to lived experience; longer reviews compare evidence over time, revisit judgments, and look for patterns together with their limits.
@@ -181,7 +187,7 @@ Installing Reflection Companion **does not create schedules automatically**. Sup
 
 The fictional weekly example below shows how facts and a changed judgment can be connected without turning them into a personality conclusion. It is an authored demonstration, not a real user record or host-test result.
 
-![Fictional weekly review example](docs/images/chat-weekly-en-short.svg)
+![Fictional weekly review example](docs/images/chat-weekly-en-short.webp)
 
 [Read all five completed examples and an analysis-off variant](plugins/reflection-companion/skills/reflection-companion/assets/examples/reviews.en.md).
 
@@ -190,6 +196,8 @@ These structures are adjustable starting points, not fixed forms. You can keep m
 For historical backfill, the assistant must check both what was retrieved and what was represented in the writing. Existing memory or an exhausted recent-history cursor is not proof of all account history. Entries need not have similar lengths; important discussions and corrections must not disappear behind a fixed message cap. You can keep daily entries and their weekly review in one weekly tab, with month/quarter reviews in the same document. Existing archive conventions and your current choices control the layout.
 
 ---
+
+<a id="install"></a>
 
 ## 5. Install and start
 
@@ -229,13 +237,16 @@ or:
 
 ---
 
-### 5.1 Model and reasoning starting point
+<details>
+<summary><strong>5.1 Model and reasoning starting point</strong></summary>
 
 Use your host's current general-purpose model at its default reasoning effort. In Codex, **GPT-6.1 Sol** is a starting option when available in your model menu. For Claude, use an available general-purpose model; the Skill does not require a particular vendor or model.
 
 A short diary from a few notes is a useful first trial. For a review spanning many sources or months, try **high** effort if the model drops earlier evidence, misses corrections or confuses statements with interpretation after the source coverage is checked. This is a practical starting guideline, not a benchmark ranking or a requirement to use the highest setting.
 
 Higher effort takes longer and uses more tokens; it cannot recover history the host cannot access. First check sources and the written result, then adjust effort. The assistant should not change your model or settings merely because this README recommends a starting point. See [OpenAI's model and reasoning guidance](https://developers.openai.com/codex/models).
+
+</details>
 
 ## 6. Sources, saving, and boundaries
 
@@ -284,21 +295,30 @@ Catalog addition dates, original publication dates and popularity are separate. 
 
 ---
 
+<a id="faq"></a>
+
 ## 8. Common questions
 
-### 8.1 I mostly use ChatGPT. Can Reflection Companion in Codex still use those conversations?
+<details>
+<summary><strong>8.1 I mostly use ChatGPT. Can Reflection Companion in Codex still use those conversations?</strong></summary>
 
 **Yes — in the Codex owner-account setup we tested, it could.** Reflection Companion retrieved real ChatGPT message content across many threads, with dates and source links, and used that material for packaged daily and weekly reflection. That cross-surface retrieval is one reason Codex is a useful current host.
 
 OpenAI documents Codex's own chat history as separate from the ChatGPT history shown in the Chat experience. That UI separation does not mean relevant ChatGPT conversations are necessarily unavailable to Codex host retrieval. The exact range can still vary by account, client, workspace permissions and platform changes, so Reflection Companion checks what it can actually retrieve and states the coverage rather than promising a complete archive. See [platform verification and source boundaries](docs/PLATFORMS.md) and OpenAI's [ChatGPT Work and Codex](https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex).
 
-### 8.2 What about Claude and Claude Code?
+</details>
+
+<details>
+<summary><strong>8.2 What about Claude and Claude Code?</strong></summary>
 
 Claude on supported paid chat surfaces can search past Claude conversations and cite them. For **Claude Code**, this release has not yet verified the same kind of cross-surface access to the Claude chat archive. Claude Code can use its current session, authorized project/files, and its own project/session memory such as `CLAUDE.md` and auto-memory.
 
 If past Claude chats are important to the task, use Claude chat search where available or provide/export the relevant material. This is an **unverified capability boundary**, not a claim that such access can never exist. See [Claude chat search and memory](https://support.claude.com/en/articles/11817273-use-claude-s-chat-search-and-memory-to-build-on-previous-context).
 
-### 8.3 What material can Reflection Companion actually use?
+</details>
+
+<details>
+<summary><strong>8.3 What material can Reflection Companion actually use?</strong></summary>
 
 Depending on the host and your choices, it can use:
 
@@ -311,17 +331,26 @@ Depending on the host and your choices, it can use:
 
 For historical claims, dated original conversations/files carry more evidential weight than memory, titles or old AI summaries. Web sources never substitute for personal history.
 
-### 8.4 How much past conversation history can it usually read?
+</details>
+
+<details>
+<summary><strong>8.4 How much past conversation history can it usually read?</strong></summary>
 
 It depends on the host and the task. In our Codex owner-account tests, Reflection Companion retrieved broad, date-scoped ChatGPT history across many threads. That does not guarantee every conversation, attachment or audio item is available on every account.
 
 A narrow question rarely needs a complete archive. A broad request such as a yearly review or “what pattern keeps recurring?” should first inspect the available time/topic coverage, repair material gaps where supported, and disclose any remaining limit.
 
-### 8.5 Do I need to journal, save anything or set up schedules first?
+</details>
+
+<details>
+<summary><strong>8.5 Do I need to journal, save anything or set up schedules first?</strong></summary>
 
 No. You can begin statelessly with one question, one event or the current conversation. Saving, durable preferences and scheduled reflection are separate opt-in choices.
 
-### 8.6 Couldn't I just ask ordinary ChatGPT or Claude these questions?
+</details>
+
+<details>
+<summary><strong>8.6 Couldn't I just ask ordinary ChatGPT or Claude these questions?</strong></summary>
 
 For a one-off question, often yes. Reflection Companion is **not** a special model and does not depend on a secret prompt.
 
@@ -330,6 +359,8 @@ What the Skill adds is a repeatable way of doing reflection: it checks which mat
 If you only want one spontaneous answer, ordinary chat may be enough. If you want reflection to stay **source-aware, longitudinal, correctable and reusable**, the Skill becomes more useful.
 
 ---
+
+</details>
 
 ## 9. Read more
 
