@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="660" viewBox="0 0 800 660">
+<rect width="800" height="660" rx="18" fill="#f2efe8"/>
+<text x="40" y="48" font-family="Arial,Helvetica,sans-serif" font-size="13" letter-spacing="2" fill="#087f78">NOT SURE WHAT TO ASK</text>
+<text x="40" y="92" font-family="Georgia,serif" font-size="29" font-weight="700" fill="#1d1d1b">No need to know what to ask — it gives you one question and begins</text>
+
+<rect x="40" y="150" width="720" height="430" rx="14" fill="#fffefb"/>
+<text x="62" y="182" font-family="Arial,sans-serif" font-size="13" fill="#6a6a64">Fictional example</text><text x="604" y="182" font-family="Arial,sans-serif" font-size="13" fill="#087f78">Reflection Companion</text>
+<rect x="350" y="210" width="375" height="56" rx="12" fill="#e9e6de"/><text x="372" y="244" font-family="Arial,sans-serif" font-size="16" fill="#1d1d1b">I don’t know what to explore. Just ask me something.</text>
+<circle cx="72" cy="306" r="16" fill="#087f78"/><text x="66" y="312" font-family="Arial,sans-serif" font-size="13" fill="white">R</text>
+<text x="102" y="299" font-family="Arial,sans-serif" font-size="14" fill="#1d1d1b">Sure. I’ll pick one from the bundled exploration library that doesn’t need</text><text x="102" y="321" font-family="Arial,sans-serif" font-size="14" fill="#1d1d1b">history and start directly.</text>
+<rect x="104" y="344" width="620" height="92" rx="10" fill="#f8f6f0" stroke="#ddd9cf"/>
+<text x="124" y="370" font-family="Arial,sans-serif" font-size="12" fill="#6a6a64">Bundled exploration · A curious interview · No history needed</text>
+<text x="124" y="408" font-family="Georgia,serif" font-size="20" fill="#1d1d1b">Is there something you meant to do recently but didn’t?</text>
+<rect x="405" y="458" width="320" height="54" rx="12" fill="#e9e6de"/><text x="427" y="491" font-family="Arial,sans-serif" font-size="15" fill="#1d1d1b">Yes. I meant to ask a friend to go to the beach, but never did.</text>
+<circle cx="72" cy="548" r="16" fill="#087f78"/><text x="66" y="554" font-family="Arial,sans-serif" font-size="13" fill="white">R</text>
+<text x="102" y="553" font-family="Arial,sans-serif" font-size="15" fill="#1d1d1b">Before calling it “procrastination,” what actually stopped you at the time?</text>
+<text x="40" y="620" font-family="Arial,sans-serif" font-size="13" fill="#6a6a64">Ask me a different one　 ·　 Let me think first　 ·　 Let’s stop here</text>
+</svg>
