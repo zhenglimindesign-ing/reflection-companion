@@ -1,4 +1,4 @@
-# Reflection Companion
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/zhenglimindesign-ing/zhenglimindesign-ing/main/assets/skill-reflection-companion-dark.png"><img src="https://raw.githubusercontent.com/zhenglimindesign-ing/zhenglimindesign-ing/main/assets/skill-reflection-companion-light.png" alt="Reflection Companion — Agent Skill"></picture>
 
 [简体中文](README.zh-CN.md) | **English**
 
@@ -77,6 +77,8 @@ One repetition does not establish a pattern, and a lack of counterexamples does 
 
 The Companion should distinguish evidence from interpretation and your own confirmation. You can reject an observation, qualify it, or revise it as new experience appears.
 
+![Fictional example: checking a possible blind spot against past conversations](docs/images/chat-blindspot-en.svg)
+
 ### 2.3 See your own thinking more clearly
 
 Sometimes another piece of advice is not what you need.
@@ -148,6 +150,8 @@ For blind spots, self-description versus behavior, happiness changes or present 
 
 For fresh inspiration, ask “What new self-exploration questions are worth trying?” It reads the dynamic catalog first, then verifies web sources when recent public content is needed. “Another direction” simply adjusts the current exercise.
 
+![Fictional example: starting with one bundled question](docs/images/chat-question-en.svg)
+
 ### 3.2 Reflection can also happen proactively
 
 If your host supports scheduled tasks, you do not have to remember to initiate every review yourself.
@@ -175,15 +179,9 @@ Installing Reflection Companion **does not create schedules automatically**. Sup
 | Quarter | Direction across months, possible patterns and the conditions that limit them. |
 | Year | Chapters, choices, ordinary life and wishes without a compulsory growth story. |
 
-The following excerpts are authored from one fictional source set, not a real person’s diary or host-test results.
+The fictional weekly example below shows how facts and a changed judgment can be connected without turning them into a personality conclusion. It is an authored demonstration, not a real user record or host-test result.
 
-**A diary can keep a small evening:**
-
-> The rain stopped on my way home. I walked an extra stop along the river. This evening is worth recording: “I didn't produce anything tonight, but I was living.”
-
-**A week can connect evidence and correct a judgment:**
-
-> With three signups, you considered cancelling the book group. All three later confirmed, and Xiaohe offered to bring a friend. That separates the size of a gathering from people's willingness to attend. It does not prove that attendance no longer matters to you; it adds evidence beside the earlier judgment.
+![Fictional weekly review example](docs/images/chat-weekly-en-short.svg)
 
 [Read all five completed examples and an analysis-off variant](plugins/reflection-companion/skills/reflection-companion/assets/examples/reviews.en.md).
 
@@ -338,7 +336,7 @@ If you only want one spontaneous answer, ordinary chat may be enough. If you wan
 - [Scenarios and advanced use](docs/USER_GUIDE.md) — diaries, weekly reviews, corrections, saving, and schedules
 - [Complete conversation examples](docs/EXAMPLES.md) — see how a discussion actually unfolds
 - [Platform setup and validation scope](docs/PLATFORMS.md) — Codex, Claude Code, and Claude web
-- [Mobile text experience](MOBILE.md) — try the method on a phone without treating it as full native Skill support
+- [Mobile text experience](docs/MOBILE.md) — try the method on a phone without treating it as full native Skill support
 - [Changelog](CHANGELOG.md)
 
 This is a public Alpha.
