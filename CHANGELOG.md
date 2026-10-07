@@ -2,6 +2,13 @@
 
 [简体中文](CHANGELOG.zh-CN.md) | **English**
 
+## Documentation 2026-10-07 · README visual examples
+
+- Add three paired fictional visual examples: blind-spot checking, the one-question entry, and a compact weekly review.
+- Keep the README as a product preview rather than a screenshot gallery; the complete five-period artifacts remain in Markdown examples.
+- Restore the visual project header in the canonical README source so future public syncs do not remove it.
+- These are documentation assets only; the v0.5.6 runtime tag and release archives remain unchanged.
+
 ## Documentation 2026-10-06 · Cross-surface history and source boundaries
 
 - Clarify the verified positive path: owner-account Codex tests retrieved real ChatGPT messages across threads, with dates and source links. Codex's own history UI being separate from ChatGPT history does not by itself mean relevant ChatGPT threads are unavailable to host retrieval.
