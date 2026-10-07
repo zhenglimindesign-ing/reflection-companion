@@ -67,7 +67,13 @@
     "plugins/reflection-companion/skills/reflection-companion/scripts/state.py": "4d6b68b15a458098f9143f8a7d43e983e4830ba25b5b46aa9f97a3fa2f019be8",
     "plugins/reflection-companion/skills/reflection-companion/scripts/topic_readiness.py": "d2ba30b83e562576908d85c226ba89aa041091462a8d3f5c0ec22d2a9fa4e22f",
     "plugins/reflection-companion/skills/reflection-companion/scripts/updates.py": "f2e3309365489712f2a3eef3d53ace72dafc943004b6b1a9ea80ec08949a3830",
-    "scripts/verify_release.py": "e3b8d2dcf42a866f818e243056469ffc05d45b1dbfb77b33d2f6c7be4663bf9f"
+    "scripts/verify_release.py": "e3b8d2dcf42a866f818e243056469ffc05d45b1dbfb77b33d2f6c7be4663bf9f",
+    "docs/images/chat-blindspot-en.svg": "fd5a08f4a2b293fd0a73d9282d55409f88cdfbd7cf0f8a57b16ea739086ef180",
+    "docs/images/chat-blindspot-zh.svg": "66acf546886a7d706feed0a374024c4174c063ef5330935f7e326658f41e8c40",
+    "docs/images/chat-question-en.svg": "aeae39a9afb713127d57a5de69a86709247e6571482fa1ebd8237cd68af5e0ee",
+    "docs/images/chat-question-zh.svg": "5d06c06293884732468787c711e9bcaa7c6b56c9cad69e3cbad9f1840c083f7b",
+    "docs/images/chat-weekly-en-short.svg": "c4240bbdbe91b952a91bfc8cf2c4d22dff3770548980ff37972246de7fd87f93",
+    "docs/images/chat-weekly-zh-short.svg": "1b8b2a3f20e2b89cb34b76ace64f3966943129b0d43babad7ab593f9c8929e3a"
   },
   "license": "MIT",
   "repository": "https://github.com/zhenglimindesign-ing/reflection-companion",
