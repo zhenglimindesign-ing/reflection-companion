@@ -2,6 +2,13 @@
 
 **简体中文** | [English](CHANGELOG.md)
 
+## 文档更新 2026-10-07 · README 视觉示例
+
+- 增加三组双语虚构视觉示例：盲区检查、一个问题直接开始、精简周回顾。
+- README 只做产品预览，不扩成截图画廊；完整五周期内容继续保留在 Markdown 示例页。
+- 把已采用的 visual project header 写回 canonical README 源，避免之后公开同步再次误删。
+- 这些只是文档资产；v0.5.6 runtime 标签和已发布 release 附件保持不变。
+
 ## 文档更新 2026-10-06 · 跨 surface 历史与来源边界
 
 - 明确已经验证过的正向路径：owner-account Codex 实测可以跨 thread 取回真实 ChatGPT 消息、日期和来源链接。Codex 自己的 history 界面与 ChatGPT history 分开，并不等于宿主检索拿不到相关 ChatGPT thread。
