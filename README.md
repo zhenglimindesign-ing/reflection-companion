@@ -1,4 +1,5 @@
-# Reflection Companion
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/zhenglimindesign-ing/zhenglimindesign-ing/main/assets/skill-reflection-companion-dark.png"><img src="https://raw.githubusercontent.com/zhenglimindesign-ing/zhenglimindesign-ing/main/assets/skill-reflection-companion-light.png" alt="Reflection Companion — Agent Skill"></picture>
+
 
 [简体中文](README.zh-CN.md) | **English**
 
