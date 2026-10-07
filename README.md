@@ -1,5 +1,4 @@
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/zhenglimindesign-ing/zhenglimindesign-ing/main/assets/skill-reflection-companion-dark.png"><img src="https://raw.githubusercontent.com/zhenglimindesign-ing/zhenglimindesign-ing/main/assets/skill-reflection-companion-light.png" alt="Reflection Companion — Agent Skill"></picture>
-
+# Reflection Companion
 
 [简体中文](README.zh-CN.md) | **English**
 
@@ -326,7 +325,11 @@ No. You can begin statelessly with one question, one event or the current conver
 
 ### 8.6 Couldn't I just ask ordinary ChatGPT or Claude these questions?
 
-For a one-off question, often yes. Reflection Companion is useful when you want the behavior to be repeatable: source-aware historical reflection, corrections that stay corrections, five-period review artifacts, a curated exploration library, optional continuity and host-native scheduling. You do not need all of those features to benefit from one conversation.
+For a one-off question, often yes. Reflection Companion is **not** a special model and does not depend on a secret prompt.
+
+What the Skill adds is a repeatable way of doing reflection: it checks which material the host can actually use, separates your words from AI interpretation, compares evidence across time, looks for corrections and counterexamples, gives you a scaffold when you do not know what to ask, and only carries learning forward when you authorize it. The same rules can then be reused for diaries, periodic reviews and scheduled reflection.
+
+If you only want one spontaneous answer, ordinary chat may be enough. If you want reflection to stay **source-aware, longitudinal, correctable and reusable**, the Skill becomes more useful.
 
 ---
 
@@ -335,7 +338,7 @@ For a one-off question, often yes. Reflection Companion is useful when you want 
 - [Scenarios and advanced use](docs/USER_GUIDE.md) — diaries, weekly reviews, corrections, saving, and schedules
 - [Complete conversation examples](docs/EXAMPLES.md) — see how a discussion actually unfolds
 - [Platform setup and validation scope](docs/PLATFORMS.md) — Codex, Claude Code, and Claude web
-- [Mobile text experience](docs/MOBILE.md) — try the method on a phone without treating it as full native Skill support
+- [Mobile text experience](MOBILE.md) — try the method on a phone without treating it as full native Skill support
 - [Changelog](CHANGELOG.md)
 
 This is a public Alpha.
