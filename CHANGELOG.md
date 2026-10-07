@@ -7,6 +7,8 @@
 - Add three paired fictional visual examples: blind-spot checking, the one-question entry, and a compact weekly review.
 - Keep the README as a product preview rather than a screenshot gallery; the complete five-period artifacts remain in Markdown examples.
 - Restore the visual project header in the canonical README source so future public syncs do not remove it.
+- Replace the interim reconstructed SVG cards with optimized WebP exports derived from the reviewed Claude Design originals. This preserves the approved layouts and fixes the text overflow visible in the SVG reconstruction.
+- Improve README scanability with a compact quick-start row, collapsed model/reasoning guidance, and collapsible FAQ answers while keeping source/saving boundaries visible.
 - These are documentation assets only; the v0.5.6 runtime tag and release archives remain unchanged.
 
 ## Documentation 2026-10-06 · Cross-surface history and source boundaries
