@@ -6,7 +6,7 @@
 
 - Clarify the verified positive path: owner-account Codex tests retrieved real ChatGPT messages across threads, with dates and source links. Codex's own history UI being separate from ChatGPT history does not by itself mean relevant ChatGPT threads are unavailable to host retrieval.
 - Reframe the FAQ around what users actually care about: which past conversations remain usable, what materials Reflection Companion consumes, how much history is needed, and the separate unverified Claude Code cross-surface boundary.
-- Keep memory as supporting context rather than a substitute for dated source evidence. This is a documentation-only main-branch update; v0.5.6 runtime packages and release assets are unchanged.
+- Keep memory as supporting context rather than a substitute for dated source evidence. Clarify that Reflection Companion acts as a reflection harness over ordinary AI conversations: source orchestration, evidence discipline, longitudinal synthesis, corrections, exploration scaffolding and optional continuity become repeatable. This is a documentation-only main-branch update; v0.5.6 runtime packages and release assets are unchanged.
 
 ## 0.5.6 — 2026-10-05 · One question to begin
 
