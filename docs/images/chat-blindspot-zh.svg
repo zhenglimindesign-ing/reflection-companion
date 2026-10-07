@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="780" viewBox="0 0 800 780">
+<rect width="800" height="780" rx="18" fill="#f2efe8"/>
+<text x="40" y="48" font-family="Arial,Helvetica,sans-serif" font-size="13" letter-spacing="2" fill="#087f78">找盲区</text>
+<text x="40" y="92" font-family="Georgia,'Noto Serif SC',serif" font-size="27" font-weight="700" fill="#1d1d1b">从你过去的对话里找证据，也说出另一种可能</text>
+
+<rect x="40" y="150" width="720" height="540" rx="14" fill="#fffefb"/>
+<text x="62" y="182" font-family="Arial,sans-serif" font-size="13" fill="#6a6a64">虚构示例</text><text x="604" y="182" font-family="Arial,sans-serif" font-size="13" fill="#087f78">Reflection Companion</text>
+<rect x="280" y="210" width="445" height="62" rx="12" fill="#e9e6de"/><text x="304" y="238" font-family="Arial,sans-serif" font-size="15" fill="#1d1d1b">回看我最近几个月的对话，你觉得我对自己哪里的认识</text><text x="304" y="260" font-family="Arial,sans-serif" font-size="15" fill="#1d1d1b">不太准确？</text>
+<circle cx="72" cy="314" r="16" fill="#087f78"/><text x="66" y="320" font-family="Arial,sans-serif" font-size="13" fill="white">R</text>
+<text x="102" y="309" font-family="Arial,sans-serif" font-size="14" fill="#1d1d1b">我读到 8月1日到11月20日之间的38段对话；11月下旬比较少。</text><text x="102" y="331" font-family="Arial,sans-serif" font-size="14" fill="#1d1d1b">下面只说有材料支持的部分。</text>
+<rect x="105" y="360" width="620" height="192" rx="10" fill="#f8f6f0" stroke="#ddd9cf"/>
+<text x="125" y="386" font-family="Arial,sans-serif" font-size="12" fill="#6a6a64">你怎么说自己</text><text x="125" y="416" font-family="Georgia,'Noto Serif SC',serif" font-size="18" fill="#1d1d1b">8月3日　“我不太会组织人，也不喜欢牵头。”</text>
+<line x1="105" y1="438" x2="725" y2="438" stroke="#ddd9cf"/>
+<text x="125" y="465" font-family="Arial,sans-serif" font-size="12" fill="#6a6a64">你做过什么</text><text x="125" y="492" font-family="Arial,sans-serif" font-size="15" fill="#1d1d1b">9月14日　发起读书会，定了书单和场地</text><text x="125" y="516" font-family="Arial,sans-serif" font-size="15" fill="#1d1d1b">10月9日　主动约了项目复盘会，提前写好议程</text><text x="125" y="540" font-family="Arial,sans-serif" font-size="15" fill="#1d1d1b">11月2日　帮朋友排了三天的行程</text>
+<text x="105" y="588" font-family="Arial,sans-serif" font-size="16" fill="#1d1d1b">这三次都是你先开口、你来安排。“不会组织”这个说法，可能低估了你。</text>
+<text x="105" y="622" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#8a392f">另一种可能：</text><text x="220" y="622" font-family="Arial,sans-serif" font-size="16" fill="#1d1d1b">你不喜欢的是“被指定当负责人”，而不是组织本身。</text>
+<text x="105" y="655" font-family="Arial,sans-serif" font-size="16" fill="#1d1d1b">这三次里，有没有哪一次你其实挺享受？</text>
+<text x="40" y="735" font-family="Arial,sans-serif" font-size="13" fill="#6a6a64">这个理解不对　 ·　 这里缺了一个条件　 ·　 记下这条观察</text>
+</svg>
