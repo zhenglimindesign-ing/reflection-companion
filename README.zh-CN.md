@@ -12,6 +12,8 @@ Reflection Companion 是一个 AI 反思伙伴。它把你已经留下的经历�
 
 目前提供 Codex、Claude Code 和 Claude 网页版。
 
+**快速跳转：** [从一个问题开始](#start-one-question) · [看回顾示例](#review-examples) · [安装](#install) · [常见问题](#faq)
+
 ---
 
 ## 1. 为什么做 Reflection Companion
@@ -77,7 +79,7 @@ Reflection Companion 想做的，是把它们重新拿回来。
 
 它应该把观察、推测和你的确认区分开来。你可以说“不是这样”，也可以用新的经历修正原来的理解。
 
-![虚构示例：对照过去对话检查一个可能的思维盲区](docs/images/chat-blindspot-zh.svg)
+![虚构示例：对照过去对话检查一个可能的思维盲区](docs/images/chat-blindspot-zh.webp)
 
 ### 2.3 看清自己的思考方式
 
@@ -136,6 +138,8 @@ Reflection Companion 可以根据当前问题，带入相关的概念、经验�
 
 同一个 Companion 可以在这些场景之间自然切换。
 
+<a id="start-one-question"></a>
+
 ### 3.1 不知道该问什么？先给你一个问题
 
 不需要先写日记，也不用想好要探索什么。直接说：
@@ -148,7 +152,7 @@ Reflection Companion 可以根据当前问题，带入相关的概念、经验�
 
 想找新灵感，可以说“最近有什么新的自我探索问题值得试？”它会先读动态目录；需要近期公开内容时，再核查网络来源。说“换个方向”只是在调整这次探索。
 
-![虚构示例：不知道问什么时，从一个内置问题直接开始](docs/images/chat-question-zh.svg)
+![虚构示例：不知道问什么时，从一个内置问题直接开始](docs/images/chat-question-zh.webp)
 
 ### 3.2 也可以让回顾主动发生
 
@@ -165,6 +169,8 @@ Reflection Companion 可以根据当前问题，带入相关的概念、经验�
 
 安装 Reflection Companion 本身**不会自动创建任何定时任务**。不同平台对定时执行、材料访问和无人值守送达的支持也不同，具体能力以平台说明为准。
 
+<a id="review-examples"></a>
+
 ## 4. 不同时间尺度，回顾的重点也不同
 
 **日、周、月、季度、年不是同一份总结换一个时间范围。** 时间跨度不同，回顾需要关注和联系的信息也不同：日记更接近生活现场；时间越长，越需要比较前后证据、重新检查判断，并辨认跨时间出现的模式和它们的边界。
@@ -179,7 +185,7 @@ Reflection Companion 可以根据当前问题，带入相关的概念、经验�
 
 下面的虚构周回顾示例展示：事实与判断变化怎样被联系起来，同时不被写成人格结论。它是编写示范，不是用户真实记录或宿主评测结果。
 
-![虚构周回顾示例](docs/images/chat-weekly-zh-short.svg)
+![虚构周回顾示例](docs/images/chat-weekly-zh-short.webp)
 
 [阅读五个周期的完整成品及关闭分析的变体](plugins/reflection-companion/skills/reflection-companion/assets/examples/reviews.zh-CN.md)。
 
@@ -188,6 +194,8 @@ Reflection Companion 可以根据当前问题，带入相关的概念、经验�
 历史回填需要同时核对“取回了什么”和“正文写入了什么”。已有记忆、近期历史游标结束，都不能证明全部账户历史。日记不需要等长，重要讨论与更正不能因固定消息上限而消失。你可以把日记和周记放在同一个每周 Tab，月／季回顾也放在同一文档；既有归档约定和你的当前选择决定组织方式。
 
 ---
+
+<a id="install"></a>
 
 ## 5. 安装并开始
 
@@ -227,13 +235,16 @@ codex plugin list --marketplace reflection-companion --json
 
 ---
 
-### 5.1 模型与思考档位的起步建议
+<details>
+<summary><strong>5.1 模型与思考档位的起步建议</strong></summary>
 
 从宿主当前的主力通用模型和默认思考档位开始。Codex 中，**GPT-6.1 Sol** 在你的模型菜单可用时可以作为起点；Claude 使用当前可用的通用模型即可。Skill 不要求固定厂商或型号。
 
 几则材料写成的一篇短日记适合首次试用。来源覆盖已经检查后，如果跨多个来源或月份的回顾仍漏掉早期证据、遗漏更正，或混淆用户陈述与 AI 解释，可以尝试 **high** 档位。这是便于起步的实践建议，不是模型排名，也不要求每次选择最高档位。
 
 更高档位会花更多时间和 token，无法补齐宿主取不到的历史。先检查来源和实际成品，再调整档位。助手不能仅凭本 README 的建议自行切换你的模型或设置。参见 [OpenAI 的模型与思考档位说明](https://developers.openai.com/codex/models)。
+
+</details>
 
 ## 6. 材料、保存与边界
 
@@ -282,21 +293,30 @@ Reflection Companion 不是心理诊断工具，也不应该根据零散材料�
 
 ---
 
+<a id="faq"></a>
+
 ## 8. 常见问题
 
-### 8.1 我平时主要在 ChatGPT 里聊。Reflection Companion 装在 Codex 后，还能用这些对话吗？
+<details>
+<summary><strong>8.1 我平时主要在 ChatGPT 里聊。Reflection Companion 装在 Codex 后，还能用这些对话吗？</strong></summary>
 
 **可以——至少在我们实际验证过的 Codex owner-account 环境里是可以的。** Reflection Companion 曾跨多个 thread 取回真实的 ChatGPT 消息正文、日期和原始链接，并据此完成日／周回顾。这种跨 surface 的历史取回能力，也是当前选择 Codex 作为主要宿主入口的重要原因之一。
 
 OpenAI 官方说明里，Codex 自己的聊天列表与 ChatGPT Chat 里的 history 是分开的；但**界面中的历史列表分开，不等于 Codex 的宿主检索一定拿不到相关 ChatGPT 对话**。实际可取回范围仍可能受账号、客户端、workspace 权限和平台变化影响，所以 Reflection Companion 会先检查自己真正能读到什么，再说明覆盖范围，而不是一上来就假设“读不到”或保证“全部都有”。详见[平台验证与来源边界](docs/PLATFORMS.zh-CN.md)以及 OpenAI 的 [ChatGPT Work and Codex](https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex)。
 
-### 8.2 那 Claude 和 Claude Code 呢？
+</details>
+
+<details>
+<summary><strong>8.2 那 Claude 和 Claude Code 呢？</strong></summary>
 
 在支持的 Claude 付费聊天端，Claude 可以搜索过去的 Claude 对话并引用来源。至于 **Claude Code**，当前这个版本还没有验证到和 Codex→ChatGPT 同等级别的“跨 surface 读取 Claude 聊天档案”能力。Claude Code 可以使用当前会话、获准的项目／文件，以及自己的项目／会话记忆，例如 `CLAUDE.md` 和 auto-memory。
 
 如果过去的 Claude 对话对这次反思很重要，可以在支持 chat search 的 Claude 聊天端使用，或把相关内容导出／提供给 Claude Code。这里是**尚未验证的能力边界**，不是说它永远不可能支持。参见 [Claude 的聊天搜索与 Memory](https://support.claude.com/en/articles/11817273-use-claude-s-chat-search-and-memory-to-build-on-previous-context)。
 
-### 8.3 Reflection Companion 实际会用哪些材料？
+</details>
+
+<details>
+<summary><strong>8.3 Reflection Companion 实际会用哪些材料？</strong></summary>
 
 视宿主能力和你的选择，它可以使用：
 
@@ -309,17 +329,26 @@ OpenAI 官方说明里，Codex 自己的聊天列表与 ChatGPT Chat 里的 hist
 
 涉及历史判断时，带日期的原始对话／文件比 Memory、标题或旧 AI 总结具有更高证据权重；网络资料也不能替代你的个人历史。
 
-### 8.4 它通常能读到多少过去的聊天？
+</details>
+
+<details>
+<summary><strong>8.4 它通常能读到多少过去的聊天？</strong></summary>
 
 取决于宿主和任务。在我们自己的 Codex owner-account 测试里，Reflection Companion 已经能按日期跨多个 ChatGPT thread 取回相当广的历史材料；但这不代表每个账号的每一条对话、附件或音频都一定可用。
 
 一个具体问题通常不需要完整历史。像年回顾、或“我有什么反复出现的模式”这种更宽的问题，才需要先看实际时间／主题覆盖，能修复的来源缺口先修复，再把仍然缺的部分说清楚。
 
-### 8.5 使用前一定要写日记、开启保存或设置定时吗？
+</details>
+
+<details>
+<summary><strong>8.5 使用前一定要写日记、开启保存或设置定时吗？</strong></summary>
 
 不用。你可以完全不保存，从一个问题、一件事或当前对话直接开始。保存、长期偏好和定时回顾都是之后单独选择的 opt-in 能力。
 
-### 8.6 普通 ChatGPT / Claude 也可以回答这些问题，为什么还要用这个 Skill？
+</details>
+
+<details>
+<summary><strong>8.6 普通 ChatGPT / Claude 也可以回答这些问题，为什么还要用这个 Skill？</strong></summary>
 
 一次性的提问，很多时候普通聊天当然也可以。Reflection Companion **不是一个特殊模型，也不靠一条“秘密 prompt”成立。**
 
@@ -328,6 +357,8 @@ OpenAI 官方说明里，Codex 自己的聊天列表与 ChatGPT Chat 里的 hist
 如果你只想随手问一次，普通聊天可能已经足够；如果你希望反思长期保持**有来源、跨时间、可纠正、可复用**，这个 Skill 会更有价值。
 
 ---
+
+</details>
 
 ## 9. 继续阅读
 
