@@ -2,6 +2,14 @@
 
 [简体中文](CHANGELOG.zh-CN.md) | **English**
 
+## 0.5.9 — 2026-10-10 · Sensitive-topic guardrails
+
+- Improve discovery for counseling-topic preparation and reflection on whether to seek counseling. Shared guardrails load when the Skill is invoked; they are not global rules for every host reply.
+- Preserve the user's counseling decision, avoid diagnoses, clinical labels and treatment plans, and keep sparse examples from becoming a claimed stable personal pattern. Sensitive notes are not saved by default.
+- Put a possible current safety concern before an exercise. Do not infer location from language or supply specific phone numbers when location is unknown; distinguish quoted fictional/history material from current real risk.
+- Independently correct two earlier Claude Code pass-with-note verdicts to failures. The final core passed all seven fictional Codex counseling cases and both focused Claude Code retests with actual Skill invocation; single runs do not prove reliability or real-user value.
+- Claude web final-version checks and account replacement remain pending. Explicit note saving, third-party topics, rich-history positive patterns, counselor mentions in diaries, English counseling requests and scheduled diary routing were not covered. Preserve the 0.5.8 counseling scaffold and 0.5.7 diary rules; no state migration or schedule change.
+
 ## 0.5.8 — 2026-10-10 · Optional counseling preparation
 
 - Add a 24th original bilingual scaffold, `strengths-counseling-topics`, for an explicitly requested, editable counseling topic list. Generic exploration or distress alone does not select it.

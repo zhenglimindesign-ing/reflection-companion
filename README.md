@@ -8,7 +8,7 @@ Reflection Companion is an AI companion for reflection. It turns experiences, co
 
 Use it for a diary, a weekly review, or a period or project retrospective. It can also compare material over time to surface possible recurring patterns or blind spots, help you reconsider a question, or introduce a new way to explore yourself.
 
-**Public Alpha · v0.5.8**
+**Public Alpha · v0.5.9**
 
 Available for Codex, Claude Code, and Claude web.
 
@@ -203,7 +203,7 @@ For historical backfill, the assistant must check both what was retrieved and wh
 
 ## 5. Install and start
 
-The current public release is **v0.5.8 Public Alpha**.
+The current public release is **v0.5.9 Public Alpha**.
 
 Available for:
 
@@ -213,17 +213,17 @@ Available for:
 
 Choose the package for your platform:
 
-[View the v0.5.8 release](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.5.8)
+[View the v0.5.9 release](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.5.9)
 
 For a **first Codex installation**, register the release marketplace, then install its plugin:
 
 ```sh
-codex plugin marketplace add https://github.com/zhenglimindesign-ing/reflection-companion.git --ref v0.5.8
+codex plugin marketplace add https://github.com/zhenglimindesign-ing/reflection-companion.git --ref v0.5.9
 codex plugin add reflection-companion@reflection-companion
 codex plugin list --marketplace reflection-companion --json
 ```
 
-Check that the installed entry is enabled and reports version `0.5.8`. Start a fresh CLI session with `codex`, or open a new desktop chat with Reflection Companion enabled, and describe your request. If these subcommands are unavailable, check `codex --version` and `codex plugin --help` before proceeding.
+Check that the installed entry is enabled and reports version `0.5.9`. Start a fresh CLI session with `codex`, or open a new desktop chat with Reflection Companion enabled, and describe your request. If these subcommands are unavailable, check `codex --version` and `codex plugin --help` before proceeding.
 
 For an existing installation, the downloaded-ZIP route, other hosts and verification limits, see [platform setup and validation scope](docs/PLATFORMS.md).
 
