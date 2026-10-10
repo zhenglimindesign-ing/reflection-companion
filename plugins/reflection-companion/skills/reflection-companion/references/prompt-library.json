@@ -593,6 +593,31 @@
         "kind": "original",
         "created_on": "2026-10-05"
       }
+    },
+    {
+      "id": "strengths-counseling-topics",
+      "theme": "strengths",
+      "title": {
+        "zh": "哪些议题值得带进咨询室？",
+        "en": "What might I bring to counseling?"
+      },
+      "context": "history",
+      "jobs": [
+        "Reflect",
+        "Challenge"
+      ],
+      "prompt": {
+        "zh": "当我明确想为长期心理咨询做准备时，请根据你实际能访问的历史对话，提出少量可供我与咨询师讨论的候选议题。先说明材料覆盖，区分我表达过的困扰、具体经历、曾尝试的应对、后续变化和你的推测；兼顾反例与外部处境。单次重要经历也值得讨论，不必强找稳定模式。不要诊断、病理化、替咨询师制定方案，或预设所有困难都源于我自身。议题由我选择、修改或删除。",
+        "en": "When I explicitly ask to prepare for ongoing counseling, use conversations you can actually access to suggest a short, revisable list of topics I might discuss with a counselor or therapist. State source coverage; distinguish concerns I expressed, specific events, steps I tried, later changes and your hypotheses, including counterexamples and external circumstances. One significant event may matter without proving a stable pattern. Do not diagnose, pathologize, plan treatment or assume every difficulty comes from me. I choose, revise or omit the topics."
+      },
+      "follow_up": {
+        "zh": "如果我选定一个议题，整理一份可修改的咨询准备笔记：事实、感受、需要与仍想探讨的问题；不自动保存。",
+        "en": "If I choose a topic, make a short editable counseling note: facts, feelings, needs and open questions. Do not save it automatically."
+      },
+      "provenance": {
+        "kind": "original",
+        "created_on": "2026-10-10"
+      }
     }
   ]
 }

@@ -2,6 +2,13 @@
 
 [简体中文](CHANGELOG.zh-CN.md) | **English**
 
+## 0.5.8 — 2026-10-10 · Optional counseling preparation
+
+- Add a 24th original bilingual scaffold, `strengths-counseling-topics`, for an explicitly requested, editable counseling topic list. Generic exploration or distress alone does not select it.
+- Keep user statements, AI hypotheses, external circumstances, counterevidence and later changes distinct. Offer possible talking points without diagnoses or treatment plans; insufficient history cannot support an invented recurring pattern.
+- Prior history may be unavailable: use only the supplied current example or one optional question, without requiring an account-wide export. Sensitive notes are not saved by default.
+- Preserve the 0.5.7 diary selection rules. Fictional Codex walkthroughs have bounded evidence; Claude Code and Claude web counseling behavior and distress-without-request remain unverified.
+
 ## 0.5.7 — 2026-10-10 · Select worthwhile diary material
 
 - Separate source coverage, editorial selection and verified saving. Reviewing every agreed source does not require narrating every lookup; justified incidental omissions are not pending diary repairs.

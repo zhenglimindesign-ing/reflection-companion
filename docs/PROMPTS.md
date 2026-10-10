@@ -14,7 +14,7 @@ Each entry states its material needs: no history, a current situation, or scoped
 
 Historical judgments about blind spots, self-understanding, happiness, priorities and traces first check actual time/topic coverage, evidence, counterexamples and corrections. Insufficient material means a scoped answer or an unresolved judgment; happiness proposals are not proven causes and a third-person introduction is not a complete biography.
 
-These 23 entries are this version's starting points. Ask “what is new?” to read the independently updated catalog or verify recent public sources; a failed read should disclose the dated bundled snapshot used instead. Catalog content requires actual curation and publication; no automatic collection service is running. See [complete user guide](USER_GUIDE.md).
+These 24 entries are this version's starting points. Ask “what is new?” to read the independently updated catalog or verify recent public sources; a failed read should disclose the dated bundled snapshot used instead. Catalog content requires actual curation and publication; no automatic collection service is running. See [complete user guide](USER_GUIDE.md).
 
 ## Change and growth
 
@@ -151,6 +151,14 @@ Possible continuation: Compare my account with observable behavior.
 > From accessible history, compare one self-description with my reported choices or behavior. Check my wording, context, supporting evidence, counterexamples and later corrections before judging whether an unexplained discrepancy exists. Do not manufacture a contradiction or turn a discrepancy into a trait or motive.
 
 Possible continuation: Let me add context or explain why the two are compatible.
+
+### What might I bring to counseling?
+
+`strengths-counseling-topics` · Accessible history within a chosen scope · Reflect / Challenge
+
+> When I explicitly ask to prepare for ongoing counseling, use conversations you can actually access to suggest a short, revisable list of topics I might discuss with a counselor or therapist. State source coverage; distinguish concerns I expressed, specific events, steps I tried, later changes and your hypotheses, including counterexamples and external circumstances. One significant event may matter without proving a stable pattern. Do not diagnose, pathologize, plan treatment or assume every difficulty comes from me. I choose, revise or omit the topics.
+
+Possible continuation: If I choose a topic, make a short editable counseling note: facts, feelings, needs and open questions. Do not save it automatically.
 
 ## Interests and possibilities
 

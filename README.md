@@ -8,7 +8,7 @@ Reflection Companion is an AI companion for reflection. It turns experiences, co
 
 Use it for a diary, a weekly review, or a period or project retrospective. It can also compare material over time to surface possible recurring patterns or blind spots, help you reconsider a question, or introduce a new way to explore yourself.
 
-**Public Alpha · v0.5.7**
+**Public Alpha · v0.5.8**
 
 Available for Codex, Claude Code, and Claude web.
 
@@ -203,7 +203,7 @@ For historical backfill, the assistant must check both what was retrieved and wh
 
 ## 5. Install and start
 
-The current public release is **v0.5.7 Public Alpha**.
+The current public release is **v0.5.8 Public Alpha**.
 
 Available for:
 
@@ -213,17 +213,17 @@ Available for:
 
 Choose the package for your platform:
 
-[View the v0.5.7 release](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.5.7)
+[View the v0.5.8 release](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.5.8)
 
 For a **first Codex installation**, register the release marketplace, then install its plugin:
 
 ```sh
-codex plugin marketplace add https://github.com/zhenglimindesign-ing/reflection-companion.git --ref v0.5.7
+codex plugin marketplace add https://github.com/zhenglimindesign-ing/reflection-companion.git --ref v0.5.8
 codex plugin add reflection-companion@reflection-companion
 codex plugin list --marketplace reflection-companion --json
 ```
 
-Check that the installed entry is enabled and reports version `0.5.7`. Start a fresh CLI session with `codex`, or open a new desktop chat with Reflection Companion enabled, and describe your request. If these subcommands are unavailable, check `codex --version` and `codex plugin --help` before proceeding.
+Check that the installed entry is enabled and reports version `0.5.8`. Start a fresh CLI session with `codex`, or open a new desktop chat with Reflection Companion enabled, and describe your request. If these subcommands are unavailable, check `codex --version` and `codex plugin --help` before proceeding.
 
 For an existing installation, the downloaded-ZIP route, other hosts and verification limits, see [platform setup and validation scope](docs/PLATFORMS.md).
 
@@ -287,7 +287,7 @@ Reflection Companion is not a diagnostic or therapy tool, and it should not turn
 
 ## 7. Where do the questions and exercises come from?
 
-- **Bundled library:** the bundled library includes 23 original bilingual scaffolds across six themes, usable offline. Ask for one question, name an exercise or request a few choices.
+- **Bundled library:** the bundled library includes 24 original bilingual scaffolds across six themes, usable offline. Ask for one question, name an exercise or request a few choices.
 - **Current context:** adapt a mechanism to what you are discussing; an unmentioned topic does not prove it is unfamiliar to you.
 - **New public inspiration:** an explicit “what's new” request reads the independently updated catalog first. A stale or insufficient catalog, or a request for recent web content, leads to verified public sources.
 
