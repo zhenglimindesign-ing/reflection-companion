@@ -4,7 +4,7 @@
 
 [Introduction and quick start](../README.md) · [Platform installation details and verification](PLATFORMS.md)
 
-The README contains the introduction, installation and examples needed for first use. This guide develops diaries, weekly reviews, recurring-pattern checks, exploration, saving and schedules as needed, including how to select material, continue a discussion and keep results. It covers public Alpha v0.5.6, with 23 bilingual bundled exercises.
+The README contains the introduction, installation and examples needed for first use. This guide develops diaries, weekly reviews, recurring-pattern checks, exploration, saving and schedules as needed, including how to select material, continue a discussion and keep results. It covers public Alpha v0.5.7, with 23 bilingual bundled exercises.
 
 ## 1. Choose material and continue a question you already have
 
@@ -57,6 +57,10 @@ Use existing material first. A diary is an optional form; daily manual input is 
 No exact phrase is required: “the past three months” can work too. Clarify an ambiguous interval when it would change the result. “Log this error” or “write the company's annual report” follows its actual task. Sparse material supports a limited record, not invented experiences to fill a template; an annual template grants no broader retrieval access.
 
 Start with faithful wording, edited prose or Long View reflection. Adjust length, layout, voice, title, language, tone, themes/exclusions, quotes, source appendix, AI observation depth, takeaways, knowledge, moments, open questions, experiment, closing question and time basis. Components can be off, inline or separate where applicable. Greater depth still needs evidence and counterexamples; a day need not produce a lesson.
+
+Select worthwhile material before deciding how to write it. Meaningful experiences, feelings, choices, understanding, corrections and ordinary life can belong in a diary; isolated practical lookups and repeated mechanics without further life or thinking context usually do not. Reviewing all agreed sources does not mean transcribing them; justified detail omissions are not pending repairs.
+
+Choose highlights, balanced (the default), or detailed recording independently of length, quote density and new AI analysis. All three preserve important threads; detailed adds scenes and reasoning within worthwhile material rather than reproducing every exchange. First use with multiple threads can offer one brief, skippable choice; no answer uses the default, and scheduled runs do not repeat onboarding. A choice applies to this output unless the user explicitly asks to keep it.
 
 | Instruction | Effect |
 | --- | --- |
@@ -141,9 +145,9 @@ First run the desired result manually. Then request, for example: “Every Sunda
 
 Basic installation is in the [README](../README.md). Ask “check whether Reflection Companion has an update,” “upgrade to the latest formal release,” or “return to the previous version.” A check reports the installed version, available release and relevant changes; only an explicit upgrade or rollback request changes installation. Pinned versions do not advance automatically, and no background update reminder is running.
 
-Update the same Skill/plugin, retain its recovery source, and keep journals and preferences in their existing directory. Rollback changes the program, preserving records added in the meantime. Older releases may ignore newer preferences but should not delete them. The result should report actual installed version, verification, recovery location and any fresh-chat step. Host methods differ; see the [platform guide](PLATFORMS.md).
+Update the same Skill/plugin, retain its recovery source, and keep journals and preferences in their existing directory. Rollback changes the program, preserving records added in the meantime; file preservation does not establish that older releases can read all new preferences. Version 0.5.6 rejects a stored recording-detail field: disclose that boundary before rollback rather than silently deleting preferences. The result should report actual installed version, verification, recovery location and any fresh-chat step. Host methods differ; see the [platform guide](PLATFORMS.md).
 
-The public release is 0.5.6, with a Codex check/prepare/upgrade/rollback helper. Existing 0.5.0 users can ask their host to assist that first transition using a reviewed current version, without finding a ZIP themselves. Claude Code project Skills and Claude web uploads follow their own channels; a Codex update does not update Claude.
+The public release is 0.5.7, with a Codex check/prepare/upgrade/rollback helper. Existing 0.5.0 users can ask their host to assist that first transition using a reviewed current version, without finding a ZIP themselves. Claude Code project Skills and Claude web uploads follow their own channels; a Codex update does not update Claude.
 
 The [mobile text sample](MOBILE.md) lets someone try one method. It does not carry Skill references, storage helpers, cross-chat state or scheduling, and is not verified native adaptation for domestic apps.
 

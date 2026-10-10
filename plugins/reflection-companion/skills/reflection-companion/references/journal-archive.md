@@ -45,6 +45,8 @@ Use available pagination when missing evidence matters. If a recent listing is u
 
 Do not calculate account-history coverage from the number of dates represented in a few retrieved snippets. Coverage against a known, bounded supplied corpus can be measured; unknown account completeness remains unknown.
 
+Track source coverage separately from editorial coverage and saved delivery. Follow the artifact's recording criteria rather than requiring every examined question in the body. Justified incidental omissions do not remain on the catch-up queue. If a verified scoped day's material contains only such lookups, record that it was examined without creating a filler diary or describing it as a quiet day; preserve any remaining broader-source gap separately.
+
 Insufficient evidence for full backfill means the backfill remains incomplete. Do not silently substitute a handful of sample diaries, a narrow review or previous AI summaries and call the original task done. If the user wants partial drafts, label them with their actual source range and record what is still missing. Missing material is not a quiet day; do not borrow neighboring days' experiences to fill a tab.
 
 ## Resolve completed periods

@@ -8,6 +8,8 @@ Open-ended personal history questions also need [longitudinal exploration](longi
 
 Distinguish **all history in a period** from **the user-selected notes/conversations**. A few complete supplied notes can support a review of those notes; they do not cover all account history. Current-chat/supplied-note tasks need no account search unless requested. Resolve actual dates, timezone, topics and exclusions before counting sources.
 
+The source inventory governs what must be examined for a coverage claim, not what must appear in diary prose. Apply the artifact's recording criteria after retrieval. Reviewed one-off lookups may be omitted with a justified selection record; they are not missing source messages or unfinished diary work. Do not shrink an unknown source inventory by assuming unread messages are trivial, and do not label every acquired-but-unwritten detail a writing omission.
+
 For broad history, a recent index, search snippets, memory, or an API's exhausted page cursor is insufficient to establish account coverage. Look for an actual export inventory or a provider's documented full inventory. Record the relevant inventory reference, selected source IDs, actual text retrieval, date verification and material attachment status. Unknown inventory coverage stays unknown. Do not set a complete flag merely because a request returned successfully.
 
 ## Diagnose and repair supported failures
@@ -67,7 +69,7 @@ These checks reconcile supplied evidence, not the truth of its provenance or the
 
 For broad backfill or reported omissions, also run the [topic-to-saved-output reconciliation](topic-coverage.md). Keep its result separate from source acquisition. A topic ledger that passes can still have partial retrieval, undeclared topics or an unfaithful condensation; inspect those boundaries before making delivery claims.
 
-Distinguish two failures in the user-facing receipt: **retrieval gap** (source/earlier messages/attachments unavailable) and **writing omission** (material obtained but not adequately represented). Automatically repair the relevant failure within authorized scope. If source access cannot be repaired, state the concrete gap and minimum user action; do not require an account export for a selected corpus that is already sufficient. A Skill cannot add host history permissions or an absent full-inventory API.
+Distinguish two failures in the user-facing receipt: **retrieval gap** (source/earlier messages/attachments unavailable) and **writing omission** (material obtained but not adequately represented). **Justified selection** of incidental material is neither failure. Automatically repair the relevant failure within authorized scope. If source access cannot be repaired, state the concrete gap and minimum user action; do not require an account export for a selected corpus that is already sufficient. A Skill cannot add host history permissions or an absent full-inventory API.
 
 With `ready`, write only the verified declared scope. With `partial_only`, use a narrowed title and explicit source note; the broader task remains incomplete. With `blocked`, repair first. If supported repairs fail, tell the user **before** writing a supposed complete review: what was accessible, what is missing, what was tried, what is still incomplete, and the minimum source/access input needed. Give a useful coverage report or finish independent work. Do not generate a small substitute journal and call the original request completed.
 

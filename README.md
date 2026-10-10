@@ -8,7 +8,7 @@ Reflection Companion is an AI companion for reflection. It turns experiences, co
 
 Use it for a diary, a weekly review, or a period or project retrospective. It can also compare material over time to surface possible recurring patterns or blind spots, help you reconsider a question, or introduce a new way to explore yourself.
 
-**Public Alpha · v0.5.6**
+**Public Alpha · v0.5.7**
 
 Available for Codex, Claude Code, and Claude web.
 
@@ -193,6 +193,8 @@ The fictional weekly example below shows how facts and a changed judgment can be
 
 These structures are adjustable starting points, not fixed forms. You can keep more of your original wording, ask for a more natural diary or review, or reduce analysis; AI observations and questions can also be turned off. See the [user guide](docs/USER_GUIDE.md) for detailed output choices and saving rules.
 
+Reviewing all agreed chats means considering the material before selection. A diary retains worthwhile experiences, thoughts and corrections; an isolated practical lookup without further significance usually stays out. Choose highlights, balanced (the default), or detailed recording to vary the context within those threads. First substantial diary use can offer one brief, skippable choice; scheduled runs use the resolved choice.
+
 For historical backfill, the assistant must check both what was retrieved and what was represented in the writing. Existing memory or an exhausted recent-history cursor is not proof of all account history. Entries need not have similar lengths; important discussions and corrections must not disappear behind a fixed message cap. You can keep daily entries and their weekly review in one weekly tab, with month/quarter reviews in the same document. Existing archive conventions and your current choices control the layout.
 
 ---
@@ -201,7 +203,7 @@ For historical backfill, the assistant must check both what was retrieved and wh
 
 ## 5. Install and start
 
-The current public release is **v0.5.6 Public Alpha**.
+The current public release is **v0.5.7 Public Alpha**.
 
 Available for:
 
@@ -211,17 +213,17 @@ Available for:
 
 Choose the package for your platform:
 
-[View the v0.5.6 release](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.5.6)
+[View the v0.5.7 release](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.5.7)
 
 For a **first Codex installation**, register the release marketplace, then install its plugin:
 
 ```sh
-codex plugin marketplace add https://github.com/zhenglimindesign-ing/reflection-companion.git --ref v0.5.6
+codex plugin marketplace add https://github.com/zhenglimindesign-ing/reflection-companion.git --ref v0.5.7
 codex plugin add reflection-companion@reflection-companion
 codex plugin list --marketplace reflection-companion --json
 ```
 
-Check that the installed entry is enabled and reports version `0.5.6`. Start a fresh CLI session with `codex`, or open a new desktop chat with Reflection Companion enabled, and describe your request. If these subcommands are unavailable, check `codex --version` and `codex plugin --help` before proceeding.
+Check that the installed entry is enabled and reports version `0.5.7`. Start a fresh CLI session with `codex`, or open a new desktop chat with Reflection Companion enabled, and describe your request. If these subcommands are unavailable, check `codex --version` and `codex plugin --help` before proceeding.
 
 For an existing installation, the downloaded-ZIP route, other hosts and verification limits, see [platform setup and validation scope](docs/PLATFORMS.md).
 

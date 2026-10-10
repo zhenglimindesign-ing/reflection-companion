@@ -6,6 +6,7 @@
     "layout": {"enum": ["prose", "sections", "raw_notes", "custom"]},
     "voice": {"enum": ["first_person", "second_person", "third_person"]},
     "length": {"enum": ["light", "standard", "expanded"]},
+    "recording_detail": {"enum": ["highlights", "balanced", "detailed"]},
     "quotes": {"enum": ["off", "selected", "more"]},
     "source_appendix": {"enum": ["off", "links", "agreed_originals"]},
     "theme_selection": {"enum": ["automatic", "selected"]},
@@ -24,7 +25,7 @@
     "language": {"type": "text"}
   },
   "common": {
-    "layout": "sections", "voice": "second_person", "length": "standard",
+    "layout": "sections", "voice": "second_person", "length": "standard", "recording_detail": "balanced",
     "quotes": "selected", "source_appendix": "links", "theme_selection": "automatic",
     "themes": [], "excluded_themes": [], "title": "content",
     "takeaways": "inline", "knowledge": "inline", "moments": "inline",

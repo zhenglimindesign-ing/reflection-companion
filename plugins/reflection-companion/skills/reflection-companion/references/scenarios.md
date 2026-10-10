@@ -16,6 +16,8 @@ Compare important earlier and later source evidence at the chosen scale. Older m
 
 Resolve default, saved and current choices, then load only the appropriate daily/weekly/monthly/quarterly/yearly template. Apply the period's writing task from the artifact guide; do not concatenate shorter summaries. Write in the user's chosen voice and language. Preserve exact original words where selected, leave unsupported components out, and keep AI interpretation separately identifiable.
 
+Apply the recording criteria and recording-detail choice before filling template components. A template controls presentation, not whether every chat turn deserves inclusion. On first substantial diary use, follow the preferences guide's optional brief choice; scheduled runs use resolved choices without reopening onboarding.
+
 Resolve options even when the user names no choices: use the bundled options file, or the read-only helper at the known selected workspace. Keep the effective voice, processing and enabled components available while writing, and check the actual body against them before delivery. No known store is not a reason to skip defaults or require setup.
 
 A short free-prose request may override the visible template while preserving scope and attribution. Existing sources/settings do not make setup mandatory before useful writing. A completed output must honor switches such as no AI analysis, no experiment or no closing question.

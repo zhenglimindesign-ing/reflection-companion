@@ -8,7 +8,7 @@ Reflection Companion 是一个 AI 反思伙伴。它把你已经留下的经历�
 
 你可以用它写日记、做周回顾、复盘一段经历；也可以让它从一段时间的材料里寻找可能反复出现的模式或盲点，陪你重新理解一个问题，或者尝试新的自我探索方式。
 
-**Public Alpha · v0.5.6**
+**Public Alpha · v0.5.7**
 
 目前提供 Codex、Claude Code 和 Claude 网页版。
 
@@ -191,6 +191,8 @@ Reflection Companion 可以根据当前问题，带入相关的概念、经验�
 
 这些结构是可调整的起点，不是固定表格。你可以要求它更多保留原话、更像一篇自然的日记／回顾，或减少分析；也可以关闭 AI 观察和提问。更详细的输出选择与保存规则见[使用指南](docs/USER_GUIDE.zh-CN.md)。
 
+检查所有约定聊天，是先考虑材料再选编。日记保留值得回看的经历、想法与更正；没有进一步意义的孤立实用查询通常不进入正文。可以选重点、平衡（默认）或细致，调整有价值主题内的背景和细节。首次整理多主题日记可以做一次简短、可跳过的选择；定时运行沿用已解析的选择。
+
 历史回填需要同时核对“取回了什么”和“正文写入了什么”。已有记忆、近期历史游标结束，都不能证明全部账户历史。日记不需要等长，重要讨论与更正不能因固定消息上限而消失。你可以把日记和周记放在同一个每周 Tab，月／季回顾也放在同一文档；既有归档约定和你的当前选择决定组织方式。
 
 ---
@@ -199,7 +201,7 @@ Reflection Companion 可以根据当前问题，带入相关的概念、经验�
 
 ## 5. 安装并开始
 
-当前公开版本为 **v0.5.6 Public Alpha**。
+当前公开版本为 **v0.5.7 Public Alpha**。
 
 支持：
 
@@ -209,17 +211,17 @@ Reflection Companion 可以根据当前问题，带入相关的概念、经验�
 
 从这里选择对应平台：
 
-[查看 v0.5.6 Release](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.5.6)
+[查看 v0.5.7 Release](https://github.com/zhenglimindesign-ing/reflection-companion/releases/tag/v0.5.7)
 
 **首次安装 Codex 插件**时，先登记发布版 marketplace，再安装其中的插件：
 
 ```sh
-codex plugin marketplace add https://github.com/zhenglimindesign-ing/reflection-companion.git --ref v0.5.6
+codex plugin marketplace add https://github.com/zhenglimindesign-ing/reflection-companion.git --ref v0.5.7
 codex plugin add reflection-companion@reflection-companion
 codex plugin list --marketplace reflection-companion --json
 ```
 
-核对安装项已启用，版本为 `0.5.6`。用 `codex` 开一个新的 CLI 会话，或在桌面端开一个已启用 Reflection Companion 的新 chat，再直接描述需要。若没有这些子命令，先检查 `codex --version` 和 `codex plugin --help`。
+核对安装项已启用，版本为 `0.5.7`。用 `codex` 开一个新的 CLI 会话，或在桌面端开一个已启用 Reflection Companion 的新 chat，再直接描述需要。若没有这些子命令，先检查 `codex --version` 和 `codex plugin --help`。
 
 已有安装、下载 ZIP 后的安装路径、其他宿主及验证边界，见[平台安装与验证范围](docs/PLATFORMS.zh-CN.md)。
 

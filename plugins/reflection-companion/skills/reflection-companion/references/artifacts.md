@@ -2,11 +2,35 @@
 
 Use for completed diaries or weekly, monthly, quarterly and yearly reviews, including requested exports and scheduled drafts. A light conversation need not become a document. Resolve output choices through [preferences](preferences.md); gathering, saving and recurrence follow [scenarios](scenarios.md). Historical writing first requires the [source-readiness check](source-readiness.md); templates cannot cure missing sources.
 
+## Purpose and completeness
+
+A diary is a selected, readable record that helps the user remember lived experience, retain worthwhile questions and understanding, and revisit changes at a larger scale. A period review compares those experiences and judgments against their original evidence. Neither is a transcript, an activity log or a compulsory growth story.
+
+Separate three checks: **source coverage** (what was discovered and read), **editorial coverage** (whether material topics survived the resolved selection), and **delivery** (whether the actual output was saved and read back when requested). Reviewing all authorized chats does not require quoting or narrating all their contents. A justified omission is a completed selection decision, not a source gap or pending repair. Unknown source coverage must still be disclosed; readable prose cannot resolve it.
+
+## Recording criteria
+
+Judge a topic in context before selecting its wording. Retain material that preserves a meaningful experience, expressed feeling or concern, consequential choice or result, changed understanding, important correction, worthwhile question, or useful knowledge connected to the user's life or thinking. Explicit requests to remember something take precedence. Ordinary pleasure, discomfort, companionship and philosophical exploration can matter without any achievement or action result.
+
+Usually omit isolated practical lookups whose purpose is exhausted by the immediate answer and which add no meaningful experience, concern, decision, learning or later context. Venue facilities, a tool specification or a routine how-to are not automatically diary material. A routine question about safety, convenience or cost does not by itself establish a personally significant concern. The same subject becomes eligible when the source connects it to a memorable experience, continuing concern, consequential choice or explicitly valued discovery. Decide from the observed context, not a universal topic blacklist, the presence of a question mark or an AI guess about hidden emotion.
+
+Keep the meaningful episode without carrying every operational detail into it. A pleasant outing can survive while its route and opening-hours checks are omitted. Preserve the user's stated significance; do not invent a lesson to justify a trivial lookup. Repeated messages alone do not establish importance or a personal pattern. When significance is uncertain, examine nearby context; a consequential uncertainty warrants clarification, routine low-value details do not warrant an onboarding interrogation.
+
+Resolve `recording_detail` independently of length, quote density and interpretation:
+
+| Recording detail | Editorial treatment |
+| --- | --- |
+| `highlights` | Keep meaningful threads in concise form, with only the context needed to understand the experience or judgment. |
+| `balanced` (default) | Retain supported scenes, ordinary moments and the reasoning or distinctions that make a thread worth rereading. |
+| `detailed` | Preserve more scene detail, follow-up reasoning and useful historical answers within eligible threads; still omit unrelated one-off lookups and repetition. |
+
+All three levels protect material topics and corrections. They change detail within worthwhile threads, not source permissions or a hidden limit on how many threads exist. A literal transcript or complete originals archive is a separately scoped task, not a fourth diary preset. Recording detail applies at every period's scale; a year review does not become a catalogue of daily logistics.
+
 ## Selecting and writing material
 
 Consider the authorized period's material before selecting a few worthwhile threads. Rank by the user's expressed significance, real-world consequences, changed judgment or behavior, memorable experience, useful uncertainty and repeated evidence. Recency, discussion length, distress and demonstrable output alone do not determine importance. A dominant topic may deserve most space; do not manufacture diversity or fill every life domain.
 
-Read every retrieved in-scope discussion before selection, including corrections and useful existing AI answers. A message can contain several topics: a reconciled message ID alone does not prove those topics survived. Compare the finished body with the source threads and repair unexplained omissions. Compress repetition, routine acknowledgments and detail proportionately; disclose consequential excluded threads and why. No fixed message-per-day cap or numeric word limit is supplied by this Skill. `light`, `standard` and `expanded` guide depth and presentation, not equal-length entries or permission to ignore source material. Honor an explicit user word limit without claiming comprehensive representation when it forces material exclusions.
+Read every retrieved in-scope discussion before selection, including corrections and useful existing AI answers. A message can contain several topics: a reconciled message ID alone does not prove those topics survived. Apply the recording criteria before classifying a topic as material or incidental; do not downgrade a worthwhile topic merely to pass a checker or shorten the body. Compare the finished body with the source threads and repair unexplained omissions. Compress repetition, routine acknowledgments and detail proportionately; disclose consequential excluded threads and why. No fixed message-per-day cap or numeric word limit is supplied by this Skill. `light`, `standard` and `expanded` guide depth and presentation, not equal-length entries or permission to ignore source material. Honor an explicit user word limit without claiming comprehensive representation when it forces material exclusions.
 
 A review thread connects specific material with its earlier/later relationship and what remains uncertain. “You grew” is not sufficient. Write scenes and relationships in connected prose; avoid repeating the same point as fact, shift and signal. A diary can preserve a small happy, sad, ordinary or contradictory moment without turning it into a lesson.
 
@@ -50,7 +74,9 @@ When the user is testing or checking templates, make the relationship inspectabl
 
 ## Daily writing
 
-Use date plus an optional concrete title. Write one or a few supported scenes with the user's expressed thoughts and feelings. Retain a phrase when its wording matters. A takeaway, knowledge point or favorite moment can be integrated into the story or shown separately; do not repeat it merely to fill a component. Leave unresolved material only when useful. With reflection enabled, keep any AI observation separate and limited to this evidence. One day cannot establish a stable personal pattern.
+Use date plus an optional concrete title. Organize supported scenes and thoughts around the day's actual threads rather than the order of chat turns. A single-thread day can remain free prose; on a multi-thread day, use thematic paragraphs or short topic headings when helpful, without forcing a fixed category list. Within an accepted two-voice layout, use matching themes or adjacent user/AI passages as the existing convention permits; preserve narrator attribution and the archive contract.
+
+The user's narrative should reconnect the experience, question and expressed meaning, not repeatedly announce "I asked" and "the assistant answered." Select historical AI material for its useful distinction, reasoning, correction or limit; condense redundant answer steps and do not repeat the user narrative. This editorial work does not turn AI advice into user adoption or authorize new psychological interpretation. Retain a phrase when its wording matters. A takeaway, knowledge point or favorite moment can be integrated into the story or shown separately; do not repeat it merely to fill a component. Leave unresolved material only when useful. With reflection enabled, keep any AI observation separate and limited to this evidence. One day cannot establish a stable personal pattern.
 
 For first-person prose under any processing level, check each assertion against the selected user's material. Reflection opt-in does not authorize adding feelings, motives or judgments to the user's “I” narration. A thought or goal absent from the note was not necessarily consciously rejected. Omit a new interpretation from that body or place it in the separate AI observation. The voice choice applies to the user's narrative; write AI observations as “the notes may suggest…” or address the user as “you,” not as an unquoted “I” that appears to express the user's own understanding. Source notes should state the actual material range concisely, including a single supplied note when that is all the diary covers.
 
@@ -82,6 +108,6 @@ Organize actual phases, events or themes into a few readable chapters; twelve eq
 
 ## Delivery checks
 
-Check date/interval and cutoff, source coverage, language, voice and selected options. Every retained quote must match its source; important comparisons must have an identifiable earlier and later basis or an explicit inability to compare. Apply corrections, keep proposed observations tentative, and remove empty sections, placeholders, duplicated insights and unauthorized commitments.
+Check date/interval and cutoff, source coverage, editorial coverage, language, voice and selected options. Ask whether the reader can recover the worthwhile experiences and thinking without reconstructing every chat turn. Every retained quote must match its source; important comparisons must have an identifiable earlier and later basis or an explicit inability to compare. Apply corrections, keep proposed observations tentative, and remove empty sections, placeholders, duplicated insights and unauthorized commitments. Keep short source/status notes outside the narrative; routine low-value omissions can be disclosed by category rather than an item-by-item list that recreates the noise.
 
 After exporting, read the actual file and verify those same properties, including disabled components and user edits. Distinguish chat output, export, saved output preferences, selected-learning continuity and scheduled delivery. A successful package or preference resolver does not prove model writing quality or live delivery.

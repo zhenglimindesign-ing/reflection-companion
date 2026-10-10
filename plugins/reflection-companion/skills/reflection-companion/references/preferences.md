@@ -13,6 +13,7 @@ Use when producing diaries/reviews, changing output options, or keeping recurrin
 | “Keep this insight for later.” | Use selected-learning state with accurate authority; an AI hypothesis remains proposed unless its meaning is confirmed. |
 | “Every Sunday at 19:00, make this review.” | Use host scheduling after resolving missing timezone, source scope, destination and saving behavior. |
 | “Can this be scheduled?” / “Are monthly reviews possible?” | Explain capability; a question about capability does not activate a task. |
+| “How should the Skill select diary material for all users?” / “Improve the templates and recording rules.” | Treat as Skill/product design, not a personal preference, diary request or authorization to change archives/schedules. |
 | “Log this error.” / “Write the annual financial report.” / “Review this code.” | Follow the actual technical/business request; isolated words do not start personal journaling. |
 
 Use nearby context to resolve “this,” “same as last time” or a period. If the user wants one small note, do not upgrade it to a complete retrospective. A topic/project reflection can use an agreed interval without forcing one of five rhythms. Clarify only a consequential ambiguity, such as which year or whether a request is recurring. No exact trigger phrase is required. Discovery metadata allows normal implicit Skill selection; actual host selection is not guaranteed by these examples.
@@ -26,7 +27,8 @@ The [options schema](../assets/artifact-options.json) defines concrete choices; 
 | Preset | `faithful`, `edited`, `long_view`; presets expand into editable processing/observation/experiment/question settings. |
 | Processing | `faithful` preserves wording with light organization; `edited` permits compression/reordering without new meaning; `reflective` permits separately attributed interpretation. |
 | Layout and voice | Prose, sections, raw notes or a custom form; first, second or third person. Custom titles/structure come from the user's actual instruction. |
-| Length | Light, standard or expanded; select fewer threads or add supported detail, never pad. |
+| Length | Light, standard or expanded; control exposition and compression, never pad or silently drop material threads. |
+| Recording detail | `highlights`, `balanced` (default), `detailed`; control context and reasoning within worthwhile threads under the [recording criteria](artifacts.md), independently of length. None means transcribe every message. |
 | Quotes and originals | Quotes off, selected or more; source appendix off, links or agreed originals. Selecting originals does not authorize a broader archive or export. |
 | Themes | Automatic importance-based selection, or selected themes; honor exclusions in retrieval where possible and throughout writing. |
 | Title, language and tone | Content/date-only/custom title; follow user language or a specified language; plain, warm or direct tone. Tone does not change certainty. |
@@ -40,6 +42,16 @@ The [options schema](../assets/artifact-options.json) defines concrete choices; 
 Daily defaults are edited first-person prose with reflection and closing question off. Weekly defaults use Long View; monthly/quarterly/yearly retain reflection but use chosen actions only. Quotes and supported takeaways/knowledge/moments are selected or inline across periods. All defaults are overridable except factual scope, quotation accuracy, correction precedence and attribution.
 
 Source permissions, saving destination/authorization, long-term meaning and host schedules are separate operations, never formatting fields. A preference cannot silently open Drive, scan all chats, enable saving or create recurrence.
+
+## First diary use
+
+For a first substantial diary with multiple threads and no current or known saved recording choice, offer one short, skippable choice in the user's language: **highlights** (worthwhile threads with minimal context), **balanced** (experiences plus useful thinking, the default), or **detailed** (more scenes and reasoning). Explain the difference with one sentence, not a setup form. The choice concerns recording detail; it does not ask for access, saving or a schedule.
+
+If the user already specified the detail, wants a quick single-note output, asks to proceed immediately, or does not answer the optional choice, use the resolved/default choice and produce the artifact. Do not hold useful writing hostage to onboarding. Do not repeat the question in the same chat or inject it into scheduled runs and every new period. Consult only known authorized preferences; unknown cross-chat history is not proof this is the user's first-ever diary.
+
+A selection applies to the current output unless the user explicitly asks to keep it for later. Follow the existing durable-preference workflow for such a request; do not silently initialize a store or claim cross-chat persistence. Feedback about universal Skill rules is product feedback, not consent to save a personal setting.
+
+`recording_detail` is a new optional preference. Existing stores without it use the balanced default without being rewritten. Version 0.5.6 rejects this field when stored; retaining records during rollback is not a promise that an older reader can load the newer preferences. See [update and rollback boundaries](updates.md) before a downgrade. A temporary choice leaves store bytes unchanged.
 
 ## Resolve temporary and durable preferences
 

@@ -2,6 +2,15 @@
 
 [简体中文](CHANGELOG.zh-CN.md) | **English**
 
+## 0.5.7 — 2026-10-10 · Select worthwhile diary material
+
+- Separate source coverage, editorial selection and verified saving. Reviewing every agreed source does not require narrating every lookup; justified incidental omissions are not pending diary repairs.
+- Define contextual recording criteria: retain meaningful experiences, ordinary moments, questions, understanding and corrections; usually omit isolated practical queries without further significance. Do not turn that distinction into a topic blacklist or require an action result.
+- Add independent highlights, balanced (default) and detailed recording choices. First substantial diary use may offer one brief, skippable choice; scheduled runs do not repeat onboarding and temporary choices do not become saved preferences.
+- Organize multi-thread days by actual themes and condense useful distinctions, reasoning and corrections in historical AI answers. Retain the different daily, weekly, monthly, quarterly and yearly writing tasks.
+- Existing schema-v1 stores load without migration or implicit rewriting. Stored `recording_detail` preferences require the new reader: 0.5.6 rejects that field, so preserving files during rollback does not prove older-reader usability.
+- Configuration, topic/source reconciliation, packaging and fictional authoring checks have separate limits. Publication does not upgrade existing installations or change personal archives or schedules.
+
 ## Documentation 2026-10-07 · README visual examples
 
 - Add three paired fictional visual examples: blind-spot checking, the one-question entry, and a compact weekly review.
