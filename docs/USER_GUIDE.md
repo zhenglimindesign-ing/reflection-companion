@@ -4,7 +4,7 @@
 
 [Introduction and quick start](../README.md) · [Platform installation details and verification](PLATFORMS.md)
 
-The README contains the introduction, installation and examples needed for first use. This guide develops diaries, weekly reviews, recurring-pattern checks, exploration, saving and schedules as needed, including how to select material, continue a discussion and keep results. It covers public Alpha v0.5.8, with 24 bilingual bundled exercises.
+The README contains the introduction, installation and examples needed for first use. This guide develops diaries, weekly reviews, recurring-pattern checks, exploration, saving and schedules as needed, including how to select material, continue a discussion and keep results. It covers public Alpha v0.5.10, with 24 bilingual bundled exercises.
 
 ## 1. Choose material and continue a question you already have
 
@@ -147,7 +147,7 @@ Basic installation is in the [README](../README.md). Ask “check whether Reflec
 
 Update the same Skill/plugin, retain its recovery source, and keep journals and preferences in their existing directory. Rollback changes the program, preserving records added in the meantime; file preservation does not establish that older releases can read all new preferences. Version 0.5.6 rejects a stored recording-detail field: disclose that boundary before rollback rather than silently deleting preferences. The result should report actual installed version, verification, recovery location and any fresh-chat step. Host methods differ; see the [platform guide](PLATFORMS.md).
 
-The public release is 0.5.8, with a Codex check/prepare/upgrade/rollback helper. Existing 0.5.0 users can ask their host to assist that first transition using a reviewed current version, without finding a ZIP themselves. Claude Code project Skills and Claude web uploads follow their own channels; a Codex update does not update Claude.
+The public release is 0.5.10, with a Codex check/prepare/upgrade/rollback helper. Existing 0.5.0 users can ask their host to assist that first transition using a reviewed current version, without finding a ZIP themselves. Claude Code project Skills and Claude web uploads follow their own channels; a Codex update does not update Claude.
 
 The [mobile text sample](MOBILE.md) lets someone try one method. It does not carry Skill references, storage helpers, cross-chat state or scheduling, and is not verified native adaptation for domestic apps.
 

@@ -2,6 +2,14 @@
 
 [简体中文](CHANGELOG.zh-CN.md) | **English**
 
+## 0.5.10 — 2026-10-10 · Source-grounded journal composition
+
+- Build themed paragraphs from exact source excerpts and corrections before polishing prose. First-person writing adds no unsupported time, action, motive, feeling, adoption or outcome; preserve the difference between knowledge, intention, action and result.
+- Keep earlier AI contributions in their own voice, addressing the user as “you”; separate optional new observations and preserve the actual object of a user decision.
+- Add a read-only draft/source comparison and render the same checked text. A source-and-draft digest binds those steps; literal checks do not establish semantic fidelity, authorization or complete history coverage.
+- Keep source notes limited to the actual material range and editorial choices. Omitting an incidental query does not establish it was answered or completed. A body-only request retains the configured source appendix unless explicitly disabled.
+- Reuse seven reviewed, unedited fictional Chinese Codex outputs, including repairs of four earlier failures: five unchanged artifacts replayed with the final helper and two fresh weekly runs using the bound flow. Keep all failed runs and test limits; no English, Claude diary, month/quarter/year or unattended Drive-delivery acceptance is claimed. Preserve the 24 bilingual exercises and 0.5.9 guardrails; no state migration or automatic installation/schedule change.
+
 ## 0.5.9 — 2026-10-10 · Sensitive-topic guardrails
 
 - Improve discovery for counseling-topic preparation and reflection on whether to seek counseling. Shared guardrails load when the Skill is invoked; they are not global rules for every host reply.

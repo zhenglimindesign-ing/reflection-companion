@@ -24,4 +24,7 @@
 
 {{optional_closing_question}}
 
+<!-- source_appendix 开启时，在正文之后简短说明实际材料范围、取舍与加工；区分历史 AI 材料和本次 AI 观察或建议。可用短段或折叠说明，不重复正文或逐条列出临时查询。关闭时删除本组件。 -->
+## 材料与加工
+
 {{source_and_processing_note}}

@@ -14,7 +14,7 @@ Compare important earlier and later source evidence at the chosen scale. Older m
 
 ## Produce the artifact
 
-Resolve default, saved and current choices, then load only the appropriate daily/weekly/monthly/quarterly/yearly template. Apply the period's writing task from the artifact guide; do not concatenate shorter summaries. Write in the user's chosen voice and language. Preserve exact original words where selected, leave unsupported components out, and keep AI interpretation separately identifiable.
+Resolve default, saved and current choices, then load only the appropriate daily/weekly/monthly/quarterly/yearly template. Apply the period's writing task from the artifact guide; do not concatenate shorter summaries. Use the [source-first composition workflow](journal-composition.md) before writing the final artifact. Write in the user's chosen voice and language. Preserve exact original words where selected, leave unsupported components out, and keep AI interpretation separately identifiable.
 
 Apply the recording criteria and recording-detail choice before filling template components. A template controls presentation, not whether every chat turn deserves inclusion. On first substantial diary use, follow the preferences guide's optional brief choice; scheduled runs use resolved choices without reopening onboarding.
 

@@ -24,4 +24,7 @@
 
 {{optional_closing_question}}
 
+<!-- When source_appendix is enabled, briefly state the actual material range, selection and editing after the narrative; distinguish historical AI material from new AI observations or suggestions. A short paragraph or collapsible note is enough: do not repeat the story or list every incidental query. Omit this component when disabled. -->
+## Material and processing
+
 {{source_and_processing_note}}
