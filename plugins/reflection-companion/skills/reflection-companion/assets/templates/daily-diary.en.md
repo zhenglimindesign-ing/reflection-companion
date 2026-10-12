@@ -1,5 +1,5 @@
 <!-- Authoring scaffold: use references/artifacts.md and resolved choices. Combine, rename or omit unsupported/disabled components; quotes and supported takeaways may be inline. Remove this comment and all unused placeholders before delivery. -->
-<!-- Select through the recording criteria and recording_detail first. Organize multi-thread days by actual themes rather than chat turns; condense useful distinctions, reasons and corrections in historical AI answers with attribution intact. Justified one-off lookups need not enter the diary. -->
+<!-- Group episodes or sustained questions under references/journal-composition.md, then select useful details through the recording criteria and recording_detail; detailed does not reproduce complete glossaries, examples or operating checklists. Organize multi-thread days by actual themes rather than chat turns; condense useful distinctions, reasons and corrections in historical AI answers with attribution intact. Justified one-off lookups need not enter the diary. -->
 
 # Diary {{date}} {{title}}
 
@@ -21,7 +21,7 @@
 
 {{optional_ai_observation}}
 
-<!-- When source_appendix is enabled, briefly state the actual material range, selection and editing after the narrative; identify condensed historical AI material. A short paragraph or collapsible note is enough: do not repeat the story or list every incidental query. Omit this component when disabled. -->
+<!-- When source_appendix is enabled, briefly state the actual material range, selection and editing after the narrative; identify condensed historical AI material. Use a short paragraph or verified source link without repeating the story. Keep full indexes, counts, rule versions, tool steps and receipts in the separately authorized audit area. Omit this component when disabled. -->
 ## Material and processing
 
 {{source_and_processing_note}}

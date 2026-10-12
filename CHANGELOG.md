@@ -2,6 +2,15 @@
 
 [简体中文](CHANGELOG.zh-CN.md) | **English**
 
+## 0.5.11 — 2026-10-12 · Readable journals and checked delivery
+
+- Group related exchanges into experiences and sustained questions before selecting useful detail. Preserve ordinary pleasure, understanding and corrections without requiring an action result; detailed mode adds supported context rather than whole lookup or teaching catalogues.
+- Keep user statements, useful historical AI contributions and optional new observations attributable. Preserve the actual object of a user choice and each status claim's last supported date.
+- Add a read-only preview returning the body and source comparison together, with an explicit delivery contract. Corrections found during review return to the input and a new preview; speaker errors identify the source owner and remind callers to retain selected user decisions in their own voice. Conservative completion cues flag actions rewritten as completed tasks; literal checks do not establish semantic fidelity or authorization.
+- Keep the visible source note short. Full source IDs, counts and receipts stay in separately authorized audit metadata; aligned bilingual templates retain useful prose as the main reading experience. Scheduled runs resolve the actual enabled installation and current references.
+- Integrate the explicit sensitive-note save gate: show the exact note, explain plain-text storage and use only a chosen or confirmed private destination. Preserve prior Claude Code failures and the untested post-destination save/readback boundary.
+- Review new fictional Codex diary/weekly material before publication, retaining all failures and repairs. The latest daily native output and weekly replay use unchanged checked text; this is not an independent blind test or a reliability claim. New Claude journal behavior, month/quarter/year model outputs and unattended personal archival delivery remain unverified. Keep 24 bilingual exercises, prior releases and personal state unchanged.
+
 ## 0.5.10 — 2026-10-10 · Source-grounded journal composition
 
 - Build themed paragraphs from exact source excerpts and corrections before polishing prose. First-person writing adds no unsupported time, action, motive, feeling, adoption or outcome; preserve the difference between knowledge, intention, action and result.

@@ -24,4 +24,5 @@
 
 {{optional_closing_question}}
 
+<!-- source_appendix 开启时只放简短、属实的材料范围与取舍说明；完整索引、数量、规则版本、工具过程及收据放在另行获准的核验区。关闭时删除该组件。 -->
 {{source_and_processing_note}}

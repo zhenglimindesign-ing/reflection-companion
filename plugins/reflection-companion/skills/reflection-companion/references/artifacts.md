@@ -28,7 +28,7 @@ All three levels protect material topics and corrections. They change detail wit
 
 ## Selecting and writing material
 
-Use the [composition workflow](journal-composition.md) for the source-to-draft pass and final claim audit. It provides a working evidence map and a read-only draft check; the check is not a semantic verdict.
+Use the [composition workflow](journal-composition.md): extract evidence, group episodes/questions, select meaningful threads and their useful details, compose the voices, then check factual fidelity and readability separately. Its read-only helper is not a semantic or editorial verdict.
 
 Consider the authorized period's material before selecting a few worthwhile threads. Rank by the user's expressed significance, real-world consequences, changed judgment or behavior, memorable experience, useful uncertainty and repeated evidence. Recency, discussion length, distress and demonstrable output alone do not determine importance. A dominant topic may deserve most space; do not manufacture diversity or fill every life domain.
 
@@ -36,11 +36,7 @@ Read every retrieved in-scope discussion before selection, including corrections
 
 A review thread connects specific material with its earlier/later relationship and what remains uncertain. “You grew” is not sufficient. Write scenes and relationships in connected prose; avoid repeating the same point as fact, shift and signal. A diary can preserve a small happy, sad, ordinary or contradictory moment without turning it into a lesson.
 
-Do not upgrade an event with unsupported success/timing language: “delivered” does not imply “on time,” and reported repair does not imply firsthand verification. A connection between separate activities does not establish a shared motive or purpose; present a warranted connection as an AI possibility rather than the user's expressed reason.
-
-Before delivery, audit factual clauses that say **why** someone acted, what an activity was **for**, or what one event **caused**. Locate the explicit source statement for each such relationship, not just sources for the two activities. Two plans mentioned near each other can have different or unstated purposes. If the relationship is absent, remove it from factual narration; a useful thematic possibility must be separately qualified as AI interpretation. For example, wanting to publish an event recap and separately considering a creative video does not establish that the video is intended to make that event count as an outcome. Compression must not silently supply this missing purpose.
-
-Separate reported events, the user's expressed meaning and AI interpretation. Facts sections contain supported facts; an inference belongs where it is identified as such. First-person narration never adopts AI-proposed feelings, motives or conclusions as the user's own. Past reviews are revisable baselines and discovery aids, not independent evidence: verify important facts from their sources when available. Preserve the older user's view as something held then; correct mistaken facts or AI interpretations without erasing genuine change.
+Apply the composition workflow's clause audit to ownership, time, feeling, purpose, causality, adoption and outcome. A thematic connection is not a shared motive, a report is not firsthand verification, and first-person narration does not adopt an AI explanation. Past reviews are revisable baselines and discovery aids, not independent evidence: verify important facts from their sources when available. Preserve the older user's view as something held then; correct mistaken facts or AI interpretations without erasing genuine change.
 
 Keep who said, understood or reported each point intact. When one note contains somebody else's remark followed by the user's response, retain those as distinct claims; do not rewrite the user's recognition or doubt as advice that the other person gave. This applies to compressed annual/quarterly narration as well as direct quotes.
 
@@ -88,7 +84,7 @@ For first-person prose under any processing level, check each assertion against 
 
 **Shifts:** compare an earlier judgment/action with new evidence and the present position. Address the user's corrections before extending an older story. No supported change is a valid finding.
 
-**Signals:** propose a small, situated observation supported by independent events or time points. Name the conditions and available counterevidence or limitations. One instance may prompt a question; it does not establish a stable pattern. With AI observation off, omit personal-pattern interpretation while retaining supported factual comparisons.
+**Signals:** propose a small, situated observation supported by independent events or time points. Bound it to the observed material and name conditions, counterevidence and limitations. Being visible in this week's material does not establish that it began this week; onset or change needs earlier evidence. One instance may prompt a question; it does not establish a stable pattern. With AI observation off, omit personal-pattern interpretation while retaining supported factual comparisons.
 
 **Open questions:** distinguish missing external outcomes, uncertain meaning and deliberate deferral. Verify newer evidence before carrying an old question forward.
 
@@ -110,6 +106,6 @@ Organize actual phases, events or themes into a few readable chapters; twelve eq
 
 ## Delivery checks
 
-Check date/interval and cutoff, source coverage, editorial coverage, language, voice and selected options. Ask whether the reader can recover the worthwhile experiences and thinking without reconstructing every chat turn. Every retained quote must match its source; important comparisons must have an identifiable earlier and later basis or an explicit inability to compare. Apply corrections, keep proposed observations tentative, and remove empty sections, placeholders, duplicated insights and unauthorized commitments. Keep short source/status notes outside the narrative; routine low-value omissions can be disclosed by category rather than an item-by-item list that recreates the noise.
+Check date/interval and cutoff, source coverage, editorial coverage, language, voice and selected options. Ask whether the reader can recover the worthwhile experiences and thinking without reconstructing every chat turn. Faithful but catalogue-like writing fails this check; reselect details and edit the actual body, rather than declare it readable because source IDs are accounted for. Every retained quote must match its source; important comparisons must have an identifiable earlier and later basis or an explicit inability to compare. Apply corrections, keep proposed observations tentative, and remove empty sections, placeholders, duplicated insights and unauthorized commitments. Keep short source/status notes outside the narrative; detailed source indexes and execution receipts belong in the separately authorized audit area. Routine low-value omissions can be disclosed by category rather than an item-by-item list that recreates the noise.
 
 After exporting, read the actual file and verify those same properties, including disabled components and user edits. Distinguish chat output, export, saved output preferences, selected-learning continuity and scheduled delivery. A successful package or preference resolver does not prove model writing quality or live delivery.

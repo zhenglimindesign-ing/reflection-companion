@@ -24,4 +24,5 @@
 
 {{optional_closing_question}}
 
+<!-- With source_appendix enabled, use a short factual scope/selection note; full indexes, counts, rule versions, tool steps and receipts belong in the separately authorized audit area. Omit this component when disabled. -->
 {{source_and_processing_note}}

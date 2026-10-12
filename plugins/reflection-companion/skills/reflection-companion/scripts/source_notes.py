@@ -71,6 +71,7 @@ ABSENCE = re.compile(r'没有|没|尚无|不存在|\b(?:no|none|nothing|not)\b',
 # Attention cues, not a sentiment classifier or proof of meaning. Restore source
 # wording after a flag; other emotions/negations still need semantic comparison.
 AFFECT = re.compile(r'担心|害怕|焦虑|难过|欣慰|释然|羞愧|愧疚|安心|兴奋|失落|烦躁|庆幸|平静|心动|\b(?:worried|afraid|anxious|relieved|ashamed|guilty|excited|disappointed|calm)\b', re.I)
+COMPLETION = re.compile(r'完成|做完|结束|\b(?:completed|finished|resolved)\b', re.I)
 CJK = re.compile(r'[\u4e00-\u9fff]')
 
 
@@ -117,7 +118,10 @@ def draft_audit(notes, draft):
             owner = ('user' if match and match.group(1).lower().startswith(('用户', 'user'))
                      else 'historical_ai' if match else None)
             if owner is None or another or sentence['voice'] != 'new_ai' and owner != sentence['voice']:
-                errors.append({'sentence': index, 'id': excerpt['id'], 'error': 'source speaker mismatch or unlabeled/mixed excerpt'})
+                errors.append({'sentence': index, 'id': excerpt['id'],
+                    'error': 'source speaker mismatch or unlabeled/mixed excerpt',
+                    'source_owner': owner,
+                    'repair_hint': 'Split by actual speaker. Keep a selected user decision in a user-voice passage; do not merely delete it to repair an AI summary.'})
             checked.append({'id': excerpt['id'], 'date': note['date'], 'speaker': owner, 'text': excerpt['text']})
         if sentence['voice'] == 'user' and checked:
             source_body = '\n'.join(SPEAKER.sub('', e['text']) for e in checked)
@@ -127,6 +131,10 @@ def draft_audit(notes, draft):
                          if cue.casefold() not in source_body.casefold()]
                 if added:
                     errors.append({'sentence': index, 'error': 'possible added user affect; restore expressed source wording', 'cues': sorted(set(added))})
+                # A reported action alone does not establish completion of its wider task.
+                if (COMPLETION.search(QUOTED.sub('', sentence['text']))
+                        and not COMPLETION.search(source_body)):
+                    errors.append({'sentence': index, 'error': 'possible added completion; preserve the reported action or provide explicit outcome evidence'})
         # Conservative attention gate: preserve a source knowledge/intention qualifier.
         # It is not a semantic verifier. Literal sourced absence clauses remain valid.
         if sentence['voice'] == 'user' and any(STATUS_QUALIFIER.search(e['text']) for e in checked):
@@ -140,22 +148,22 @@ def draft_audit(notes, draft):
         errors.append({'error': 'omitted IDs outside selection or also used as evidence'})
     if set(by_id) - used - set(omitted):
         errors.append({'error': 'unaccounted source IDs', 'ids': sorted(set(by_id) - used - set(omitted))})
+    dates = sorted({note['date'] for note in notes})
+    span = dates[0] if len(dates) == 1 else dates[0] + '–' + dates[-1]
+    scope = {'ids': list(by_id), 'date_span': span, 'omitted_ids': list(omitted)}
     note_text = None
     if draft['source_appendix'] != 'off':
-        dates = sorted({note['date'] for note in notes})
-        span = dates[0] if len(dates) == 1 else dates[0] + '–' + dates[-1]
-        ids = ', '.join(by_id)
         if draft['language'] == 'zh-CN':
-            note_text = f'材料：所提供的 {span} 记录（{ids}），仅涵盖这些材料。加工：按主题选编、压缩重复内容。'
+            note_text = f'材料：所提供的 {span} 记录，仅涵盖这些材料。加工：按主题选编、压缩重复内容。'
             if omitted:
                 note_text += '部分材料未进入正文，属于编辑取舍；不表示相关事项已解决。'
         else:
-            note_text = f'Material: the supplied {span} records ({ids}); coverage is limited to these sources. Editing: selected by topic and condensed.'
+            note_text = f'Material: the supplied {span} records; coverage is limited to these sources. Editing: selected by topic and condensed.'
             if omitted:
                 note_text += ' Some material was omitted as an editorial choice; this does not establish that the matters were resolved.'
     digest = hashlib.sha256(json.dumps({'notes': notes, 'draft': draft}, ensure_ascii=False, sort_keys=True).encode()).hexdigest()
     return {'ok': not errors, 'errors': errors, 'comparison': comparison, 'draft_sha256': digest if not errors else None,
-            'processing_note': note_text, 'semantic_review_required': True}
+            'processing_note': note_text, 'source_scope': scope, 'semantic_review_required': True}
 
 
 def render_draft(notes, draft):
@@ -171,6 +179,8 @@ def render_draft(notes, draft):
         raise ValueError('Missing/stale source-and-draft audit; run --audit-draft, review comparison and render the same text')
     if not isinstance(draft['title'], str) or '\n' in draft['title']:
         raise ValueError('Title must be a single line; empty means no title')
+    if draft['title'].lstrip().startswith('#'):
+        raise ValueError('Title is a plain label; the renderer adds its Markdown heading')
     if not isinstance(draft['sections'], list) or not draft['sections']:
         raise ValueError('Supply sections with narrator and sentence indices')
     indices, blocks = [], (['# ' + draft['title']] if draft['title'].strip() else [])
@@ -181,6 +191,8 @@ def render_draft(notes, draft):
                 or not isinstance(section['indices'], list) or not section['indices']):
             raise ValueError('Invalid section')
         if section['heading']:
+            if section['heading'].lstrip().startswith('#'):
+                raise ValueError('Section heading is a plain label; the renderer adds Markdown')
             blocks.append('## ' + section['heading'])
         for index in section['indices']:
             if type(index) is not int or not 0 <= index < len(draft['sentences']):
@@ -195,6 +207,27 @@ def render_draft(notes, draft):
         blocks.append('*' + checked['processing_note'] + '*')
     return '\n\n'.join(blocks) + '\n'
 
+
+def preview_draft(notes, draft):
+    """Return an immutable candidate and its evidence, awaiting semantic review.
+
+    This combines the existing read-only checks and renderer, without claiming
+    entailment, editorial quality or permission to save. No file is written.
+    """
+    if not isinstance(draft, dict) or set(draft) != {'sentences', 'omitted', 'language', 'source_appendix', 'title', 'sections'}:
+        raise ValueError('Preview adds title and sections to the audit payload')
+    audit = draft_audit(notes, {k: v for k, v in draft.items() if k not in ('title', 'sections')})
+    if not audit['ok']:
+        return dict(audit, body=None)
+    body = render_draft(notes, dict(draft, audit_sha256=audit['draft_sha256']))
+    return dict(audit, body=body, delivery_contract={
+        'after_review': 'Deliver this body verbatim only after semantic and editorial review.',
+        'if_text_changes': 'Revise the input and call preview_draft again; review the new body and comparison before delivery.',
+        'semantic_approval': False,
+        'save_authorization': False,
+    })
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--source', type=Path, required=True, help='One explicitly authorized Markdown source')
@@ -203,9 +236,14 @@ def main():
     mode.add_argument('--verify', action='store_true', help='Check JSON date/quote claims on stdin')
     mode.add_argument('--audit-draft', action='store_true', help='Compare JSON factual draft sentences with labeled excerpts on stdin')
     mode.add_argument('--render-draft', action='store_true', help='Render final Markdown from the audited payload without rewriting')
+    mode.add_argument('--preview-draft', action='store_true', help='Return a checked candidate and its evidence for final semantic/editorial review; does not save')
     args = parser.parse_args()
     try:
         notes = read_notes(args.source, [value.strip() for value in args.ids.split(',')] if args.ids else None)
+        if args.preview_draft:
+            result = preview_draft(notes, json.load(sys.stdin))
+            print(json.dumps(result, ensure_ascii=False, indent=2))
+            return int(not result['ok'])
         if args.render_draft:
             print(render_draft(notes, json.load(sys.stdin)), end='')
             return 0
