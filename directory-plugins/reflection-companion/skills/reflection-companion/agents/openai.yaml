@@ -1,0 +1,7 @@
+interface:
+  display_name: "Reflection Companion"
+  short_description: "Reflect and explore yourself"
+  default_prompt: "Ask me one question that could help me understand myself."
+policy:
+  products: ["CHAT", "CODEX"]
+  allow_implicit_invocation: true
