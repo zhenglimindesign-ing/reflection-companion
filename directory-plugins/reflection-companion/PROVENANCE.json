@@ -1,0 +1,78 @@
+{
+  "status": "REVIEW_CANDIDATE_NOT_PUBLISHED",
+  "source_repository": "https://github.com/zhenglimindesign-ing/reflection-companion",
+  "source_release": "v0.5.11",
+  "public_base_commit": "002b9e9f07b355feaa396e31540408acc423082e",
+  "unchanged_skill_files": {
+    "references/scheduling.md": "d3a6d852982805fbfd546cd78012f976ee5b5815fcde1ccc00f0f8a97b622b1d",
+    "references/longitudinal-exploration.md": "2feab9493200aa57b098dbc35e0efad6bb78f5cba922aa9abd30fa9728fe4107",
+    "references/expand.md": "b88c4cbc8644d23b089d8c09f01cea4a02153d30e1d3891394fa01fc13d211d9",
+    "references/source-readiness.md": "eabf5e7fd6a8e42b61b2e019d4485a288c8b93e7dd6b075054a0c5649f686a0c",
+    "references/state.md": "b4e23d8224f7b140ae4f37f06fb1aa1c50b0c3b5dd561465cc1f0347972909bd",
+    "references/artifacts.md": "c37b6bf8df7ffae0eb5cb6571220a84d9689089252111aa95c98b2630655c015",
+    "references/prompt-library.json": "7d5465db3b5ba6e17c0bf7dacfa10de3fce5d65d8db94f5eb6f145daffc23834",
+    "references/delivery.md": "afac0f678f793ffb53f41cb224144572ac68cd658586571b2c8b068abe5b56ab",
+    "references/scenarios.md": "ef2177cf58c24a8eac762e1661edc193cfd98350fd1cf922e3fc05c232fd7117",
+    "references/journal-archive.md": "dd1d2ed37dada63a1b8178c780c5183690903325605658a5148bfe28462e4fa9",
+    "references/exploration-feed.json": "7e209ff3f1c647dfa3960495691d5cb4d3d3303162ea64eb45830a336262d05e",
+    "references/hosts.md": "c31a367ef49c70f1d0089505c303f56b2fa834166330903e034ccfcf62b9f939",
+    "references/preferences.md": "00ed47711ffd89cea52dbaa58f44ade5f2cdf91cf08883777c867b9215887a37",
+    "references/topic-coverage.md": "4383729c11e7535bbdb65c1788168a18418ff233d0c7fa91ebc6b28372f09fb4",
+    "references/updates.md": "0725f99e87c067290aa596258e08010bd3857048cfdf2914ba916ecaed1840f1",
+    "references/journal-composition.md": "70a6a2406607c956b0f508a36e8e68c2eefb9a37346367d5a3624030cae1688a",
+    "scripts/topic_readiness.py": "d2ba30b83e562576908d85c226ba89aa041091462a8d3f5c0ec22d2a9fa4e22f",
+    "scripts/source_readiness.py": "7548337aef98df159e0c706e35f7ac9e384df52e9cc97fca5fa29d38e5aae96d",
+    "scripts/discovery.py": "0d6e60a31d4f8111e5eeb80a32789971c682f475f7755efaf94ddcfb5b4cafe1",
+    "scripts/source_notes.py": "bba80e1aea48600cf089beac78a584074089f39c628af4ce1d1eb96a68b24da3",
+    "scripts/state.py": "4d6b68b15a458098f9143f8a7d43e983e4830ba25b5b46aa9f97a3fa2f019be8",
+    "assets/artifact-options.json": "a02a63ee47b330dd1bf22823a5f3a743b6fefb6309ede94a661fe291e1a301bd",
+    "assets/examples/fictional-notes.zh-CN.md": "5477ab4bc12f3964983e3c6bf1def4eb0bf9dc0a9fe6dccea289287b0fde3cb0",
+    "assets/examples/fictional-notes.en.md": "2b12ec3fae9990a5ef6c930c8684efe22eac6bd3c36bff15d5932b4b0c68944b",
+    "assets/examples/reviews.zh-CN.md": "5386c76dc9b8cc4741d7ea1e0218a96d584fa2909f1345625164ff46b48f094b",
+    "assets/examples/reviews.en.md": "d6bba16e3136c82a929631f07f8c17488fdfcb219cb54765289d7e5fd94f7091",
+    "assets/templates/yearly-review.zh-CN.md": "8816ccccd8daf1a1a183b378a07b4c86d8039d19c5d74fcaf6d85e6a45e35b5d",
+    "assets/templates/daily-diary.en.md": "caf6b89d261fa87da1940db2d8e68ac697b576eb6975cc995bf3badc0abb8124",
+    "assets/templates/daily-diary.zh-CN.md": "9ffb350058026b050b87a523d9cc7cde236ceb48f3ec5030eef2685c6366c91b",
+    "assets/templates/yearly-review.en.md": "43115ec8a264ab0a894f55ac50d5595d0594588c88504f48c0806fa01b46b044",
+    "assets/templates/monthly-review.zh-CN.md": "ebda86c799266087a54be58e7aa896c0e169b018f12ea2ad16d411b2499a8a0a",
+    "assets/templates/weekly-review.zh-CN.md": "88e0de87b1fa20ea840d4a470b41dea744a4bdf27e75b7e6383077a8874bb5a3",
+    "assets/templates/quarterly-review.zh-CN.md": "ac5b9544bea303fd3859065dabdaa04ebbd880d43c978e737638be69e137e710",
+    "assets/templates/quarterly-review.en.md": "3c407114dc456dcade352a48f96e99de02de2c110e9e0e3ae5c41e6e2a08bea2",
+    "assets/templates/weekly-review.en.md": "3f0e100762e48ff26c3276790c38843118df6eff789991f7091c2c81d9bd8793",
+    "assets/templates/monthly-review.en.md": "5711da81dbb70425782584f08d7265678409a1e2db25448105e366066b563634",
+    "references/exploration.md": "21aac93ea747bb64014afb24c6369927c0102d5620691e43f1b7e19b3fc8b208"
+  },
+  "packaging_changes": [
+    "directory manifests",
+    "square branding asset",
+    "product-scoped OpenAI interface",
+    "bilingual plugin README",
+    "verified skills.sh README instructions",
+    "license notices retained in standalone Skill copies",
+    "review-branch privacy URL",
+    "separate prerelease wrapper version for the review iteration",
+    "Public-release helper uses a minimal subprocess environment; no inherited credential variables",
+    "OpenAI scan remediation: termsOfServiceURL points to the existing public software license; no additional legal conditions introduced",
+    "Clarify the existing Python 3.11+ requirement of the optional Codex upgrade helper"
+  ],
+  "runtime_claims": "Codex local and bounded Claude Code tests only; official portal checks are recorded separately. No new ChatGPT/Work execution claim.",
+  "added_license_notices": {
+    "LICENSE": "272bff50f2a283206dfa708195c9c63ad54584fdf2b229e4ca8e5cf5f0de3f35"
+  },
+  "bounded_instruction_fixes": {
+    "basis": "Actual Claude Sonnet 5 synthetic host failures",
+    "changed_files": {
+      "SKILL.md": {
+        "released_sha256": "56677f967f52151a4b3f0992008b3706ac42dfbba405512b1306ce9b3f41ea05",
+        "candidate_sha256": "fccd3bff1a16ef254328bfe7a472e51f826ef6b51c6d117ac59a06ce4ff68d50"
+      },
+      "scripts/updates.py": {
+        "released_sha256": "f2e3309365489712f2a3eef3d53ace72dafc943004b6b1a9ea80ec08949a3830",
+        "candidate_sha256": "4f168f3b216fac1c9ad2ff428e8323ea3d82c3257b9315f94e283ab5a5a08a19"
+      }
+    },
+    "scope": "Preserve evidence qualifiers / distinguish universal counterexamples from new patterns; no workflow or history retrieval removed."
+  },
+  "candidate_package_version": "0.5.11-distribution.3",
+  "source_release_unchanged": true
+}
