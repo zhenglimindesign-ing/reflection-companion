@@ -10,7 +10,7 @@ The complete ZIP includes portable, Codex and Claude manifests, square icons, th
 
 The conversation entry is scoped to CHAT and CODEX. Codex source-notes preview and an authenticated Claude counterexample task pass. History retrieval remains intact and requires user-scoped sources and host capabilities. ChatGPT/Work native execution, cloud saving and scheduling are NOT VERIFIED.
 
-The authenticated portal rejected upload until developer identity is verified. The account holder submitted individual verification; identity is in review. No upload, official scan or formal submission is claimed. Once approved, continue at https://platform.openai.com/plugins → upload new plugin → skills-only ZIP, inspect conversion and automatic findings, then fix any blocking findings. Formal submission and binding attestations require the account holder's authorization.
+Developer identity and write access must be verified in the submitting account. Use https://platform.openai.com/plugins → upload new plugin → skills-only ZIP, inspect conversion and automatic findings, then fix blocking findings. Current draft and scan results are recorded separately in the task handoff; local package validation alone does not establish them. Formal submission and binding attestations require the account holder's authorization.
 
 ## Claude
 
