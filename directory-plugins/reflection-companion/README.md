@@ -2,7 +2,7 @@
 
 [中文](README.zh-CN.md)
 
-Ask a self-understanding question, examine a judgment, or reflect on explicitly supplied conversation material. No account, backend, or credentials are required for the core conversation. Optional local helpers require Python 3.10+. History, browsing, saving and scheduling depend on tools actually available in the host; installation grants none of them. Personal records remain user-controlled. This is not diagnosis, therapy, or an emergency service. Source fidelity and semantic review remain separate from mechanical checks.
+Ask a self-understanding question, examine a judgment, or reflect on explicitly supplied conversation material. No account, backend, or credentials are required for the core conversation. Optional local helpers require Python 3.10+; the explicit Codex upgrade helper requires Python 3.11+. History, browsing, saving and scheduling depend on tools actually available in the host; installation grants none of them. Personal records remain user-controlled. This is not diagnosis, therapy, or an emergency service. Source fidelity and semantic review remain separate from mechanical checks.
 
 ## Start
 

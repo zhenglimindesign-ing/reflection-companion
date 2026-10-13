@@ -52,7 +52,8 @@
     "review-branch privacy URL",
     "separate prerelease wrapper version for the review iteration",
     "Public-release helper uses a minimal subprocess environment; no inherited credential variables",
-    "OpenAI scan remediation: termsOfServiceURL points to the existing public software license; no additional legal conditions introduced"
+    "OpenAI scan remediation: termsOfServiceURL points to the existing public software license; no additional legal conditions introduced",
+    "Clarify the existing Python 3.11+ requirement of the optional Codex upgrade helper"
   ],
   "runtime_claims": "Codex local and bounded Claude Code tests only; official portal checks are recorded separately. No new ChatGPT/Work execution claim.",
   "added_license_notices": {

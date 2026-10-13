@@ -2,7 +2,7 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "reflection-companion",
   "version": "0.5.11-distribution.3",
-  "description": "Ask a self-understanding question, examine a judgment, or reflect on explicitly supplied conversation material. No account, backend, or credentials are required for the core conversation. Optional local helpers require Python 3.10+. History, browsing, saving and scheduling depend on tools actually available in the host; installation grants none of them. Personal records remain user-controlled. This is not diagnosis, therapy, or an emergency service. Source fidelity and semantic review remain separate from mechanical checks.",
+  "description": "Ask a self-understanding question, examine a judgment, or reflect on explicitly supplied conversation material. No account, backend, or credentials are required for the core conversation. Optional local helpers require Python 3.10+; the explicit Codex upgrade helper requires Python 3.11+. History, browsing, saving and scheduling depend on tools actually available in the host; installation grants none of them. Personal records remain user-controlled. This is not diagnosis, therapy, or an emergency service. Source fidelity and semantic review remain separate from mechanical checks.",
   "author": {
     "name": "Limin Zheng"
   },
@@ -14,7 +14,7 @@
       "interface": {
         "displayName": "Reflection Companion",
         "shortDescription": "Reflect and explore yourself",
-        "longDescription": "Ask a self-understanding question, examine a judgment, or reflect on explicitly supplied conversation material. No account, backend, or credentials are required for the core conversation. Optional local helpers require Python 3.10+. History, browsing, saving and scheduling depend on tools actually available in the host; installation grants none of them. Personal records remain user-controlled. This is not diagnosis, therapy, or an emergency service. Source fidelity and semantic review remain separate from mechanical checks.",
+        "longDescription": "Ask a self-understanding question, examine a judgment, or reflect on explicitly supplied conversation material. No account, backend, or credentials are required for the core conversation. Optional local helpers require Python 3.10+; the explicit Codex upgrade helper requires Python 3.11+. History, browsing, saving and scheduling depend on tools actually available in the host; installation grants none of them. Personal records remain user-controlled. This is not diagnosis, therapy, or an emergency service. Source fidelity and semantic review remain separate from mechanical checks.",
         "developerName": "Limin Zheng",
         "category": "Productivity",
         "capabilities": [
