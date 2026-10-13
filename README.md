@@ -227,6 +227,16 @@ Check that the installed entry is enabled and reports version `0.5.11`. Start a 
 
 For an existing installation, the downloaded-ZIP route, other hosts and verification limits, see [platform setup and validation scope](docs/PLATFORMS.md).
 
+### Install the complete Skill with skills.sh
+
+From the project where you will use the Skill, run:
+
+```sh
+DISABLE_TELEMETRY=1 DO_NOT_TRACK=1 npx --yes skills@1.7.2 add zhenglimindesign-ing/reflection-companion --skill reflection-companion --agent codex claude-code --copy --yes
+```
+
+This project-level command copies the Skill and its resources into the Codex and Claude Code skill directories with telemetry disabled. It follows the repository’s current default branch. Restart the host or open a fresh session, then describe your task. Plugin marketplace registration and Python/system dependency setup are separate steps; the command does not perform them.
+
 You do not need to create a personal profile or enable saving before the first conversation.
 
 Start naturally, for example:

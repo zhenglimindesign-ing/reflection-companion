@@ -4,7 +4,6 @@
   "source_release": "v0.5.11",
   "public_base_commit": "002b9e9f07b355feaa396e31540408acc423082e",
   "unchanged_skill_files": {
-    "SKILL.md": "56677f967f52151a4b3f0992008b3706ac42dfbba405512b1306ce9b3f41ea05",
     "references/scheduling.md": "d3a6d852982805fbfd546cd78012f976ee5b5815fcde1ccc00f0f8a97b622b1d",
     "references/longitudinal-exploration.md": "2feab9493200aa57b098dbc35e0efad6bb78f5cba922aa9abd30fa9728fe4107",
     "references/expand.md": "b88c4cbc8644d23b089d8c09f01cea4a02153d30e1d3891394fa01fc13d211d9",
@@ -20,7 +19,6 @@
     "references/preferences.md": "00ed47711ffd89cea52dbaa58f44ade5f2cdf91cf08883777c867b9215887a37",
     "references/topic-coverage.md": "4383729c11e7535bbdb65c1788168a18418ff233d0c7fa91ebc6b28372f09fb4",
     "references/updates.md": "0725f99e87c067290aa596258e08010bd3857048cfdf2914ba916ecaed1840f1",
-    "references/exploration.md": "21aac93ea747bb64014afb24c6369927c0102d5620691e43f1b7e19b3fc8b208",
     "references/journal-composition.md": "70a6a2406607c956b0f508a36e8e68c2eefb9a37346367d5a3624030cae1688a",
     "scripts/topic_readiness.py": "d2ba30b83e562576908d85c226ba89aa041091462a8d3f5c0ec22d2a9fa4e22f",
     "scripts/source_readiness.py": "7548337aef98df159e0c706e35f7ac9e384df52e9cc97fca5fa29d38e5aae96d",
@@ -42,13 +40,33 @@
     "assets/templates/quarterly-review.zh-CN.md": "ac5b9544bea303fd3859065dabdaa04ebbd880d43c978e737638be69e137e710",
     "assets/templates/quarterly-review.en.md": "3c407114dc456dcade352a48f96e99de02de2c110e9e0e3ae5c41e6e2a08bea2",
     "assets/templates/weekly-review.en.md": "3f0e100762e48ff26c3276790c38843118df6eff789991f7091c2c81d9bd8793",
-    "assets/templates/monthly-review.en.md": "5711da81dbb70425782584f08d7265678409a1e2db25448105e366066b563634"
+    "assets/templates/monthly-review.en.md": "5711da81dbb70425782584f08d7265678409a1e2db25448105e366066b563634",
+    "references/exploration.md": "21aac93ea747bb64014afb24c6369927c0102d5620691e43f1b7e19b3fc8b208"
   },
   "packaging_changes": [
     "directory manifests",
     "square branding asset",
     "product-scoped OpenAI interface",
-    "bilingual plugin README"
+    "bilingual plugin README",
+    "verified skills.sh README instructions",
+    "license notices retained in standalone Skill copies",
+    "review-branch privacy URL",
+    "separate prerelease wrapper version for the review iteration"
   ],
-  "runtime_claims": "See README. Portal conversion and official directory installation NOT VERIFIED."
+  "runtime_claims": "Codex local and bounded Claude Code tests only; official portal checks are recorded separately. No new ChatGPT/Work execution claim.",
+  "added_license_notices": {
+    "LICENSE": "272bff50f2a283206dfa708195c9c63ad54584fdf2b229e4ca8e5cf5f0de3f35"
+  },
+  "bounded_instruction_fixes": {
+    "basis": "Actual Claude Sonnet 5 synthetic host failures",
+    "changed_files": {
+      "SKILL.md": {
+        "released_sha256": "56677f967f52151a4b3f0992008b3706ac42dfbba405512b1306ce9b3f41ea05",
+        "candidate_sha256": "fccd3bff1a16ef254328bfe7a472e51f826ef6b51c6d117ac59a06ce4ff68d50"
+      }
+    },
+    "scope": "Preserve evidence qualifiers / distinguish universal counterexamples from new patterns; no workflow or history retrieval removed."
+  },
+  "candidate_package_version": "0.5.11-distribution.2",
+  "source_release_unchanged": true
 }

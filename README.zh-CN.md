@@ -225,6 +225,16 @@ codex plugin list --marketplace reflection-companion --json
 
 已有安装、下载 ZIP 后的安装路径、其他宿主及验证边界，见[平台安装与验证范围](docs/PLATFORMS.zh-CN.md)。
 
+### 通过 skills.sh 安装完整 Skill
+
+在准备使用 Skill 的项目目录中运行：
+
+```sh
+DISABLE_TELEMETRY=1 DO_NOT_TRACK=1 npx --yes skills@1.7.2 add zhenglimindesign-ing/reflection-companion --skill reflection-companion --agent codex claude-code --copy --yes
+```
+
+该命令关闭遥测，将 Skill 和资源完整复制到项目的 Codex、Claude Code skill 目录，并跟随仓库当前默认分支。重启宿主或新开会话后描述任务。插件 marketplace 登记及 Python／系统依赖准备是独立步骤，该命令不会代办这些设置。
+
 安装之后，不需要先配置个人档案或开启保存。
 
 可以直接从一句自然语言开始，例如：

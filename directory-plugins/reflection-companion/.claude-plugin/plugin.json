@@ -1,6 +1,6 @@
 {
   "name": "reflection-companion",
-  "version": "0.5.11",
+  "version": "0.5.11-distribution.2",
   "description": "Ask a self-understanding question, examine a judgment, or reflect on explicitly supplied conversation material. No account, backend, or credentials are required for the core conversation. Optional local helpers require Python 3.10+. History, browsing, saving and scheduling depend on tools actually available in the host; installation grants none of them. Personal records remain user-controlled. This is not diagnosis, therapy, or an emergency service. Source fidelity and semantic review remain separate from mechanical checks.",
   "author": {
     "name": "Limin Zheng"
@@ -9,5 +9,9 @@
   "repository": "https://github.com/zhenglimindesign-ing/reflection-companion",
   "license": "MIT",
   "displayName": "Reflection Companion",
-  "skills": "./skills/"
+  "skills": "./skills/",
+  "icon": "./assets/icon.svg",
+  "documentationUrl": "https://github.com/zhenglimindesign-ing/reflection-companion",
+  "supportUrl": "https://github.com/zhenglimindesign-ing/reflection-companion/issues",
+  "privacyPolicyUrl": "https://github.com/zhenglimindesign-ing/reflection-companion/blob/codex/distribution-prep-20261013/directory-plugins/reflection-companion/PRIVACY.md"
 }
