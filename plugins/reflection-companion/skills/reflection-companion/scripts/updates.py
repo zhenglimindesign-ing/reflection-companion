@@ -13,6 +13,7 @@ import json
 import os
 from pathlib import Path, PurePosixPath
 import re
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -238,9 +239,14 @@ class CodexInstall:
                 'config_sha256': sha(self.config_bytes()), 'chat_reload_verified': False}
 
     def run(self, *args):
-        env = dict(os.environ, CODEX_HOME=str(self.home))
+        # Public release operations need no inherited tokens or API keys.
+        # Resolve the installed CLI before giving it a minimal environment.
+        executable = shutil.which(self.executable) or self.executable
+        env = {'PATH': str(Path(executable).parent) + os.pathsep + os.defpath,
+               'CODEX_HOME': str(self.home),
+               'DISABLE_TELEMETRY': '1', 'DO_NOT_TRACK': '1'}
         try:
-            result = subprocess.run([self.executable, 'plugin', *args, '--json'], env=env,
+            result = subprocess.run([executable, 'plugin', *args, '--json'], env=env,
                                     text=True, capture_output=True, timeout=90)
             if result.returncode:
                 raise ValueError('Codex ' + ' '.join(args[:2]) + ' failed; inspect the recovery receipt')

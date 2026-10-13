@@ -23,7 +23,6 @@
     "scripts/topic_readiness.py": "d2ba30b83e562576908d85c226ba89aa041091462a8d3f5c0ec22d2a9fa4e22f",
     "scripts/source_readiness.py": "7548337aef98df159e0c706e35f7ac9e384df52e9cc97fca5fa29d38e5aae96d",
     "scripts/discovery.py": "0d6e60a31d4f8111e5eeb80a32789971c682f475f7755efaf94ddcfb5b4cafe1",
-    "scripts/updates.py": "f2e3309365489712f2a3eef3d53ace72dafc943004b6b1a9ea80ec08949a3830",
     "scripts/source_notes.py": "bba80e1aea48600cf089beac78a584074089f39c628af4ce1d1eb96a68b24da3",
     "scripts/state.py": "4d6b68b15a458098f9143f8a7d43e983e4830ba25b5b46aa9f97a3fa2f019be8",
     "assets/artifact-options.json": "a02a63ee47b330dd1bf22823a5f3a743b6fefb6309ede94a661fe291e1a301bd",
@@ -51,7 +50,8 @@
     "verified skills.sh README instructions",
     "license notices retained in standalone Skill copies",
     "review-branch privacy URL",
-    "separate prerelease wrapper version for the review iteration"
+    "separate prerelease wrapper version for the review iteration",
+    "Public-release helper uses a minimal subprocess environment; no inherited credential variables"
   ],
   "runtime_claims": "Codex local and bounded Claude Code tests only; official portal checks are recorded separately. No new ChatGPT/Work execution claim.",
   "added_license_notices": {
@@ -63,6 +63,10 @@
       "SKILL.md": {
         "released_sha256": "56677f967f52151a4b3f0992008b3706ac42dfbba405512b1306ce9b3f41ea05",
         "candidate_sha256": "fccd3bff1a16ef254328bfe7a472e51f826ef6b51c6d117ac59a06ce4ff68d50"
+      },
+      "scripts/updates.py": {
+        "released_sha256": "f2e3309365489712f2a3eef3d53ace72dafc943004b6b1a9ea80ec08949a3830",
+        "candidate_sha256": "4f168f3b216fac1c9ad2ff428e8323ea3d82c3257b9315f94e283ab5a5a08a19"
       }
     },
     "scope": "Preserve evidence qualifiers / distinguish universal counterexamples from new patterns; no workflow or history retrieval removed."
